@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2025-12-02T23:30:58.821936+00:00",
+  "snapshot_time": "2025-12-02T23:58:34.975267+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url.32B8466C": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "32B8466C",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 10,
+        "object_id": "interactions:url.32B8466C",
+        "created_at": "2025-12-02T23:58:08+00:00",
+        "updated_at": "2025-12-02T23:58:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:url.32B8466C": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "32B8466C",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2212473X25000495?via%3Dihub",
+        "title": "The liabilities of robots.txt",
+        "authors": "",
+        "abstract": "This paper explores the legal implications of violating robots.txt, a technical standard widely used by webmasters to communicate restrictions on auto\u2026",
+        "timestamp": "2025-12-02T23:57:49.902Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1016/j.clsr.2025.106176",
+        "journalName": "Computer Law & Security Review",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 9,
+        "object_id": "paper:url.32B8466C",
+        "created_at": "2025-12-02T23:57:50+00:00",
+        "updated_at": "2025-12-02T23:58:11+00:00",
+        "version": 1
+      }
+    },
     "interactions:url.7C3E216C": {
       "data": {
         "sourceId": "url",
