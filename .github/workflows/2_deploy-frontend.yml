@@ -55,20 +55,16 @@ jobs:
           
       - name: Install dependencies
         run: pip install gh-store
-
+      
       - name: Update snapshot
         env:
           SNAPSHOT_PATH: data/papers/gh-store-snapshot.json
         run: |
           mkdir -p $(dirname ${{ env.SNAPSHOT_PATH }})
-          # Create empty snapshot if it doesn't exist
-          if [ ! -f "${{ env.SNAPSHOT_PATH }}" ]; then
-            echo '{"objects": {}, "snapshot_time": "1970-01-01T00:00:00+00:00"}' > ${{ env.SNAPSHOT_PATH }}
-          fi
-          python -m gh_store update-snapshot \
+          python -m gh_store snapshot \
             --token ${{ secrets.GITHUB_TOKEN }} \
             --repo ${{ github.repository }} \
-            --snapshot-path ${{ env.SNAPSHOT_PATH }}
+            --output ${{ env.SNAPSHOT_PATH }}
 
       #- name: Update snapshot
       #  env:
