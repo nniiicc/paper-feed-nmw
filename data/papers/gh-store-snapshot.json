@@ -1,1 +1,120 @@
-{"objects": {}, "snapshot_time": "1970-01-01T00:00:00+00:00"}
+{
+  "snapshot_time": "2025-12-02T23:10:45.524486+00:00",
+  "repository": "nniiicc/paper-feed-nmw",
+  "objects": {
+    "interactions:url.7C3E216C": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "7C3E216C",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 8,
+        "object_id": "interactions:url.7C3E216C",
+        "created_at": "2025-12-02T22:46:48+00:00",
+        "updated_at": "2025-12-02T22:46:50+00:00",
+        "version": 1
+      }
+    },
+    "paper:url.7C3E216C": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "7C3E216C",
+        "url": "https://dl.acm.org/doi/10.1145/2630729.2630748",
+        "title": "Do U.S. Regulators Listen to the Public? Testing the Regulatory Process with the RegRank Algorithm | Proceedings of the International Workshop on Data Science for Macro-Modeling",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-02T22:46:37.360Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 7,
+        "object_id": "paper:url.7C3E216C",
+        "created_at": "2025-12-02T22:46:38+00:00",
+        "updated_at": "2025-12-02T22:53:22+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url.1967CBE6": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "1967CBE6",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 6,
+        "object_id": "interactions:url.1967CBE6",
+        "created_at": "2025-12-02T22:44:01+00:00",
+        "updated_at": "2025-12-02T22:44:03+00:00",
+        "version": 1
+      }
+    },
+    "paper:url.1967CBE6": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "1967CBE6",
+        "url": "https://www.nature.com/articles/s41597-025-04448-4",
+        "title": "Australian automotive workers and community leaders interview dataset following 2017 assembly plant closures",
+        "authors": "Irving, Jacob, Beer, Andrew, Weller, Sally, Barnes, Tom, Washington, Lynette, Dinmore, Helen",
+        "abstract": "The Australian manufacturing sector saw the exit of the automotive industry in 2017 arising in mass retrenchment across its assembly plants and supply chain firms. In 2019, a large-scale program of research was launched to investigate the impacts of the closures on workers and community including a dedicated stream of qualitative work which took place in 2021. This work took the form of in-depth interviews that investigated the experiences of automotive workers as they underwent retrenchment, reskilling, re-employment and retirement. A further set of interviews took place in 2023 to investigate the experiences of community leaders in the areas affected by the assembly plant closures as they navigated a changing economic landscape. This dataset is designed to aid researchers and policy makers understand the complexities of individual experiences that complement the quantitative data collected during the broader program of work. In total, 73 automotive workers and 33 community leaders were interviewed.",
+        "timestamp": "2025-12-02T22:43:52.565Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1038/s41597-025-04448-4",
+        "journalName": "Scientific Data",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 5,
+        "object_id": "paper:url.1967CBE6",
+        "created_at": "2025-12-02T22:43:53+00:00",
+        "updated_at": "2025-12-02T22:54:19+00:00",
+        "version": 1
+      }
+    },
+    "interactions:arxiv.2503.06035": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2503.06035",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 2,
+        "object_id": "interactions:arxiv.2503.06035",
+        "created_at": "2025-12-02T20:39:15+00:00",
+        "updated_at": "2025-12-02T23:06:35+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2503.06035": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2503.06035",
+        "url": "https://arxiv.org/pdf/2503.06035",
+        "title": "",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-02T20:13:58.987Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1,
+        "object_id": "paper:arxiv.2503.06035",
+        "created_at": "2025-12-02T20:13:59+00:00",
+        "updated_at": "2025-12-02T23:06:35+00:00",
+        "version": 1
+      }
+    }
+  }
+}
