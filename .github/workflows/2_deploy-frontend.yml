@@ -124,17 +124,12 @@ jobs:
           cp frontend/* web/
           
           # Copy paper features maintaining directory structure
-          cd data
-          if [ -d "papers" ]; then
-            # Create papers directory in web/data
-            mkdir -p ../web/data/papers
-            
-            # Find all markdown files under papers/*/features
-            # and copy them maintaining directory structure
-            find papers -type f -name "*.md" -path "*/features/*" -exec cp --parents {} ../web/data/ \;
+          if [ -d "data/papers" ]; then
+            mkdir -p web/data/papers
+            cd data
+            find papers -type f -name "*.md" -path "*/features/*" -exec cp --parents {} ../web/data/ \; || true
+            cd ..
           fi
-          cd ..
-
       - name: Get git info
         id: git-info
         run: |
