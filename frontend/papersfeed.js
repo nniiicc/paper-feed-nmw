@@ -551,6 +551,9 @@ function formatTags(cell) {
 
 function formatReadingTimeWithColor(cell) {
   const seconds = cell.getValue();
+  if (!readingTimeColorScale || seconds === 0) {
+    return seconds;
+  }
   const backgroundColor = readingTimeColorScale(seconds);
   const textColor = getContrastColor(backgroundColor);
   const element = cell.getElement();
@@ -560,13 +563,16 @@ function formatReadingTimeWithColor(cell) {
 }
 
 function formatInteractionDaysWithColor(cell) {
-  const seconds = cell.getValue();
-  const backgroundColor = interactionDaysColorScale(seconds);
+  const days = cell.getValue();
+  if (!interactionDaysColorScale || days === 0) {
+    return days;
+  }
+  const backgroundColor = interactionDaysColorScale(days);
   const textColor = getContrastColor(backgroundColor);
   const element = cell.getElement();
   element.style.backgroundColor = backgroundColor;
   element.style.color = textColor;
-  return seconds;
+  return days;
 }
 
 // Get contrasting text color for readability
