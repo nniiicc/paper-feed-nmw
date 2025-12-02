@@ -61,10 +61,24 @@ jobs:
           SNAPSHOT_PATH: data/papers/gh-store-snapshot.json
         run: |
           mkdir -p $(dirname ${{ env.SNAPSHOT_PATH }})
+          # Create empty snapshot if it doesn't exist
+          if [ ! -f "${{ env.SNAPSHOT_PATH }}" ]; then
+            echo '{"objects": {}, "meta": {"object_count": 0}}' > ${{ env.SNAPSHOT_PATH }}
+          fi
           python -m gh_store update-snapshot \
             --token ${{ secrets.GITHUB_TOKEN }} \
             --repo ${{ github.repository }} \
             --snapshot-path ${{ env.SNAPSHOT_PATH }}
+
+      #- name: Update snapshot
+      #  env:
+      #    SNAPSHOT_PATH: data/papers/gh-store-snapshot.json
+      #  run: |
+      #    mkdir -p $(dirname ${{ env.SNAPSHOT_PATH }})
+      #    python -m gh_store update-snapshot \
+      #      --token ${{ secrets.GITHUB_TOKEN }} \
+      #      --repo ${{ github.repository }} \
+      #      --snapshot-path ${{ env.SNAPSHOT_PATH }}
       
       # - name: Convert data
       #   run: |
