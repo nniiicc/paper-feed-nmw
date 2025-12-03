@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2025-12-03T00:01:29.483077+00:00",
+  "snapshot_time": "2025-12-03T18:10:57.598619+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2511.13949": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2511.13949",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 16,
+        "object_id": "interactions:arxiv.2511.13949",
+        "created_at": "2025-12-03T18:10:38+00:00",
+        "updated_at": "2025-12-03T18:10:40+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2511.13949": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2511.13949",
+        "url": "https://arxiv.org/abs/2511.13949",
+        "title": "Introducing AI to an Online Petition Platform Changed Outputs but not Outcomes",
+        "authors": "Isabel Corpus, Eric Gilbert, Allison Koenecke, Mor Naaman",
+        "abstract": "The rapid integration of AI writing tools into online platforms raises critical questions about their impact on content production and outcomes. We leverage a unique natural experiment on Change..org, a leading social advocacy platform, to causally investigate the effects of an in-platform ''write with AI'' tool. To understand the impact of the AI integration, we collected 1.5 million petitions and employed a difference-in-differences analysis. Our findings reveal that in-platform AI access significantly altered the lexical features of petitions and increased petition homogeneity, but did not improve petition outcomes. We confirmed the results in a separate analysis of repeat petition writers who wrote petitions before and after introduction of the AI tool. The results suggest that while AI writing tools can profoundly reshape online content, their practical utility for improving desired outcomes may be less beneficial than anticipated, and introduce unintended consequences like content homogenization.",
+        "timestamp": "2025-12-03T18:10:16.259Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/17",
+        "tags": [
+          "Computers and Society (cs.CY)"
+        ],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 15,
+        "object_id": "paper:arxiv.2511.13949",
+        "created_at": "2025-12-03T18:10:16+00:00",
+        "updated_at": "2025-12-03T18:10:36+00:00",
+        "version": 1
+      }
+    },
     "paper:url.509EAA5": {
       "data": {
         "sourceId": "url",
