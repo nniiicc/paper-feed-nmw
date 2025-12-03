@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2025-12-03T20:20:46.413691+00:00",
+  "snapshot_time": "2025-12-03T21:42:36.455547+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "paper:wiley.10.1111/ajps.12521": {
@@ -60,6 +60,36 @@
               "idle_seconds": 4,
               "total_elapsed_seconds": 14
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-03T21:41:22.252Z",
+            "data": {
+              "session_id": "session_1764798082248_f760uyy",
+              "source_id": "arxiv",
+              "paper_id": "2511.13949",
+              "start_time": "2025-12-03T21:40:38.298Z",
+              "end_time": "2025-12-03T21:41:22.248Z",
+              "heartbeat_count": 8,
+              "duration_seconds": 40,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 44
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-03T21:41:58.418Z",
+            "data": {
+              "session_id": "session_1764798118412_vr49xlz",
+              "source_id": "arxiv",
+              "paper_id": "2511.13949",
+              "start_time": "2025-12-03T21:41:52.944Z",
+              "end_time": "2025-12-03T21:41:58.412Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 0,
+              "total_elapsed_seconds": 5
+            }
           }
         ]
       },
@@ -67,7 +97,7 @@
         "issue_number": 16,
         "object_id": "interactions:arxiv.2511.13949",
         "created_at": "2025-12-03T18:10:38+00:00",
-        "updated_at": "2025-12-03T18:21:15+00:00",
+        "updated_at": "2025-12-03T21:42:11+00:00",
         "version": 1
       }
     },
