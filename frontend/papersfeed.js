@@ -796,20 +796,21 @@ const publishedColorScale = d3.scaleSequential(d3.interpolateGreens)
 function formatPublishedWithColor(cell) {
   const publishedDate = cell.getValue();
   const cellElement = cell.getElement();
-  
+
   if (!publishedDate || publishedDate === 'N/A') {
-    cellElement.style.backgroundColor = 'white';
+    cellElement.style.backgroundColor = '';
     return publishedDate || '';
   }
-  
+
   try {
     const pubDate = new Date(publishedDate);
     const today = new Date();
     const daysAgo = Math.floor((today - pubDate) / (1000 * 60 * 60 * 24));
-    
+
     if (daysAgo < 0 || daysAgo > 90) {
-      // More than 3 months old or future date - white
-      cellElement.style.backgroundColor = 'white';
+      // More than 3 months old or future date - inherit from theme
+      cellElement.style.backgroundColor = '';
+      cellElement.style.color = '';
     } else {
       // 0-90 days: use D3 color scale
       const backgroundColor = publishedColorScale(daysAgo);
@@ -817,10 +818,11 @@ function formatPublishedWithColor(cell) {
       cellElement.style.backgroundColor = backgroundColor;
       cellElement.style.color = textColor;
     }
-    
+
     return publishedDate;
   } catch (error) {
-    cellElement.style.backgroundColor = 'white';
+    cellElement.style.backgroundColor = '';
+    cellElement.style.color = '';
     return publishedDate;
   }
 }
