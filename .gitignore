@@ -165,3 +165,7 @@ cython_debug/
 .aider*
 
 !extension/dist/
+
+# Node.js
+node_modules/
+
