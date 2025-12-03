@@ -1,7 +1,69 @@
 {
-  "snapshot_time": "2025-12-02T23:58:34.975267+00:00",
+  "snapshot_time": "2025-12-03T00:00:33.424968+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url.2A39C77A": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "2A39C77A",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 13,
+        "object_id": "interactions:url.2A39C77A",
+        "created_at": "2025-12-02T23:59:51+00:00",
+        "updated_at": "2025-12-02T23:59:53+00:00",
+        "version": 1
+      }
+    },
+    "paper:url.2A39C77A": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "2A39C77A",
+        "url": "https://www.proquest.com/docview/2394987347?%20Theses&fromopenview=true&pq-origsite=gscholar&sourcetype=Dissertations%20",
+        "title": "Essays on Private Influence on the Policymaking Process - ProQuest",
+        "authors": "",
+        "abstract": "Explore millions of resources from scholarly journals, books, newspapers, videos and more, on the ProQuest Platform.",
+        "timestamp": "2025-12-02T23:59:37.357Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 12,
+        "object_id": "paper:url.2A39C77A",
+        "created_at": "2025-12-02T23:59:37+00:00",
+        "updated_at": "2025-12-03T00:00:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:url.2B5E272A": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "2B5E272A",
+        "url": "https://www.journals.uchicago.edu/doi/pdf/10.1086/706891",
+        "title": "2B5E272A",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-02T23:59:26.548Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 11,
+        "object_id": "paper:url.2B5E272A",
+        "created_at": "2025-12-02T23:59:26+00:00",
+        "updated_at": "2025-12-02T23:59:48+00:00",
+        "version": 1
+      }
+    },
     "interactions:url.32B8466C": {
       "data": {
         "sourceId": "url",
