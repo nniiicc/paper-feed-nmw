@@ -122,20 +122,61 @@ export class IEEEIntegration extends BaseSourceIntegration {
 
   // URL patterns for IEEE articles
   readonly urlPatterns = [
+    // Standard document URLs
     /ieeexplore\.ieee\.org\/document\/(\d+)/,
     /ieeexplore\.ieee\.org\/abstract\/document\/(\d+)/,
+    // Stamp (full text) URLs
+    /ieeexplore\.ieee\.org\/stamp\/stamp\.jsp\?.*arnumber=(\d+)/,
+    // PDF direct links
+    /ieeexplore\.ieee\.org\/ielx?\d*\/\d+\/\d+\/(\d+)\.pdf/,
+    // XPL URLs (older format)
+    /ieeexplore\.ieee\.org\/xpl\/articleDetails\.jsp\?arnumber=(\d+)/,
+    /ieeexplore\.ieee\.org\/xpl\/tocresult\.jsp/,
+    // Course/content URLs
+    /ieeexplore\.ieee\.org\/courses\/details\/(\d+)/,
+    // IEEE Computer Society
+    /computer\.org\/csdl\/\w+\/\d+\/\d+\/(\d+)/,
+    // Generic document pattern
+    /ieeexplore\.ieee\.org\/document\//,
+    /ieeexplore\.ieee\.org\/abstract\/document\//,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /ieeexplore\.ieee\.org\/(document|abstract|stamp|ielx?\d*|xpl)\//.test(url) ||
+           /computer\.org\/csdl\//.test(url);
+  }
 
   /**
    * Extract paper ID (document number) from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try document/abstract URL
+    const docMatch = url.match(/document\/(\d+)/);
+    if (docMatch) {
+      return docMatch[1];
     }
+
+    // Try arnumber parameter
+    const arnumberMatch = url.match(/arnumber=(\d+)/);
+    if (arnumberMatch) {
+      return arnumberMatch[1];
+    }
+
+    // Try PDF URL format
+    const pdfMatch = url.match(/\/(\d+)\.pdf/);
+    if (pdfMatch) {
+      return pdfMatch[1];
+    }
+
+    // Try IEEE Computer Society format
+    const csdlMatch = url.match(/csdl\/\w+\/\d+\/\d+\/(\d+)/);
+    if (csdlMatch) {
+      return csdlMatch[1];
+    }
+
     return null;
   }
 

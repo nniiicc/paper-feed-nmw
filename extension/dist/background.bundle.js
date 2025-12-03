@@ -759,25 +759,53 @@ class MetadataExtractor {
     }
     /**
      * Extract title from document
-     * Considers multiple metadata standards with priority order
+     * Considers multiple metadata standards with priority order, then DOM fallbacks
      */
     extractTitle() {
-        // Title extraction - priority order
-        return (
+        // Title extraction from meta tags - priority order
+        const metaTitle = (
         // Dublin Core
-        this.getMetaContent('meta[name="DC.Title"]') ||
+        this.getMetaContent('meta[name="DC.Title"]') || this.getMetaContent('meta[name="dc.title"]') ||
             // Citation
             this.getMetaContent('meta[name="citation_title"]') ||
             // Open Graph
             this.getMetaContent('meta[property="og:title"]') ||
             // Standard meta
-            this.getMetaContent('meta[name="title"]') ||
-            // Fallback to document title
-            this.document.title);
+            this.getMetaContent('meta[name="title"]'));
+        if (metaTitle) {
+            return metaTitle;
+        }
+        // DOM-based fallback extraction
+        // Look for common paper title patterns in the page
+        const titleSelectors = [
+            // Common academic page patterns
+            'h1.title', 'h1.article-title', 'h1.paper-title', 'h1.document-title',
+            '.title h1', '.article-title h1', '.paper-title h1',
+            'h1[itemprop="headline"]', 'h1[itemprop="name"]',
+            '.citation_title', '.paper-title', '.article-title',
+            // Generic heading patterns
+            'article h1', 'main h1', '.content h1', '#content h1',
+            // PDF viewer fallbacks
+            '.page-title', '#title',
+            // First h1 on the page as last resort before document.title
+            'h1'
+        ];
+        for (const selector of titleSelectors) {
+            const element = this.document.querySelector(selector);
+            if (element) {
+                const text = element.textContent?.trim();
+                // Only use if it looks like a real title (not too short, not navigation)
+                if (text && text.length > 5 && text.length < 500) {
+                    return text;
+                }
+            }
+        }
+        // Fallback to document title
+        return this.document.title;
     }
     /**
      * Extract authors from document
-     * Handles multiple author formats and sources
+     * Handles multiple author formats and sources with DOM fallbacks
      */
     extractAuthors() {
         // Get all citation authors (some pages have multiple citation_author tags)
@@ -795,11 +823,11 @@ class MetadataExtractor {
                 dcCreators.push(content);
         });
         // Individual author elements
-        const dcCreator = this.getMetaContent('meta[name="DC.Creator.PersonalName"]');
+        const dcCreator = this.getMetaContent('meta[name="DC.Creator.PersonalName"]') || this.getMetaContent('meta[name="dc.creator.personalname"]');
         const citationAuthor = this.getMetaContent('meta[name="citation_author"]');
         const ogAuthor = this.getMetaContent('meta[property="og:article:author"]') ||
             this.getMetaContent('meta[name="author"]');
-        // Set authors with priority
+        // Set authors with priority from meta tags
         if (dcCreators.length > 0) {
             return dcCreators.join(', ');
         }
@@ -815,37 +843,231 @@ class MetadataExtractor {
         else if (ogAuthor) {
             return ogAuthor;
         }
+        // DOM-based fallback extraction
+        const authorSelectors = [
+            // Common academic page patterns
+            '.authors a', '.author a', '.author-name a',
+            '.authors', '.author', '.author-name', '.author-list',
+            '[itemprop="author"]', '[rel="author"]',
+            '.byline', '.by-line', '.article-author', '.paper-author',
+            '.contributor', '.contributors',
+            // arXiv-like patterns
+            '.authors', '.authors-list',
+            // IEEE/ACM patterns
+            '.authors-info .author span', '.author-info',
+            // Nature/Science patterns
+            '.c-article-author-list', '.article-authors',
+            // Generic patterns
+            '.meta-authors', '#authors', '.author-block'
+        ];
+        for (const selector of authorSelectors) {
+            const elements = this.document.querySelectorAll(selector);
+            if (elements.length > 0) {
+                const authors = [];
+                elements.forEach(el => {
+                    const text = el.textContent?.trim();
+                    if (text && text.length > 1 && text.length < 200) {
+                        // Clean up common prefixes
+                        const cleaned = text
+                            .replace(/^(by|authors?:?|written by)\s*/i, '')
+                            .replace(/\s+/g, ' ')
+                            .trim();
+                        if (cleaned) {
+                            authors.push(cleaned);
+                        }
+                    }
+                });
+                if (authors.length > 0) {
+                    // If we got multiple elements, join them
+                    // If we got one element that looks like a comma-separated list, return as-is
+                    const result = authors.join(', ');
+                    if (result.length > 2) {
+                        return result;
+                    }
+                }
+            }
+        }
         return '';
     }
     /**
-     * Extract description/abstract from document
+     * Extract description/abstract from document with DOM fallbacks
      */
     extractDescription() {
-        return (this.getMetaContent('meta[name="DC.Description"]') ||
+        // Try meta tags first
+        const metaDescription = (this.getMetaContent('meta[name="DC.Description"]') || this.getMetaContent('meta[name="dc.description"]') ||
             this.getMetaContent('meta[name="citation_abstract"]') ||
             this.getMetaContent('meta[property="og:description"]') ||
             this.getMetaContent('meta[name="description"]'));
+        if (metaDescription && metaDescription.length > 50) {
+            return metaDescription;
+        }
+        // DOM-based fallback extraction for abstracts
+        const abstractSelectors = [
+            // Common academic patterns
+            '.abstract', '#abstract', '[id*="abstract"]', '[class*="abstract"]',
+            '.Abstract', '#Abstract',
+            // Specific patterns
+            '.abstractSection', '.abstract-content', '.abstract-text',
+            '.paper-abstract', '.article-abstract',
+            // arXiv patterns
+            'blockquote.abstract',
+            // Summary patterns (some sites use "summary" instead of "abstract")
+            '.summary', '#summary', '.article-summary',
+            // IEEE/ACM patterns
+            '.abstract-text', '.abstractInFull',
+            // Nature/Science patterns
+            '.c-article-section__content', '[data-component="article-abstract"]',
+            // Schema.org patterns
+            '[itemprop="description"]', '[itemprop="abstract"]'
+        ];
+        for (const selector of abstractSelectors) {
+            const element = this.document.querySelector(selector);
+            if (element) {
+                let text = element.textContent?.trim() || '';
+                // Clean up the abstract
+                text = text
+                    .replace(/^(abstract:?|summary:?)\s*/i, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+                // Only use if it looks like a real abstract (not too short)
+                if (text.length > 100) {
+                    return text;
+                }
+            }
+        }
+        // If we have a short meta description, return it as fallback
+        if (metaDescription) {
+            return metaDescription;
+        }
+        return '';
     }
     /**
-     * Extract publication date from document
+     * Extract publication date from document with DOM fallbacks
      */
     extractPublishedDate() {
-        return (this.getMetaContent('meta[name="DC.Date.issued"]') ||
+        // Try meta tags first
+        const metaDate = (this.getMetaContent('meta[name="DC.Date.issued"]') || this.getMetaContent('meta[name="dc.date.issued"]') ||
+            this.getMetaContent('meta[name="dc.date"]') || this.getMetaContent('meta[name="dc.Date"]') ||
+            this.getMetaContent('meta[name="DC.Date"]') ||
             this.getMetaContent('meta[name="citation_date"]') ||
-            this.getMetaContent('meta[property="article:published_time"]'));
+            this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            this.getMetaContent('meta[property="article:published_time"]') ||
+            this.getMetaContent('meta[property="article:modified_time"]'));
+        if (metaDate) {
+            return metaDate;
+        }
+        // DOM-based fallback extraction
+        const dateSelectors = [
+            // Common patterns
+            '.date', '.pub-date', '.publication-date', '.published-date',
+            '.article-date', '.paper-date', '.dateline',
+            '[itemprop="datePublished"]', '[itemprop="dateCreated"]',
+            'time[datetime]', 'time[pubdate]',
+            // arXiv patterns
+            '.dateline', '.submission-history',
+            // Specific patterns
+            '.meta-date', '.entry-date', '.post-date'
+        ];
+        for (const selector of dateSelectors) {
+            const element = this.document.querySelector(selector);
+            if (element) {
+                // Check for datetime attribute first (more reliable)
+                const datetime = element.getAttribute('datetime') || element.getAttribute('content');
+                if (datetime) {
+                    return datetime;
+                }
+                // Fall back to text content
+                const text = element.textContent?.trim();
+                if (text && this.looksLikeDate(text)) {
+                    return text;
+                }
+            }
+        }
+        return '';
     }
     /**
-     * Extract DOI (Digital Object Identifier) from document
+     * Check if a string looks like a date
+     */
+    looksLikeDate(text) {
+        // Common date patterns
+        const datePatterns = [
+            /\d{4}-\d{2}-\d{2}/, // ISO format
+            /\d{1,2}\/\d{1,2}\/\d{2,4}/, // US format
+            /\d{1,2}\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/i, // Month name
+            /(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2}/i, // Month name
+            /(January|February|March|April|May|June|July|August|September|October|November|December)/i,
+            /\d{4}/ // Just a year
+        ];
+        return datePatterns.some(pattern => pattern.test(text));
+    }
+    /**
+     * Extract DOI (Digital Object Identifier) from document with URL and DOM fallbacks
      */
     extractDoi() {
-        return (this.getMetaContent('meta[name="DC.Identifier.DOI"]') ||
-            this.getMetaContent('meta[name="citation_doi"]'));
+        // Try meta tags first
+        const metaDoi = (this.getMetaContent('meta[name="DC.Identifier.DOI"]') || this.getMetaContent('meta[name="dc.identifier.doi"]') ||
+            this.getMetaContent('meta[name="citation_doi"]') ||
+            this.getMetaContent('meta[name="DOI"]') || this.getMetaContent('meta[name="doi"]'));
+        if (metaDoi) {
+            return metaDoi;
+        }
+        // Try to extract DOI from URL
+        const doiFromUrl = this.extractDoiFromUrl(this.url);
+        if (doiFromUrl) {
+            return doiFromUrl;
+        }
+        // DOM-based fallback - look for DOI links or text
+        const doiSelectors = [
+            'a[href*="doi.org/10."]',
+            'a[href*="/doi/10."]',
+            '.doi', '#doi', '[class*="doi"]'
+        ];
+        for (const selector of doiSelectors) {
+            const element = this.document.querySelector(selector);
+            if (element) {
+                // Check href for DOI
+                const href = element.getAttribute('href');
+                if (href) {
+                    const doi = this.extractDoiFromUrl(href);
+                    if (doi)
+                        return doi;
+                }
+                // Check text content
+                const text = element.textContent?.trim();
+                if (text) {
+                    const doiMatch = text.match(/10\.\d{4,}\/[^\s]+/);
+                    if (doiMatch) {
+                        return doiMatch[0];
+                    }
+                }
+            }
+        }
+        return '';
+    }
+    /**
+     * Extract DOI from a URL
+     */
+    extractDoiFromUrl(url) {
+        // Common DOI URL patterns
+        const doiPatterns = [
+            /doi\.org\/(10\.\d{4,}\/[^\s?#]+)/i,
+            /\/doi\/(?:abs|full|pdf|epdf)?\/?((10\.\d{4,}\/[^\s?#]+))/i,
+            /doi[=:](10\.\d{4,}\/[^\s&?#]+)/i
+        ];
+        for (const pattern of doiPatterns) {
+            const match = url.match(pattern);
+            if (match) {
+                return match[1] || match[2];
+            }
+        }
+        return '';
     }
     /**
      * Extract journal name from document
      */
     extractJournalName() {
-        return (this.getMetaContent('meta[name="DC.Source"]') ||
+        return (this.getMetaContent('meta[name="DC.Source"]') || this.getMetaContent('meta[name="dc.source"]') ||
             this.getMetaContent('meta[name="citation_journal_title"]'));
     }
     /**
@@ -853,7 +1075,7 @@ class MetadataExtractor {
      */
     extractTags() {
         const keywords = this.getMetaContent('meta[name="keywords"]') ||
-            this.getMetaContent('meta[name="DC.Subject"]');
+            this.getMetaContent('meta[name="DC.Subject"]') || this.getMetaContent('meta[name="dc.subject"]');
         if (keywords) {
             return keywords.split(',').map(tag => tag.trim());
         }
@@ -1034,9 +1256,6 @@ class ArxivMetadataExtractor extends MetadataExtractor {
         if (this.apiMetadata?.title) {
             return this.apiMetadata.title;
         }
-        // arXiv-specific selectors
-        //const arxivTitle = this.document.querySelector('.title.mathjax')?.textContent?.trim();
-        //return arxivTitle || super.extractTitle();
         return super.extractTitle();
     }
     /**
@@ -1130,9 +1349,9 @@ class ArXivIntegration extends BaseSourceIntegration {
             /arxiv\.org\/\w+\/([0-9.]+)/
         ];
         // Content script matches
-        this.contentScriptMatches = [
-            "*://*.arxiv.org/*"
-        ];
+        // readonly contentScriptMatches = [
+        //   "*://*.arxiv.org/*"
+        // ];
         // ArXiv API endpoint
         this.API_BASE_URL = 'https://export.arxiv.org/api/query';
     }
@@ -1353,25 +1572,42 @@ class OpenReviewIntegration extends BaseSourceIntegration {
         super(...arguments);
         this.id = 'openreview';
         this.name = 'OpenReview';
-        // URL patterns for papers
+        // URL patterns for papers (various OpenReview formats)
         this.urlPatterns = [
-            /openreview\.net\/forum\?id=([a-zA-Z0-9]+)/,
-            /openreview\.net\/pdf\?id=([a-zA-Z0-9]+)/
+            // Forum page (main paper page)
+            /openreview\.net\/forum\?id=([a-zA-Z0-9_-]+)/,
+            // PDF page
+            /openreview\.net\/pdf\?id=([a-zA-Z0-9_-]+)/,
+            // Attachment URLs
+            /openreview\.net\/attachment\?id=([a-zA-Z0-9_-]+)/,
+            // References/revisions
+            /openreview\.net\/references\?referent=([a-zA-Z0-9_-]+)/,
+            /openreview\.net\/revisions\?id=([a-zA-Z0-9_-]+)/,
+            // Group/venue pages (for browsing)
+            /openreview\.net\/group\?id=([^&\s]+)/,
+            // Generic OpenReview paper URL
+            /openreview\.net\/(?:forum|pdf)\?id=/,
         ];
-        // Content script matches
-        this.contentScriptMatches = [
-            "*://*.openreview.net/*"
-        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /openreview\.net\/(forum|pdf|attachment|references|revisions)\?id=/.test(url);
     }
     /**
      * Extract paper ID from URL
      */
     extractPaperId(url) {
-        for (const pattern of this.urlPatterns) {
-            const match = url.match(pattern);
-            if (match) {
-                return match[1]; // The capture group with the paper ID
-            }
+        // Try to extract ID from various URL formats
+        const idMatch = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+        if (idMatch) {
+            return idMatch[1];
+        }
+        // Try referent parameter
+        const referentMatch = url.match(/[?&]referent=([a-zA-Z0-9_-]+)/);
+        if (referentMatch) {
+            return referentMatch[1];
         }
         return null;
     }
@@ -1403,16 +1639,2189 @@ class OpenReviewIntegration extends BaseSourceIntegration {
 // Export a singleton instance that can be used by both background and content scripts
 const openReviewIntegration = new OpenReviewIntegration();
 
-// extension/source-integration/registry.ts
-// Import any other integrations here
+// extension/source-integration/nature/index.ts
+loguru.getLogger('nature-integration');
 /**
- * Registry of all available source integrations
- * This is the SINGLE place where integrations need to be added
+ * Custom metadata extractor for Nature.com pages
  */
+class NatureMetadataExtractor extends MetadataExtractor {
+    /**
+     * Override title extraction to use meta tag first
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Override authors extraction to use meta tag first
+     */
+    extractAuthors() {
+        const metaAuthors = this.getMetaContent('meta[name="citation_author"]');
+        if (metaAuthors) {
+            return metaAuthors;
+        }
+        // Fallback to HTML extraction
+        const authorElements = this.document.querySelectorAll('.c-article-author-list__item');
+        if (authorElements.length > 0) {
+            return Array.from(authorElements)
+                .map(el => el.textContent?.trim())
+                .filter(Boolean)
+                .join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract keywords/tags from document
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="dc.subject"]');
+        if (keywords) {
+            return keywords.split(',').map(tag => tag.trim());
+        }
+        return [];
+    }
+    /**
+     * Override description extraction to use meta tag first
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Override published date extraction to use meta tag
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') || super.extractPublishedDate();
+    }
+    /**
+     * Override DOI extraction to use meta tag
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') || super.extractDoi();
+    }
+}
+/**
+ * Nature.com integration with custom metadata extraction
+ */
+class NatureIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'nature';
+        this.name = 'Nature';
+        // URL patterns for Nature articles (including all Nature journals)
+        this.urlPatterns = [
+            // Main nature.com articles
+            /nature\.com\/articles\/([^?#/]+)/,
+            // Nature sub-journals (e.g., nature.com/ncomms/articles/...)
+            /nature\.com\/\w+\/articles\/([^?#/]+)/,
+            // Scientific Reports
+            /nature\.com\/srep\/articles\/([^?#/]+)/,
+            // Nature Communications
+            /nature\.com\/ncomms\/articles\/([^?#/]+)/,
+            // Nature Methods, Nature Reviews, etc.
+            /nature\.com\/n[a-z]+\/articles\/([^?#/]+)/,
+            // DOI-based URLs
+            /nature\.com\/doi\/(10\.\d+\/[^?#\s]+)/,
+            // Full text and PDF variants
+            /nature\.com\/articles\/([^?#/]+)\.pdf/,
+            /nature\.com\/articles\/([^?#/]+)\/full/,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /nature\.com\/(articles|doi)\//.test(url) ||
+            /nature\.com\/\w+\/articles\//.test(url);
+    }
+    /**
+     * Extract paper ID from URL
+     */
+    extractPaperId(url) {
+        // Try to extract article ID
+        const articleMatch = url.match(/nature\.com\/(?:\w+\/)?articles\/([^?#/]+)/);
+        if (articleMatch) {
+            return articleMatch[1].replace(/\.pdf$/, '');
+        }
+        // Try DOI format
+        const doiMatch = url.match(/nature\.com\/doi\/(10\.\d+\/[^?#\s]+)/);
+        if (doiMatch) {
+            return doiMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create a custom metadata extractor for Nature.com
+     */
+    createMetadataExtractor(document) {
+        return new NatureMetadataExtractor(document);
+    }
+}
+// Export a singleton instance 
+const natureIntegration = new NatureIntegration();
+
+// extension/source-integration/pnas/index.ts
+class PnasIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'pnas';
+        this.name = 'PNAS';
+        // URL patterns for PNAS articles
+        this.urlPatterns = [
+            // DOI-based URLs (most common)
+            /pnas\.org\/doi\/(10\.1073\/pnas\.[0-9]+)/,
+            /pnas\.org\/doi\/abs\/(10\.1073\/pnas\.[0-9]+)/,
+            /pnas\.org\/doi\/full\/(10\.1073\/pnas\.[0-9]+)/,
+            /pnas\.org\/doi\/pdf\/(10\.1073\/pnas\.[0-9]+)/,
+            /pnas\.org\/doi\/epdf\/(10\.1073\/pnas\.[0-9]+)/,
+            // Alternate DOI formats
+            /pnas\.org\/doi\/(10\.1073\/[^\s?#]+)/,
+            // Content-based URLs (older format)
+            /pnas\.org\/content\/(\d+\/\d+\/[^\s?#]+)/,
+            /pnas\.org\/content\/early\/\d+\/\d+\/\d+\/(\d+)/,
+            // Legacy cgi format
+            /pnas\.org\/cgi\/doi\/(10\.1073\/[^\s?#]+)/,
+            // Generic PNAS DOI pattern
+            /pnas\.org\/doi\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /pnas\.org\/(doi|content|cgi)\//.test(url);
+    }
+    /**
+     * Extract paper ID (DOI) from URL
+     */
+    extractPaperId(url) {
+        // Try DOI format
+        const doiMatch = url.match(/pnas\.org\/(?:doi\/(?:abs|full|pdf|epdf)?\/?)?(10\.1073\/[^\s?#]+)/);
+        if (doiMatch) {
+            return doiMatch[1];
+        }
+        // Try content-based format
+        const contentMatch = url.match(/content\/(\d+\/\d+\/[^\s?#.]+)/);
+        if (contentMatch) {
+            return contentMatch[1];
+        }
+        // Try early format
+        const earlyMatch = url.match(/early\/\d+\/\d+\/\d+\/(\d+)/);
+        if (earlyMatch) {
+            return earlyMatch[1];
+        }
+        return null;
+    }
+}
+const pnasIntegration = new PnasIntegration();
+
+// extension/source-integration/sciencedirect/index.ts
+loguru.getLogger('sciencedirect-integration');
+/**
+ * Custom metadata extractor for ScienceDirect pages
+ */
+class ScienceDirectMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') || super.extractDoi();
+    }
+    /**
+     * Extract journal name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') || super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * ScienceDirect integration for Elsevier journals
+ */
+class ScienceDirectIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'sciencedirect';
+        this.name = 'ScienceDirect';
+        // URL patterns for ScienceDirect articles
+        this.urlPatterns = [
+            // PII-based URLs (most common)
+            /sciencedirect\.com\/science\/article\/pii\/([A-Z0-9]+)/i,
+            /sciencedirect\.com\/science\/article\/abs\/pii\/([A-Z0-9]+)/i,
+            // Book chapters
+            /sciencedirect\.com\/science\/book\/([A-Z0-9]+)/i,
+            // DOI-based URLs
+            /sciencedirect\.com\/science\/article\/doi\/(10\.\d+\/[^\s?#]+)/i,
+            // Generic article URLs
+            /sciencedirect\.com\/science\/article\//,
+            // PDF direct links
+            /sciencedirect\.com\/\S+\.pdf/i,
+            // Reader view
+            /reader\.elsevier\.com\/reader\/sd\/pii\/([A-Z0-9]+)/i,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /sciencedirect\.com\/science\/article\//.test(url) ||
+            /sciencedirect\.com\/science\/book\//.test(url) ||
+            /reader\.elsevier\.com\/reader\/sd\/pii\//.test(url);
+    }
+    /**
+     * Extract paper ID (PII) from URL
+     */
+    extractPaperId(url) {
+        // Try PII format (most common)
+        const piiMatch = url.match(/pii\/([A-Z0-9]+)/i);
+        if (piiMatch) {
+            return piiMatch[1];
+        }
+        // Try DOI format
+        const doiMatch = url.match(/doi\/(10\.\d+\/[^\s?#]+)/i);
+        if (doiMatch) {
+            return doiMatch[1];
+        }
+        // Try book format
+        const bookMatch = url.match(/book\/([A-Z0-9]+)/i);
+        if (bookMatch) {
+            return bookMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for ScienceDirect
+     */
+    createMetadataExtractor(document) {
+        return new ScienceDirectMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const scienceDirectIntegration = new ScienceDirectIntegration();
+
+// extension/source-integration/springer/index.ts
+loguru.getLogger('springer-integration');
+/**
+ * Custom metadata extractor for Springer pages
+ */
+class SpringerMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]') ||
+            this.getMetaContent('meta[name="dc.title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        // Fallback to DC creator
+        const dcCreators = [];
+        this.document.querySelectorAll('meta[name="dc.creator"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                dcCreators.push(content);
+        });
+        if (dcCreators.length > 0) {
+            return dcCreators.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="dc.description"]') ||
+            this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            this.getMetaContent('meta[name="dc.date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') ||
+            this.getMetaContent('meta[name="dc.identifier"]') ||
+            super.extractDoi();
+    }
+    /**
+     * Extract journal name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            this.getMetaContent('meta[name="citation_conference_title"]') ||
+            this.getMetaContent('meta[name="prism.publicationName"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * Springer integration for Springer Link articles
+ */
+class SpringerIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'springer';
+        this.name = 'Springer';
+        // URL patterns for Springer articles and chapters
+        this.urlPatterns = [
+            // Articles with DOI
+            /link\.springer\.com\/article\/(10\.\d+\/[^\s?#]+)/,
+            // Book chapters with DOI
+            /link\.springer\.com\/chapter\/(10\.\d+\/[^\s?#]+)/,
+            // Books
+            /link\.springer\.com\/book\/(10\.\d+\/[^\s?#]+)/,
+            // Conference papers
+            /link\.springer\.com\/content\/pdf\/(10\.\d+\/[^\s?#]+)/,
+            // Proceedings
+            /link\.springer\.com\/proceeding\/(10\.\d+\/[^\s?#]+)/,
+            // Reference work entries
+            /link\.springer\.com\/referenceworkentry\/(10\.\d+\/[^\s?#]+)/,
+            // PDF variants
+            /link\.springer\.com\/content\/pdf\/(10\.\d+%2F[^\s?#]+)/,
+            // EPUB variants
+            /link\.springer\.com\/epub\/(10\.\d+\/[^\s?#]+)/,
+            // Generic patterns for matching
+            /link\.springer\.com\/article\//,
+            /link\.springer\.com\/chapter\//,
+            /link\.springer\.com\/book\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /link\.springer\.com\/(article|chapter|book|content|proceeding|referenceworkentry|epub)\//.test(url);
+    }
+    /**
+     * Extract paper ID (DOI) from URL
+     */
+    extractPaperId(url) {
+        // Try to extract DOI from URL path
+        const doiMatch = url.match(/link\.springer\.com\/(?:article|chapter|book|content\/pdf|proceeding|referenceworkentry|epub)\/(10\.\d+[/%][^\s?#]+)/);
+        if (doiMatch) {
+            // Decode URL-encoded DOIs
+            return decodeURIComponent(doiMatch[1]).replace(/%2F/gi, '/');
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for Springer
+     */
+    createMetadataExtractor(document) {
+        return new SpringerMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const springerIntegration = new SpringerIntegration();
+
+// extension/source-integration/ieee/index.ts
+loguru.getLogger('ieee-integration');
+/**
+ * Custom metadata extractor for IEEE Xplore pages
+ */
+class IEEEMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        // Fallback to HTML extraction
+        const authorElements = this.document.querySelectorAll('.authors-info .author span');
+        if (authorElements.length > 0) {
+            return Array.from(authorElements)
+                .map(el => el.textContent?.trim())
+                .filter(Boolean)
+                .join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        // IEEE often has abstract in a specific div
+        if (!metaDescription) {
+            const abstractDiv = this.document.querySelector('.abstract-text');
+            if (abstractDiv) {
+                return abstractDiv.textContent?.trim() || '';
+            }
+        }
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') || super.extractDoi();
+    }
+    /**
+     * Extract journal/conference name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            this.getMetaContent('meta[name="citation_conference_title"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        // IEEE-specific keyword extraction from HTML
+        const keywordElements = this.document.querySelectorAll('.keywords .keyword');
+        if (keywordElements.length > 0) {
+            return Array.from(keywordElements)
+                .map(el => el.textContent?.trim())
+                .filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * IEEE Xplore integration
+ */
+class IEEEIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'ieee';
+        this.name = 'IEEE Xplore';
+        // URL patterns for IEEE articles
+        this.urlPatterns = [
+            // Standard document URLs
+            /ieeexplore\.ieee\.org\/document\/(\d+)/,
+            /ieeexplore\.ieee\.org\/abstract\/document\/(\d+)/,
+            // Stamp (full text) URLs
+            /ieeexplore\.ieee\.org\/stamp\/stamp\.jsp\?.*arnumber=(\d+)/,
+            // PDF direct links
+            /ieeexplore\.ieee\.org\/ielx?\d*\/\d+\/\d+\/(\d+)\.pdf/,
+            // XPL URLs (older format)
+            /ieeexplore\.ieee\.org\/xpl\/articleDetails\.jsp\?arnumber=(\d+)/,
+            /ieeexplore\.ieee\.org\/xpl\/tocresult\.jsp/,
+            // Course/content URLs
+            /ieeexplore\.ieee\.org\/courses\/details\/(\d+)/,
+            // IEEE Computer Society
+            /computer\.org\/csdl\/\w+\/\d+\/\d+\/(\d+)/,
+            // Generic document pattern
+            /ieeexplore\.ieee\.org\/document\//,
+            /ieeexplore\.ieee\.org\/abstract\/document\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /ieeexplore\.ieee\.org\/(document|abstract|stamp|ielx?\d*|xpl)\//.test(url) ||
+            /computer\.org\/csdl\//.test(url);
+    }
+    /**
+     * Extract paper ID (document number) from URL
+     */
+    extractPaperId(url) {
+        // Try document/abstract URL
+        const docMatch = url.match(/document\/(\d+)/);
+        if (docMatch) {
+            return docMatch[1];
+        }
+        // Try arnumber parameter
+        const arnumberMatch = url.match(/arnumber=(\d+)/);
+        if (arnumberMatch) {
+            return arnumberMatch[1];
+        }
+        // Try PDF URL format
+        const pdfMatch = url.match(/\/(\d+)\.pdf/);
+        if (pdfMatch) {
+            return pdfMatch[1];
+        }
+        // Try IEEE Computer Society format
+        const csdlMatch = url.match(/csdl\/\w+\/\d+\/\d+\/(\d+)/);
+        if (csdlMatch) {
+            return csdlMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for IEEE
+     */
+    createMetadataExtractor(document) {
+        return new IEEEMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const ieeeIntegration = new IEEEIntegration();
+
+// extension/source-integration/acm/index.ts
+loguru.getLogger('acm-integration');
+/**
+ * Custom metadata extractor for ACM DL pages
+ */
+class ACMMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]') ||
+            this.getMetaContent('meta[name="dc.Title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            this.getMetaContent('meta[name="dc.Date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') ||
+            this.getMetaContent('meta[name="dc.Identifier"]') ||
+            super.extractDoi();
+    }
+    /**
+     * Extract journal/conference name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            this.getMetaContent('meta[name="citation_conference_title"]') ||
+            this.getMetaContent('meta[name="dc.Source"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * ACM Digital Library integration
+ */
+class ACMIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'acm';
+        this.name = 'ACM Digital Library';
+        // URL patterns for ACM articles
+        this.urlPatterns = [
+            // Standard DOI URLs (handles various DOI formats including alphanumeric)
+            /dl\.acm\.org\/doi\/(10\.\d+\/[^\s?#]+)/,
+            /dl\.acm\.org\/doi\/abs\/(10\.\d+\/[^\s?#]+)/,
+            /dl\.acm\.org\/doi\/full\/(10\.\d+\/[^\s?#]+)/,
+            /dl\.acm\.org\/doi\/pdf\/(10\.\d+\/[^\s?#]+)/,
+            /dl\.acm\.org\/doi\/epdf\/(10\.\d+\/[^\s?#]+)/,
+            // Legacy citation URLs
+            /dl\.acm\.org\/citation\.cfm\?id=(\d+)/,
+            /dl\.acm\.org\/citation\.cfm\?.*doid=[\d.]+\.(\d+)/,
+            // Proceeding URLs
+            /dl\.acm\.org\/doi\/proceedings\/(10\.\d+\/[^\s?#]+)/,
+            // Book chapters
+            /dl\.acm\.org\/doi\/book\/(10\.\d+\/[^\s?#]+)/,
+            // Generic ACM DL pattern
+            /dl\.acm\.org\/doi\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /dl\.acm\.org\/(doi|citation)/.test(url);
+    }
+    /**
+     * Extract paper ID (DOI or citation ID) from URL
+     */
+    extractPaperId(url) {
+        // Try DOI format (most common, handles alphanumeric DOIs)
+        const doiMatch = url.match(/dl\.acm\.org\/doi\/(?:abs|full|pdf|epdf|proceedings|book)?\/?((10\.\d+\/[^\s?#]+))/);
+        if (doiMatch) {
+            return doiMatch[2] || doiMatch[1];
+        }
+        // Try legacy citation.cfm format
+        const legacyMatch = url.match(/citation\.cfm\?.*id=(\d+)/);
+        if (legacyMatch) {
+            return legacyMatch[1];
+        }
+        // Try doid format
+        const doidMatch = url.match(/doid=[\d.]+\.(\d+)/);
+        if (doidMatch) {
+            return doidMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for ACM
+     */
+    createMetadataExtractor(document) {
+        return new ACMMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const acmIntegration = new ACMIntegration();
+
+// extension/source-integration/acl/index.ts
+loguru.getLogger('acl-integration');
+/**
+ * Custom metadata extractor for ACL Anthology pages
+ */
+class ACLMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="citation_abstract"]') ||
+            this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') || super.extractDoi();
+    }
+    /**
+     * Extract conference name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_conference_title"]') ||
+            this.getMetaContent('meta[name="citation_journal_title"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * ACL Anthology integration for computational linguistics papers
+ */
+class ACLIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'acl';
+        this.name = 'ACL Anthology';
+        // URL patterns for ACL Anthology papers (various formats)
+        this.urlPatterns = [
+            // Current ACL Anthology format (e.g., 2023.acl-main.1)
+            /aclanthology\.org\/([A-Z0-9]+\.\d+-[a-z]+-\d+)/i,
+            /aclanthology\.org\/([A-Z0-9]+\.\d+-\d+)/,
+            // Older ACL Anthology format (e.g., P18-1001)
+            /aclanthology\.org\/([A-Z]\d{2}-\d+)/,
+            // Legacy aclweb.org URLs
+            /aclweb\.org\/anthology\/([A-Z0-9]+\.\d+-\d+)/,
+            /aclweb\.org\/anthology\/([A-Z]\d{2}-\d+)/,
+            // PDF variants
+            /aclanthology\.org\/([^\/]+)\.pdf/,
+            // Volumes
+            /aclanthology\.org\/volumes\/([^\/\s?#]+)/,
+            // Generic ACL patterns
+            /aclanthology\.org\/[A-Z0-9]/i,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /aclanthology\.org\/[A-Z0-9]/i.test(url) ||
+            /aclweb\.org\/anthology\//.test(url);
+    }
+    /**
+     * Extract paper ID from URL
+     */
+    extractPaperId(url) {
+        // Try new format (e.g., 2023.acl-main.1)
+        const newFormatMatch = url.match(/aclanthology\.org\/([A-Z0-9]+\.[a-z0-9-]+)/i);
+        if (newFormatMatch) {
+            return newFormatMatch[1].replace(/\.pdf$/, '');
+        }
+        // Try old format (e.g., P18-1001)
+        const oldFormatMatch = url.match(/(?:aclanthology|aclweb)\.org\/(?:anthology\/)?([A-Z]\d{2}-\d+)/);
+        if (oldFormatMatch) {
+            return oldFormatMatch[1];
+        }
+        // Try volume format
+        const volumeMatch = url.match(/volumes\/([^\/\s?#]+)/);
+        if (volumeMatch) {
+            return volumeMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for ACL
+     */
+    createMetadataExtractor(document) {
+        return new ACLMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const aclIntegration = new ACLIntegration();
+
+// extension/source-integration/neurips/index.ts
+loguru.getLogger('neurips-integration');
+/**
+ * Custom metadata extractor for NeurIPS pages
+ */
+class NeurIPSMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        // Fallback to HTML extraction
+        const authorElements = this.document.querySelectorAll('.author a, .author span');
+        if (authorElements.length > 0) {
+            return Array.from(authorElements)
+                .map(el => el.textContent?.trim())
+                .filter(Boolean)
+                .join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="citation_abstract"]') ||
+            this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        // NeurIPS often has abstract in a specific section
+        if (!metaDescription) {
+            const abstractSection = this.document.querySelector('.abstract');
+            if (abstractSection) {
+                return abstractSection.textContent?.trim() || '';
+            }
+        }
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract conference name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_conference_title"]') ||
+            'NeurIPS' ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * NeurIPS proceedings integration
+ */
+class NeurIPSIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'neurips';
+        this.name = 'NeurIPS';
+        // URL patterns for NeurIPS papers (multiple domains and formats)
+        this.urlPatterns = [
+            // proceedings.neurips.cc (current main site)
+            /proceedings\.neurips\.cc\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
+            /proceedings\.neurips\.cc\/paper\/(\d+)\/file\/([a-f0-9]+)/,
+            /proceedings\.neurips\.cc\/paper_files\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
+            /proceedings\.neurips\.cc\/paper_files\/paper\/(\d+)\/file\/([a-f0-9]+)/,
+            // papers.nips.cc (legacy domain)
+            /papers\.nips\.cc\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
+            /papers\.nips\.cc\/paper\/(\d+)\/file\/([a-f0-9]+)/,
+            /papers\.nips\.cc\/paper_files\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
+            // Title-based URLs (older format)
+            /papers\.nips\.cc\/paper\/(\d+)-([^\/\s]+)/,
+            /proceedings\.neurips\.cc\/paper\/(\d+)-([^\/\s]+)/,
+            // Generic NeurIPS paper patterns
+            /proceedings\.neurips\.cc\/paper/,
+            /papers\.nips\.cc\/paper/,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /proceedings\.neurips\.cc\/paper/.test(url) ||
+            /papers\.nips\.cc\/paper/.test(url);
+    }
+    /**
+     * Extract paper ID from URL
+     */
+    extractPaperId(url) {
+        // Try hash/file format (current)
+        const hashMatch = url.match(/paper(?:_files)?\/paper\/(\d+)\/(?:hash|file)\/([a-f0-9]+)/);
+        if (hashMatch) {
+            return `${hashMatch[1]}-${hashMatch[2]}`;
+        }
+        // Try title-based format (older)
+        const titleMatch = url.match(/paper\/(\d+)-([^\/\s.]+)/);
+        if (titleMatch) {
+            return `${titleMatch[1]}-${titleMatch[2]}`;
+        }
+        // Try just year + anything
+        const yearMatch = url.match(/paper(?:_files)?\/paper\/(\d+)\/([^\/\s]+)/);
+        if (yearMatch) {
+            return `${yearMatch[1]}-${yearMatch[2]}`;
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for NeurIPS
+     */
+    createMetadataExtractor(document) {
+        return new NeurIPSMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const neuripsIntegration = new NeurIPSIntegration();
+
+// extension/source-integration/cvf/index.ts
+loguru.getLogger('cvf-integration');
+/**
+ * Custom metadata extractor for CVF pages
+ */
+class CVFMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        // Fallback to HTML extraction
+        const authorElements = this.document.querySelectorAll('.author a, #authors b');
+        if (authorElements.length > 0) {
+            return Array.from(authorElements)
+                .map(el => el.textContent?.trim())
+                .filter(Boolean)
+                .join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="citation_abstract"]') ||
+            this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        // CVF has abstract in a specific div
+        if (!metaDescription) {
+            const abstractDiv = this.document.querySelector('#abstract');
+            if (abstractDiv) {
+                return abstractDiv.textContent?.trim() || '';
+            }
+        }
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract conference name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_conference_title"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * CVF Open Access integration for CVPR, ICCV, WACV
+ */
+class CVFIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'cvf';
+        this.name = 'CVF Open Access';
+        // URL patterns for CVF papers (CVPR, ICCV, WACV, etc.)
+        this.urlPatterns = [
+            // HTML paper pages
+            /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]html[_\/]([^.]+)\.html/i,
+            /openaccess\.thecvf\.com\/content\/([A-Z]+)(\d+)[_\/]html[_\/]([^.]+)\.html/i,
+            // PDF papers
+            /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]papers[_\/]([^.]+)\.pdf/i,
+            /openaccess\.thecvf\.com\/content\/([A-Z]+)(\d+)[_\/]papers[_\/]([^.]+)\.pdf/i,
+            // Workshop papers
+            /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]W\d+[_\/]html[_\/]([^.]+)\.html/i,
+            /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]W\d+[_\/]papers[_\/]([^.]+)\.pdf/i,
+            // Supplementary materials
+            /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]supplemental[_\/]([^.]+)/i,
+            // Generic CVF content pattern
+            /openaccess\.thecvf\.com\/content/,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /openaccess\.thecvf\.com\/content/.test(url);
+    }
+    /**
+     * Extract paper ID from URL
+     */
+    extractPaperId(url) {
+        // Try to extract conference, year, and paper name from various formats
+        // Format 1: content_CONF_YEAR/html/paper.html
+        const format1 = url.match(/content[_\/]([A-Z]+)[_\/](\d+)[_\/](?:W\d+[_\/])?(?:html|papers)[_\/]([^.\/]+)/i);
+        if (format1) {
+            return `${format1[1]}-${format1[2]}-${format1[3]}`;
+        }
+        // Format 2: content/CONFYEAR/html/paper.html
+        const format2 = url.match(/content\/([A-Z]+)(\d{4})[_\/](?:W\d+[_\/])?(?:html|papers)[_\/]([^.\/]+)/i);
+        if (format2) {
+            return `${format2[1]}-${format2[2]}-${format2[3]}`;
+        }
+        // Fallback: just extract the paper name from the path
+        const fallback = url.match(/\/([^\/]+)\.(?:html|pdf)$/);
+        if (fallback) {
+            return fallback[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for CVF
+     */
+    createMetadataExtractor(document) {
+        return new CVFMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const cvfIntegration = new CVFIntegration();
+
+// extension/source-integration/wiley/index.ts
+loguru.getLogger('wiley-integration');
+/**
+ * Custom metadata extractor for Wiley pages
+ */
+class WileyMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]') ||
+            this.getMetaContent('meta[name="dc.Title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            this.getMetaContent('meta[name="dc.Date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') ||
+            this.getMetaContent('meta[name="dc.Identifier"]') ||
+            super.extractDoi();
+    }
+    /**
+     * Extract journal name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            this.getMetaContent('meta[name="dc.Source"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * Wiley Online Library integration
+ */
+class WileyIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'wiley';
+        this.name = 'Wiley Online Library';
+        // URL patterns for Wiley articles
+        this.urlPatterns = [
+            // Standard DOI URLs
+            /onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+            /onlinelibrary\.wiley\.com\/doi\/abs\/(10\.\d+\/[^\s?#]+)/,
+            /onlinelibrary\.wiley\.com\/doi\/full\/(10\.\d+\/[^\s?#]+)/,
+            /onlinelibrary\.wiley\.com\/doi\/pdf\/(10\.\d+\/[^\s?#]+)/,
+            /onlinelibrary\.wiley\.com\/doi\/epdf\/(10\.\d+\/[^\s?#]+)/,
+            // Wiley society journals (e.g., physoc.onlinelibrary.wiley.com)
+            /\w+\.onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+            /\w+\.onlinelibrary\.wiley\.com\/doi\/abs\/(10\.\d+\/[^\s?#]+)/,
+            /\w+\.onlinelibrary\.wiley\.com\/doi\/full\/(10\.\d+\/[^\s?#]+)/,
+            // AGU Publications (agupubs)
+            /agupubs\.onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+            // FEBS journals
+            /febs\.onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+            // Generic Wiley DOI pattern
+            /onlinelibrary\.wiley\.com\/doi\//,
+            /\.onlinelibrary\.wiley\.com\/doi\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /\.?onlinelibrary\.wiley\.com\/doi\//.test(url);
+    }
+    /**
+     * Extract paper ID (DOI) from URL
+     */
+    extractPaperId(url) {
+        // Try to extract DOI from URL path (handles all variants)
+        const doiMatch = url.match(/\/doi\/(?:abs|full|pdf|epdf)?\/?((10\.\d+\/[^\s?#]+))/);
+        if (doiMatch) {
+            return doiMatch[2] || doiMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for Wiley
+     */
+    createMetadataExtractor(document) {
+        return new WileyMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const wileyIntegration = new WileyIntegration();
+
+// extension/source-integration/plos/index.ts
+loguru.getLogger('plos-integration');
+/**
+ * Custom metadata extractor for PLOS pages
+ */
+class PLOSMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]') ||
+            this.getMetaContent('meta[name="dc.title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            this.getMetaContent('meta[name="dc.date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') ||
+            this.getMetaContent('meta[name="dc.identifier"]') ||
+            super.extractDoi();
+    }
+    /**
+     * Extract journal name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * PLOS (Public Library of Science) integration
+ */
+class PLOSIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'plos';
+        this.name = 'PLOS';
+        // URL patterns for PLOS articles (all PLOS journals)
+        this.urlPatterns = [
+            // Standard article URLs with DOI parameter
+            /journals\.plos\.org\/\w+\/article\?id=(10\.\d+\/[^\s&]+)/,
+            // URL encoded DOI format
+            /journals\.plos\.org\/\w+\/article\/info[:%]3Adoi[/%]2F(10\.\d+)/,
+            // Generic PLOS article URL (for canHandleUrl)
+            /journals\.plos\.org\/\w+\/article/,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /journals\.plos\.org\/\w+\/article/.test(url);
+    }
+    /**
+     * Extract paper ID (DOI) from URL
+     */
+    extractPaperId(url) {
+        // Try to extract DOI from id parameter
+        const idMatch = url.match(/[?&]id=(10\.\d+\/[^\s&]+)/);
+        if (idMatch) {
+            return decodeURIComponent(idMatch[1]);
+        }
+        // Try URL encoded DOI format
+        const encodedMatch = url.match(/doi[/%]2F(10\.\d+[/%]2F[^\s&]+)/i);
+        if (encodedMatch) {
+            return decodeURIComponent(encodedMatch[1].replace(/%2F/gi, '/'));
+        }
+        // Fallback: generate from URL
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for PLOS
+     */
+    createMetadataExtractor(document) {
+        return new PLOSMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const plosIntegration = new PLOSIntegration();
+
+// extension/source-integration/biorxiv/index.ts
+loguru.getLogger('biorxiv-integration');
+/**
+ * Custom metadata extractor for bioRxiv pages
+ */
+class BioRxivMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]') ||
+            this.getMetaContent('meta[name="DC.Title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="citation_abstract"]') ||
+            this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            this.getMetaContent('meta[name="DC.Date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') ||
+            this.getMetaContent('meta[name="DC.Identifier"]') ||
+            super.extractDoi();
+    }
+    /**
+     * Extract journal/venue name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            'bioRxiv' ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * bioRxiv integration for preprints in biology
+ */
+class BioRxivIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'biorxiv';
+        this.name = 'bioRxiv';
+        // URL patterns for bioRxiv preprints
+        this.urlPatterns = [
+            // DOI-based content URLs (most common)
+            /biorxiv\.org\/content\/(10\.\d+\/[^\s?#]+)/,
+            // Early preprint URLs (legacy format)
+            /biorxiv\.org\/content\/early\/\d+\/\d+\/\d+\/(\d+)/,
+            // Full/abs/pdf variants
+            /biorxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.full/,
+            /biorxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.abstract/,
+            /biorxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.pdf/,
+            // Collection URLs
+            /biorxiv\.org\/cgi\/content\/full\/(\d+)/,
+            /biorxiv\.org\/cgi\/content\/abstract\/(\d+)/,
+            // Generic content pattern
+            /biorxiv\.org\/content\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /biorxiv\.org\/(content|cgi\/content)\//.test(url);
+    }
+    /**
+     * Extract paper ID (DOI or early ID) from URL
+     */
+    extractPaperId(url) {
+        // Try DOI format (remove version suffix like v1, v2, etc.)
+        const doiMatch = url.match(/biorxiv\.org\/content\/(10\.\d+\/[^\s?#.]+)/);
+        if (doiMatch) {
+            return doiMatch[1].replace(/v\d+$/, '');
+        }
+        // Try early format
+        const earlyMatch = url.match(/early\/\d+\/\d+\/\d+\/(\d+)/);
+        if (earlyMatch) {
+            return earlyMatch[1];
+        }
+        // Try cgi format
+        const cgiMatch = url.match(/cgi\/content\/(?:full|abstract)\/(\d+)/);
+        if (cgiMatch) {
+            return cgiMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for bioRxiv
+     */
+    createMetadataExtractor(document) {
+        return new BioRxivMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const bioRxivIntegration = new BioRxivIntegration();
+
+// extension/source-integration/medrxiv/index.ts
+loguru.getLogger('medrxiv-integration');
+/**
+ * Custom metadata extractor for medRxiv pages
+ */
+class MedRxivMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]') ||
+            this.getMetaContent('meta[name="DC.Title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="citation_abstract"]') ||
+            this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            this.getMetaContent('meta[name="DC.Date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') ||
+            this.getMetaContent('meta[name="DC.Identifier"]') ||
+            super.extractDoi();
+    }
+    /**
+     * Extract journal/venue name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            'medRxiv' ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * medRxiv integration for medical preprints
+ */
+class MedRxivIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'medrxiv';
+        this.name = 'medRxiv';
+        // URL patterns for medRxiv preprints
+        this.urlPatterns = [
+            // DOI-based content URLs (most common)
+            /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)/,
+            // Early preprint URLs (legacy format)
+            /medrxiv\.org\/content\/early\/\d+\/\d+\/\d+\/(\d+)/,
+            // Full/abs/pdf variants
+            /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.full/,
+            /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.abstract/,
+            /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.pdf/,
+            // Collection URLs
+            /medrxiv\.org\/cgi\/content\/full\/(\d+)/,
+            /medrxiv\.org\/cgi\/content\/abstract\/(\d+)/,
+            // Generic content pattern
+            /medrxiv\.org\/content\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /medrxiv\.org\/(content|cgi\/content)\//.test(url);
+    }
+    /**
+     * Extract paper ID (DOI or early ID) from URL
+     */
+    extractPaperId(url) {
+        // Try DOI format (remove version suffix like v1, v2, etc.)
+        const doiMatch = url.match(/medrxiv\.org\/content\/(10\.\d+\/[^\s?#.]+)/);
+        if (doiMatch) {
+            return doiMatch[1].replace(/v\d+$/, '');
+        }
+        // Try early format
+        const earlyMatch = url.match(/early\/\d+\/\d+\/\d+\/(\d+)/);
+        if (earlyMatch) {
+            return earlyMatch[1];
+        }
+        // Try cgi format
+        const cgiMatch = url.match(/cgi\/content\/(?:full|abstract)\/(\d+)/);
+        if (cgiMatch) {
+            return cgiMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for medRxiv
+     */
+    createMetadataExtractor(document) {
+        return new MedRxivMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const medRxivIntegration = new MedRxivIntegration();
+
+// extension/source-integration/ssrn/index.ts
+loguru.getLogger('ssrn-integration');
+/**
+ * Custom metadata extractor for SSRN pages
+ */
+class SSRNMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            this.getMetaContent('meta[name="citation_online_date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI if available
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') || super.extractDoi();
+    }
+    /**
+     * Extract journal/series name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            'SSRN' ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * SSRN (Social Science Research Network) integration
+ */
+class SSRNIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'ssrn';
+        this.name = 'SSRN';
+        // URL patterns for SSRN papers
+        this.urlPatterns = [
+            // Short URL format
+            /ssrn\.com\/abstract=(\d+)/,
+            // Legacy sol3/papers.cfm format
+            /papers\.ssrn\.com\/sol3\/papers\.cfm\?abstract_id=(\d+)/,
+            /papers\.ssrn\.com\/sol3\/papers\.cfm\?.*abstract_id=(\d+)/,
+            // Delivery format
+            /papers\.ssrn\.com\/sol3\/Delivery\.cfm.*abstractid=(\d+)/i,
+            // Direct link format
+            /ssrn\.com\/(\d{7,})/,
+            // DOI format
+            /dx\.doi\.org\/10\.2139\/ssrn\.(\d+)/,
+            // Generic SSRN patterns
+            /ssrn\.com\/abstract/,
+            /papers\.ssrn\.com\/sol3\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /ssrn\.com\/(abstract|sol3|\d{7})/.test(url) ||
+            /papers\.ssrn\.com\/sol3\//.test(url) ||
+            /doi\.org\/10\.2139\/ssrn/.test(url);
+    }
+    /**
+     * Extract paper ID from URL
+     */
+    extractPaperId(url) {
+        // Try abstract= format
+        const abstractMatch = url.match(/abstract[=_]?(\d+)/i);
+        if (abstractMatch) {
+            return abstractMatch[1];
+        }
+        // Try abstract_id= format
+        const abstractIdMatch = url.match(/abstract_id=(\d+)/i);
+        if (abstractIdMatch) {
+            return abstractIdMatch[1];
+        }
+        // Try DOI format
+        const doiMatch = url.match(/10\.2139\/ssrn\.(\d+)/);
+        if (doiMatch) {
+            return doiMatch[1];
+        }
+        // Try direct numeric ID in URL path
+        const directMatch = url.match(/ssrn\.com\/(\d{7,})/);
+        if (directMatch) {
+            return directMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for SSRN
+     */
+    createMetadataExtractor(document) {
+        return new SSRNMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const ssrnIntegration = new SSRNIntegration();
+
+// extension/source-integration/semanticscholar/index.ts
+loguru.getLogger('semanticscholar-integration');
+/**
+ * Custom metadata extractor for Semantic Scholar pages
+ */
+class SemanticScholarMetadataExtractor extends MetadataExtractor {
+    /**
+     * Extract title using citation meta tags
+     */
+    extractTitle() {
+        const metaTitle = this.getMetaContent('meta[name="citation_title"]') ||
+            this.getMetaContent('meta[property="og:title"]');
+        return metaTitle || super.extractTitle();
+    }
+    /**
+     * Extract authors from citation meta tags
+     */
+    extractAuthors() {
+        const citationAuthors = [];
+        this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+            const content = el.getAttribute('content');
+            if (content)
+                citationAuthors.push(content);
+        });
+        if (citationAuthors.length > 0) {
+            return citationAuthors.join(', ');
+        }
+        return super.extractAuthors();
+    }
+    /**
+     * Extract abstract/description
+     */
+    extractDescription() {
+        const metaDescription = this.getMetaContent('meta[name="description"]') ||
+            this.getMetaContent('meta[property="og:description"]');
+        return metaDescription || super.extractDescription();
+    }
+    /**
+     * Extract publication date
+     */
+    extractPublishedDate() {
+        return this.getMetaContent('meta[name="citation_publication_date"]') ||
+            this.getMetaContent('meta[name="citation_date"]') ||
+            super.extractPublishedDate();
+    }
+    /**
+     * Extract DOI if available
+     */
+    extractDoi() {
+        return this.getMetaContent('meta[name="citation_doi"]') || super.extractDoi();
+    }
+    /**
+     * Extract journal/venue name
+     */
+    extractJournalName() {
+        return this.getMetaContent('meta[name="citation_journal_title"]') ||
+            this.getMetaContent('meta[name="citation_conference_title"]') ||
+            super.extractJournalName();
+    }
+    /**
+     * Extract keywords/tags
+     */
+    extractTags() {
+        const keywords = this.getMetaContent('meta[name="citation_keywords"]') ||
+            this.getMetaContent('meta[name="keywords"]');
+        if (keywords) {
+            return keywords.split(/[;,]/).map(tag => tag.trim()).filter(Boolean);
+        }
+        return super.extractTags();
+    }
+}
+/**
+ * Semantic Scholar integration
+ */
+class SemanticScholarIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'semanticscholar';
+        this.name = 'Semantic Scholar';
+        // URL patterns for Semantic Scholar papers
+        this.urlPatterns = [
+            // Standard paper URL with title slug and corpus ID
+            /semanticscholar\.org\/paper\/[^/]+\/([a-f0-9]+)/,
+            // Paper URL without title slug (direct ID)
+            /semanticscholar\.org\/paper\/([a-f0-9]{40})/,
+            // CorpusID-based URL
+            /semanticscholar\.org\/paper\/[^?]*[?&]corpusId=(\d+)/,
+            // Reader URL
+            /semanticscholar\.org\/reader\/([a-f0-9]+)/,
+            // Author paper pages
+            /semanticscholar\.org\/author\/[^/]+\/papers/,
+            // Generic paper pattern
+            /semanticscholar\.org\/paper\//,
+        ];
+    }
+    /**
+     * Check if this integration can handle the given URL
+     */
+    canHandleUrl(url) {
+        return /semanticscholar\.org\/(paper|reader)\//.test(url);
+    }
+    /**
+     * Extract paper ID from URL
+     */
+    extractPaperId(url) {
+        // Try to extract 40-character hex ID (SHA)
+        const shaMatch = url.match(/\/([a-f0-9]{40})/);
+        if (shaMatch) {
+            return shaMatch[1];
+        }
+        // Try corpus ID from query params
+        const corpusMatch = url.match(/[?&]corpusId=(\d+)/);
+        if (corpusMatch) {
+            return `corpus:${corpusMatch[1]}`;
+        }
+        // Try shorter hex ID format
+        const shortIdMatch = url.match(/semanticscholar\.org\/(?:paper|reader)\/[^/]*\/([a-f0-9]+)/);
+        if (shortIdMatch) {
+            return shortIdMatch[1];
+        }
+        return null;
+    }
+    /**
+     * Create custom metadata extractor for Semantic Scholar
+     */
+    createMetadataExtractor(document) {
+        return new SemanticScholarMetadataExtractor(document);
+    }
+}
+// Export singleton instance
+const semanticScholarIntegration = new SemanticScholarIntegration();
+
+// extension/source-integration/misc/index.ts
+class MiscIntegration extends BaseSourceIntegration {
+    constructor() {
+        super(...arguments);
+        this.id = 'url-misc';
+        this.name = 'misc tracked url';
+        // URL patterns for link detection - these enable the annotation icon on matching links
+        this.urlPatterns = [
+            // ScienceDirect
+            /sciencedirect\.com\/science\/article\//,
+            // PhilPapers
+            /philpapers\.org\/rec\//,
+            // NeurIPS proceedings
+            /proceedings\.neurips\.cc\/paper_files\/paper\//,
+            /papers\.nips\.cc\/paper_files\/paper\//,
+            // Sage Journals
+            /journals\.sagepub\.com\/doi\//,
+            // Springer Link
+            /link\.springer\.com\/article\//,
+            // Science.org
+            /science\.org\/doi\//,
+            // APS Journals
+            /journals\.aps\.org\/\w+\/abstract\//,
+            // Wiley
+            /onlinelibrary\.wiley\.com\/doi\//,
+            /physoc\.onlinelibrary\.wiley\.com\/doi\//,
+            // Cell Press
+            /cell\.com\/.*\/fulltext\//,
+            // ResearchGate
+            /researchgate\.net\/publication\//,
+            // APA PsycNET
+            /psycnet\.apa\.org\/record\//,
+            // bioRxiv/medRxiv
+            /biorxiv\.org\/content\//,
+            /medrxiv\.org\/content\//,
+            // OSF Preprints
+            /osf\.io\/preprints\//,
+            // Frontiers
+            /frontiersin\.org\/journals?\//,
+            /frontiersin\.org\/articles?\//,
+            // JSTOR
+            /jstor\.org\/stable\//,
+            // PMLR (Proceedings of Machine Learning Research)
+            /proceedings\.mlr\.press\//,
+            // PLOS
+            /journals\.plos\.org\/\w+\/article/,
+            // IEEE Xplore
+            /ieeexplore\.ieee\.org\/document\//,
+            /ieeexplore\.ieee\.org\/abstract\/document\//,
+            // Royal Society
+            /royalsocietypublishing\.org\/doi\//,
+            // PhilArchive
+            /philarchive\.org\/archive\//,
+            // Taylor & Francis
+            /tandfonline\.com\/doi\//,
+            // IOP Science
+            /iopscience\.iop\.org\/article\//,
+            // Oxford Academic
+            /academic\.oup\.com\/\w+\/article/,
+            // eLife
+            /elifesciences\.org\/articles\//,
+            // eScholarship
+            /escholarship\.org\/content\//,
+            // PubMed Central
+            /pmc\.ncbi\.nlm\.nih\.gov\/articles\//,
+            /ncbi\.nlm\.nih\.gov\/pmc\/articles\//,
+            // PubMed
+            /pubmed\.ncbi\.nlm\.nih\.gov\/\d+/,
+            // CVF Open Access
+            /openaccess\.thecvf\.com\/content/,
+            // Zenodo
+            /zenodo\.org\/records?\//,
+            // ASM Journals
+            /journals\.asm\.org\/doi\//,
+            // BMJ
+            /bmj\.com\/content\//,
+            // ACL Anthology
+            /aclanthology\.org\/[A-Z0-9.-]+\//,
+            // AMS Journals
+            /journals\.ametsoc\.org\/view\/journals\//,
+            // Substack (for academic newsletters)
+            /substack\.com\/p\//,
+            // CiteSeerX
+            /citeseerx\.ist\.psu\.edu\//,
+            // Hugging Face Papers
+            /huggingface\.co\/papers\//,
+            // Papers With Code
+            /paperswithcode\.com\/paper\//,
+            // Google Scholar direct links
+            /scholar\.google\.com\/scholar\?.*cluster=/,
+            // SSRN
+            /papers\.ssrn\.com\/sol3\/papers\.cfm/,
+            /ssrn\.com\/abstract=/,
+            // Cambridge Core
+            /cambridge\.org\/core\/journals\/.*\/article\//,
+            // Annual Reviews
+            /annualreviews\.org\/doi\//,
+            // Generic DOI patterns
+            /\/doi\/(?:abs|full|pdf|epdf)?\/?10\.\d+\//,
+            // Generic PDF patterns (academic contexts)
+            /\.pdf(?:\?|$)/,
+        ];
+        // Content script matches - used for canHandleUrl checks
+        this.contentScriptMatches = [
+            "sciencedirect.com/science/article/",
+            "philpapers.org/rec/",
+            "proceedings.neurips.cc/paper_files/paper/",
+            "journals.sagepub.com/doi/",
+            "link.springer.com/article/",
+            ".science.org/doi/",
+            "journals.aps.org/prx/abstract/",
+            "onlinelibrary.wiley.com/doi/",
+            "cell.com/trends/cognitive-sciences/fulltext/",
+            "researchgate.net/publication/",
+            "psycnet.apa.org/record/",
+            "biorxiv.org/content/",
+            "medrxiv.org/content/",
+            "osf.io/preprints/",
+            "frontiersin.org/journals/",
+            "frontiersin.org/articles/",
+            "jstor.org/stable/",
+            "proceedings.mlr.press/",
+            "journals.plos.org/plosone/article",
+            "ieeexplore.ieee.org/document/",
+            "royalsocietypublishing.org/doi/",
+            "papers.nips.cc/paper_files/paper/",
+            "philarchive.org/archive/",
+            "tandfonline.com/doi/",
+            "iopscience.iop.org/article/",
+            "academic.oup.com/brain/article/",
+            "elifesciences.org/articles/",
+            "escholarship.org/content/",
+            "pmc.ncbi.nlm.nih.gov/articles/",
+            "ncbi.nlm.nih.gov/pmc/articles/",
+            "pubmed.ncbi.nlm.nih.gov/",
+            "openaccess.thecvf.com/content/",
+            "zenodo.org/records/",
+            "journals.asm.org/doi/full/",
+            "physoc.onlinelibrary.wiley.com/doi/full/",
+            "storage.courtlistener.com/recap/",
+            "bmj.com/content/",
+            "ntsb.gov/investigations/pages",
+            "ntsb.gov/investigations/AccidentReports",
+            "aclanthology.org/",
+            "journals.ametsoc.org/view/journals/",
+            "huggingface.co/papers/",
+            "paperswithcode.com/paper/",
+            "papers.ssrn.com/",
+            "ssrn.com/abstract=",
+            "cambridge.org/core/journals/",
+            "annualreviews.org/doi/",
+            "substack.com/p/",
+            "citeseerx.",
+            "/doi/",
+            "/pdf/",
+        ];
+    }
+    canHandleUrl(url) {
+        // First check urlPatterns (regex)
+        if (this.urlPatterns.some(pattern => pattern.test(url))) {
+            return true;
+        }
+        // Then check contentScriptMatches (substring)
+        return this.contentScriptMatches.some(pattern => url.includes(pattern));
+    }
+}
+const miscIntegration = new MiscIntegration();
+
+// extension/source-integration/registry.ts
 const sourceIntegrations = [
     arxivIntegration,
     openReviewIntegration,
-    // Add new integrations here
+    natureIntegration,
+    pnasIntegration,
+    scienceDirectIntegration,
+    springerIntegration,
+    ieeeIntegration,
+    acmIntegration,
+    aclIntegration,
+    neuripsIntegration,
+    cvfIntegration,
+    wileyIntegration,
+    plosIntegration,
+    bioRxivIntegration,
+    medRxivIntegration,
+    ssrnIntegration,
+    semanticScholarIntegration,
+    miscIntegration,
 ];
 
 // background.ts

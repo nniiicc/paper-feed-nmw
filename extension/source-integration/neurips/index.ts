@@ -105,26 +105,55 @@ export class NeurIPSIntegration extends BaseSourceIntegration {
   readonly id = 'neurips';
   readonly name = 'NeurIPS';
 
-  // URL patterns for NeurIPS papers
+  // URL patterns for NeurIPS papers (multiple domains and formats)
   readonly urlPatterns = [
-    /papers\.nips\.cc\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
-    /papers\.nips\.cc\/paper\/(\d+)\/file\/([a-f0-9]+)/,
+    // proceedings.neurips.cc (current main site)
     /proceedings\.neurips\.cc\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
     /proceedings\.neurips\.cc\/paper\/(\d+)\/file\/([a-f0-9]+)/,
     /proceedings\.neurips\.cc\/paper_files\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
+    /proceedings\.neurips\.cc\/paper_files\/paper\/(\d+)\/file\/([a-f0-9]+)/,
+    // papers.nips.cc (legacy domain)
+    /papers\.nips\.cc\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
+    /papers\.nips\.cc\/paper\/(\d+)\/file\/([a-f0-9]+)/,
+    /papers\.nips\.cc\/paper_files\/paper\/(\d+)\/hash\/([a-f0-9]+)/,
+    // Title-based URLs (older format)
+    /papers\.nips\.cc\/paper\/(\d+)-([^\/\s]+)/,
+    /proceedings\.neurips\.cc\/paper\/(\d+)-([^\/\s]+)/,
+    // Generic NeurIPS paper patterns
+    /proceedings\.neurips\.cc\/paper/,
+    /papers\.nips\.cc\/paper/,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /proceedings\.neurips\.cc\/paper/.test(url) ||
+           /papers\.nips\.cc\/paper/.test(url);
+  }
 
   /**
    * Extract paper ID from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        // Combine year and hash for unique ID
-        return `${match[1]}-${match[2]}`;
-      }
+    // Try hash/file format (current)
+    const hashMatch = url.match(/paper(?:_files)?\/paper\/(\d+)\/(?:hash|file)\/([a-f0-9]+)/);
+    if (hashMatch) {
+      return `${hashMatch[1]}-${hashMatch[2]}`;
     }
+
+    // Try title-based format (older)
+    const titleMatch = url.match(/paper\/(\d+)-([^\/\s.]+)/);
+    if (titleMatch) {
+      return `${titleMatch[1]}-${titleMatch[2]}`;
+    }
+
+    // Try just year + anything
+    const yearMatch = url.match(/paper(?:_files)?\/paper\/(\d+)\/([^\/\s]+)/);
+    if (yearMatch) {
+      return `${yearMatch[1]}-${yearMatch[2]}`;
+    }
+
     return null;
   }
 

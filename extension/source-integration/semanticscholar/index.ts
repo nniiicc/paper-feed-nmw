@@ -95,19 +95,49 @@ export class SemanticScholarIntegration extends BaseSourceIntegration {
 
   // URL patterns for Semantic Scholar papers
   readonly urlPatterns = [
+    // Standard paper URL with title slug and corpus ID
     /semanticscholar\.org\/paper\/[^/]+\/([a-f0-9]+)/,
+    // Paper URL without title slug (direct ID)
+    /semanticscholar\.org\/paper\/([a-f0-9]{40})/,
+    // CorpusID-based URL
+    /semanticscholar\.org\/paper\/[^?]*[?&]corpusId=(\d+)/,
+    // Reader URL
+    /semanticscholar\.org\/reader\/([a-f0-9]+)/,
+    // Author paper pages
+    /semanticscholar\.org\/author\/[^/]+\/papers/,
+    // Generic paper pattern
+    /semanticscholar\.org\/paper\//,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /semanticscholar\.org\/(paper|reader)\//.test(url);
+  }
 
   /**
    * Extract paper ID from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try to extract 40-character hex ID (SHA)
+    const shaMatch = url.match(/\/([a-f0-9]{40})/);
+    if (shaMatch) {
+      return shaMatch[1];
     }
+
+    // Try corpus ID from query params
+    const corpusMatch = url.match(/[?&]corpusId=(\d+)/);
+    if (corpusMatch) {
+      return `corpus:${corpusMatch[1]}`;
+    }
+
+    // Try shorter hex ID format
+    const shortIdMatch = url.match(/semanticscholar\.org\/(?:paper|reader)\/[^/]*\/([a-f0-9]+)/);
+    if (shortIdMatch) {
+      return shortIdMatch[1];
+    }
+
     return null;
   }
 

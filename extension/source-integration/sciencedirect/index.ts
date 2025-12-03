@@ -91,22 +91,54 @@ export class ScienceDirectIntegration extends BaseSourceIntegration {
   readonly id = 'sciencedirect';
   readonly name = 'ScienceDirect';
 
-  // URL pattern for ScienceDirect articles with PII
+  // URL patterns for ScienceDirect articles
   readonly urlPatterns = [
+    // PII-based URLs (most common)
     /sciencedirect\.com\/science\/article\/pii\/([A-Z0-9]+)/i,
     /sciencedirect\.com\/science\/article\/abs\/pii\/([A-Z0-9]+)/i,
+    // Book chapters
+    /sciencedirect\.com\/science\/book\/([A-Z0-9]+)/i,
+    // DOI-based URLs
+    /sciencedirect\.com\/science\/article\/doi\/(10\.\d+\/[^\s?#]+)/i,
+    // Generic article URLs
+    /sciencedirect\.com\/science\/article\//,
+    // PDF direct links
+    /sciencedirect\.com\/\S+\.pdf/i,
+    // Reader view
+    /reader\.elsevier\.com\/reader\/sd\/pii\/([A-Z0-9]+)/i,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /sciencedirect\.com\/science\/article\//.test(url) ||
+           /sciencedirect\.com\/science\/book\//.test(url) ||
+           /reader\.elsevier\.com\/reader\/sd\/pii\//.test(url);
+  }
 
   /**
    * Extract paper ID (PII) from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try PII format (most common)
+    const piiMatch = url.match(/pii\/([A-Z0-9]+)/i);
+    if (piiMatch) {
+      return piiMatch[1];
     }
+
+    // Try DOI format
+    const doiMatch = url.match(/doi\/(10\.\d+\/[^\s?#]+)/i);
+    if (doiMatch) {
+      return doiMatch[1];
+    }
+
+    // Try book format
+    const bookMatch = url.match(/book\/([A-Z0-9]+)/i);
+    if (bookMatch) {
+      return bookMatch[1];
+    }
+
     return null;
   }
 

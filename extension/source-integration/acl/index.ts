@@ -94,22 +94,54 @@ export class ACLIntegration extends BaseSourceIntegration {
   readonly id = 'acl';
   readonly name = 'ACL Anthology';
 
-  // URL patterns for ACL Anthology papers
+  // URL patterns for ACL Anthology papers (various formats)
   readonly urlPatterns = [
+    // Current ACL Anthology format (e.g., 2023.acl-main.1)
+    /aclanthology\.org\/([A-Z0-9]+\.\d+-[a-z]+-\d+)/i,
     /aclanthology\.org\/([A-Z0-9]+\.\d+-\d+)/,
+    // Older ACL Anthology format (e.g., P18-1001)
+    /aclanthology\.org\/([A-Z]\d{2}-\d+)/,
+    // Legacy aclweb.org URLs
     /aclweb\.org\/anthology\/([A-Z0-9]+\.\d+-\d+)/,
+    /aclweb\.org\/anthology\/([A-Z]\d{2}-\d+)/,
+    // PDF variants
+    /aclanthology\.org\/([^\/]+)\.pdf/,
+    // Volumes
+    /aclanthology\.org\/volumes\/([^\/\s?#]+)/,
+    // Generic ACL patterns
+    /aclanthology\.org\/[A-Z0-9]/i,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /aclanthology\.org\/[A-Z0-9]/i.test(url) ||
+           /aclweb\.org\/anthology\//.test(url);
+  }
 
   /**
    * Extract paper ID from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try new format (e.g., 2023.acl-main.1)
+    const newFormatMatch = url.match(/aclanthology\.org\/([A-Z0-9]+\.[a-z0-9-]+)/i);
+    if (newFormatMatch) {
+      return newFormatMatch[1].replace(/\.pdf$/, '');
     }
+
+    // Try old format (e.g., P18-1001)
+    const oldFormatMatch = url.match(/(?:aclanthology|aclweb)\.org\/(?:anthology\/)?([A-Z]\d{2}-\d+)/);
+    if (oldFormatMatch) {
+      return oldFormatMatch[1];
+    }
+
+    // Try volume format
+    const volumeMatch = url.match(/volumes\/([^\/\s?#]+)/);
+    if (volumeMatch) {
+      return volumeMatch[1];
+    }
+
     return null;
   }
 

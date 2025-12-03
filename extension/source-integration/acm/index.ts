@@ -100,21 +100,52 @@ export class ACMIntegration extends BaseSourceIntegration {
 
   // URL patterns for ACM articles
   readonly urlPatterns = [
-    /dl\.acm\.org\/doi\/(10\.\d+\/\d+)/,
-    /dl\.acm\.org\/doi\/abs\/(10\.\d+\/\d+)/,
+    // Standard DOI URLs (handles various DOI formats including alphanumeric)
+    /dl\.acm\.org\/doi\/(10\.\d+\/[^\s?#]+)/,
+    /dl\.acm\.org\/doi\/abs\/(10\.\d+\/[^\s?#]+)/,
+    /dl\.acm\.org\/doi\/full\/(10\.\d+\/[^\s?#]+)/,
+    /dl\.acm\.org\/doi\/pdf\/(10\.\d+\/[^\s?#]+)/,
+    /dl\.acm\.org\/doi\/epdf\/(10\.\d+\/[^\s?#]+)/,
+    // Legacy citation URLs
     /dl\.acm\.org\/citation\.cfm\?id=(\d+)/,
+    /dl\.acm\.org\/citation\.cfm\?.*doid=[\d.]+\.(\d+)/,
+    // Proceeding URLs
+    /dl\.acm\.org\/doi\/proceedings\/(10\.\d+\/[^\s?#]+)/,
+    // Book chapters
+    /dl\.acm\.org\/doi\/book\/(10\.\d+\/[^\s?#]+)/,
+    // Generic ACM DL pattern
+    /dl\.acm\.org\/doi\//,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /dl\.acm\.org\/(doi|citation)/.test(url);
+  }
 
   /**
    * Extract paper ID (DOI or citation ID) from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try DOI format (most common, handles alphanumeric DOIs)
+    const doiMatch = url.match(/dl\.acm\.org\/doi\/(?:abs|full|pdf|epdf|proceedings|book)?\/?((10\.\d+\/[^\s?#]+))/);
+    if (doiMatch) {
+      return doiMatch[2] || doiMatch[1];
     }
+
+    // Try legacy citation.cfm format
+    const legacyMatch = url.match(/citation\.cfm\?.*id=(\d+)/);
+    if (legacyMatch) {
+      return legacyMatch[1];
+    }
+
+    // Try doid format
+    const doidMatch = url.match(/doid=[\d.]+\.(\d+)/);
+    if (doidMatch) {
+      return doidMatch[1];
+    }
+
     return null;
   }
 

@@ -96,22 +96,46 @@ export class OpenReviewIntegration extends BaseSourceIntegration {
   readonly id = 'openreview';
   readonly name = 'OpenReview';
   
-  // URL patterns for papers
+  // URL patterns for papers (various OpenReview formats)
   readonly urlPatterns = [
-    /openreview\.net\/forum\?id=([a-zA-Z0-9]+)/,
-    /openreview\.net\/pdf\?id=([a-zA-Z0-9]+)/
+    // Forum page (main paper page)
+    /openreview\.net\/forum\?id=([a-zA-Z0-9_-]+)/,
+    // PDF page
+    /openreview\.net\/pdf\?id=([a-zA-Z0-9_-]+)/,
+    // Attachment URLs
+    /openreview\.net\/attachment\?id=([a-zA-Z0-9_-]+)/,
+    // References/revisions
+    /openreview\.net\/references\?referent=([a-zA-Z0-9_-]+)/,
+    /openreview\.net\/revisions\?id=([a-zA-Z0-9_-]+)/,
+    // Group/venue pages (for browsing)
+    /openreview\.net\/group\?id=([^&\s]+)/,
+    // Generic OpenReview paper URL
+    /openreview\.net\/(?:forum|pdf)\?id=/,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /openreview\.net\/(forum|pdf|attachment|references|revisions)\?id=/.test(url);
+  }
 
   /**
    * Extract paper ID from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1]; // The capture group with the paper ID
-      }
+    // Try to extract ID from various URL formats
+    const idMatch = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+    if (idMatch) {
+      return idMatch[1];
     }
+
+    // Try referent parameter
+    const referentMatch = url.match(/[?&]referent=([a-zA-Z0-9_-]+)/);
+    if (referentMatch) {
+      return referentMatch[1];
+    }
+
     return null;
   }
 

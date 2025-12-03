@@ -110,22 +110,48 @@ export class SpringerIntegration extends BaseSourceIntegration {
   readonly id = 'springer';
   readonly name = 'Springer';
 
-  // URL patterns for Springer articles
+  // URL patterns for Springer articles and chapters
   readonly urlPatterns = [
-    /link\.springer\.com\/article\/(10\.\d+\/[^\s?]+)/,
-    /link\.springer\.com\/chapter\/(10\.\d+\/[^\s?]+)/,
+    // Articles with DOI
+    /link\.springer\.com\/article\/(10\.\d+\/[^\s?#]+)/,
+    // Book chapters with DOI
+    /link\.springer\.com\/chapter\/(10\.\d+\/[^\s?#]+)/,
+    // Books
+    /link\.springer\.com\/book\/(10\.\d+\/[^\s?#]+)/,
+    // Conference papers
+    /link\.springer\.com\/content\/pdf\/(10\.\d+\/[^\s?#]+)/,
+    // Proceedings
+    /link\.springer\.com\/proceeding\/(10\.\d+\/[^\s?#]+)/,
+    // Reference work entries
+    /link\.springer\.com\/referenceworkentry\/(10\.\d+\/[^\s?#]+)/,
+    // PDF variants
+    /link\.springer\.com\/content\/pdf\/(10\.\d+%2F[^\s?#]+)/,
+    // EPUB variants
+    /link\.springer\.com\/epub\/(10\.\d+\/[^\s?#]+)/,
+    // Generic patterns for matching
+    /link\.springer\.com\/article\//,
+    /link\.springer\.com\/chapter\//,
+    /link\.springer\.com\/book\//,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /link\.springer\.com\/(article|chapter|book|content|proceeding|referenceworkentry|epub)\//.test(url);
+  }
 
   /**
    * Extract paper ID (DOI) from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try to extract DOI from URL path
+    const doiMatch = url.match(/link\.springer\.com\/(?:article|chapter|book|content\/pdf|proceeding|referenceworkentry|epub)\/(10\.\d+[/%][^\s?#]+)/);
+    if (doiMatch) {
+      // Decode URL-encoded DOIs
+      return decodeURIComponent(doiMatch[1]).replace(/%2F/gi, '/');
     }
+
     return null;
   }
 

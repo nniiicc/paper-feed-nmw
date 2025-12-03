@@ -85,17 +85,50 @@ export class NatureIntegration extends BaseSourceIntegration {
   readonly id = 'nature';
   readonly name = 'Nature'; 
 
-  // URL pattern for Nature articles with capture group for ID
+  // URL patterns for Nature articles (including all Nature journals)
   readonly urlPatterns = [
-    /nature\.com\/articles\/([^?]+)/,
+    // Main nature.com articles
+    /nature\.com\/articles\/([^?#/]+)/,
+    // Nature sub-journals (e.g., nature.com/ncomms/articles/...)
+    /nature\.com\/\w+\/articles\/([^?#/]+)/,
+    // Scientific Reports
+    /nature\.com\/srep\/articles\/([^?#/]+)/,
+    // Nature Communications
+    /nature\.com\/ncomms\/articles\/([^?#/]+)/,
+    // Nature Methods, Nature Reviews, etc.
+    /nature\.com\/n[a-z]+\/articles\/([^?#/]+)/,
+    // DOI-based URLs
+    /nature\.com\/doi\/(10\.\d+\/[^?#\s]+)/,
+    // Full text and PDF variants
+    /nature\.com\/articles\/([^?#/]+)\.pdf/,
+    /nature\.com\/articles\/([^?#/]+)\/full/,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /nature\.com\/(articles|doi)\//.test(url) ||
+           /nature\.com\/\w+\/articles\//.test(url);
+  }
 
   /**
    * Extract paper ID from URL
    */
   extractPaperId(url: string): string | null {
-    const match = url.match(this.urlPatterns[0]);
-    return match ? match[1] : null;
+    // Try to extract article ID
+    const articleMatch = url.match(/nature\.com\/(?:\w+\/)?articles\/([^?#/]+)/);
+    if (articleMatch) {
+      return articleMatch[1].replace(/\.pdf$/, '');
+    }
+
+    // Try DOI format
+    const doiMatch = url.match(/nature\.com\/doi\/(10\.\d+\/[^?#\s]+)/);
+    if (doiMatch) {
+      return doiMatch[1];
+    }
+
+    return null;
   }
 
   /**

@@ -96,22 +96,40 @@ export class PLOSIntegration extends BaseSourceIntegration {
   readonly id = 'plos';
   readonly name = 'PLOS';
 
-  // URL patterns for PLOS articles
+  // URL patterns for PLOS articles (all PLOS journals)
   readonly urlPatterns = [
-    /journals\.plos\.org\/[^/]+\/article\?id=(10\.\d+\/[^\s&]+)/,
-    /journals\.plos\.org\/plosone\/article\?id=(10\.\d+\/[^\s&]+)/,
+    // Standard article URLs with DOI parameter
+    /journals\.plos\.org\/\w+\/article\?id=(10\.\d+\/[^\s&]+)/,
+    // URL encoded DOI format
+    /journals\.plos\.org\/\w+\/article\/info[:%]3Adoi[/%]2F(10\.\d+)/,
+    // Generic PLOS article URL (for canHandleUrl)
+    /journals\.plos\.org\/\w+\/article/,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /journals\.plos\.org\/\w+\/article/.test(url);
+  }
 
   /**
    * Extract paper ID (DOI) from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try to extract DOI from id parameter
+    const idMatch = url.match(/[?&]id=(10\.\d+\/[^\s&]+)/);
+    if (idMatch) {
+      return decodeURIComponent(idMatch[1]);
     }
+
+    // Try URL encoded DOI format
+    const encodedMatch = url.match(/doi[/%]2F(10\.\d+[/%]2F[^\s&]+)/i);
+    if (encodedMatch) {
+      return decodeURIComponent(encodedMatch[1].replace(/%2F/gi, '/'));
+    }
+
+    // Fallback: generate from URL
     return null;
   }
 

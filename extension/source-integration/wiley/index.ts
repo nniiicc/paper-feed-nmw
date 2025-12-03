@@ -99,21 +99,42 @@ export class WileyIntegration extends BaseSourceIntegration {
 
   // URL patterns for Wiley articles
   readonly urlPatterns = [
-    /onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?]+)/,
-    /onlinelibrary\.wiley\.com\/doi\/abs\/(10\.\d+\/[^\s?]+)/,
-    /onlinelibrary\.wiley\.com\/doi\/full\/(10\.\d+\/[^\s?]+)/,
+    // Standard DOI URLs
+    /onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+    /onlinelibrary\.wiley\.com\/doi\/abs\/(10\.\d+\/[^\s?#]+)/,
+    /onlinelibrary\.wiley\.com\/doi\/full\/(10\.\d+\/[^\s?#]+)/,
+    /onlinelibrary\.wiley\.com\/doi\/pdf\/(10\.\d+\/[^\s?#]+)/,
+    /onlinelibrary\.wiley\.com\/doi\/epdf\/(10\.\d+\/[^\s?#]+)/,
+    // Wiley society journals (e.g., physoc.onlinelibrary.wiley.com)
+    /\w+\.onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+    /\w+\.onlinelibrary\.wiley\.com\/doi\/abs\/(10\.\d+\/[^\s?#]+)/,
+    /\w+\.onlinelibrary\.wiley\.com\/doi\/full\/(10\.\d+\/[^\s?#]+)/,
+    // AGU Publications (agupubs)
+    /agupubs\.onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+    // FEBS journals
+    /febs\.onlinelibrary\.wiley\.com\/doi\/(10\.\d+\/[^\s?#]+)/,
+    // Generic Wiley DOI pattern
+    /onlinelibrary\.wiley\.com\/doi\//,
+    /\.onlinelibrary\.wiley\.com\/doi\//,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /\.?onlinelibrary\.wiley\.com\/doi\//.test(url);
+  }
 
   /**
    * Extract paper ID (DOI) from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try to extract DOI from URL path (handles all variants)
+    const doiMatch = url.match(/\/doi\/(?:abs|full|pdf|epdf)?\/?((10\.\d+\/[^\s?#]+))/);
+    if (doiMatch) {
+      return doiMatch[2] || doiMatch[1];
     }
+
     return null;
   }
 

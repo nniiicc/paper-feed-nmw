@@ -104,23 +104,53 @@ export class CVFIntegration extends BaseSourceIntegration {
   readonly id = 'cvf';
   readonly name = 'CVF Open Access';
 
-  // URL patterns for CVF papers
+  // URL patterns for CVF papers (CVPR, ICCV, WACV, etc.)
   readonly urlPatterns = [
-    /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]html[_\/]([^.]+)\.html/,
-    /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]papers[_\/]([^.]+)\.pdf/,
+    // HTML paper pages
+    /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]html[_\/]([^.]+)\.html/i,
+    /openaccess\.thecvf\.com\/content\/([A-Z]+)(\d+)[_\/]html[_\/]([^.]+)\.html/i,
+    // PDF papers
+    /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]papers[_\/]([^.]+)\.pdf/i,
+    /openaccess\.thecvf\.com\/content\/([A-Z]+)(\d+)[_\/]papers[_\/]([^.]+)\.pdf/i,
+    // Workshop papers
+    /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]W\d+[_\/]html[_\/]([^.]+)\.html/i,
+    /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]W\d+[_\/]papers[_\/]([^.]+)\.pdf/i,
+    // Supplementary materials
+    /openaccess\.thecvf\.com\/content[_\/]([A-Z]+)[_\/](\d+)[_\/]supplemental[_\/]([^.]+)/i,
+    // Generic CVF content pattern
+    /openaccess\.thecvf\.com\/content/,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /openaccess\.thecvf\.com\/content/.test(url);
+  }
 
   /**
    * Extract paper ID from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        // Combine conference, year, and paper ID
-        return `${match[1]}-${match[2]}-${match[3]}`;
-      }
+    // Try to extract conference, year, and paper name from various formats
+    // Format 1: content_CONF_YEAR/html/paper.html
+    const format1 = url.match(/content[_\/]([A-Z]+)[_\/](\d+)[_\/](?:W\d+[_\/])?(?:html|papers)[_\/]([^.\/]+)/i);
+    if (format1) {
+      return `${format1[1]}-${format1[2]}-${format1[3]}`;
     }
+
+    // Format 2: content/CONFYEAR/html/paper.html
+    const format2 = url.match(/content\/([A-Z]+)(\d{4})[_\/](?:W\d+[_\/])?(?:html|papers)[_\/]([^.\/]+)/i);
+    if (format2) {
+      return `${format2[1]}-${format2[2]}-${format2[3]}`;
+    }
+
+    // Fallback: just extract the paper name from the path
+    const fallback = url.match(/\/([^\/]+)\.(?:html|pdf)$/);
+    if (fallback) {
+      return fallback[1];
+    }
+
     return null;
   }
 

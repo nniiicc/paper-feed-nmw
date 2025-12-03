@@ -436,6 +436,12 @@ window.addEventListener('beforeunload', () => {
 chrome.runtime.onMessage.addListener((message: any, sender, sendResponse) => {
   logger.debug('Received message', message);
 
+  // Simple ping to check if content script is loaded
+  if (message.type === 'ping') {
+    sendResponse({ success: true, loaded: true });
+    return true;
+  }
+
   if (message.type === 'extractPaperMetadata') {
     logger.debug('Received request to force paper metadata extraction');
     

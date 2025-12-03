@@ -100,20 +100,50 @@ export class MedRxivIntegration extends BaseSourceIntegration {
 
   // URL patterns for medRxiv preprints
   readonly urlPatterns = [
-    /medrxiv\.org\/content\/(10\.\d+\/[^v\s?]+)v?\d*/,
+    // DOI-based content URLs (most common)
+    /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)/,
+    // Early preprint URLs (legacy format)
     /medrxiv\.org\/content\/early\/\d+\/\d+\/\d+\/(\d+)/,
+    // Full/abs/pdf variants
+    /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.full/,
+    /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.abstract/,
+    /medrxiv\.org\/content\/(10\.\d+\/[^\s?#]+)\.pdf/,
+    // Collection URLs
+    /medrxiv\.org\/cgi\/content\/full\/(\d+)/,
+    /medrxiv\.org\/cgi\/content\/abstract\/(\d+)/,
+    // Generic content pattern
+    /medrxiv\.org\/content\//,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /medrxiv\.org\/(content|cgi\/content)\//.test(url);
+  }
 
   /**
    * Extract paper ID (DOI or early ID) from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try DOI format (remove version suffix like v1, v2, etc.)
+    const doiMatch = url.match(/medrxiv\.org\/content\/(10\.\d+\/[^\s?#.]+)/);
+    if (doiMatch) {
+      return doiMatch[1].replace(/v\d+$/, '');
     }
+
+    // Try early format
+    const earlyMatch = url.match(/early\/\d+\/\d+\/\d+\/(\d+)/);
+    if (earlyMatch) {
+      return earlyMatch[1];
+    }
+
+    // Try cgi format
+    const cgiMatch = url.match(/cgi\/content\/(?:full|abstract)\/(\d+)/);
+    if (cgiMatch) {
+      return cgiMatch[1];
+    }
+
     return null;
   }
 

@@ -54,6 +54,39 @@ function updateUI(paperData) {
         manualLogSection.style.display = 'block';
     }
 }
+// Function to ensure content script is loaded
+async function ensureContentScriptLoaded(tabId) {
+    try {
+        // Try to ping the content script
+        return new Promise((resolve) => {
+            chrome.tabs.sendMessage(tabId, { type: 'ping' }, (response) => {
+                if (chrome.runtime.lastError) {
+                    // Content script not loaded, try to inject it
+                    console.log('Content script not loaded, injecting...');
+                    chrome.scripting.executeScript({
+                        target: { tabId },
+                        files: ['dist/content-script.js']
+                    }).then(() => {
+                        console.log('Content script injected successfully');
+                        // Wait a bit for the script to initialize
+                        setTimeout(() => resolve(true), 500);
+                    }).catch((err) => {
+                        console.error('Failed to inject content script:', err);
+                        resolve(false);
+                    });
+                }
+                else {
+                    // Content script is already loaded
+                    resolve(true);
+                }
+            });
+        });
+    }
+    catch (err) {
+        console.error('Error ensuring content script:', err);
+        return false;
+    }
+}
 // Function to log current page as a paper (using content script extraction)
 async function logCurrentPage() {
     console.log("attempting to log paper");
@@ -66,13 +99,32 @@ async function logCurrentPage() {
         }
         return;
     }
+    const tabId = tabs[0].id;
+    const tabUrl = tabs[0].url || '';
+    // Check if this is a special page we can't access
+    if (tabUrl.startsWith('chrome://') || tabUrl.startsWith('chrome-extension://') ||
+        tabUrl.startsWith('about:') || tabUrl.startsWith('edge://')) {
+        const statusElement = document.getElementById('status');
+        if (statusElement) {
+            statusElement.textContent = 'Error: Cannot access this type of page';
+        }
+        return;
+    }
     // Show loading state
     const statusElement = document.getElementById('status');
     if (statusElement) {
         statusElement.textContent = 'Extracting paper metadata...';
     }
+    // Ensure content script is loaded
+    const contentScriptLoaded = await ensureContentScriptLoaded(tabId);
+    if (!contentScriptLoaded) {
+        if (statusElement) {
+            statusElement.textContent = 'Error: Could not load content script on this page';
+        }
+        return;
+    }
     // Send message to content script requesting extraction
-    chrome.tabs.sendMessage(tabs[0].id, {
+    chrome.tabs.sendMessage(tabId, {
         type: 'extractPaperMetadata'
     }, (response) => {
         if (chrome.runtime.lastError) {

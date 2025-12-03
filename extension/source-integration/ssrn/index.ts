@@ -96,20 +96,59 @@ export class SSRNIntegration extends BaseSourceIntegration {
 
   // URL patterns for SSRN papers
   readonly urlPatterns = [
+    // Short URL format
     /ssrn\.com\/abstract=(\d+)/,
+    // Legacy sol3/papers.cfm format
     /papers\.ssrn\.com\/sol3\/papers\.cfm\?abstract_id=(\d+)/,
+    /papers\.ssrn\.com\/sol3\/papers\.cfm\?.*abstract_id=(\d+)/,
+    // Delivery format
+    /papers\.ssrn\.com\/sol3\/Delivery\.cfm.*abstractid=(\d+)/i,
+    // Direct link format
+    /ssrn\.com\/(\d{7,})/,
+    // DOI format
+    /dx\.doi\.org\/10\.2139\/ssrn\.(\d+)/,
+    // Generic SSRN patterns
+    /ssrn\.com\/abstract/,
+    /papers\.ssrn\.com\/sol3\//,
   ];
+
+  /**
+   * Check if this integration can handle the given URL
+   */
+  canHandleUrl(url: string): boolean {
+    return /ssrn\.com\/(abstract|sol3|\d{7})/.test(url) ||
+           /papers\.ssrn\.com\/sol3\//.test(url) ||
+           /doi\.org\/10\.2139\/ssrn/.test(url);
+  }
 
   /**
    * Extract paper ID from URL
    */
   extractPaperId(url: string): string | null {
-    for (const pattern of this.urlPatterns) {
-      const match = url.match(pattern);
-      if (match) {
-        return match[1];
-      }
+    // Try abstract= format
+    const abstractMatch = url.match(/abstract[=_]?(\d+)/i);
+    if (abstractMatch) {
+      return abstractMatch[1];
     }
+
+    // Try abstract_id= format
+    const abstractIdMatch = url.match(/abstract_id=(\d+)/i);
+    if (abstractIdMatch) {
+      return abstractIdMatch[1];
+    }
+
+    // Try DOI format
+    const doiMatch = url.match(/10\.2139\/ssrn\.(\d+)/);
+    if (doiMatch) {
+      return doiMatch[1];
+    }
+
+    // Try direct numeric ID in URL path
+    const directMatch = url.match(/ssrn\.com\/(\d{7,})/);
+    if (directMatch) {
+      return directMatch[1];
+    }
+
     return null;
   }
 
