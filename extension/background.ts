@@ -52,15 +52,22 @@ async function initialize() {
     
     // Initialize paper manager if we have credentials
     if (githubToken && githubRepo) {
-      const githubClient = new GitHubStoreClient(githubToken, githubRepo);
-      
-      // Pass the source manager to the paper manager
-      paperManager = new PaperManager(githubClient, sourceManager!);
-      logger.info('Paper manager initialized');
-      
-      // Initialize session service with paper manager
-      sessionService = new SessionService(paperManager);
+      logger.info(`Initializing GitHub client for repo: ${githubRepo}`);
+      try {
+        const githubClient = new GitHubStoreClient(githubToken, githubRepo);
+
+        // Pass the source manager to the paper manager
+        paperManager = new PaperManager(githubClient, sourceManager!);
+        logger.info('Paper manager initialized successfully');
+
+        // Initialize session service with paper manager
+        sessionService = new SessionService(paperManager);
+      } catch (error) {
+        logger.error('Failed to initialize paper manager', error);
+        sessionService = new SessionService(null);
+      }
     } else {
+      logger.warning('GitHub credentials missing', { hasToken: !!githubToken, hasRepo: !!githubRepo });
       // Initialize session service without paper manager
       sessionService = new SessionService(null);
     }
@@ -150,16 +157,29 @@ function setupMessageListeners() {
         .then(() => sendResponse({ success: true }))
         .catch(error => {
           logger.error('Error handling manual paper log', error);
-          sendResponse({ 
-            success: false, 
-            error: error instanceof Error ? error.message : 'Unknown error' 
+          sendResponse({
+            success: false,
+            error: error instanceof Error ? error.message : 'Unknown error'
           });
         });
       return true; // Will respond asynchronously
     }
-    
+
+    // Debug handler to check extension status
+    if (message.type === 'getDebugStatus') {
+      sendResponse({
+        hasGithubToken: !!githubToken,
+        hasGithubRepo: !!githubRepo,
+        githubRepo: githubRepo || '(not set)',
+        paperManagerInitialized: !!paperManager,
+        sessionServiceInitialized: !!sessionService,
+        sourceManagerInitialized: !!sourceManager
+      });
+      return true;
+    }
+
     // Other message handlers are managed by PopupManager
-    
+
     return false; // Not handled
   });
 }
@@ -175,9 +195,15 @@ async function handlePaperMetadata(metadata: PaperMetadata): Promise<{ storedInG
 
   // Store in GitHub if we have a paper manager
   if (paperManager) {
-    await paperManager.getOrCreatePaper(metadata);
-    logger.debug('Paper metadata stored in GitHub');
-    return { storedInGitHub: true };
+    try {
+      logger.info(`Attempting to store paper in GitHub: ${metadata.sourceId}:${metadata.paperId}`);
+      await paperManager.getOrCreatePaper(metadata);
+      logger.info('Paper metadata stored in GitHub successfully');
+      return { storedInGitHub: true };
+    } catch (error) {
+      logger.error('Failed to store paper in GitHub', error);
+      throw error; // Re-throw so the caller can handle it
+    }
   } else {
     logger.warning('Paper manager not initialized - GitHub credentials may not be configured');
     return { storedInGitHub: false };
