@@ -3889,9 +3889,18 @@ function setupMessageListeners() {
         }
         if (message.type === 'paperMetadata' && message.metadata) {
             // Store metadata received from content script
-            handlePaperMetadata(message.metadata);
-            sendResponse({ success: true });
-            return true;
+            handlePaperMetadata(message.metadata)
+                .then(result => {
+                sendResponse({ success: true, storedInGitHub: result.storedInGitHub });
+            })
+                .catch(error => {
+                logger.error('Error handling paper metadata', error);
+                sendResponse({
+                    success: false,
+                    error: error instanceof Error ? error.message : 'Unknown error'
+                });
+            });
+            return true; // Will respond asynchronously
         }
         if (message.type === 'getCurrentPaper') {
             const session = sessionService?.getCurrentSession();
@@ -3942,19 +3951,19 @@ function setupMessageListeners() {
 // Handle paper metadata from content script
 async function handlePaperMetadata(metadata) {
     logger.info(`Received metadata for ${metadata.sourceId}:${metadata.paperId}`);
-    try {
-        // Store metadata in session service
-        if (sessionService) {
-            sessionService.storePaperMetadata(metadata);
-        }
-        // Store in GitHub if we have a paper manager
-        if (paperManager) {
-            await paperManager.getOrCreatePaper(metadata);
-            logger.debug('Paper metadata stored in GitHub');
-        }
+    // Store metadata in session service
+    if (sessionService) {
+        sessionService.storePaperMetadata(metadata);
     }
-    catch (error) {
-        logger.error('Error handling paper metadata', error);
+    // Store in GitHub if we have a paper manager
+    if (paperManager) {
+        await paperManager.getOrCreatePaper(metadata);
+        logger.debug('Paper metadata stored in GitHub');
+        return { storedInGitHub: true };
+    }
+    else {
+        logger.warning('Paper manager not initialized - GitHub credentials may not be configured');
+        return { storedInGitHub: false };
     }
 }
 // Handle rating update
@@ -4018,20 +4027,17 @@ function handleEndSession(reason) {
 }
 async function handleManualPaperLog(metadata) {
     logger.info(`Received manual paper log: ${metadata.sourceId}:${metadata.paperId}`);
-    try {
-        // Store metadata in session service
-        if (sessionService) {
-            sessionService.storePaperMetadata(metadata);
-        }
-        // Store in GitHub if we have a paper manager
-        if (paperManager) {
-            await paperManager.getOrCreatePaper(metadata);
-            logger.debug('Manually logged paper stored in GitHub');
-        }
+    // Store metadata in session service
+    if (sessionService) {
+        sessionService.storePaperMetadata(metadata);
     }
-    catch (error) {
-        logger.error('Error handling manual paper log', error);
-        throw error;
+    // Store in GitHub if we have a paper manager
+    if (paperManager) {
+        await paperManager.getOrCreatePaper(metadata);
+        logger.debug('Manually logged paper stored in GitHub');
+    }
+    else {
+        throw new Error('GitHub credentials not configured. Please set up your token and repository in the extension options.');
     }
 }
 // Listen for credential changes

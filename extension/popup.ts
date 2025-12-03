@@ -169,15 +169,27 @@ async function logCurrentPage(): Promise<void> {
       return;
     }
 
-    // Success - update UI
-    updateUI(response.metadata);
-    if (statusElement) {
-      statusElement.textContent = 'Paper tracked successfully!';
-    }
-
-    // The content script has already:
-    // 1. Sent metadata to background script
-    // 2. Started a session if the tab is visible
+    // Metadata extracted, now explicitly send to background to store in GitHub
+    chrome.runtime.sendMessage({
+      type: 'manualPaperLog',
+      metadata: response.metadata
+    }, (storeResponse: MessageResponse) => {
+      if (storeResponse && storeResponse.success) {
+        // Success - update UI
+        updateUI(response.metadata!);
+        if (statusElement) {
+          statusElement.textContent = 'Paper tracked and saved to GitHub!';
+        }
+      } else {
+        // GitHub storage failed but we still have the metadata
+        updateUI(response.metadata!);
+        if (statusElement) {
+          const errorMsg = storeResponse?.error || 'Could not save to GitHub';
+          statusElement.textContent = 'Paper detected but: ' + errorMsg;
+          statusElement.style.color = '#d97706'; // Warning color
+        }
+      }
+    });
 
     // Hide manual log section
     const manualLogSection = document.getElementById('manualLogSection');

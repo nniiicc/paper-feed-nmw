@@ -353,19 +353,29 @@ async function processCurrentPage(force: boolean = false): Promise<PaperMetadata
     const metadata = await source.extractMetadata(document, paperId);
     
     if (metadata) {
-      // Send metadata to background script
+      // Send metadata to background script and wait for response
       chrome.runtime.sendMessage({
         type: 'paperMetadata',
         metadata
+      }, (response) => {
+        if (chrome.runtime.lastError) {
+          logger.error('Error sending metadata to background:', chrome.runtime.lastError.message);
+        } else if (response && !response.success) {
+          logger.error('Background script failed to store paper:', response.error);
+        } else if (response && !response.storedInGitHub) {
+          logger.warning('Paper metadata stored locally but NOT in GitHub - check credentials');
+        } else {
+          logger.debug('Paper metadata successfully stored in GitHub');
+        }
       });
-      
+
       logger.debug(`Sent extracted metadata to background script for ${metadata.sourceId}:${metadata.paperId}`);
-      
+
       // Start session tracking if tab is visible
       if (isTabVisible) {
         startSessionTracking(metadata.sourceId, metadata.paperId);
       }
-      
+
       return metadata;
     }
   } catch (error) {
