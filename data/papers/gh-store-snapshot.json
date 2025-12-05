@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2025-12-04T17:33:30.078342+00:00",
+  "snapshot_time": "2025-12-05T00:43:01.116092+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "paper:tandfonline.10.1080/2167081_daf4906c9f0c": {
@@ -20,6 +20,24 @@
         "version": 1
       }
     },
+    "paper:sciencedirect.S2352711025004030": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S2352711025004030",
+        "timestamp": "2025-12-01T16:35:59.751000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "RSEMM: A dashboard for evaluating research software maturity"
+      },
+      "meta": {
+        "issue_number": 522,
+        "object_id": "paper:sciencedirect.S2352711025004030",
+        "created_at": "2025-12-04T16:43:43+00:00",
+        "updated_at": "2025-12-04T17:36:45+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2510.06378": {
       "data": {
         "sourceId": "arxiv",
@@ -35,6 +53,24 @@
         "object_id": "paper:arxiv.2510.06378",
         "created_at": "2025-12-04T16:40:48+00:00",
         "updated_at": "2025-12-04T16:41:48+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/ajps.12900": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/ajps.12900",
+        "timestamp": "2025-11-17T21:38:33.838000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Public comment and public policy - Sahn - 2025 - American Journal of Political Science"
+      },
+      "meta": {
+        "issue_number": 520,
+        "object_id": "paper:wiley.10.1111/ajps.12900",
+        "created_at": "2025-12-04T16:34:47+00:00",
+        "updated_at": "2025-12-04T17:36:45+00:00",
         "version": 1
       }
     },
@@ -92,6 +128,24 @@
         "version": 1
       }
     },
+    "paper:arxiv.2508.06760": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2508.06760",
+        "timestamp": "2025-10-24T21:38:21.385000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2508.06760] Understanding Privacy Norms Around LLM-Based Chatbots: A Contextual Integrity Perspective"
+      },
+      "meta": {
+        "issue_number": 516,
+        "object_id": "paper:arxiv.2508.06760",
+        "created_at": "2025-12-04T16:03:27+00:00",
+        "updated_at": "2025-12-04T17:36:45+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2505.18128": {
       "data": {
         "sourceId": "arxiv",
@@ -107,6 +161,60 @@
         "object_id": "paper:arxiv.2505.18128",
         "created_at": "2025-12-04T16:00:38+00:00",
         "updated_at": "2025-12-04T16:01:28+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3589334.3645520": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3589334.3645520",
+        "timestamp": "2025-10-24T17:25:00.083000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "ModelGo: A Practical Tool for Machine Learning License Analysis - 3589334.3645520.pdf"
+      },
+      "meta": {
+        "issue_number": 514,
+        "object_id": "paper:acm.10.1145/3589334.3645520",
+        "created_at": "2025-12-04T15:57:36+00:00",
+        "updated_at": "2025-12-04T17:36:44+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41592-021-01254-9": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41592-021-01254-9",
+        "timestamp": "2025-10-24T17:23:05.397000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Reproducible, scalable, and shareable analysis pipelines with bioinformatics workflow managers - s41592-021-01254-9.pdf"
+      },
+      "meta": {
+        "issue_number": 513,
+        "object_id": "paper:nature.s41592-021-01254-9",
+        "created_at": "2025-12-04T15:52:36+00:00",
+        "updated_at": "2025-12-04T17:36:44+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2004.04906": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2004.04906",
+        "timestamp": "2025-10-02T18:51:48.327000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2004.04906v3.pdf"
+      },
+      "meta": {
+        "issue_number": 512,
+        "object_id": "paper:arxiv.2004.04906",
+        "created_at": "2025-12-04T15:43:54+00:00",
+        "updated_at": "2025-12-04T17:36:44+00:00",
         "version": 1
       }
     },
@@ -236,6 +344,24 @@
         "version": 1
       }
     },
+    "paper:nature.s43588-024-00651-2": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s43588-024-00651-2",
+        "timestamp": "2025-08-05T17:18:34.204000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Software in science is ubiquitous yet overlooked | Nature Computational Science"
+      },
+      "meta": {
+        "issue_number": 504,
+        "object_id": "paper:nature.s43588-024-00651-2",
+        "created_at": "2025-12-04T14:57:10+00:00",
+        "updated_at": "2025-12-04T17:36:43+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s43588-021-00037-8": {
       "data": {
         "sourceId": "nature",
@@ -251,6 +377,24 @@
         "object_id": "paper:nature.s43588-021-00037-8",
         "created_at": "2025-12-04T14:53:16+00:00",
         "updated_at": "2025-12-04T14:54:12+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s43588-021-00051-w": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s43588-021-00051-w",
+        "timestamp": "2025-08-05T17:18:16.881000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Porting software without affecting scientific results | Nature Computational Science"
+      },
+      "meta": {
+        "issue_number": 502,
+        "object_id": "paper:nature.s43588-021-00051-w",
+        "created_at": "2025-12-04T14:49:25+00:00",
+        "updated_at": "2025-12-04T17:36:43+00:00",
         "version": 1
       }
     },
@@ -287,6 +431,24 @@
         "object_id": "paper:plos.10.1371/journal.pbio.3001931",
         "created_at": "2025-12-04T14:32:18+00:00",
         "updated_at": "2025-12-04T14:32:24+00:00",
+        "version": 1
+      }
+    },
+    "paper:pubmed.39483396": {
+      "data": {
+        "sourceId": "pubmed",
+        "paperId": "39483396",
+        "timestamp": "2025-07-15T20:44:15.070000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "An open-source, battery-powered, low-cost, and dual-channel pneumatic pulse generator for microfluidic cell-stretch assays - PubMed"
+      },
+      "meta": {
+        "issue_number": 499,
+        "object_id": "paper:pubmed.39483396",
+        "created_at": "2025-12-04T14:26:20+00:00",
+        "updated_at": "2025-12-04T17:36:43+00:00",
         "version": 1
       }
     },
@@ -470,6 +632,24 @@
         "version": 1
       }
     },
+    "paper:sciencedirect.S1084804523000577": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1084804523000577",
+        "timestamp": "2025-06-26T20:33:15.525000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "An open-source implementation and validation of 5G NR configured grant for URLLC in ns-3 5G LENA: A scheduling case study in industry 4.0 scenarios"
+      },
+      "meta": {
+        "issue_number": 488,
+        "object_id": "paper:sciencedirect.S1084804523000577",
+        "created_at": "2025-12-04T13:40:24+00:00",
+        "updated_at": "2025-12-04T17:36:42+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S1084804523000504": {
       "data": {
         "sourceId": "sciencedirect",
@@ -506,6 +686,42 @@
         "version": 1
       }
     },
+    "paper:arxiv.2101.00027": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2101.00027",
+        "timestamp": "2025-06-19T00:33:04.655000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2101.00027] The Pile: An 800GB Dataset of Diverse Text for Language Modeling"
+      },
+      "meta": {
+        "issue_number": 485,
+        "object_id": "paper:arxiv.2101.00027",
+        "created_at": "2025-12-04T13:26:32+00:00",
+        "updated_at": "2025-12-04T17:36:42+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1007/s13132-025-02783-w": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s13132-025-02783-w",
+        "timestamp": "2025-06-13T23:03:59.668000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Overcoming Limitations of Proprietary Scientific Hardware Funding | Journal of the Knowledge Economy"
+      },
+      "meta": {
+        "issue_number": 484,
+        "object_id": "paper:springer.10.1007/s13132-025-02783-w",
+        "created_at": "2025-12-04T13:21:40+00:00",
+        "updated_at": "2025-12-04T17:36:42+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s41562-021-01257-8": {
       "data": {
         "sourceId": "nature",
@@ -524,6 +740,24 @@
         "version": 1
       }
     },
+    "paper:tandfonline.10.1080/1757996_a9823c3eab87": {
+      "data": {
+        "sourceId": "tandfonline",
+        "paperId": "10.1080/17579961.2021.1898300",
+        "timestamp": "2025-06-10T21:11:52.407000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Full article: From a \u2018race to AI\u2019 to a \u2018race to AI regulation\u2019: regulatory competition for artificial intelligence"
+      },
+      "meta": {
+        "issue_number": 482,
+        "object_id": "paper:tandfonline.10.1080/1757996_a9823c3eab87",
+        "created_at": "2025-12-04T13:15:00+00:00",
+        "updated_at": "2025-12-04T17:36:41+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1057/s41599-024-03982-7": {
       "data": {
         "sourceId": "springer",
@@ -535,10 +769,28 @@
         "title": "Counting regulations and measuring regulatory impact: a call for nuance | Humanities and Social Sciences Communications"
       },
       "meta": {
-        "issue_number": 481,
+        "issue_number": 480,
         "object_id": "paper:springer.10.1057/s41599-024-03982-7",
-        "created_at": "2025-12-04T13:11:03+00:00",
-        "updated_at": "2025-12-04T13:11:09+00:00",
+        "created_at": "2025-12-04T12:52:46+00:00",
+        "updated_at": "2025-12-04T17:36:41+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2103.06268": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2103.06268",
+        "timestamp": "2025-06-04T21:33:28.209000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review - 2103.06268v2.pdf"
+      },
+      "meta": {
+        "issue_number": 479,
+        "object_id": "paper:arxiv.2103.06268",
+        "created_at": "2025-12-04T12:45:00+00:00",
+        "updated_at": "2025-12-04T17:36:41+00:00",
         "version": 1
       }
     },
@@ -593,6 +845,42 @@
         "object_id": "paper:sciencedirect.S0048733325000988",
         "created_at": "2025-12-04T12:28:05+00:00",
         "updated_at": "2025-12-04T12:29:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2107.03961": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2107.03961",
+        "timestamp": "2025-05-31T20:37:08.183000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2107.03961v5.pdf"
+      },
+      "meta": {
+        "issue_number": 475,
+        "object_id": "paper:arxiv.2107.03961",
+        "created_at": "2025-12-04T12:24:52+00:00",
+        "updated_at": "2025-12-04T17:36:40+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2406.04148": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2406.04148",
+        "timestamp": "2025-05-31T20:30:58.306000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2406.04148] Fast Redescription Mining Using Locality-Sensitive Hashing"
+      },
+      "meta": {
+        "issue_number": 474,
+        "object_id": "paper:arxiv.2406.04148",
+        "created_at": "2025-12-04T12:21:41+00:00",
+        "updated_at": "2025-12-04T17:36:40+00:00",
         "version": 1
       }
     },
@@ -668,6 +956,42 @@
         "version": 1
       }
     },
+    "paper:sciencedirect.S1877750324000589": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1877750324000589",
+        "timestamp": "2025-05-31T19:21:50.839000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "A GPU-accelerated computational fluid dynamics solver for assessing shear-driven indoor airflow and virus transmission by scale-resolved simulations"
+      },
+      "meta": {
+        "issue_number": 469,
+        "object_id": "paper:sciencedirect.S1877750324000589",
+        "created_at": "2025-12-04T11:54:45+00:00",
+        "updated_at": "2025-12-04T17:36:40+00:00",
+        "version": 1
+      }
+    },
+    "paper:ieee.8848044": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "8848044",
+        "timestamp": "2025-05-31T19:18:37.555000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Learning Local Forward Models on Unforgiving Games | IEEE Conference Publication"
+      },
+      "meta": {
+        "issue_number": 468,
+        "object_id": "paper:ieee.8848044",
+        "created_at": "2025-12-04T11:52:44+00:00",
+        "updated_at": "2025-12-04T17:36:39+00:00",
+        "version": 1
+      }
+    },
     "paper:ieee.9459540": {
       "data": {
         "sourceId": "ieee",
@@ -701,6 +1025,24 @@
         "object_id": "paper:ieee.9711098",
         "created_at": "2025-12-04T11:40:43+00:00",
         "updated_at": "2025-12-04T11:41:37+00:00",
+        "version": 1
+      }
+    },
+    "paper:ieee.9577874": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "9577874",
+        "timestamp": "2025-05-30T22:53:12.845000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Activate or Not: Learning Customized Activation | IEEE Conference Publication"
+      },
+      "meta": {
+        "issue_number": 465,
+        "object_id": "paper:ieee.9577874",
+        "created_at": "2025-12-04T11:34:29+00:00",
+        "updated_at": "2025-12-04T17:36:39+00:00",
         "version": 1
       }
     },
@@ -848,6 +1190,60 @@
         "version": 1
       }
     },
+    "paper:arxiv.2305.08598": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2305.08598",
+        "timestamp": "2025-05-14T19:02:59.605000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Humans, AI, and Context: Understanding End-Users\u2019 Trust in a Real-World Computer Vision ApplicationHumans, AI, and Context: Understanding End-Users\u2019 Trust in a Real-World Computer Vision Application - 2305.08598v1.pdf"
+      },
+      "meta": {
+        "issue_number": 456,
+        "object_id": "paper:arxiv.2305.08598",
+        "created_at": "2025-12-04T10:56:13+00:00",
+        "updated_at": "2025-12-04T17:36:39+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2311.00804": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2311.00804",
+        "timestamp": "2025-05-09T17:47:32.228000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2311.00804v1.pdf"
+      },
+      "meta": {
+        "issue_number": 455,
+        "object_id": "paper:arxiv.2311.00804",
+        "created_at": "2025-12-04T10:53:19+00:00",
+        "updated_at": "2025-12-04T17:36:38+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2503.04305": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2503.04305",
+        "timestamp": "2025-05-07T18:29:33.049000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2503.04305v2.pdf"
+      },
+      "meta": {
+        "issue_number": 454,
+        "object_id": "paper:arxiv.2503.04305",
+        "created_at": "2025-12-04T10:49:17+00:00",
+        "updated_at": "2025-12-04T17:36:38+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2410.21306": {
       "data": {
         "sourceId": "arxiv",
@@ -884,6 +1280,114 @@
         "version": 1
       }
     },
+    "paper:tandfonline.10.1080/19331680802153683": {
+      "data": {
+        "sourceId": "tandfonline",
+        "paperId": "10.1080/19331680802153683",
+        "timestamp": "2025-05-05T18:43:44.270000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Full article: Recognizing Citations in Public Comments"
+      },
+      "meta": {
+        "issue_number": 451,
+        "object_id": "paper:tandfonline.10.1080/19331680802153683",
+        "created_at": "2025-12-04T10:38:02+00:00",
+        "updated_at": "2025-12-04T17:36:38+00:00",
+        "version": 1
+      }
+    },
+    "paper:tandfonline.10.1080/1070542_e51e9b633735": {
+      "data": {
+        "sourceId": "tandfonline",
+        "paperId": "10.1080/10705422.2020.1841703",
+        "timestamp": "2025-05-03T18:19:05.451000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "The promises and perils of community benefits agreements: evidence from public comments to a large bank merger - The promises and perils of community benefits agreements evidence from public comments to a large bank merger.pdf"
+      },
+      "meta": {
+        "issue_number": 450,
+        "object_id": "paper:tandfonline.10.1080/1070542_e51e9b633735",
+        "created_at": "2025-12-04T10:35:51+00:00",
+        "updated_at": "2025-12-04T17:36:37+00:00",
+        "version": 1
+      }
+    },
+    "paper:pubmed.2231712": {
+      "data": {
+        "sourceId": "pubmed",
+        "paperId": "2231712",
+        "timestamp": "2025-04-30T15:30:46.587000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Basic local alignment search tool - PubMed"
+      },
+      "meta": {
+        "issue_number": 449,
+        "object_id": "paper:pubmed.2231712",
+        "created_at": "2025-12-04T10:30:58+00:00",
+        "updated_at": "2025-12-04T17:37:16+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1002/smj.3145": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/smj.3145",
+        "timestamp": "2025-04-29T18:47:55.692000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Reliance on science: Worldwide front\u2010page patent citations to scientific articles - Marx - 2020 - Strategic Management Journal"
+      },
+      "meta": {
+        "issue_number": 448,
+        "object_id": "paper:wiley.10.1002/smj.3145",
+        "created_at": "2025-12-04T10:28:02+00:00",
+        "updated_at": "2025-12-04T17:37:16+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2504.15504": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2504.15504",
+        "timestamp": "2025-04-25T00:45:00.548000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2504.15504v1.pdf"
+      },
+      "meta": {
+        "issue_number": 447,
+        "object_id": "paper:arxiv.2504.15504",
+        "created_at": "2025-12-04T10:24:59+00:00",
+        "updated_at": "2025-12-04T17:37:16+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1038/s41597-023-02198-9": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1038/s41597-023-02198-9",
+        "timestamp": "2025-04-24T18:42:13.086000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "SciSciNet: A large-scale open data lake for the science of science research"
+      },
+      "meta": {
+        "issue_number": 446,
+        "object_id": "paper:springer.10.1038/s41597-023-02198-9",
+        "created_at": "2025-12-04T10:18:59+00:00",
+        "updated_at": "2025-12-04T17:37:15+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s43588-025-00789-7": {
       "data": {
         "sourceId": "nature",
@@ -899,6 +1403,24 @@
         "object_id": "paper:nature.s43588-025-00789-7",
         "created_at": "2025-12-04T10:15:04+00:00",
         "updated_at": "2025-12-04T10:16:00+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/rego.12107": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/rego.12107",
+        "timestamp": "2025-04-16T21:07:05.545000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "RegData: A numerical database on industry\u2010specific regulations for all United States industries and federal regulations, 1997\u20132012 - Al\u2010Ubaydli - 2017 - Regulation & Governance"
+      },
+      "meta": {
+        "issue_number": 444,
+        "object_id": "paper:wiley.10.1111/rego.12107",
+        "created_at": "2025-12-04T10:11:53+00:00",
+        "updated_at": "2025-12-04T17:37:15+00:00",
         "version": 1
       }
     },
@@ -992,6 +1514,24 @@
         "version": 1
       }
     },
+    "paper:sciencedirect.S1751157725000021": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1751157725000021",
+        "timestamp": "2025-03-26T18:28:37.877000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Investigating the research output of institutions"
+      },
+      "meta": {
+        "issue_number": 438,
+        "object_id": "paper:sciencedirect.S1751157725000021",
+        "created_at": "2025-12-04T09:44:46+00:00",
+        "updated_at": "2025-12-04T17:37:15+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2503.16055": {
       "data": {
         "sourceId": "arxiv",
@@ -1064,6 +1604,42 @@
         "version": 1
       }
     },
+    "paper:arxiv.2407.07300": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2407.07300",
+        "timestamp": "2025-03-20T17:48:47.065000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2407.07300] From Principles to Rules: A Regulatory Approach for Frontier AI"
+      },
+      "meta": {
+        "issue_number": 433,
+        "object_id": "paper:arxiv.2407.07300",
+        "created_at": "2025-12-04T09:34:42+00:00",
+        "updated_at": "2025-12-04T17:37:14+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2503.12282": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2503.12282",
+        "timestamp": "2025-03-19T20:32:01.701000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Toward Foundation Models for Online Complex Event Detection in CPS-IoT: A Case Study - 2503.12282v1.pdf"
+      },
+      "meta": {
+        "issue_number": 432,
+        "object_id": "paper:arxiv.2503.12282",
+        "created_at": "2025-12-04T09:32:44+00:00",
+        "updated_at": "2025-12-04T17:37:14+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S0048733318300076": {
       "data": {
         "sourceId": "sciencedirect",
@@ -1118,6 +1694,42 @@
         "version": 1
       }
     },
+    "paper:arxiv.2502.17348": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2502.17348",
+        "timestamp": "2025-03-13T17:56:55.065000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2502.17348] How Scientists Use Large Language Models to Program"
+      },
+      "meta": {
+        "issue_number": 428,
+        "object_id": "paper:arxiv.2502.17348",
+        "created_at": "2025-12-04T09:18:34+00:00",
+        "updated_at": "2025-12-04T17:37:13+00:00",
+        "version": 1
+      }
+    },
+    "paper:plos.10.1371/journal.pcbi.1007283": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pcbi.1007283",
+        "timestamp": "2025-02-25T01:04:18.979000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Integrating thermodynamic and sequence contexts improves protein-RNA binding prediction | PLOS Computational Biology"
+      },
+      "meta": {
+        "issue_number": 427,
+        "object_id": "paper:plos.10.1371/journal.pcbi.1007283",
+        "created_at": "2025-12-04T09:12:44+00:00",
+        "updated_at": "2025-12-04T17:37:13+00:00",
+        "version": 1
+      }
+    },
     "paper:plos.10.1371/journal.pcbi.0030102": {
       "data": {
         "sourceId": "plos",
@@ -1133,6 +1745,42 @@
         "object_id": "paper:plos.10.1371/journal.pcbi.0030102",
         "created_at": "2025-12-04T09:08:54+00:00",
         "updated_at": "2025-12-04T09:09:42+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/psj.12590": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.12590",
+        "timestamp": "2025-02-21T21:50:17.879000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Does policy design matter for the effectiveness of local content requirements? A qualitative comparative analysis of renewable energy value chains - Eicke - Policy Studies Journal"
+      },
+      "meta": {
+        "issue_number": 425,
+        "object_id": "paper:wiley.10.1111/psj.12590",
+        "created_at": "2025-12-04T09:05:10+00:00",
+        "updated_at": "2025-12-04T17:37:12+00:00",
+        "version": 1
+      }
+    },
+    "paper:plos.10.1371/journal.pone.0251488": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pone.0251488",
+        "timestamp": "2025-02-20T17:54:03.984000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Getting to the bottom of research funding: Acknowledging the complexity of funding dynamics | PLOS ONE"
+      },
+      "meta": {
+        "issue_number": 424,
+        "object_id": "paper:plos.10.1371/journal.pone.0251488",
+        "created_at": "2025-12-04T09:01:57+00:00",
+        "updated_at": "2025-12-04T17:37:12+00:00",
         "version": 1
       }
     },
@@ -1154,6 +1802,24 @@
         "version": 1
       }
     },
+    "paper:nature.d41586-024-04095-6": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-024-04095-6",
+        "timestamp": "2025-02-19T00:09:20.096000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Striving for open-source and equitable speech-to-speech translation"
+      },
+      "meta": {
+        "issue_number": 422,
+        "object_id": "paper:nature.d41586-024-04095-6",
+        "created_at": "2025-12-04T08:55:19+00:00",
+        "updated_at": "2025-12-04T17:37:12+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2110.08520": {
       "data": {
         "sourceId": "arxiv",
@@ -1169,6 +1835,24 @@
         "object_id": "paper:arxiv.2110.08520",
         "created_at": "2025-12-04T08:52:09+00:00",
         "updated_at": "2025-12-04T08:54:08+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2103.06130": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2103.06130",
+        "timestamp": "2025-02-17T23:15:49.847000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2103.06130v1.pdf"
+      },
+      "meta": {
+        "issue_number": 420,
+        "object_id": "paper:arxiv.2103.06130",
+        "created_at": "2025-12-04T08:49:58+00:00",
+        "updated_at": "2025-12-04T17:37:11+00:00",
         "version": 1
       }
     },
@@ -1259,6 +1943,24 @@
         "object_id": "paper:acm.10.1145/3558482.3590180",
         "created_at": "2025-12-04T08:33:37+00:00",
         "updated_at": "2025-12-04T08:34:45+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s42256-024-00820-y": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s42256-024-00820-y",
+        "timestamp": "2025-02-03T23:15:08.527000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "The benefits, risks and bounds of personalizing the alignment of large language models to individuals | Nature Machine Intelligence"
+      },
+      "meta": {
+        "issue_number": 414,
+        "object_id": "paper:nature.s42256-024-00820-y",
+        "created_at": "2025-12-04T08:26:52+00:00",
+        "updated_at": "2025-12-04T17:37:11+00:00",
         "version": 1
       }
     },
@@ -1460,6 +2162,60 @@
         "version": 1
       }
     },
+    "paper:nature.s41586-023-06757-3": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-023-06757-3",
+        "timestamp": "2024-12-27T01:09:56.445000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Human mobility networks reveal increased segregation in large cities"
+      },
+      "meta": {
+        "issue_number": 402,
+        "object_id": "paper:nature.s41586-023-06757-3",
+        "created_at": "2025-12-04T07:43:14+00:00",
+        "updated_at": "2025-12-04T17:37:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0378873324000704": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0378873324000704",
+        "timestamp": "2024-12-26T19:02:33.122000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Revising the Borgatti-Everett core-periphery model: Inter-categorical density blocks and partially connected cores"
+      },
+      "meta": {
+        "issue_number": 401,
+        "object_id": "paper:sciencedirect.S0378873324000704",
+        "created_at": "2025-12-04T07:41:17+00:00",
+        "updated_at": "2025-12-04T17:37:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:pubmed.36562559": {
+      "data": {
+        "sourceId": "pubmed",
+        "paperId": "36562559",
+        "timestamp": "2024-12-20T19:24:17.507000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "igv.js: an embeddable JavaScript implementation of the Integrative Genomics Viewer (IGV) - PubMed"
+      },
+      "meta": {
+        "issue_number": 400,
+        "object_id": "paper:pubmed.36562559",
+        "created_at": "2025-12-04T07:39:23+00:00",
+        "updated_at": "2025-12-04T17:37:10+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2407.12500": {
       "data": {
         "sourceId": "arxiv",
@@ -1493,6 +2249,60 @@
         "object_id": "paper:sciencedirect.S0040162522000105",
         "created_at": "2025-12-04T07:34:26+00:00",
         "updated_at": "2025-12-04T07:35:20+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3630106.3658996": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3630106.3658996",
+        "timestamp": "2024-12-05T18:10:13.801000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Careless Whisper: Speech-to-Text Hallucination Harms - 3630106.3658996.pdf"
+      },
+      "meta": {
+        "issue_number": 397,
+        "object_id": "paper:acm.10.1145/3630106.3658996",
+        "created_at": "2025-12-04T07:32:14+00:00",
+        "updated_at": "2025-12-04T17:37:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2411.18365": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2411.18365",
+        "timestamp": "2024-12-03T17:32:54.058000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Corpus_Savoy - 2411.18365v1.pdf"
+      },
+      "meta": {
+        "issue_number": 396,
+        "object_id": "paper:arxiv.2411.18365",
+        "created_at": "2025-12-04T07:28:31+00:00",
+        "updated_at": "2025-12-04T17:37:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2411.17855": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2411.17855",
+        "timestamp": "2024-12-03T17:32:32.420000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2411.17855v2.pdf"
+      },
+      "meta": {
+        "issue_number": 395,
+        "object_id": "paper:arxiv.2411.17855",
+        "created_at": "2025-12-04T07:26:41+00:00",
+        "updated_at": "2025-12-04T17:37:08+00:00",
         "version": 1
       }
     },
@@ -1568,6 +2378,42 @@
         "version": 1
       }
     },
+    "paper:arxiv.2407.15907": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2407.15907",
+        "timestamp": "2024-10-31T14:07:28.386000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Thoughts on learning human and programming langauges - 2407.15907v1.pdf"
+      },
+      "meta": {
+        "issue_number": 390,
+        "object_id": "paper:arxiv.2407.15907",
+        "created_at": "2025-12-04T06:58:50+00:00",
+        "updated_at": "2025-12-04T17:37:08+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2310.06830": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2310.06830",
+        "timestamp": "2024-10-31T00:01:57.443000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2310.06830v2.pdf"
+      },
+      "meta": {
+        "issue_number": 389,
+        "object_id": "paper:arxiv.2310.06830",
+        "created_at": "2025-12-04T06:56:49+00:00",
+        "updated_at": "2025-12-04T17:37:08+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2309.01522": {
       "data": {
         "sourceId": "arxiv",
@@ -1622,6 +2468,42 @@
         "version": 1
       }
     },
+    "paper:springer.10.1007/s13278-019-0580-z": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s13278-019-0580-z",
+        "timestamp": "2024-10-28T22:09:03.515000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Understanding archetypes of fake news via fine-grained classification | Social Network Analysis and Mining"
+      },
+      "meta": {
+        "issue_number": 385,
+        "object_id": "paper:springer.10.1007/s13278-019-0580-z",
+        "created_at": "2025-12-04T06:45:01+00:00",
+        "updated_at": "2025-12-04T17:37:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:ieee.1192440": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "1192440",
+        "timestamp": "2024-10-28T16:59:36.265000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Characteristics of open source projects | IEEE Conference Publication"
+      },
+      "meta": {
+        "issue_number": 384,
+        "object_id": "paper:ieee.1192440",
+        "created_at": "2025-12-04T06:42:11+00:00",
+        "updated_at": "2025-12-04T17:37:07+00:00",
+        "version": 1
+      }
+    },
     "paper:wiley.10.1002/meet.2011.14504801174": {
       "data": {
         "sourceId": "wiley",
@@ -1655,6 +2537,24 @@
         "object_id": "paper:springer.10.1007/s42001-024-00300-8",
         "created_at": "2025-12-04T06:33:53+00:00",
         "updated_at": "2025-12-04T06:34:55+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/2668947.2668955": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/2668947.2668955",
+        "timestamp": "2024-10-25T20:02:00.814000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Open source hardware (OSHW) supporting interaction between traditional crafts and emergent science | SIGGRAPH Asia 2014 Designing Tools For Crafting Interactive Artifacts"
+      },
+      "meta": {
+        "issue_number": 381,
+        "object_id": "paper:acm.10.1145/2668947.2668955",
+        "created_at": "2025-12-04T06:31:48+00:00",
+        "updated_at": "2025-12-04T17:37:49+00:00",
         "version": 1
       }
     },
@@ -1799,6 +2699,24 @@
         "object_id": "paper:arxiv.2103.11007",
         "created_at": "2025-12-04T06:03:32+00:00",
         "updated_at": "2025-12-04T06:04:24+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.4271239": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "4271239",
+        "timestamp": "2024-10-15T16:14:05.906000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "How Boundary-Spanning Discovery Sparkles Citation: From Citation Count to Citation Network by Jianhua Hou, Bili Zheng, Dongyi Wang, Yang Zhang, Chaomei Chen"
+      },
+      "meta": {
+        "issue_number": 372,
+        "object_id": "paper:ssrn.4271239",
+        "created_at": "2025-12-04T06:01:26+00:00",
+        "updated_at": "2025-12-04T17:37:48+00:00",
         "version": 1
       }
     },
@@ -1964,6 +2882,24 @@
         "version": 1
       }
     },
+    "paper:wiley.10.1002/asi.24638": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/asi.24638",
+        "timestamp": "2024-10-09T20:49:19.408000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Locating the work of artificial intelligence ethics - Slota - 2023 - Journal of the Association for Information Science and Technology"
+      },
+      "meta": {
+        "issue_number": 362,
+        "object_id": "paper:wiley.10.1002/asi.24638",
+        "created_at": "2025-12-04T05:27:19+00:00",
+        "updated_at": "2025-12-04T17:37:48+00:00",
+        "version": 1
+      }
+    },
     "paper:acm.10.1145/3589334.3645634": {
       "data": {
         "sourceId": "acm",
@@ -2000,6 +2936,24 @@
         "version": 1
       }
     },
+    "paper:arxiv.2404.08495": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2404.08495",
+        "timestamp": "2024-10-07T16:37:35.888000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2404.08495] Dataset Reset Policy Optimization for RLHF"
+      },
+      "meta": {
+        "issue_number": 359,
+        "object_id": "paper:arxiv.2404.08495",
+        "created_at": "2025-12-04T05:16:45+00:00",
+        "updated_at": "2025-12-04T17:37:48+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S0048733323001300": {
       "data": {
         "sourceId": "sciencedirect",
@@ -2015,6 +2969,42 @@
         "object_id": "paper:sciencedirect.S0048733323001300",
         "created_at": "2025-12-04T05:12:47+00:00",
         "updated_at": "2025-12-04T05:13:47+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41562-024-01977-7": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-024-01977-7",
+        "timestamp": "2024-10-05T14:59:50.270000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Underrepresented minority faculty in the USA face a double standard in promotion and tenure decisions | Nature Human Behaviour"
+      },
+      "meta": {
+        "issue_number": 357,
+        "object_id": "paper:nature.s41562-024-01977-7",
+        "created_at": "2025-12-04T05:07:31+00:00",
+        "updated_at": "2025-12-04T17:37:47+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2408.16601": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2408.16601",
+        "timestamp": "2024-10-04T00:14:17.572000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2408.16601] Examination of Code generated by Large Language Models"
+      },
+      "meta": {
+        "issue_number": 356,
+        "object_id": "paper:arxiv.2408.16601",
+        "created_at": "2025-12-04T05:03:44+00:00",
+        "updated_at": "2025-12-04T17:37:47+00:00",
         "version": 1
       }
     },
@@ -2090,6 +3080,42 @@
         "version": 1
       }
     },
+    "paper:pubmed.33134614": {
+      "data": {
+        "sourceId": "pubmed",
+        "paperId": "33134614",
+        "timestamp": "2024-09-26T14:48:40.423000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Can Open Source Hardware Mechanical Ventilator (OSH-MVs) initiatives help cope with the COVID-19 health crisis? Taxonomy and state of the art - PubMed"
+      },
+      "meta": {
+        "issue_number": 351,
+        "object_id": "paper:pubmed.33134614",
+        "created_at": "2025-12-04T04:48:10+00:00",
+        "updated_at": "2025-12-04T17:37:47+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0740624X18304131": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0740624X18304131",
+        "timestamp": "2024-09-21T14:42:21.612000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Defining digital transformation: Results from expert interviews"
+      },
+      "meta": {
+        "issue_number": 350,
+        "object_id": "paper:sciencedirect.S0740624X18304131",
+        "created_at": "2025-12-04T04:42:21+00:00",
+        "updated_at": "2025-12-04T17:37:46+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2409.04056": {
       "data": {
         "sourceId": "arxiv",
@@ -2105,6 +3131,42 @@
         "object_id": "paper:arxiv.2409.04056",
         "created_at": "2025-12-04T04:38:31+00:00",
         "updated_at": "2025-12-04T04:39:35+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.d41586-024-02842-3": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-024-02842-3",
+        "timestamp": "2024-09-13T00:14:37.098000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Researchers built an \u2018AI Scientist\u2019 \u2014 what can it do?"
+      },
+      "meta": {
+        "issue_number": 348,
+        "object_id": "paper:nature.d41586-024-02842-3",
+        "created_at": "2025-12-04T04:34:48+00:00",
+        "updated_at": "2025-12-04T17:37:46+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/radm.12348": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/radm.12348",
+        "timestamp": "2024-09-12T17:39:26.071000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Why makers make what they make: motivations to contribute to open source hardware development - Hausberg - 2020 - R&D Management"
+      },
+      "meta": {
+        "issue_number": 347,
+        "object_id": "paper:wiley.10.1111/radm.12348",
+        "created_at": "2025-12-04T04:32:54+00:00",
+        "updated_at": "2025-12-04T17:37:46+00:00",
         "version": 1
       }
     },
@@ -2144,6 +3206,24 @@
         "version": 1
       }
     },
+    "paper:ieee.7343958": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "7343958",
+        "timestamp": "2024-09-09T20:33:25.914000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Using open-source hardware to support disadvantaged communications | IEEE Conference Publication"
+      },
+      "meta": {
+        "issue_number": 344,
+        "object_id": "paper:ieee.7343958",
+        "created_at": "2025-12-04T04:24:25+00:00",
+        "updated_at": "2025-12-04T17:37:45+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S2211883717300667": {
       "data": {
         "sourceId": "sciencedirect",
@@ -2159,6 +3239,24 @@
         "object_id": "paper:sciencedirect.S2211883717300667",
         "created_at": "2025-12-04T04:21:25+00:00",
         "updated_at": "2025-12-04T04:22:25+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3614407.3643707": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3614407.3643707",
+        "timestamp": "2024-09-09T20:23:07.548000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Break It `Til You Make It An Exploration of the Ramifications of Copyright Liability Under a Pre-training Paradigm of AI Development - 3614407.3643707.pdf"
+      },
+      "meta": {
+        "issue_number": 342,
+        "object_id": "paper:acm.10.1145/3614407.3643707",
+        "created_at": "2025-12-04T04:17:48+00:00",
+        "updated_at": "2025-12-04T17:37:45+00:00",
         "version": 1
       }
     },
@@ -2195,6 +3293,24 @@
         "object_id": "paper:sciencedirect.S1462901104000620",
         "created_at": "2025-12-04T04:08:10+00:00",
         "updated_at": "2025-12-04T04:08:15+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1007/s10588-024-09387-w": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s10588-024-09387-w",
+        "timestamp": "2024-09-04T21:44:57.502000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Misogynistic targeting of women in power predicts broader online harassment patterns | Computational and Mathematical Organization Theory"
+      },
+      "meta": {
+        "issue_number": 339,
+        "object_id": "paper:springer.10.1007/s10588-024-09387-w",
+        "created_at": "2025-12-04T04:06:06+00:00",
+        "updated_at": "2025-12-04T17:37:45+00:00",
         "version": 1
       }
     },
@@ -2249,6 +3365,42 @@
         "object_id": "paper:arxiv.2310.07736",
         "created_at": "2025-12-04T03:57:04+00:00",
         "updated_at": "2025-12-04T03:57:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.4627341": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "4627341",
+        "timestamp": "2024-08-08T22:27:54.341000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "A Data Donation Approach for Youth Online Safety by Afsaneh Razi, Ashwaq Alsoubai, Jinkyung Katie Park, Xavier Caddle, Shiza Ali, Seunghyun Kim, Gianluca Stringhini, Munmun De Choudhury, Pamela Wisniewski"
+      },
+      "meta": {
+        "issue_number": 335,
+        "object_id": "paper:ssrn.4627341",
+        "created_at": "2025-12-04T03:50:13+00:00",
+        "updated_at": "2025-12-04T17:37:44+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s42256-020-00287-7": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s42256-020-00287-7",
+        "timestamp": "2024-08-08T18:24:42.767000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "An open source machine learning framework for efficient and transparent systematic reviews | Nature Machine Intelligence"
+      },
+      "meta": {
+        "issue_number": 334,
+        "object_id": "paper:nature.s42256-020-00287-7",
+        "created_at": "2025-12-04T03:48:25+00:00",
+        "updated_at": "2025-12-04T17:37:44+00:00",
         "version": 1
       }
     },
@@ -2339,6 +3491,42 @@
         "object_id": "paper:springer.10.1023/B:PHEN.000_10d409eb8cc0",
         "created_at": "2025-12-04T03:30:16+00:00",
         "updated_at": "2025-12-04T03:31:22+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S156849462301116X": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S156849462301116X",
+        "timestamp": "2024-07-29T00:11:53.620000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "A systematic review of the soft computing methods shaping the future of the metaverse"
+      },
+      "meta": {
+        "issue_number": 328,
+        "object_id": "paper:sciencedirect.S156849462301116X",
+        "created_at": "2025-12-04T03:27:03+00:00",
+        "updated_at": "2025-12-04T17:37:44+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3626203.3670595": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3626203.3670595",
+        "timestamp": "2024-07-27T18:40:06.237000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Zero Code and Infrastructure Research Data Portals - 3626203.3670595.pdf"
+      },
+      "meta": {
+        "issue_number": 327,
+        "object_id": "paper:acm.10.1145/3626203.3670595",
+        "created_at": "2025-12-04T03:23:20+00:00",
+        "updated_at": "2025-12-04T17:37:44+00:00",
         "version": 1
       }
     },
@@ -2468,6 +3656,24 @@
         "version": 1
       }
     },
+    "paper:tandfonline.10.1080/1229465_e8b9a46aeb9a": {
+      "data": {
+        "sourceId": "tandfonline",
+        "paperId": "10.1080/12294659.2010.10805166",
+        "timestamp": "2024-06-24T17:04:28.735000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Ustification of Public Subsidy: Externality Effects of a Historic Church Reuse Project on Neighborhood Housing Sale Prices in Cleveland, Ohio: International Review of Public Administration: Vol 15, No 1"
+      },
+      "meta": {
+        "issue_number": 319,
+        "object_id": "paper:tandfonline.10.1080/1229465_e8b9a46aeb9a",
+        "created_at": "2025-12-04T02:59:59+00:00",
+        "updated_at": "2025-12-04T17:37:43+00:00",
+        "version": 1
+      }
+    },
     "paper:ssrn.4744217": {
       "data": {
         "sourceId": "ssrn",
@@ -2483,6 +3689,24 @@
         "object_id": "paper:ssrn.4744217",
         "created_at": "2025-12-04T02:58:44+00:00",
         "updated_at": "2025-12-04T02:58:49+00:00",
+        "version": 1
+      }
+    },
+    "paper:tandfonline.10.1080/1063073_8d28bb982607": {
+      "data": {
+        "sourceId": "tandfonline",
+        "paperId": "10.1080/10630732.2024.2328128",
+        "timestamp": "2024-06-24T17:02:28.217000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Informational Modeling of Cities: Method and Challenges for Institutional Implementation: Journal of Urban Technology: Vol 31 , No 2 - Get Access"
+      },
+      "meta": {
+        "issue_number": 317,
+        "object_id": "paper:tandfonline.10.1080/1063073_8d28bb982607",
+        "created_at": "2025-12-04T02:56:57+00:00",
+        "updated_at": "2025-12-04T17:37:43+00:00",
         "version": 1
       }
     },
@@ -2573,6 +3797,24 @@
         "object_id": "paper:arxiv.2403.09053",
         "created_at": "2025-12-04T02:44:49+00:00",
         "updated_at": "2025-12-04T02:45:42+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0925753523001765": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0925753523001765",
+        "timestamp": "2024-05-23T19:09:52.849000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Physical and psychological hazards in the gig economy system: A systematic review"
+      },
+      "meta": {
+        "issue_number": 311,
+        "object_id": "paper:sciencedirect.S0925753523001765",
+        "created_at": "2025-12-04T02:40:48+00:00",
+        "updated_at": "2025-12-04T17:37:43+00:00",
         "version": 1
       }
     },
@@ -2702,6 +3944,24 @@
         "version": 1
       }
     },
+    "paper:arxiv.2303.07838": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2303.07838",
+        "timestamp": "2024-05-09T20:50:15.777000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2303.07838] Online to Offline Crossover of White Supremacist Propaganda"
+      },
+      "meta": {
+        "issue_number": 303,
+        "object_id": "paper:arxiv.2303.07838",
+        "created_at": "2025-12-04T02:19:53+00:00",
+        "updated_at": "2025-12-04T17:37:42+00:00",
+        "version": 1
+      }
+    },
     "paper:wiley.10.1111/1475-6765.12593": {
       "data": {
         "sourceId": "wiley",
@@ -2735,6 +3995,24 @@
         "object_id": "paper:arxiv.2311.09818",
         "created_at": "2025-12-04T02:15:52+00:00",
         "updated_at": "2025-12-04T02:16:55+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/1745-9125.12321": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/1745-9125.12321",
+        "timestamp": "2024-05-08T17:50:18.663000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Police legitimacy regimes and the suppression of citizen oversight in response to police violence - Rocha Beardall - 2022 - Criminology"
+      },
+      "meta": {
+        "issue_number": 300,
+        "object_id": "paper:wiley.10.1111/1745-9125.12321",
+        "created_at": "2025-12-04T02:14:45+00:00",
+        "updated_at": "2025-12-04T17:37:42+00:00",
         "version": 1
       }
     },
@@ -2882,6 +4160,24 @@
         "version": 1
       }
     },
+    "paper:arxiv.2310.11687": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2310.11687",
+        "timestamp": "2024-05-08T15:47:46.937000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2310.11687] Are research contributions assigned differently under the two contributorship classification systems in PLoS ONE?"
+      },
+      "meta": {
+        "issue_number": 291,
+        "object_id": "paper:arxiv.2310.11687",
+        "created_at": "2025-12-04T01:58:50+00:00",
+        "updated_at": "2025-12-04T17:37:42+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/s11948-023-00445-1": {
       "data": {
         "sourceId": "springer",
@@ -2936,6 +4232,42 @@
         "version": 1
       }
     },
+    "paper:sciencedirect.S0049089X2200076X": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0049089X2200076X",
+        "timestamp": "2024-05-07T16:08:05.735000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Advances in transparency and reproducibility in the social sciences"
+      },
+      "meta": {
+        "issue_number": 287,
+        "object_id": "paper:sciencedirect.S0049089X2200076X",
+        "created_at": "2025-12-04T01:48:49+00:00",
+        "updated_at": "2025-12-04T17:37:41+00:00",
+        "version": 1
+      }
+    },
+    "paper:tandfonline.10.1080/1470329_e09c8fbaef28": {
+      "data": {
+        "sourceId": "tandfonline",
+        "paperId": "10.1080/14703297.2020.1786432",
+        "timestamp": "2024-04-26T23:23:17.640000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Just a moment..."
+      },
+      "meta": {
+        "issue_number": 286,
+        "object_id": "paper:tandfonline.10.1080/1470329_e09c8fbaef28",
+        "created_at": "2025-12-04T01:45:54+00:00",
+        "updated_at": "2025-12-04T17:37:41+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S0362331901001100": {
       "data": {
         "sourceId": "sciencedirect",
@@ -2951,6 +4283,60 @@
         "object_id": "paper:sciencedirect.S0362331901001100",
         "created_at": "2025-12-04T01:43:56+00:00",
         "updated_at": "2025-12-04T01:44:56+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1002/hrm.22168": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/hrm.22168",
+        "timestamp": "2024-04-26T20:53:39.402000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Algorithmic HRM control in the gig economy: The app\u2010worker perspective - Duggan - 2023 - Human Resource Management"
+      },
+      "meta": {
+        "issue_number": 284,
+        "object_id": "paper:wiley.10.1002/hrm.22168",
+        "created_at": "2025-12-04T01:43:00+00:00",
+        "updated_at": "2025-12-04T17:38:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41598-023-42227-6": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41598-023-42227-6",
+        "timestamp": "2024-04-25T19:44:27.627000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "ChatGPT in education: global reactions to AI innovations | Scientific Reports"
+      },
+      "meta": {
+        "issue_number": 283,
+        "object_id": "paper:nature.s41598-023-42227-6",
+        "created_at": "2025-12-04T01:40:07+00:00",
+        "updated_at": "2025-12-04T17:38:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3047273.3047334": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3047273.3047334",
+        "timestamp": "2024-04-24T16:57:04.417000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "3047273.3047334.pdf"
+      },
+      "meta": {
+        "issue_number": 282,
+        "object_id": "paper:acm.10.1145/3047273.3047334",
+        "created_at": "2025-12-04T01:38:09+00:00",
+        "updated_at": "2025-12-04T17:38:09+00:00",
         "version": 1
       }
     },
@@ -2972,6 +4358,24 @@
         "version": 1
       }
     },
+    "paper:nature.d41586-023-00579-z": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-023-00579-z",
+        "timestamp": "2024-04-17T19:56:48.491000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "\u2018Golden tickets\u2019 on the cards for NSF grant reviewers"
+      },
+      "meta": {
+        "issue_number": 280,
+        "object_id": "paper:nature.d41586-023-00579-z",
+        "created_at": "2025-12-04T01:33:53+00:00",
+        "updated_at": "2025-12-04T17:38:08+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/s11138-023-00625-z": {
       "data": {
         "sourceId": "springer",
@@ -2987,6 +4391,24 @@
         "object_id": "paper:springer.10.1007/s11138-023-00625-z",
         "created_at": "2025-12-04T01:31:03+00:00",
         "updated_at": "2025-12-04T01:31:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41598-022-12558-x": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41598-022-12558-x",
+        "timestamp": "2024-04-12T20:16:15.420000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Women in gig economy work less in the evenings | Scientific Reports"
+      },
+      "meta": {
+        "issue_number": 278,
+        "object_id": "paper:nature.s41598-022-12558-x",
+        "created_at": "2025-12-04T01:28:10+00:00",
+        "updated_at": "2025-12-04T17:38:08+00:00",
         "version": 1
       }
     },
@@ -3044,6 +4466,42 @@
         "version": 1
       }
     },
+    "paper:wiley.10.1002/cae.21571": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/cae.21571",
+        "timestamp": "2024-04-05T17:41:43.174000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Detection of source code similitude in academic environments - Bejarano - 2015 - Computer Applications in Engineering Education"
+      },
+      "meta": {
+        "issue_number": 274,
+        "object_id": "paper:wiley.10.1002/cae.21571",
+        "created_at": "2025-12-04T01:18:59+00:00",
+        "updated_at": "2025-12-04T17:38:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2404.01268": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2404.01268",
+        "timestamp": "2024-04-02T15:55:54.113000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "[2404.01268] Mapping the Increasing Use of LLMs in Scientific Papers"
+      },
+      "meta": {
+        "issue_number": 273,
+        "object_id": "paper:arxiv.2404.01268",
+        "created_at": "2025-12-04T01:17:05+00:00",
+        "updated_at": "2025-12-04T17:38:07+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2303.14957": {
       "data": {
         "sourceId": "arxiv",
@@ -3077,6 +4535,24 @@
         "object_id": "paper:nature.nature18315",
         "created_at": "2025-12-04T01:14:18+00:00",
         "updated_at": "2025-12-04T01:14:23+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41562-023-01562-4": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-023-01562-4",
+        "timestamp": "2024-04-01T19:50:26.342000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Data, measurement and empirical methods in the science of science | Nature Human Behaviour"
+      },
+      "meta": {
+        "issue_number": 270,
+        "object_id": "paper:nature.s41562-023-01562-4",
+        "created_at": "2025-12-04T01:12:17+00:00",
+        "updated_at": "2025-12-04T17:38:07+00:00",
         "version": 1
       }
     },
@@ -3170,6 +4646,42 @@
         "version": 1
       }
     },
+    "paper:springer.10.1007/s11219-019-09457-2": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s11219-019-09457-2",
+        "timestamp": "2024-03-31T19:42:19.694000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Algorithms for estimating truck factors: a comparative study | Software Quality Journal"
+      },
+      "meta": {
+        "issue_number": 264,
+        "object_id": "paper:springer.10.1007/s11219-019-09457-2",
+        "created_at": "2025-12-04T00:59:04+00:00",
+        "updated_at": "2025-12-04T17:38:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2403.19394": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2403.19394",
+        "timestamp": "2024-03-31T19:33:21.482000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2403.19394.pdf"
+      },
+      "meta": {
+        "issue_number": 263,
+        "object_id": "paper:arxiv.2403.19394",
+        "created_at": "2025-12-04T00:57:11+00:00",
+        "updated_at": "2025-12-04T17:38:06+00:00",
+        "version": 1
+      }
+    },
     "paper:acm.10.1145/3613506": {
       "data": {
         "sourceId": "acm",
@@ -3185,6 +4697,24 @@
         "object_id": "paper:acm.10.1145/3613506",
         "created_at": "2025-12-04T00:54:00+00:00",
         "updated_at": "2025-12-04T00:54:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1007/s42001-024-00261-y": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s42001-024-00261-y",
+        "timestamp": "2024-03-21T14:19:25.684000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Towards a large scale analysis of claims: developing a machine learning method for detecting and classifying politicians\u2019 claims of representation | Journal of Computational Social Science"
+      },
+      "meta": {
+        "issue_number": 261,
+        "object_id": "paper:springer.10.1007/s42001-024-00261-y",
+        "created_at": "2025-12-04T00:51:02+00:00",
+        "updated_at": "2025-12-04T17:38:06+00:00",
         "version": 1
       }
     },
@@ -3295,6 +4825,24 @@
         "version": 1
       }
     },
+    "paper:wiley.10.1002/leap.1210": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/leap.1210",
+        "timestamp": "2024-03-07T15:24:39.977000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "How can we ensure visibility and diversity in research contributions? How the Contributor Role Taxonomy (CRediT) is helping the shift from authorship to contributorship - Allen - 2019 - Learned Publishing"
+      },
+      "meta": {
+        "issue_number": 254,
+        "object_id": "paper:wiley.10.1002/leap.1210",
+        "created_at": "2025-12-04T00:34:28+00:00",
+        "updated_at": "2025-12-04T17:38:05+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s41586-022-05543-x": {
       "data": {
         "sourceId": "nature",
@@ -3364,6 +4912,24 @@
         "object_id": "paper:sciencedirect.S0262407923010461",
         "created_at": "2025-12-04T00:26:31+00:00",
         "updated_at": "2025-12-04T00:27:21+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2403.00742": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2403.00742",
+        "timestamp": "2024-03-06T21:33:28.865000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "2403.00742.pdf"
+      },
+      "meta": {
+        "issue_number": 249,
+        "object_id": "paper:arxiv.2403.00742",
+        "created_at": "2025-12-04T00:25:36+00:00",
+        "updated_at": "2025-12-04T17:38:05+00:00",
         "version": 1
       }
     },
@@ -3475,6 +5041,24 @@
         "version": 1
       }
     },
+    "paper:springer.10.1007/s11192-022-04466-8": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s11192-022-04466-8",
+        "timestamp": "2024-02-29T00:57:08.368000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Scientometric portraits of recognized scientists: a structured literature review | Scientometrics"
+      },
+      "meta": {
+        "issue_number": 242,
+        "object_id": "paper:springer.10.1007/s11192-022-04466-8",
+        "created_at": "2025-12-04T00:07:43+00:00",
+        "updated_at": "2025-12-04T17:38:05+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/s11192-022-04520-5": {
       "data": {
         "sourceId": "springer",
@@ -3529,6 +5113,24 @@
         "version": 1
       }
     },
+    "paper:wiley.10.1111/psj.12527": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.12527",
+        "timestamp": "2024-02-22T17:17:03.071000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "Participation in multiple policy venues in governance of Chile's Santiago Metropolitan Region: When institutional attributes can make the difference - Arias\u2010Yurisch - Policy Studies Journal"
+      },
+      "meta": {
+        "issue_number": 238,
+        "object_id": "paper:wiley.10.1111/psj.12527",
+        "created_at": "2025-12-03T23:59:37+00:00",
+        "updated_at": "2025-12-04T17:38:04+00:00",
+        "version": 1
+      }
+    },
     "paper:tandfonline.10.1080/0022250_633911ecf045": {
       "data": {
         "sourceId": "tandfonline",
@@ -3562,6 +5164,42 @@
         "object_id": "paper:nature.srep01376",
         "created_at": "2025-12-03T23:55:20+00:00",
         "updated_at": "2025-12-03T23:56:27+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0267364923001140": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0267364923001140",
+        "timestamp": "2024-02-18T21:14:59.270000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "An entity-centric approach to manage court judgments based on Natural Language Processing"
+      },
+      "meta": {
+        "issue_number": 235,
+        "object_id": "paper:sciencedirect.S0267364923001140",
+        "created_at": "2025-12-03T23:54:26+00:00",
+        "updated_at": "2025-12-04T17:38:04+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0267364923001176": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0267364923001176",
+        "timestamp": "2024-02-18T21:06:37.218000+00:00",
+        "rating": "novote",
+        "tags": [],
+        "sourceType": "browser_history",
+        "title": "The right not to use the internet"
+      },
+      "meta": {
+        "issue_number": 234,
+        "object_id": "paper:sciencedirect.S0267364923001176",
+        "created_at": "2025-12-03T23:52:20+00:00",
+        "updated_at": "2025-12-04T17:38:04+00:00",
         "version": 1
       }
     },
