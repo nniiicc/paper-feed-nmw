@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2025-12-05T23:37:40.980769+00:00",
+  "snapshot_time": "2025-12-05T23:38:32.181969+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s42256-024-00878-8": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s42256-024-00878-8",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 531,
+        "object_id": "interactions:nature.s42256-024-00878-8",
+        "created_at": "2025-12-05T23:38:01+00:00",
+        "updated_at": "2025-12-05T23:38:03+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s42256-024-00878-8": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s42256-024-00878-8",
+        "url": "https://www.nature.com/articles/s42256-024-00878-8?fromPaywallRec=false",
+        "title": "A large-scale audit of dataset licensing and attribution in AI",
+        "authors": "Longpre, Shayne",
+        "abstract": "The race to train language models on vast, diverse and inconsistently documented datasets raises pressing legal and ethical concerns. To improve data transparency and understanding, we convene a multi-disciplinary effort between legal and machine learning experts to systematically audit and trace more than 1,800 text datasets. We develop tools and standards to trace the lineage of these datasets, including their source, creators, licences and subsequent use. Our landscape analysis highlights sharp divides in the composition and focus of data licenced for commercial use. Important categories including low-resource languages, creative tasks and new synthetic data all tend to be restrictively licenced. We observe frequent miscategorization of licences on popular dataset hosting sites, with licence omission rates of more than 70% and error rates of more than 50%. This highlights a crisis in misattribution and informed use of popular datasets driving many recent breakthroughs. Our analysis of data sources also explains the application of copyright law and fair use to finetuning data. As a contribution to continuing improvements in dataset transparency and responsible use, we release our audit, with an interactive user interface, the Data Provenance Explorer, to enable practitioners to trace and filter on data provenance for the most popular finetuning data collections: www.dataprovenance.org . The Data Provenance Initiative audits over 1,800 text artificial intelligence (AI) datasets, analysing trends, permissions of use and global representation. It exposes frequent errors on several major data hosting sites and offers tools for transparent and informed use of AI training data.",
+        "timestamp": "2025-12-05T23:37:31.024Z",
+        "rating": "novote",
+        "publishedDate": "2024/08",
+        "tags": [
+          "Information systems and information technology"
+        ],
+        "doi": "10.1038/s42256-024-00878-8",
+        "journalName": "Nature Machine Intelligence 2024 6:8",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 530,
+        "object_id": "paper:nature.s42256-024-00878-8",
+        "created_at": "2025-12-05T23:37:31+00:00",
+        "updated_at": "2025-12-05T23:37:50+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s43588-025-00899-2": {
       "data": {
         "sourceId": "nature",
@@ -13,6 +53,32 @@
         "object_id": "interactions:nature.s43588-025-00899-2",
         "created_at": "2025-12-05T23:37:30+00:00",
         "updated_at": "2025-12-05T23:37:31+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s43588-025-00899-2": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s43588-025-00899-2",
+        "url": "https://www.nature.com/articles/s43588-025-00899-2",
+        "title": "Data-driven law firm rankings to reduce information asymmetry in legal disputes",
+        "authors": "Mojon, Alexandre",
+        "abstract": "Selecting capable counsel can shape the outcome of litigation, yet evaluating law firm performance remains challenging. Widely used rankings prioritize prestige, size and revenue over empirical litigation outcomes, offering little practical guidance. Here, to address this gap, we build on the Bradley\u2013Terry model and introduce a new ranking framework that treats each lawsuit as a competitive game between plaintiff and defendant law firms. Leveraging a newly constructed dataset of 60,540 US civil lawsuits involving 54,541 law firms, our findings show that existing reputation-based rankings correlate poorly with actual litigation success, while our outcome-based ranking substantially improves predictive accuracy. These findings establish a foundation for more transparent, data-driven assessments of legal performance. This study introduces a data-driven method for ranking law firms based on litigation outcomes, revealing that traditional reputation-based rankings do not reflect legal performance accurately.",
+        "timestamp": "2025-12-05T23:37:17.570Z",
+        "rating": "novote",
+        "publishedDate": "2025/11",
+        "tags": [
+          "Computational science"
+        ],
+        "doi": "10.1038/s43588-025-00899-2",
+        "journalName": "Nature Computational Science 2025 5:11",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 528,
+        "object_id": "paper:nature.s43588-025-00899-2",
+        "created_at": "2025-12-05T23:37:17+00:00",
+        "updated_at": "2025-12-05T23:37:36+00:00",
         "version": 1
       }
     },
