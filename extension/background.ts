@@ -8,6 +8,7 @@ import { PopupManager } from './utils/popup-manager';
 import { SourceIntegrationManager } from './source-integration/source-manager';
 import { loguru } from './utils/logger';
 import { PaperMetadata } from './papers/types';
+import { browser } from './utils/browser-api';
 
 // Import from central registry instead of individual integrations
 import { sourceIntegrations } from './source-integration/registry';
@@ -45,7 +46,7 @@ async function initialize() {
     initializeSources();
     
     // Load GitHub credentials
-    const items = await chrome.storage.sync.get(['githubToken', 'githubRepo']);
+    const items = await browser.storage.sync.get(['githubToken', 'githubRepo']);
     githubToken = items.githubToken || '';
     githubRepo = items.githubRepo || '';
     logger.info('Credentials loaded', { hasToken: !!githubToken, hasRepo: !!githubRepo });
@@ -93,7 +94,7 @@ async function initialize() {
 
 // Set up message listeners
 function setupMessageListeners() {
-  chrome.runtime.onMessage.addListener((message: any, sender, sendResponse) => {
+  browser.runtime.onMessage.addListener((message: any, sender, sendResponse) => {
     if (message.type === 'contentScriptReady' && sender.tab?.id) {
       logger.debug('Content script ready:', sender.tab.url);
       sendResponse({ success: true });
@@ -304,7 +305,7 @@ async function handleManualPaperLog(metadata: PaperMetadata): Promise<void> {
 }
 
 // Listen for credential changes
-chrome.storage.onChanged.addListener(async (changes) => {
+browser.storage.onChanged.addListener(async (changes) => {
   logger.debug('Storage changes detected', Object.keys(changes));
   
   if (changes.githubToken) {

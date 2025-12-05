@@ -1,6 +1,7 @@
 // options.ts
 import { loadSessionConfig, DEFAULT_CONFIG, saveSessionConfig } from './config/session';
 import { RawSessionConfig } from './config/types';
+import { browser } from './utils/browser-api';
 
 // Helper to set form values
 function setFormValues(settings: {
@@ -108,7 +109,7 @@ async function saveSettings(settings: {
   githubToken: string;
   sessionConfig: RawSessionConfig;
 }): Promise<void> {
-  await chrome.storage.sync.set({
+  await browser.storage.sync.set({
     githubRepo: settings.githubRepo,
     githubToken: settings.githubToken
   });
@@ -121,7 +122,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     // Load current settings
     const [storageItems, sessionConfig] = await Promise.all([
-      chrome.storage.sync.get(['githubRepo', 'githubToken']),
+      browser.storage.sync.get(['githubRepo', 'githubToken']),
       loadSessionConfig()
     ]);
 

@@ -2,13 +2,14 @@
 // Popup script with refactored manual paper tracking
 
 import { PaperMetadata } from './papers/types';
+import { browser } from './utils/browser-api';
 
 console.log('Popup script starting...');
 
 // Function to get paper data from background script
 async function getCurrentPaper(): Promise<PaperMetadata | null> {
   return new Promise((resolve) => {
-    chrome.runtime.sendMessage({type: 'getCurrentPaper'}, (response) => {
+    browser.runtime.sendMessage({type: 'getCurrentPaper'}, (response) => {
       console.log('Got paper data from background:', response);
       resolve(response as PaperMetadata | null);
     });
@@ -80,11 +81,11 @@ async function ensureContentScriptLoaded(tabId: number): Promise<boolean> {
   try {
     // Try to ping the content script
     return new Promise((resolve) => {
-      chrome.tabs.sendMessage(tabId, { type: 'ping' }, (response) => {
-        if (chrome.runtime.lastError) {
+      browser.tabs.sendMessage(tabId, { type: 'ping' }, (response) => {
+        if (browser.runtime.lastError) {
           // Content script not loaded, try to inject it
           console.log('Content script not loaded, injecting...');
-          chrome.scripting.executeScript({
+          browser.scripting.executeScript({
             target: { tabId },
             files: ['dist/content-script.js']
           }).then(() => {
@@ -112,7 +113,7 @@ async function logCurrentPage(): Promise<void> {
   console.log("attempting to log paper");
 
   // Get the active tab
-  const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+  const tabs = await browser.tabs.query({ active: true, currentWindow: true });
   if (!tabs[0] || !tabs[0].id) {
     const statusElement = document.getElementById('status');
     if (statusElement) {
@@ -126,7 +127,8 @@ async function logCurrentPage(): Promise<void> {
 
   // Check if this is a special page we can't access
   if (tabUrl.startsWith('chrome://') || tabUrl.startsWith('chrome-extension://') ||
-      tabUrl.startsWith('about:') || tabUrl.startsWith('edge://')) {
+      tabUrl.startsWith('about:') || tabUrl.startsWith('edge://') ||
+      tabUrl.startsWith('moz-extension://')) {
     const statusElement = document.getElementById('status');
     if (statusElement) {
       statusElement.textContent = 'Error: Cannot access this type of page';
@@ -150,13 +152,13 @@ async function logCurrentPage(): Promise<void> {
   }
 
   // Send message to content script requesting extraction
-  chrome.tabs.sendMessage(tabId, {
+  browser.tabs.sendMessage(tabId, {
     type: 'extractPaperMetadata'
   }, (response: MessageResponse) => {
-    if (chrome.runtime.lastError) {
+    if (browser.runtime.lastError) {
       // Handle error
       if (statusElement) {
-        statusElement.textContent = 'Error: ' + chrome.runtime.lastError.message;
+        statusElement.textContent = 'Error: ' + browser.runtime.lastError.message;
       }
       return;
     }
@@ -170,7 +172,7 @@ async function logCurrentPage(): Promise<void> {
     }
 
     // Metadata extracted, now explicitly send to background to store in GitHub
-    chrome.runtime.sendMessage({
+    browser.runtime.sendMessage({
       type: 'manualPaperLog',
       metadata: response.metadata
     }, (storeResponse: MessageResponse) => {
@@ -229,7 +231,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const thumbsUpButton = document.getElementById('thumbsUp');
   if (thumbsUpButton) {
     thumbsUpButton.addEventListener('click', () => {
-      chrome.runtime.sendMessage({
+      browser.runtime.sendMessage({
         type: 'updateRating',
         rating: 'thumbsup'
       }, (response: MessageResponse) => {
@@ -254,7 +256,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const thumbsDownButton = document.getElementById('thumbsDown');
   if (thumbsDownButton) {
     thumbsDownButton.addEventListener('click', () => {
-      chrome.runtime.sendMessage({
+      browser.runtime.sendMessage({
         type: 'updateRating',
         rating: 'thumbsdown'
       }, (response: MessageResponse) => {

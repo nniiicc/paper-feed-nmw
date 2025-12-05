@@ -3,6 +3,7 @@
 
 import { RawSessionConfig, SessionConfig } from './types';
 import { loguru } from '../utils/logger';
+import { browser } from '../utils/browser-api';
 
 const logger = loguru.getLogger('session-config');
 
@@ -20,7 +21,7 @@ export const DEFAULT_CONFIG: RawSessionConfig = {
  */
 export async function loadSessionConfig(): Promise<RawSessionConfig> {
     try {
-        const items = await chrome.storage.sync.get('sessionConfig');
+        const items = await browser.storage.sync.get('sessionConfig');
         const config = { ...DEFAULT_CONFIG, ...items.sessionConfig };
         logger.debug('Loaded session config', config);
         return config;
@@ -44,7 +45,7 @@ export async function saveSessionConfig(config: RawSessionConfig): Promise<void>
             activityUpdateIntervalSeconds: Number(config.activityUpdateIntervalSeconds)
         };
         
-        await chrome.storage.sync.set({ sessionConfig: sanitizedConfig });
+        await browser.storage.sync.set({ sessionConfig: sanitizedConfig });
         logger.debug('Saved session config', sanitizedConfig);
     } catch (error) {
         logger.error('Error saving session config', error);

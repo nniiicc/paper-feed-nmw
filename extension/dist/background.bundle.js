@@ -712,6 +712,11 @@ class SourceIntegrationManager {
     }
 }
 
+// utils/browser-api.ts
+// Cross-browser API abstraction for Chrome and Firefox compatibility
+// Use browser namespace if available (Firefox), otherwise fall back to chrome (Chrome/Edge)
+const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
 // extension/source-integration/metadata-extractor.ts
 const logger$4 = loguru.getLogger('metadata-extractor');
 // Constants for standard source types
@@ -3849,7 +3854,7 @@ async function initialize() {
         // Initialize sources first
         initializeSources();
         // Load GitHub credentials
-        const items = await chrome.storage.sync.get(['githubToken', 'githubRepo']);
+        const items = await browserAPI.storage.sync.get(['githubToken', 'githubRepo']);
         githubToken = items.githubToken || '';
         githubRepo = items.githubRepo || '';
         logger.info('Credentials loaded', { hasToken: !!githubToken, hasRepo: !!githubRepo });
@@ -3889,7 +3894,7 @@ async function initialize() {
 }
 // Set up message listeners
 function setupMessageListeners() {
-    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    browserAPI.runtime.onMessage.addListener((message, sender, sendResponse) => {
         if (message.type === 'contentScriptReady' && sender.tab?.id) {
             logger.debug('Content script ready:', sender.tab.url);
             sendResponse({ success: true });
@@ -4068,7 +4073,7 @@ async function handleManualPaperLog(metadata) {
     }
 }
 // Listen for credential changes
-chrome.storage.onChanged.addListener(async (changes) => {
+browserAPI.storage.onChanged.addListener(async (changes) => {
     logger.debug('Storage changes detected', Object.keys(changes));
     if (changes.githubToken) {
         githubToken = changes.githubToken.newValue;

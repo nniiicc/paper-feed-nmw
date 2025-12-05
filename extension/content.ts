@@ -7,6 +7,7 @@ import { PaperMetadata } from './papers/types';
 import { loguru } from './utils/logger';
 import { BaseSourceIntegration } from './source-integration/base-source';
 import { generatePaperIdFromUrl } from './source-integration/metadata-extractor';
+import { browser } from './utils/browser-api';
 
 // Import from registry instead of individual sources
 import { sourceIntegrations } from './source-integration/registry';
@@ -202,7 +203,7 @@ function injectAnnotationButton(link: HTMLAnchorElement, sourceId: string, paper
     e.stopPropagation();
     
     // Send message to background script to show popup
-    chrome.runtime.sendMessage({
+    browser.runtime.sendMessage({
       type: 'showAnnotationPopup',
       sourceId,
       paperId,
@@ -252,7 +253,7 @@ function startSessionTracking(sourceId: string, paperId: string) {
   currentSession = { sourceId, paperId };
   
   // Tell background script to start a new session
-  chrome.runtime.sendMessage({
+  browser.runtime.sendMessage({
     type: 'startSession',
     sourceId,
     paperId
@@ -279,7 +280,7 @@ function startHeartbeat() {
   heartbeatInterval = window.setInterval(() => {
     if (!currentSession) return;
     
-    chrome.runtime.sendMessage({
+    browser.runtime.sendMessage({
       type: 'sessionHeartbeat',
       sourceId: currentSession.sourceId,
       paperId: currentSession.paperId,
@@ -309,7 +310,7 @@ function endCurrentSession(reason: string) {
   stopHeartbeat();
   
   // Send end session message
-  chrome.runtime.sendMessage({
+  browser.runtime.sendMessage({
     type: 'endSession',
     sourceId,
     paperId,
@@ -354,12 +355,12 @@ async function processCurrentPage(force: boolean = false): Promise<PaperMetadata
     
     if (metadata) {
       // Send metadata to background script and wait for response
-      chrome.runtime.sendMessage({
+      browser.runtime.sendMessage({
         type: 'paperMetadata',
         metadata
       }, (response) => {
-        if (chrome.runtime.lastError) {
-          logger.error('Error sending metadata to background:', chrome.runtime.lastError.message);
+        if (browser.runtime.lastError) {
+          logger.error('Error sending metadata to background:', browser.runtime.lastError.message);
         } else if (response && !response.success) {
           logger.error('Background script failed to store paper:', response.error);
         } else if (response && !response.storedInGitHub) {
@@ -443,7 +444,7 @@ window.addEventListener('beforeunload', () => {
 });
 
 // Message handler for background script
-chrome.runtime.onMessage.addListener((message: any, sender, sendResponse) => {
+browser.runtime.onMessage.addListener((message: any, sender, sendResponse) => {
   logger.debug('Received message', message);
 
   // Simple ping to check if content script is loaded
@@ -506,7 +507,7 @@ chrome.runtime.onMessage.addListener((message: any, sender, sendResponse) => {
         const elements = popup.querySelectorAll(handler.selector);
         elements.forEach(element => {
           element.addEventListener(handler.event, () => {
-            chrome.runtime.sendMessage({
+            browser.runtime.sendMessage({
               type: 'popupAction',
               action: handler.action,
               sourceId: message.sourceId,
@@ -562,10 +563,10 @@ chrome.runtime.onMessage.addListener((message: any, sender, sendResponse) => {
   processCurrentPage();
   
   // Tell background script we're ready and what page we're on
-  chrome.runtime.sendMessage(
-    { 
-      type: 'contentScriptReady', 
-      url: window.location.href 
+  browser.runtime.sendMessage(
+    {
+      type: 'contentScriptReady',
+      url: window.location.href
     },
     (response) => {
       if (response?.success) {

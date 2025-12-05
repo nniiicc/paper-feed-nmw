@@ -11,7 +11,7 @@
     "activeTab"
   ],
   "host_permissions": [
-    "*://*.arxiv.org/*", 
+    "*://*.arxiv.org/*",
     "*://export.arxiv.org/*",
     "*://*.openreview.net/*",
     "*://api.github.com/*",
@@ -19,7 +19,14 @@
   ],
   "background": {
     "service_worker": "dist/background.bundle.js",
+    "scripts": ["dist/background.bundle.js"],
     "type": "module"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "academic-paper-tracker@paper-feed",
+      "strict_min_version": "128.0"
+    }
   },
   "content_scripts": [{
     "matches": ["<all_urls>"],

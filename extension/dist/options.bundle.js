@@ -52,6 +52,11 @@ class LoguruMock {
 // Export singleton instance
 const loguru = new LoguruMock();
 
+// utils/browser-api.ts
+// Cross-browser API abstraction for Chrome and Firefox compatibility
+// Use browser namespace if available (Firefox), otherwise fall back to chrome (Chrome/Edge)
+const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
 // config/session.ts
 const logger = loguru.getLogger('session-config');
 // Default configuration values
@@ -67,7 +72,7 @@ const DEFAULT_CONFIG = {
  */
 async function loadSessionConfig() {
     try {
-        const items = await chrome.storage.sync.get('sessionConfig');
+        const items = await browserAPI.storage.sync.get('sessionConfig');
         const config = { ...DEFAULT_CONFIG, ...items.sessionConfig };
         logger.debug('Loaded session config', config);
         return config;
@@ -90,7 +95,7 @@ async function saveSessionConfig(config) {
             logPartialSessions: Boolean(config.logPartialSessions),
             activityUpdateIntervalSeconds: Number(config.activityUpdateIntervalSeconds)
         };
-        await chrome.storage.sync.set({ sessionConfig: sanitizedConfig });
+        await browserAPI.storage.sync.set({ sessionConfig: sanitizedConfig });
         logger.debug('Saved session config', sanitizedConfig);
     }
     catch (error) {
@@ -178,7 +183,7 @@ async function validateSettings(settings) {
 }
 // Save settings
 async function saveSettings(settings) {
-    await chrome.storage.sync.set({
+    await browserAPI.storage.sync.set({
         githubRepo: settings.githubRepo,
         githubToken: settings.githubToken
     });
@@ -189,7 +194,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Load current settings
         const [storageItems, sessionConfig] = await Promise.all([
-            chrome.storage.sync.get(['githubRepo', 'githubToken']),
+            browserAPI.storage.sync.get(['githubRepo', 'githubToken']),
             loadSessionConfig()
         ]);
         // Combine settings and display them

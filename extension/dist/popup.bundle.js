@@ -1,10 +1,14 @@
+// utils/browser-api.ts
+// Cross-browser API abstraction for Chrome and Firefox compatibility
+// Use browser namespace if available (Firefox), otherwise fall back to chrome (Chrome/Edge)
+const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
 // extension/popup.ts
-// Popup script with refactored manual paper tracking
 console.log('Popup script starting...');
 // Function to get paper data from background script
 async function getCurrentPaper() {
     return new Promise((resolve) => {
-        chrome.runtime.sendMessage({ type: 'getCurrentPaper' }, (response) => {
+        browserAPI.runtime.sendMessage({ type: 'getCurrentPaper' }, (response) => {
             console.log('Got paper data from background:', response);
             resolve(response);
         });
@@ -59,11 +63,11 @@ async function ensureContentScriptLoaded(tabId) {
     try {
         // Try to ping the content script
         return new Promise((resolve) => {
-            chrome.tabs.sendMessage(tabId, { type: 'ping' }, (response) => {
-                if (chrome.runtime.lastError) {
+            browserAPI.tabs.sendMessage(tabId, { type: 'ping' }, (response) => {
+                if (browserAPI.runtime.lastError) {
                     // Content script not loaded, try to inject it
                     console.log('Content script not loaded, injecting...');
-                    chrome.scripting.executeScript({
+                    browserAPI.scripting.executeScript({
                         target: { tabId },
                         files: ['dist/content-script.js']
                     }).then(() => {
@@ -91,7 +95,7 @@ async function ensureContentScriptLoaded(tabId) {
 async function logCurrentPage() {
     console.log("attempting to log paper");
     // Get the active tab
-    const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+    const tabs = await browserAPI.tabs.query({ active: true, currentWindow: true });
     if (!tabs[0] || !tabs[0].id) {
         const statusElement = document.getElementById('status');
         if (statusElement) {
@@ -103,7 +107,8 @@ async function logCurrentPage() {
     const tabUrl = tabs[0].url || '';
     // Check if this is a special page we can't access
     if (tabUrl.startsWith('chrome://') || tabUrl.startsWith('chrome-extension://') ||
-        tabUrl.startsWith('about:') || tabUrl.startsWith('edge://')) {
+        tabUrl.startsWith('about:') || tabUrl.startsWith('edge://') ||
+        tabUrl.startsWith('moz-extension://')) {
         const statusElement = document.getElementById('status');
         if (statusElement) {
             statusElement.textContent = 'Error: Cannot access this type of page';
@@ -124,13 +129,13 @@ async function logCurrentPage() {
         return;
     }
     // Send message to content script requesting extraction
-    chrome.tabs.sendMessage(tabId, {
+    browserAPI.tabs.sendMessage(tabId, {
         type: 'extractPaperMetadata'
     }, (response) => {
-        if (chrome.runtime.lastError) {
+        if (browserAPI.runtime.lastError) {
             // Handle error
             if (statusElement) {
-                statusElement.textContent = 'Error: ' + chrome.runtime.lastError.message;
+                statusElement.textContent = 'Error: ' + browserAPI.runtime.lastError.message;
             }
             return;
         }
@@ -142,7 +147,7 @@ async function logCurrentPage() {
             return;
         }
         // Metadata extracted, now explicitly send to background to store in GitHub
-        chrome.runtime.sendMessage({
+        browserAPI.runtime.sendMessage({
             type: 'manualPaperLog',
             metadata: response.metadata
         }, (storeResponse) => {
@@ -195,7 +200,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const thumbsUpButton = document.getElementById('thumbsUp');
     if (thumbsUpButton) {
         thumbsUpButton.addEventListener('click', () => {
-            chrome.runtime.sendMessage({
+            browserAPI.runtime.sendMessage({
                 type: 'updateRating',
                 rating: 'thumbsup'
             }, (response) => {
@@ -219,7 +224,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const thumbsDownButton = document.getElementById('thumbsDown');
     if (thumbsDownButton) {
         thumbsDownButton.addEventListener('click', () => {
-            chrome.runtime.sendMessage({
+            browserAPI.runtime.sendMessage({
                 type: 'updateRating',
                 rating: 'thumbsdown'
             }, (response) => {
