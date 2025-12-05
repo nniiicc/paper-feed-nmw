@@ -1,7 +1,73 @@
 {
-  "snapshot_time": "2025-12-05T00:43:01.116092+00:00",
+  "snapshot_time": "2025-12-05T23:37:40.980769+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s43588-025-00899-2": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s43588-025-00899-2",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 529,
+        "object_id": "interactions:nature.s43588-025-00899-2",
+        "created_at": "2025-12-05T23:37:30+00:00",
+        "updated_at": "2025-12-05T23:37:31+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url.6EF1CA43": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "6EF1CA43",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 527,
+        "object_id": "interactions:url.6EF1CA43",
+        "created_at": "2025-12-05T23:37:05+00:00",
+        "updated_at": "2025-12-05T23:37:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:url.6EF1CA43": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "6EF1CA43",
+        "url": "https://pleias.fr/blog/blogsynth-the-new-data-frontier",
+        "title": "SYNTH: the new data frontier",
+        "authors": "",
+        "abstract": "We\u00a0build reasoning models for advanced context engineering in the agentic AI",
+        "timestamp": "2025-12-05T23:36:44.932Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 525,
+        "object_id": "paper:url.6EF1CA43",
+        "created_at": "2025-12-05T23:36:45+00:00",
+        "updated_at": "2025-12-05T23:37:03+00:00",
+        "version": 1
+      }
+    },
+    "interactions:arxiv.2508.06760": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2508.06760",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 524,
+        "object_id": "interactions:arxiv.2508.06760",
+        "created_at": "2025-12-05T23:35:16+00:00",
+        "updated_at": "2025-12-05T23:35:17+00:00",
+        "version": 1
+      }
+    },
     "paper:tandfonline.10.1080/2167081_daf4906c9f0c": {
       "data": {
         "sourceId": "tandfonline",
