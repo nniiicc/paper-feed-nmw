@@ -20,14 +20,48 @@ Example feed: https://dmarx.github.io/papers-feed/
 2. Configure repository settings
   * [Configure github pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch) to deploy from the `gh-pages` branch
   * Give actions write permissions on your repo
-3. [Install the browser extension](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked) located in `papers-feed-src/extension`
-4. [Create a a github PAT](https://github.blog/security/application-security/introducing-fine-grained-personal-access-tokens-for-github/#creating-personal-access-tokens) with permission to create issues on your papers-feed repo
+3. Install the browser extension (see below)
+4. [Create a github PAT](https://github.blog/security/application-security/introducing-fine-grained-personal-access-tokens-for-github/#creating-personal-access-tokens) with permission to create issues on your papers-feed repo
 5. Register the PAT in the browser extension's options
 
-To test that everything is set up correctly, visit an arxiv `/abs/` or `/pdf/` page. Shortly after visiting:
-  * an issue with a bunch of labels should be created
-  * this should also trigger activity which will be logged in the repository's `Actions` tab
-  * after a few minutes, the frontend should be available via gh-pages at `<username>.github.io/<repo-name>`
+## Installing the Browser Extension
+
+### Build the extension (required for both browsers)
+
+```bash
+cd extension
+npm install
+npm run build
+```
+
+### Chrome / Edge / Chromium
+
+1. Navigate to `chrome://extensions` (or `edge://extensions`)
+2. Enable "Developer mode" (toggle in top right)
+3. Click "Load unpacked"
+4. Select the `extension` folder
+
+### Firefox
+
+**Option A: Temporary installation (for testing)**
+```bash
+cd extension
+npm run firefox:run
+```
+
+**Option B: Manual installation**
+1. Navigate to `about:debugging#/runtime/this-firefox`
+2. Click "Load Temporary Add-on..."
+3. Select any file in the `extension` folder (e.g., `manifest.json`)
+
+> **Note:** Firefox requires version 128+ for full Manifest V3 support.
+
+## Testing your setup
+
+Visit an arxiv `/abs/` or `/pdf/` page. Shortly after:
+* An issue with labels should be created in your repo
+* Activity will be logged in the repository's `Actions` tab
+* After a few minutes, the frontend should be available at `<username>.github.io/<repo-name>`
 
 # Acknowledgements
 
