@@ -63,6 +63,70 @@ Visit an arxiv `/abs/` or `/pdf/` page. Shortly after:
 * Activity will be logged in the repository's `Actions` tab
 * After a few minutes, the frontend should be available at `<username>.github.io/<repo-name>`
 
+## Zotero Integration (Optional)
+
+Sync your Zotero library to paper-feed. Papers are deduplicated by arXiv ID, DOI, or title hash.
+
+### Setup
+
+1. **Get your Zotero credentials:**
+   - Go to https://www.zotero.org/settings/keys
+   - Note your **Library ID** (numeric, shown at top)
+   - Create a new API key with read access to your library
+
+2. **Add secrets to your GitHub repository:**
+   - Go to Settings → Secrets and variables → Actions
+   - Add these repository secrets:
+     - `ZOTERO_LIBRARY_ID` - Your numeric library ID
+     - `ZOTERO_API_KEY` - Your API key
+
+3. **Enable the workflow:**
+   - Copy `zotero-sync.yml` to `.github/workflows/zotero-sync.yml`
+   - Or set repository variable `ENABLE_ZOTERO_SYNC` to `true`
+
+### Sync Modes
+
+The workflow runs automatically every 6 hours, or manually via Actions tab:
+
+| Mode | Description |
+|------|-------------|
+| `incremental` | Only sync items changed since last sync (default) |
+| `historical` | Sync items from last N days |
+| `init` | Initialize sync marker without importing history |
+
+### Manual Sync Options
+
+From the Actions tab, you can:
+- Choose sync mode (incremental/historical/init)
+- Set days to look back (historical mode)
+- Filter to a specific Zotero collection
+- Skip updating existing items
+
+### Local Usage
+
+```bash
+# Set environment variables
+export ZOTERO_LIBRARY_ID="your_library_id"
+export ZOTERO_API_KEY="your_api_key"
+export GITHUB_TOKEN="your_github_pat"
+export GITHUB_REPOSITORY="username/repo"
+
+# List your collections
+python scripts/zotero_sync.py --list-collections
+
+# Initialize (start tracking from now, no historical import)
+python scripts/zotero_sync.py --init
+
+# Sync incrementally (only new changes)
+python scripts/zotero_sync.py --incremental
+
+# Sync last 30 days
+python scripts/zotero_sync.py --days 30
+
+# Sync specific collection
+python scripts/zotero_sync.py --days 14 --collection "To Read"
+```
+
 # Acknowledgements
 
 * Thank you to anthropic for making a decent LLM (I made claude write nearly all of this)
