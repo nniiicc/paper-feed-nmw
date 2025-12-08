@@ -1,7 +1,52 @@
 {
-  "snapshot_time": "2025-12-08T22:25:25.443748+00:00",
+  "snapshot_time": "2025-12-08T22:27:20.628160+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s41562-025-02358-4": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-025-02358-4",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-08T22:25:06.919Z",
+            "data": {
+              "session_id": "session_1765232706389_4k5m2za",
+              "source_id": "nature",
+              "paper_id": "s41562-025-02358-4",
+              "start_time": "2025-12-08T22:24:25.263Z",
+              "end_time": "2025-12-08T22:25:06.389Z",
+              "heartbeat_count": 8,
+              "duration_seconds": 40,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 41
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-08T22:26:12.419Z",
+            "data": {
+              "session_id": "session_1765232771909_fxgquhq",
+              "source_id": "nature",
+              "paper_id": "s41562-025-02358-4",
+              "start_time": "2025-12-08T22:25:36.010Z",
+              "end_time": "2025-12-08T22:26:11.909Z",
+              "heartbeat_count": 7,
+              "duration_seconds": 35,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 36
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 543,
+        "object_id": "interactions:nature.s41562-025-02358-4",
+        "created_at": "2025-12-08T22:25:07+00:00",
+        "updated_at": "2025-12-08T22:26:38+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s41562-025-02358-4": {
       "data": {
         "sourceId": "nature",
