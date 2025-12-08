@@ -1,7 +1,63 @@
 {
-  "snapshot_time": "2025-12-08T22:27:20.628160+00:00",
+  "snapshot_time": "2025-12-08T22:29:50.717603+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s41562-025-02377-1": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-025-02377-1",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-08T22:28:42.096Z",
+            "data": {
+              "session_id": "session_1765232921660_01we5xt",
+              "source_id": "nature",
+              "paper_id": "s41562-025-02377-1",
+              "start_time": "2025-12-08T22:28:28.242Z",
+              "end_time": "2025-12-08T22:28:41.660Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 13
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 545,
+        "object_id": "interactions:nature.s41562-025-02377-1",
+        "created_at": "2025-12-08T22:28:42+00:00",
+        "updated_at": "2025-12-08T22:29:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41562-025-02377-1": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-025-02377-1",
+        "url": "https://www.nature.com/articles/s41562-025-02377-1",
+        "title": "Threats to democracy are threats to health",
+        "authors": "Schmit, Cason D.",
+        "abstract": "Threats to democracy \u2014 such as voter suppression, misinformation and gerrymandering \u2014 interfere with voters\u2019 ability to advance policies that serve their health interests. The result is a dangerous feedback cycle: barriers to democracy increase health vulnerability, which then compounds existing democratic barriers.",
+        "timestamp": "2025-12-08T22:28:28.444Z",
+        "rating": "novote",
+        "publishedDate": "2025-12-08",
+        "tags": [
+          "Government"
+        ],
+        "doi": "10.1038/s41562-025-02377-1",
+        "journalName": "Nature Human Behaviour 2025",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 544,
+        "object_id": "paper:nature.s41562-025-02377-1",
+        "created_at": "2025-12-08T22:28:28+00:00",
+        "updated_at": "2025-12-08T22:28:49+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41562-025-02358-4": {
       "data": {
         "sourceId": "nature",
