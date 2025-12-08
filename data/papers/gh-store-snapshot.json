@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2025-12-08T20:03:33.607736+00:00",
+  "snapshot_time": "2025-12-08T22:25:25.443748+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41562-025-02358-4": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-025-02358-4",
+        "url": "https://www.nature.com/articles/s41562-025-02358-4",
+        "title": "Representation in science and trust in scientists in the USA",
+        "authors": "Druckman, James N.",
+        "abstract": "Scientists provide important information to the public. Whether that information influences decision-making depends on trust. In the USA, gaps in trust in scientists have been stable for 50 years: women, Black people, rural residents, religious people, less educated people and people with lower economic status express less trust than their counterparts (who are more represented among scientists). Here we probe the factors that influence trust. We find that members of the less trusting groups exhibit greater trust in scientists who share their characteristics (for example, women trust women scientists more than men scientists). They view such scientists as having more benevolence and, in most cases, more integrity. In contrast, those from high-trusting groups appear mostly indifferent about scientists\u2019 characteristics. Our results highlight how increasing the presence of underrepresented groups among scientists can increase trust. This means expanding representation across several divides\u2014not just gender and race/ethnicity but also rurality and economic status. Druckman et al. document gaps in trust in scientists in the USA. People from groups less represented among scientists (for example, women and those with lower economic status) are less trusting. Increasing the representation of these groups within science increases trust.",
+        "timestamp": "2025-12-08T22:24:25.626Z",
+        "rating": "novote",
+        "publishedDate": "2025-12-08",
+        "tags": [
+          "Politics and international relations"
+        ],
+        "doi": "10.1038/s41562-025-02358-4",
+        "journalName": "Nature Human Behaviour 2025",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 542,
+        "object_id": "paper:nature.s41562-025-02358-4",
+        "created_at": "2025-12-08T22:24:25+00:00",
+        "updated_at": "2025-12-08T22:24:51+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.1A783C4": {
       "data": {
         "sourceId": "url-misc",
