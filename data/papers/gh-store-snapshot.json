@@ -1,7 +1,68 @@
 {
-  "snapshot_time": "2025-12-08T19:31:02.327382+00:00",
+  "snapshot_time": "2025-12-08T20:03:33.607736+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.1A783C4": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "1A783C4",
+        "url": "url-misc.1A783C4",
+        "title": "1A783C4",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-08T20:02:34.637Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": []
+      },
+      "meta": {
+        "issue_number": 541,
+        "object_id": "paper:url-misc.1A783C4",
+        "created_at": "2025-12-08T20:02:34+00:00",
+        "updated_at": "2025-12-08T20:02:56+00:00",
+        "version": 1
+      }
+    },
+    "interactions:nature.s41562-025-02352-w": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-025-02352-w",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 540,
+        "object_id": "interactions:nature.s41562-025-02352-w",
+        "created_at": "2025-12-08T19:32:27+00:00",
+        "updated_at": "2025-12-08T19:32:29+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41562-025-02352-w": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-025-02352-w",
+        "url": "https://www.nature.com/articles/s41562-025-02352-w?utm_source=bluesky&utm_medium=social&utm_campaign=nathumbehav",
+        "title": "Enhancing climate resilience with proximal cues in personalized climate disaster preparedness messaging",
+        "authors": "Nobel, Nurit",
+        "abstract": "Climate-related disasters such as wildfires and floods pose escalating risks to communities worldwide, yet motivating individuals to adopt protective measures remains a persistent challenge. In a pre-registered field experiment with 12,985 Australian homeowners in wildfire-prone areas, we demonstrate that a simple behavioural intervention\u2014integrating proximal cues, such as participants\u2019 suburbs, into climate risk communications\u2014significantly increases engagement. Participants who received localized messages were twice as likely to seek further information about wildfire preparedness compared with those who received generic communications (odds ratio of 2.03, 95% confidence interval of 1.33 to 3.16). This effect highlights the power of behavioural interventions in addressing barriers to climate adaptation, particularly by reducing psychological distance and fostering place attachment. By making abstract climate risks tangible and personally relevant, the intervention nudges individuals towards action. These findings suggest a scalable, low-cost approach for enhancing disaster preparedness, offering insights for leveraging behavioural science to mitigate the impact of climate-related disasters. In this randomized field experiment with 12,985 Australian homeowners, adding place cues to climate-risk emails increased click-throughs and engagement, suggesting a low-cost, scalable way to prompt wildfire-preparedness actions.",
+        "timestamp": "2025-12-08T19:30:45.092Z",
+        "rating": "novote",
+        "publishedDate": "2025-12-08",
+        "tags": [
+          "Climate-change adaptation"
+        ],
+        "doi": "10.1038/s41562-025-02352-w",
+        "journalName": "Nature Human Behaviour 2025",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 539,
+        "object_id": "paper:nature.s41562-025-02352-w",
+        "created_at": "2025-12-08T19:30:45+00:00",
+        "updated_at": "2025-12-08T19:31:05+00:00",
+        "version": 1
+      }
+    },
     "interactions:url.46757959": {
       "data": {
         "sourceId": "url",
