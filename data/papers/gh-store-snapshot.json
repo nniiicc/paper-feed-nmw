@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2025-12-08T00:43:05.383548+00:00",
+  "snapshot_time": "2025-12-08T19:28:41.477325+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:acm.10.1145/3706598.3713292": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3706598.3713292",
+        "url": "https://dl.acm.org/doi/10.1145/3706598.3713292",
+        "title": "AI Rules? Characterizing Reddit Community Policies Towards AI-Generated Content | Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+        "authors": "Travis Lloyd, Jennah Gosciak, Tung Nguyen, Mor Naaman",
+        "abstract": "How are Reddit communities responding to AI-generated content? We explored this question through a large-scale analysis of subreddit community rules and their change over time. We collected the metadata and community rules for over 300,000 public subreddits and measured the prevalence of rules governing AI. We labeled subreddits and AI rules according to existing taxonomies from the HCI literature and a new taxonomy we developed specific to AI rules. While rules about AI are still relatively uncommon, the number of subreddits with these rules more than doubled over the course of a year. AI rules are more common in larger subreddits and communities focused on art or celebrity topics, and less common in those focused on social support. These rules often focus on AI images and evoke, as justification, concerns about quality and authenticity. Overall, our findings illustrate the emergence of varied concerns about AI, in different community contexts. Platform designers and HCI researchers should heed these concerns if they hope to encourage community self-determination in the age of generative AI. We make our datasets public to enable future large-scale studies of community self-governance.",
+        "timestamp": "2025-12-08T19:27:37.768Z",
+        "rating": "novote",
+        "publishedDate": "(2025)",
+        "tags": [],
+        "doi": "3713292",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 532,
+        "object_id": "paper:acm.10.1145/3706598.3713292",
+        "created_at": "2025-12-08T19:27:38+00:00",
+        "updated_at": "2025-12-08T19:28:07+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s42256-024-00878-8": {
       "data": {
         "sourceId": "nature",
