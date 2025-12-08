@@ -1,7 +1,143 @@
 {
-  "snapshot_time": "2025-12-08T19:28:41.477325+00:00",
+  "snapshot_time": "2025-12-08T19:31:02.327382+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url.46757959": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "46757959",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-08T19:30:03.344Z",
+            "data": {
+              "session_id": "session_1765222202841_sho0m5r",
+              "source_id": "url",
+              "paper_id": "46757959",
+              "start_time": "2025-12-08T19:29:56.078Z",
+              "end_time": "2025-12-08T19:30:02.841Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 7
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 538,
+        "object_id": "interactions:url.46757959",
+        "created_at": "2025-12-08T19:30:03+00:00",
+        "updated_at": "2025-12-08T19:30:26+00:00",
+        "version": 1
+      }
+    },
+    "paper:url.46757959": {
+      "data": {
+        "sourceId": "url",
+        "paperId": "46757959",
+        "url": "https://www.nist.gov/blogs/caisi-research-blog/accelerating-ai-innovation-through-measurement-science",
+        "title": "Accelerating AI Innovation Through Measurement Science | NIST",
+        "authors": "",
+        "abstract": "Building gold-standard AI systems requires gold-standard AI measurement science \u2013 the scientific study of methods used to assess AI systems\u2019 properties and impacts. NIST works to improve measurements of AI performance, reliability, and security that American companies and consumers rely on to develo",
+        "timestamp": "2025-12-08T19:29:56.370Z",
+        "rating": "novote",
+        "publishedDate": "2025-12-02T07:00-05:00",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 536,
+        "object_id": "paper:url.46757959",
+        "created_at": "2025-12-08T19:29:56+00:00",
+        "updated_at": "2025-12-08T19:30:16+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2511.04703": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2511.04703",
+        "url": "https://arxiv.org/abs/2511.04703",
+        "title": "Measuring what Matters: Construct Validity in Large Language Model Benchmarks",
+        "authors": "Andrew M. Bean, Ryan Othniel Kearns, Angelika Romanou, Franziska Sofia Hafner, Harry Mayne, Jan Batzner, Negar Foroutan, Chris Schmitz, Karolina Korgul, Hunar Batra, Oishi Deb, Emma Beharry, Cornelius Emde, Thomas Foster, Anna Gausen, Mar\u00eda Grandury, Simeng Han, Valentin Hofmann, Lujain Ibrahim, Hazel Kim, Hannah Rose Kirk, Fangru Lin, Gabrielle Kaili-May Liu, Lennart Luettgau, Jabez Magomere, Jonathan Rystr\u00f8m, Anna Sotnikova, Yushi Yang, Yilun Zhao, Adel Bibi, Antoine Bosselut, Ronald Clark, Arman Cohan, Jakob Foerster, Yarin Gal, Scott A. Hale, Inioluwa Deborah Raji, Christopher Summerfield, Philip H.S. Torr, Cozmin Ududec, Luc Rocher, Adam Mahdi",
+        "abstract": "Evaluating large language models (LLMs) is crucial for both assessing their capabilities and identifying safety or robustness issues prior to deployment. Reliably measuring abstract and complex phenomena such as 'safety' and 'robustness' requires strong construct validity, that is, having measures that represent what matters to the phenomenon. With a team of 29 expert reviewers, we conduct a systematic review of 445 LLM benchmarks from leading conferences in natural language processing and machine learning. Across the reviewed articles, we find patterns related to the measured phenomena, tasks, and scoring metrics which undermine the validity of the resulting claims. To address these shortcomings, we provide eight key recommendations and detailed actionable guidance to researchers and practitioners in developing LLM benchmarks.",
+        "timestamp": "2025-12-08T19:29:40.928Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/03",
+        "tags": [
+          "Computation and Language (cs.CL)",
+          "Artificial Intelligence (cs.AI)"
+        ],
+        "doi": "10.48550/arXiv.2511.04703",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 535,
+        "object_id": "paper:arxiv.2511.04703",
+        "created_at": "2025-12-08T19:29:41+00:00",
+        "updated_at": "2025-12-08T19:30:05+00:00",
+        "version": 1
+      }
+    },
+    "paper:openreview.kzYq2hfyHB": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "kzYq2hfyHB",
+        "url": "https://openreview.net/forum?id=kzYq2hfyHB",
+        "title": "Correlated Errors in Large Language Models",
+        "authors": "Elliot Myunghoon Kim, Avi Garg, Kenny Peng, Nikhil Garg",
+        "abstract": "Diversity in training data, architecture, and providers is assumed to mitigate homogeneity in LLMs. However, we lack empirical evidence on whether different LLMs differ \\textit{meaningfully}. We conduct a large-scale empirical evaluation on over 350 LLMs overall, using two popular leaderboards and a resume-screening task. We find substantial correlation in model errors---on one leaderboard dataset, models agree 60\\% of the time when both models err. We identify factors driving model correlation, including shared architectures and providers. Crucially, however, larger and more accurate models have highly correlated errors, even with distinct architectures and providers. Finally, we show the effects of correlation in two downstream tasks: LLM-as-judge evaluation and hiring---the latter reflecting theoretical predictions regarding  algorithmic monoculture.",
+        "timestamp": "2025-12-08T19:29:12.881Z",
+        "rating": "novote",
+        "publishedDate": "01 May 2025",
+        "tags": [
+          "algorithmic monoculture",
+          "evaluations",
+          "LLMs"
+        ],
+        "doi": "",
+        "journalName": "ICML 2025 poster",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 534,
+        "object_id": "paper:openreview.kzYq2hfyHB",
+        "created_at": "2025-12-08T19:29:13+00:00",
+        "updated_at": "2025-12-08T19:29:31+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2410.13341": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2410.13341",
+        "url": "https://arxiv.org/abs/2410.13341",
+        "title": "Limits to scalable evaluation at the frontier: LLM as Judge won't beat twice the data",
+        "authors": "Florian E. Dorner, Vivian Y. Nastl, Moritz Hardt",
+        "abstract": "High quality annotations are increasingly a bottleneck in the explosively growing machine learning ecosystem. Scalable evaluation methods that avoid costly annotation have therefore become an important research ambition. Many hope to use strong existing models in lieu of costly labels to provide cheap model evaluations. Unfortunately, this method of using models as judges introduces biases, such as self-preferencing, that can distort model comparisons. An emerging family of debiasing tools promises to fix these issues by using a few high quality labels to debias a large number of model judgments. In this paper, we study how far such debiasing methods, in principle, can go. Our main result shows that when the judge is no more accurate than the evaluated model, no debiasing method can decrease the required amount of ground truth labels by more than half. Our result speaks to the severe limitations of the LLM-as-a-judge paradigm at the evaluation frontier where the goal is to assess newly released models that are possibly better than the judge. Through an empirical evaluation, we demonstrate that the sample size savings achievable in practice are even more modest than what our theoretical limit suggests. Along the way, our work provides new observations about debiasing methods for model evaluation, and points out promising avenues for future work.",
+        "timestamp": "2025-12-08T19:29:00.017Z",
+        "rating": "novote",
+        "publishedDate": "2024/10/17",
+        "tags": [
+          "Machine Learning (cs.LG)",
+          "Machine Learning (stat.ML)"
+        ],
+        "doi": "10.48550/arXiv.2410.13341",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 533,
+        "object_id": "paper:arxiv.2410.13341",
+        "created_at": "2025-12-08T19:29:00+00:00",
+        "updated_at": "2025-12-08T19:29:19+00:00",
+        "version": 1
+      }
+    },
     "paper:acm.10.1145/3706598.3713292": {
       "data": {
         "sourceId": "acm",
