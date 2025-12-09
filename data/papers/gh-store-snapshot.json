@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2025-12-09T00:42:57.670943+00:00",
+  "snapshot_time": "2025-12-09T16:57:48.038201+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s43588-025-00906-6": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s43588-025-00906-6",
+        "url": "https://www.nature.com/articles/s43588-025-00906-6?utm_source=bluesky&utm_medium=social&utm_campaign=natcomputsci",
+        "title": "SciSciGPT: advancing human\u2013AI collaboration in the science of science",
+        "authors": "Shao, Erzhuo",
+        "abstract": "We introduce SciSciGPT, an open-source, prototype artificial intelligence (AI) collaborator that uses the domain of science of science as a testbed to explore the potential of large language model-powered research tools. SciSciGPT automates complex workflows, supports diverse analytical approaches, accelerates research prototyping and iteration and facilitates reproducibility. Through case studies, we demonstrate its ability to streamline a wide range of empirical and analytical research tasks while highlighting its broader potential to advance research. We further propose a large language model agent capability maturity model for human\u2013AI collaboration, envisioning a roadmap to further improve and expand upon frameworks such as SciSciGPT. As AI capabilities continue to evolve, frameworks such as SciSciGPT may play increasingly pivotal roles in scientific research and discovery. At the same time, these new advances also raise critical challenges, from ensuring transparency and ethical use to balancing human and AI contributions. Addressing these issues may shape the future of scientific inquiry and inform how we train the next generation of scientists to thrive in an increasingly AI-integrated research ecosystem. SciSciGPT is an open-source prototype AI collaborator that explores the use of LLM research tools to automate workflows, support diverse analytical approaches and enhance reproducibility in the domain of science of science.",
+        "timestamp": "2025-12-09T16:56:49.353Z",
+        "rating": "novote",
+        "publishedDate": "2025-12-09",
+        "tags": [
+          "Computational science"
+        ],
+        "doi": "10.1038/s43588-025-00906-6",
+        "journalName": "Nature Computational Science 2025",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 546,
+        "object_id": "paper:nature.s43588-025-00906-6",
+        "created_at": "2025-12-09T16:56:49+00:00",
+        "updated_at": "2025-12-09T16:57:09+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41562-025-02377-1": {
       "data": {
         "sourceId": "nature",
