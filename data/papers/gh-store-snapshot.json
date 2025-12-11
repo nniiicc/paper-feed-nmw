@@ -1,7 +1,61 @@
 {
-  "snapshot_time": "2025-12-11T00:44:34.076453+00:00",
+  "snapshot_time": "2025-12-11T19:29:31.018865+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:sciencedirect.S2212473X25001063": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S2212473X25001063",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-11T19:28:24.601Z",
+            "data": {
+              "session_id": "session_1765481304185_4ut3aml",
+              "source_id": "sciencedirect",
+              "paper_id": "S2212473X25001063",
+              "start_time": "2025-12-11T19:28:16.522Z",
+              "end_time": "2025-12-11T19:28:24.185Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 8
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 548,
+        "object_id": "interactions:sciencedirect.S2212473X25001063",
+        "created_at": "2025-12-11T19:28:25+00:00",
+        "updated_at": "2025-12-11T19:28:52+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S2212473X25001063": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S2212473X25001063",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2212473X25001063",
+        "title": "The regulation of fine-tuning: Federated compliance for modified general-purpose AI models",
+        "authors": "D. Fern\u00e1ndez-Llorca, E. G\u00f3mez, I. S\u00e1nchez, G. Mazzini, O.J. Gstrein, N. Haleem, A. Zwitter, P. Hacker, A. Engel, M. Mauer, N. Helberger, N. Diakopoulos, J. M\u00f6kander, J. Schuett, H.R. Kirk, L. Floridi, P. Ohm, J. Schuett, D. Anisuzzaman, J.G. Malins, P.A. Friedman, Z.I. Attia, T. Blaschke, J. Bajorath, B. Laufer, J. Kleinberg, H. Heidari, A. Berz, A. Engel, P. Hacker, R. Binns, L. Edwards, S. Farquhar, J. Kossen, L. Kuhn, Y. Gal, D. Ganguli, D. Hernandez, L. Lovitt, A. Askell, Y. Bai, A. Chen, T. Conerly, N. Dassarma, D. Drain, N. Elhage, M. Gupta, C. Akiri, K. Aryal, E. Parker, L. Praharaj, P. Hacker, A. Engel, S. Hammer, B. Mittelstadt, Z. Ji, N. Lee, R. Frieske, T. Yu, D. Su, Y. Xu, E. Ishii, Y.J. Bang, A. Madotto, P. Fung, G. Marcus, R. Southen, Oxford Analytica, C. Stokel-Walker, R.V. Noorden, W. Gilchrist, H.-C. Liu, L. Liu, N. Liu, K.D. Sharma, S. Srivastava, F. Ogunde, P. Hacker, M. van Bekkum, F. Zuiderveen Borgesius, T. Heskes, S. Wachter, B. Bischl, M. Binder, M. Lang, T. Pielok, J. Richter, S. Coors, J. Thomas, T. Ullmann, M. Becker, A.L. Boulesteix, D. Deng, P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, H. K\u00fcttler, M. Lewis, W.-t. Yih, T. Rockt\u00e4schel, E.J. Hu, Y. Shen, P. Wallis, Z. Allen-Zhu, Y. Li, S. Wang, L. Wang, W. Chen, I. Goodfellow, Y. Bengio, A. Courville, A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A.N. Gomez, \u0141. Kaiser, I. Polosukhin, I. Shumailov, Z. Shumaylov, Y. Zhao, N. Papernot, R. Anderson, Y. Gal, W. Du, Y. Zhao, B. Li, G. Liu, S. Wang, M.J. Wolf, K. Miller, F.S. Grodzinsky, M. Mitchell, S. Wu, A. Zaldivar, P. Barnes, L. Vasserman, B. Hutchinson, E. Spitzer, I.D. Raji, T. Gebru, B. Blum, J. Rappengl\u00fcck, C.I. Gutierrez, A. Aguirre, R. Uuk, C.C. Boine, M. Franklin, G. Calabresi, S. Wachter, C. Wendehorst, Y. Liu, Y. Jia, R. Geng, J. Jia, N.Z. Gong, I. Solaiman, C. Dennison, K. Roose, A. Wei, N. Haghtalab, J. Steinhardt, M. Assran, Q. Duval, I. Misra, P. Bojanowski, P. Vincent, M. Rabbat, Y. LeCun, N. Ballas, S. Mo, P. Tong, K. Huang, Y. Wang, X. Zhang, K. H. a. others, Z. Deng, W. Ma, Q.-L. Han, W. Zhou, X. Zhu, S. Wen, Y. Xiang, J. De Bruyne, O. Dheu, C. Ducuing, P. Hacker, C. Novelli, F. Casolari, P. Hacker, G. Spedicato, L. Floridi, G. Wagner, M. Vogel, M. Chertoff, J. Wiley, R. Kahn, P. Hacker, C. Wendehorst, T. Madiega, L. Grozdanovski, M.B. Gallub, R.A. Sachs, G. Swanson, P. Zablotsky, T. Stilwell, C.A. Czernik, C. F\u00f6rster, M. Veale, F.Z. Borgesius, M. Almada, N. Petit, G. Wagner, M.L. Smith, M.D. Green, R. Gorwa, M. Veale, W. Hawkins, B. Mittelstadt, C. Russell, D. Thiel, M. Stroebel, R. Portnoff, A. Trivison, M. Herbosch, T.K. Sundberg, R. Kilian, L. J\u00e4ck, D. Ebel, Jan Koco\u0144, Marek Maziarz, Niels van Dijk, \u2026, Kjetil Rommetveit, Jan Koco\u0144, \u2026, Przemys\u0142aw Kazienko, Maciej Dzie\u017cyc, Przemys\u0142aw Kazienko, Alice Pailh\u00e8s, \u2026, Gustav Kuhn, Teddy Ferdinan, Jan Koco\u0144",
+        "abstract": "This paper addresses the regulatory and liability implications of modifying general-purpose AI (GPAI) models under the EU AI Act and related legal fra\u2026",
+        "timestamp": "2025-12-11T19:28:16.836Z",
+        "rating": "novote",
+        "publishedDate": "2026/04/01",
+        "tags": [],
+        "doi": "10.1016/j.clsr.2025.106234",
+        "journalName": "Computer Law & Security Review",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 547,
+        "object_id": "paper:sciencedirect.S2212473X25001063",
+        "created_at": "2025-12-11T19:28:17+00:00",
+        "updated_at": "2025-12-11T19:28:40+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s43588-025-00906-6": {
       "data": {
         "sourceId": "nature",
