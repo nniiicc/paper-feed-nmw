@@ -1,7 +1,69 @@
 {
-  "snapshot_time": "2025-12-13T23:15:40.060014+00:00",
+  "snapshot_time": "2025-12-13T23:22:34.112775+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.1D6C2630": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "1D6C2630",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 568,
+        "object_id": "interactions:url-misc.1D6C2630",
+        "created_at": "2025-12-13T23:22:21+00:00",
+        "updated_at": "2025-12-13T23:22:23+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.1D6C2630": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "1D6C2630",
+        "url": "https://www.researchgate.net/profile/Sarah-Chen-49/publication/398511808_Career_Trajectory_Forecasting_via_Latent_Space_Generative_Modeling_A_Theoretical_Framework_for_Predicting_Extreme_Professional_Success/links/6938cbbc9aa6b4649dbee8ae/Career-Trajectory-Forecasting-via-Latent-Space-Generative-Modeling-A-Theoretical-Framework-for-Predicting-Extreme-Professional-Success.pdf",
+        "title": "1D6C2630",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-13T23:21:39.700Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "pdf"
+      },
+      "meta": {
+        "issue_number": 567,
+        "object_id": "paper:url-misc.1D6C2630",
+        "created_at": "2025-12-13T23:21:40+00:00",
+        "updated_at": "2025-12-13T23:21:59+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.5E832792": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "5E832792",
+        "url": "https://www.researchgate.net/profile/Sarah-Chen-49/publication/398423708_A_Rigorous_Analytical_Treatment_of_Probabilistic_Topic_Models_Foundations_Inference_Identifiability_and_Theoretical_Frontiers/links/6935ac9ea1fd01798905f8d5/A-Rigorous-Analytical-Treatment-of-Probabilistic-Topic-Models-Foundations-Inference-Identifiability-and-Theoretical-Frontiers.pdf",
+        "title": "5E832792",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-13T23:21:27.393Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "pdf"
+      },
+      "meta": {
+        "issue_number": 566,
+        "object_id": "paper:url-misc.5E832792",
+        "created_at": "2025-12-13T23:21:27+00:00",
+        "updated_at": "2025-12-13T23:21:46+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.54106DBA": {
       "data": {
         "sourceId": "url-misc",
@@ -263,6 +325,51 @@
         "object_id": "paper:url-misc.280802AB",
         "created_at": "2025-12-13T23:07:38+00:00",
         "updated_at": "2025-12-13T23:07:58+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.33A21640": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "33A21640",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-13T23:07:30.969Z",
+            "data": {
+              "session_id": "session_1765667250855_tpq7qkq",
+              "source_id": "url-misc",
+              "paper_id": "33A21640",
+              "start_time": "2025-12-13T23:07:01.099Z",
+              "end_time": "2025-12-13T23:07:30.855Z",
+              "heartbeat_count": 5,
+              "duration_seconds": 25,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 30
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-13T23:15:28.126Z",
+            "data": {
+              "session_id": "session_1765667728119_cvek391",
+              "source_id": "url-misc",
+              "paper_id": "33A21640",
+              "start_time": "2025-12-13T23:15:19.190Z",
+              "end_time": "2025-12-13T23:15:28.119Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 9
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 556,
+        "object_id": "interactions:url-misc.33A21640",
+        "created_at": "2025-12-13T23:07:31+00:00",
+        "updated_at": "2025-12-13T23:15:43+00:00",
         "version": 1
       }
     },
