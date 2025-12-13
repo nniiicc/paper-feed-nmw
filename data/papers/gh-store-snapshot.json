@@ -1,37 +1,7 @@
 {
-  "snapshot_time": "2025-12-13T23:12:42.951592+00:00",
+  "snapshot_time": "2025-12-13T23:13:33.554518+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
-    "interactions:arxiv.2309.16437": {
-      "data": {
-        "sourceId": "arxiv",
-        "paperId": "2309.16437",
-        "interactions": [
-          {
-            "type": "reading_session",
-            "timestamp": "2025-12-13T23:12:19.146Z",
-            "data": {
-              "session_id": "session_1765667538962_80a4h35",
-              "source_id": "arxiv",
-              "paper_id": "2309.16437",
-              "start_time": "2025-12-13T23:12:05.110Z",
-              "end_time": "2025-12-13T23:12:18.962Z",
-              "heartbeat_count": 2,
-              "duration_seconds": 10,
-              "idle_seconds": 4,
-              "total_elapsed_seconds": 14
-            }
-          }
-        ]
-      },
-      "meta": {
-        "issue_number": 562,
-        "object_id": "interactions:arxiv.2309.16437",
-        "created_at": "2025-12-13T23:12:19+00:00",
-        "updated_at": "2025-12-13T23:12:38+00:00",
-        "version": 1
-      }
-    },
     "paper:url-misc.485CD76E": {
       "data": {
         "sourceId": "url-misc",
@@ -101,6 +71,81 @@
         "object_id": "paper:arxiv.2309.16437",
         "created_at": "2025-12-13T23:08:45+00:00",
         "updated_at": "2025-12-13T23:09:06+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.280802AB": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "280802AB",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-13T23:08:15.303Z",
+            "data": {
+              "session_id": "session_1765667295296_yhv35mj",
+              "source_id": "url-misc",
+              "paper_id": "280802AB",
+              "start_time": "2025-12-13T23:08:09.793Z",
+              "end_time": "2025-12-13T23:08:15.296Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-13T23:09:43.754Z",
+            "data": {
+              "session_id": "session_1765667383680_2r7iwud",
+              "source_id": "url-misc",
+              "paper_id": "280802AB",
+              "start_time": "2025-12-13T23:09:32.566Z",
+              "end_time": "2025-12-13T23:09:43.680Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 11
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-13T23:10:57.736Z",
+            "data": {
+              "session_id": "session_1765667457719_fh1u1yq",
+              "source_id": "url-misc",
+              "paper_id": "280802AB",
+              "start_time": "2025-12-13T23:10:38.169Z",
+              "end_time": "2025-12-13T23:10:57.719Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 20
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-13T23:12:30.155Z",
+            "data": {
+              "session_id": "session_1765667549943_y2ylesc",
+              "source_id": "url-misc",
+              "paper_id": "280802AB",
+              "start_time": "2025-12-13T23:12:24.025Z",
+              "end_time": "2025-12-13T23:12:29.943Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 558,
+        "object_id": "interactions:url-misc.280802AB",
+        "created_at": "2025-12-13T23:08:10+00:00",
+        "updated_at": "2025-12-13T23:12:55+00:00",
         "version": 1
       }
     },
