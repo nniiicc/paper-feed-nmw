@@ -1,7 +1,57 @@
 {
-  "snapshot_time": "2025-12-14T22:58:13.330302+00:00",
+  "snapshot_time": "2025-12-14T22:59:09.422642+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/s11192-025-05424-w": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s11192-025-05424-w",
+        "url": "https://link.springer.com/article/10.1007/s11192-025-05424-w",
+        "title": "Standing on the shoulder of data: data-driven research boosts scientific innovation",
+        "authors": "Yang, Alex J., Zhao, Star X., Deng, Sanhong",
+        "abstract": "The increasing centrality of data in scientific research prompts important questions regarding its influence on the innovative potential of scientific endeavors. While the value of data in enhancing research rigor is well-recognized, empirical studies investigating its effects on scientific progress remain limited. This paper addresses this gap by analyzing the impact of data-driven research on scientific outcomes, utilizing two recent datasets from the life and social sciences. By applying Coarsened Exact Matching (CEM) to pair data-based papers with non-data-based counterparts, we isolate the effects of data utilization on scientific impact, interdisciplinarity, and disruption. Our findings provide evidence that data-based papers demonstrate significantly higher scientific impact, greater interdisciplinarity, and a stronger potential for disruption compared to their non-data-based counterparts. Additionally, data-based papers receive both higher disruptive and consolidating citations, indicating a dual effect that not only challenges existing paradigms but also strengthens and expands the existing body of knowledge. These results underscore the role of data-driven research in shaping the future of scientific inquiry, bridging traditional research paradigms with emerging, data-centric methodologies.",
+        "timestamp": "2025-12-14T22:58:14.193Z",
+        "rating": "novote",
+        "publishedDate": "2025/10",
+        "tags": [
+          "Information Storage and Retrieval"
+        ],
+        "doi": "10.1007/s11192-025-05424-w",
+        "journalName": "Scientometrics",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 577,
+        "object_id": "paper:springer.10.1007/s11192-025-05424-w",
+        "created_at": "2025-12-14T22:58:14+00:00",
+        "updated_at": "2025-12-14T22:58:32+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.47C2E3F7": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "47C2E3F7",
+        "url": "https://scholar.google.com/scholar?cluster=18280935017327569105&hl=en&as_sdt=5,48&sciodt=0,48",
+        "title": "Yang: Standing on the shoulder of data: data-driven... - Google Scholar",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-14T22:58:11.925Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 576,
+        "object_id": "paper:url-misc.47C2E3F7",
+        "created_at": "2025-12-14T22:58:12+00:00",
+        "updated_at": "2025-12-14T22:58:32+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.2B2344AE": {
       "data": {
         "sourceId": "url-misc",
