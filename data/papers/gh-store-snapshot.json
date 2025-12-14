@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2025-12-14T22:59:09.422642+00:00",
+  "snapshot_time": "2025-12-14T23:00:00.799763+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/978-981-95-4861-3_25": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/978-981-95-4861-3_25",
+        "url": "https://link.springer.com/chapter/10.1007/978-981-95-4861-3_25?fromPaywallRec=true",
+        "title": "Data Papers in\u00a0Scholarly Communication: Patterns of\u00a0Publication and\u00a0Citation Performance",
+        "authors": "Tsunoda, Hiroyuki, Sun, Yuan, Nishizawa, Masaki, Liu, Xiaomin, Amano, Kou",
+        "abstract": "This study examines the publication and citation patterns of data papers\u2014scholarly articles that describe research datasets\u2014across 32 journals indexed in Web of Science. As a cornerstone of open science, data papers enhance transparency, reproducibility,...",
+        "timestamp": "2025-12-14T22:59:04.683Z",
+        "rating": "novote",
+        "publishedDate": "2026",
+        "tags": [],
+        "doi": "10.1007/978-981-95-4861-3_25",
+        "journalName": "International Conference on Asian Digital Libraries",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 578,
+        "object_id": "paper:springer.10.1007/978-981-95-4861-3_25",
+        "created_at": "2025-12-14T22:59:05+00:00",
+        "updated_at": "2025-12-14T22:59:24+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/s11192-025-05424-w": {
       "data": {
         "sourceId": "springer",
