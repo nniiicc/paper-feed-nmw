@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2025-12-14T22:36:59.563931+00:00",
+  "snapshot_time": "2025-12-14T22:40:19.239055+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.485CD76E": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "485CD76E",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 570,
+        "object_id": "interactions:url-misc.485CD76E",
+        "created_at": "2025-12-14T22:39:26+00:00",
+        "updated_at": "2025-12-14T22:39:27+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.13833B59": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "13833B59",
+        "url": "https://www.researchgate.net/publication/398423708_A_Rigorous_Analytical_Treatment_of_Probabilistic_Topic_Models_Foundations_Inference_Identifiability_and_Theoretical_Frontiers",
+        "title": "(PDF) A Rigorous Analytical Treatment of Probabilistic Topic Models: Foundations, Inference, Identifiability, and Theoretical Frontiers",
+        "authors": "",
+        "abstract": "PDF | Probabilistic topic models, particularly Latent Dirichlet Allocation (LDA) and its hierarchical , correlated, and dynamic extensions, remain a... | Find, read and cite all the research you need on ResearchGate",
+        "timestamp": "2025-12-14T22:39:25.397Z",
+        "rating": "novote",
+        "publishedDate": "2025-12-09T21:46:12.901+0000",
+        "tags": [],
+        "doi": "10.13140/RG.2.2.12416.90887",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 569,
+        "object_id": "paper:url-misc.13833B59",
+        "created_at": "2025-12-14T22:39:25+00:00",
+        "updated_at": "2025-12-14T22:39:44+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.1D6C2630": {
       "data": {
         "sourceId": "url-misc",
@@ -293,6 +331,21 @@
               "idle_seconds": 1,
               "total_elapsed_seconds": 6
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-14T22:39:14.075Z",
+            "data": {
+              "session_id": "session_1765751953831_c338l2b",
+              "source_id": "url-misc",
+              "paper_id": "280802AB",
+              "start_time": "2025-12-14T22:38:50.204Z",
+              "end_time": "2025-12-14T22:39:13.831Z",
+              "heartbeat_count": 4,
+              "duration_seconds": 20,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 24
+            }
           }
         ]
       },
@@ -300,7 +353,7 @@
         "issue_number": 558,
         "object_id": "interactions:url-misc.280802AB",
         "created_at": "2025-12-13T23:08:10+00:00",
-        "updated_at": "2025-12-13T23:12:55+00:00",
+        "updated_at": "2025-12-14T22:39:39+00:00",
         "version": 1
       }
     },
