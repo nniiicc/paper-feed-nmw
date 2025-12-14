@@ -1,7 +1,37 @@
 {
-  "snapshot_time": "2025-12-14T22:40:19.239055+00:00",
+  "snapshot_time": "2025-12-14T22:42:24.944863+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.13833B59": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "13833B59",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-14T22:41:02.406Z",
+            "data": {
+              "session_id": "session_1765752061983_6pnuefc",
+              "source_id": "url-misc",
+              "paper_id": "13833B59",
+              "start_time": "2025-12-14T22:39:25.209Z",
+              "end_time": "2025-12-14T22:41:01.983Z",
+              "heartbeat_count": 19,
+              "duration_seconds": 95,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 97
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 571,
+        "object_id": "interactions:url-misc.13833B59",
+        "created_at": "2025-12-14T22:41:03+00:00",
+        "updated_at": "2025-12-14T22:41:25+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.485CD76E": {
       "data": {
         "sourceId": "url-misc",
@@ -44,13 +74,29 @@
       "data": {
         "sourceId": "url-misc",
         "paperId": "1D6C2630",
-        "interactions": []
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-14T22:41:31.244Z",
+            "data": {
+              "session_id": "session_1765752091056_xtss3d7",
+              "source_id": "url-misc",
+              "paper_id": "1D6C2630",
+              "start_time": "2025-12-14T22:41:06.070Z",
+              "end_time": "2025-12-14T22:41:31.056Z",
+              "heartbeat_count": 4,
+              "duration_seconds": 20,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 25
+            }
+          }
+        ]
       },
       "meta": {
         "issue_number": 568,
         "object_id": "interactions:url-misc.1D6C2630",
         "created_at": "2025-12-13T23:22:21+00:00",
-        "updated_at": "2025-12-13T23:22:23+00:00",
+        "updated_at": "2025-12-14T22:41:52+00:00",
         "version": 1
       }
     },
