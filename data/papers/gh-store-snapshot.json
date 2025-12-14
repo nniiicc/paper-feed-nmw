@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2025-12-14T23:00:00.799763+00:00",
+  "snapshot_time": "2025-12-14T23:05:27.018337+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "paper:springer.10.1007/978-981-95-4861-3_25": {
@@ -175,6 +175,21 @@
               "idle_seconds": 2,
               "total_elapsed_seconds": 97
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-14T23:04:25.039Z",
+            "data": {
+              "session_id": "session_1765753464782_a7bqzqz",
+              "source_id": "url-misc",
+              "paper_id": "13833B59",
+              "start_time": "2025-12-14T23:04:15.129Z",
+              "end_time": "2025-12-14T23:04:24.782Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 10
+            }
           }
         ]
       },
@@ -182,7 +197,7 @@
         "issue_number": 571,
         "object_id": "interactions:url-misc.13833B59",
         "created_at": "2025-12-14T22:41:03+00:00",
-        "updated_at": "2025-12-14T22:41:25+00:00",
+        "updated_at": "2025-12-14T23:04:47+00:00",
         "version": 1
       }
     },
@@ -546,6 +561,21 @@
               "idle_seconds": 4,
               "total_elapsed_seconds": 24
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-14T23:05:00.093Z",
+            "data": {
+              "session_id": "session_1765753499639_xiapx7u",
+              "source_id": "url-misc",
+              "paper_id": "280802AB",
+              "start_time": "2025-12-14T23:04:24.786Z",
+              "end_time": "2025-12-14T23:04:59.639Z",
+              "heartbeat_count": 6,
+              "duration_seconds": 30,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 35
+            }
           }
         ]
       },
@@ -553,7 +583,7 @@
         "issue_number": 558,
         "object_id": "interactions:url-misc.280802AB",
         "created_at": "2025-12-13T23:08:10+00:00",
-        "updated_at": "2025-12-14T22:39:39+00:00",
+        "updated_at": "2025-12-14T23:05:21+00:00",
         "version": 1
       }
     },
