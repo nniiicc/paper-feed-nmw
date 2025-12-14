@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2025-12-14T22:56:56.638361+00:00",
+  "snapshot_time": "2025-12-14T22:58:13.330302+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.2B2344AE": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2B2344AE",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 575,
+        "object_id": "interactions:url-misc.2B2344AE",
+        "created_at": "2025-12-14T22:57:48+00:00",
+        "updated_at": "2025-12-14T22:57:49+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.2B2344AE": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2B2344AE",
+        "url": "https://www.science.org/doi/abs/10.1126/science.aed7998",
+        "title": "SAFE Act hinders US-China collaboration",
+        "authors": "Alex J. Yang, Richard B. Freeman, Sanhong Deng",
+        "abstract": "The US Securing American Funding and Expertise from Adversarial Research Exploitation (SAFE) Act, introduced as Amendment 163 to the National Defense Authorization Act for Fiscal Year 2025 (1), would bar US scientists from federal funding if they have collaborated within the past 5 years with researchers affiliated with China, Russia, Iran, or North Korea. Prohibited activities include co-authorship on papers, joint projects, and mentoring foreign postdoctoral scholars. Such a blanket policy would fracture essential international partnerships at a moment when global challenges demand cooperative expertise.",
+        "timestamp": "2025-12-14T22:57:17.452Z",
+        "rating": "novote",
+        "publishedDate": "2025-12-04",
+        "tags": [],
+        "doi": "10.1126/science.aed7998",
+        "journalName": "Science",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 574,
+        "object_id": "paper:url-misc.2B2344AE",
+        "created_at": "2025-12-14T22:57:17+00:00",
+        "updated_at": "2025-12-14T22:57:39+00:00",
+        "version": 1
+      }
+    },
     "interactions:openreview.2Np82XlB34": {
       "data": {
         "sourceId": "openreview",
