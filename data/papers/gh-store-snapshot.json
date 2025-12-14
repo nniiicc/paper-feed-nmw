@@ -1,7 +1,49 @@
 {
-  "snapshot_time": "2025-12-14T22:42:24.944863+00:00",
+  "snapshot_time": "2025-12-14T22:56:56.638361+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:openreview.2Np82XlB34": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "2Np82XlB34",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 573,
+        "object_id": "interactions:openreview.2Np82XlB34",
+        "created_at": "2025-12-14T22:56:35+00:00",
+        "updated_at": "2025-12-14T22:56:36+00:00",
+        "version": 1
+      }
+    },
+    "paper:openreview.2Np82XlB34": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "2Np82XlB34",
+        "url": "https://openreview.net/forum?id=2Np82XlB34",
+        "title": "ChiFlow: Torsional Asymmetry Flow Matching For Chirality-Aware Protein Backbone Generation",
+        "authors": "Li Sun, Hechuan Zhang, Chunchen Wang, Longzhu He, Suyang Zhou, Hao Peng, Jiawei Zhang, Philip S. Yu",
+        "abstract": "Protein backbone generation is critical for de novo protein design, yet existing methods suffer from two key limitations: over-reliance on SE(3) modeling, which introduces unnecessary complexity for cyclic dihedral angles, and lack of explicit chirality control, leading to nonfunctional D-chiral outputs. We present ChiFlow, a chirality-aware backbone generator based on flow matching on toroidal Riemannian manifolds. ChiFlow models backbone dihedrals $\\phi,\\psi,\\omega$ as points on $\\mathbb{T}^3$, extending PPFlow to backbone variables and using periodicity to avoid boundary artifacts. Unlike the previous SE(3)-based flows such as Frameflow and Foldflow2, ChiFlow operates directly on the hypertorus, simplifying computations for angles. We also introduce a Riemannian mirroring operator and impose asymmetry on the learned vector field to enforce L-chirality. And we extended the methods in Foldingdiff by reconstructing the 3D atomic coordinates using fixed bond lengths and trigonometric calculations. To increase the diversity that was lowered by the chirality constraint, we added Stochastic Flow Matching to ChiFlow, resulting in an increase in diversity of the generated backbone. With extensive experiments on real-world protein datasets, ChiFlow approaches the leading flow models in the benchmark while maintaining absolute chirality purity. Our implement detail is at https://anonymous.4open.science/r/anonym1.",
+        "timestamp": "2025-12-14T22:55:58.397Z",
+        "rating": "novote",
+        "publishedDate": "2025/10/08",
+        "tags": [
+          "graph",
+          "machine learning",
+          "protein backbone generation"
+        ],
+        "doi": "",
+        "journalName": "ICLR 2026 Conference Withdrawn Submission",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 572,
+        "object_id": "paper:openreview.2Np82XlB34",
+        "created_at": "2025-12-14T22:55:58+00:00",
+        "updated_at": "2025-12-14T22:56:22+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.13833B59": {
       "data": {
         "sourceId": "url-misc",
