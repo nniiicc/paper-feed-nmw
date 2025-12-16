@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2025-12-16T17:49:07.384417+00:00",
+  "snapshot_time": "2025-12-16T17:52:39.559708+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:wiley.10.1111/psj.70013": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70013",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/psj.70013",
+        "title": "A novel research method to detect punctuation and its application to bureaucratic decision-making",
+        "authors": "J. S. Butler, Iuliia Shybalkina",
+        "abstract": "Punctuated equilibrium theory (PET) suggests that policy processes experience periods of stability interrupted by dramatic change. Most previous studies have used kurtosis, distribution tests, or cha...",
+        "timestamp": "2025-12-16T17:51:41.617Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/01",
+        "tags": [
+          "budget"
+        ],
+        "doi": "10.1111/psj.70013",
+        "journalName": "Policy Studies Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 590,
+        "object_id": "paper:wiley.10.1111/psj.70013",
+        "created_at": "2025-12-16T17:51:41+00:00",
+        "updated_at": "2025-12-16T17:52:00+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.2ADEE811": {
       "data": {
         "sourceId": "url-misc",
