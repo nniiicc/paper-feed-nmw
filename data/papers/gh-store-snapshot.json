@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2025-12-16T01:00:35.306642+00:00",
+  "snapshot_time": "2025-12-16T01:08:54.348106+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2505.15799": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2505.15799",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 585,
+        "object_id": "interactions:arxiv.2505.15799",
+        "created_at": "2025-12-16T01:08:48+00:00",
+        "updated_at": "2025-12-16T01:08:50+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2505.15799": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2505.15799",
+        "url": "https://arxiv.org/abs/2505.15799",
+        "title": "The Agentic Economy",
+        "authors": "David M. Rothschild, Markus Mobius, Jake M. Hofman, Eleanor W. Dillon, Daniel G. Goldstein, Nicole Immorlica, Sonia Jaffe, Brendan Lucier, Aleksandrs Slivkins, Matthew Vogel",
+        "abstract": "Generative AI has transformed human-computer interaction by enabling natural language interfaces and the emergence of autonomous agents capable of acting on users' behalf. While early applications have improved individual productivity, these gains have largely been confined to predefined tasks within existing workflows. We argue that the more profound economic impact lies in reducing communication frictions between consumers and businesses. This shift could reorganize markets, redistribute power, and catalyze the creation of new products and services. We explore the implications of an agentic economy, where assistant agents act on behalf of consumers and service agents represent businesses, interacting programmatically to facilitate transactions. A key distinction we draw is between unscripted interactions -- enabled by technical advances in natural language and protocol design -- and unrestricted interactions, which depend on market structures and governance. We examine the current limitations of siloed and end-to-end agents, and explore future scenarios shaped by technical standards and market dynamics. These include the potential tension between agentic walled gardens and an open web of agents, implications for advertising and discovery, the evolution of micro-transactions, and the unbundling and rebundling of digital goods. Ultimately, we argue that the architecture of agentic communication will determine the extent to which generative AI democratizes access to economic opportunity.",
+        "timestamp": "2025-12-16T01:07:56.533Z",
+        "rating": "novote",
+        "publishedDate": "2025/05/21",
+        "tags": [
+          "Computers and Society (cs.CY)"
+        ],
+        "doi": "10.48550/arXiv.2505.15799",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 584,
+        "object_id": "paper:arxiv.2505.15799",
+        "created_at": "2025-12-16T01:07:56+00:00",
+        "updated_at": "2025-12-16T01:08:22+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2511.21739": {
       "data": {
         "sourceId": "arxiv",
