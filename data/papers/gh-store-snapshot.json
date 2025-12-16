@@ -1,7 +1,63 @@
 {
-  "snapshot_time": "2025-12-16T01:08:54.348106+00:00",
+  "snapshot_time": "2025-12-16T01:11:46.753495+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2404.11794": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2404.11794",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2025-12-16T01:10:47.826Z",
+            "data": {
+              "session_id": "session_1765847447823_boh5o2j",
+              "source_id": "arxiv",
+              "paper_id": "2404.11794",
+              "start_time": "2025-12-16T01:10:38.595Z",
+              "end_time": "2025-12-16T01:10:47.823Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 9
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 587,
+        "object_id": "interactions:arxiv.2404.11794",
+        "created_at": "2025-12-16T01:10:48+00:00",
+        "updated_at": "2025-12-16T01:11:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2404.11794": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2404.11794",
+        "url": "https://arxiv.org/abs/2404.11794",
+        "title": "Automated Social Science: Language Models as Scientist and Subjects",
+        "authors": "Benjamin S. Manning, Kehang Zhu, John J. Horton",
+        "abstract": "We present an approach for automatically generating and testing, in silico, social scientific hypotheses. This automation is made possible by recent advances in large language models (LLM), but the key feature of the approach is the use of structural causal models. Structural causal models provide a language to state hypotheses, a blueprint for constructing LLM-based agents, an experimental design, and a plan for data analysis. The fitted structural causal model becomes an object available for prediction or the planning of follow-on experiments. We demonstrate the approach with several scenarios: a negotiation, a bail hearing, a job interview, and an auction. In each case, causal relationships are both proposed and tested by the system, finding evidence for some and not others. We provide evidence that the insights from these simulations of social interactions are not available to the LLM purely through direct elicitation. When given its proposed structural causal model for each scenario, the LLM is good at predicting the signs of estimated effects, but it cannot reliably predict the magnitudes of those estimates. In the auction experiment, the in silico simulation results closely match the predictions of auction theory, but elicited predictions of the clearing prices from the LLM are inaccurate. However, the LLM's predictions are dramatically improved if the model can condition on the fitted structural causal model. In short, the LLM knows more than it can (immediately) tell.",
+        "timestamp": "2025-12-16T01:10:33.884Z",
+        "rating": "novote",
+        "publishedDate": "2024/04/17",
+        "tags": [
+          "General Economics (econ.GN)"
+        ],
+        "doi": "10.48550/arXiv.2404.11794",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 586,
+        "object_id": "paper:arxiv.2404.11794",
+        "created_at": "2025-12-16T01:10:34+00:00",
+        "updated_at": "2025-12-16T01:10:54+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2505.15799": {
       "data": {
         "sourceId": "arxiv",
