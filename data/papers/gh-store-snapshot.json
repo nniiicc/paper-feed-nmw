@@ -1,7 +1,48 @@
 {
-  "snapshot_time": "2025-12-16T19:10:37.194458+00:00",
+  "snapshot_time": "2025-12-16T19:38:20.059700+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2510.25779": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2510.25779",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 600,
+        "object_id": "interactions:arxiv.2510.25779",
+        "created_at": "2025-12-16T19:37:59+00:00",
+        "updated_at": "2025-12-16T19:38:00+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2510.25779": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2510.25779",
+        "url": "https://arxiv.org/abs/2510.25779",
+        "title": "Magentic Marketplace: An Open-Source Environment for Studying Agentic Markets",
+        "authors": "Gagan Bansal, Wenyue Hua, Zezhou Huang, Adam Fourney, Amanda Swearngin, Will Epperson, Tyler Payne, Jake M. Hofman, Brendan Lucier, Chinmay Singh, Markus Mobius, Akshay Nambi, Archana Yadav, Kevin Gao, David M. Rothschild, Aleksandrs Slivkins, Daniel G. Goldstein, Hussein Mozannar, Nicole Immorlica, Maya Murad, Matthew Vogel, Subbarao Kambhampati, Eric Horvitz, Saleema Amershi",
+        "abstract": "As LLM agents advance, they are increasingly mediating economic decisions, ranging from product discovery to transactions, on behalf of users. Such applications promise benefits but also raise many questions about agent accountability and value for users. Addressing these questions requires understanding how agents behave in realistic market conditions. However, previous research has largely evaluated agents in constrained settings, such as single-task marketplaces (e.g., negotiation) or structured two-agent interactions. Real-world markets are fundamentally different: they require agents to handle diverse economic activities and coordinate within large, dynamic ecosystems where multiple agents with opaque behaviors may engage in open-ended dialogues. To bridge this gap, we investigate two-sided agentic marketplaces where Assistant agents represent consumers and Service agents represent competing businesses. To study these interactions safely, we develop Magentic-Marketplace -- a simulated environment where Assistants and Services can operate. This environment enables us to study key market dynamics: the utility agents achieve, behavioral biases, vulnerability to manipulation, and how search mechanisms shape market outcomes. Our experiments show that frontier models can approach optimal welfare -- but only under ideal search conditions. Performance degrades sharply with scale, and all models exhibit severe first-proposal bias, creating 10-30x advantages for response speed over quality. These findings reveal how behaviors emerge across market conditions, informing the design of fair and efficient agentic marketplaces.",
+        "timestamp": "2025-12-16T19:37:22.457Z",
+        "rating": "novote",
+        "publishedDate": "2025/10/27",
+        "tags": [
+          "Multiagent Systems (cs.MA)",
+          "Artificial Intelligence (cs.AI)"
+        ],
+        "doi": "10.48550/arXiv.2510.25779",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 599,
+        "object_id": "paper:arxiv.2510.25779",
+        "created_at": "2025-12-16T19:37:22+00:00",
+        "updated_at": "2025-12-16T19:37:40+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2505.21733": {
       "data": {
         "sourceId": "arxiv",
