@@ -1,7 +1,55 @@
 {
-  "snapshot_time": "2025-12-16T20:20:09.573654+00:00",
+  "snapshot_time": "2025-12-16T22:51:08.903256+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.1B4EEC85": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "1B4EEC85",
+        "url": "https://www.researchgate.net/profile/Sarah-Chen-49/publication/398269018_Quantifying_Transformative_Impact_in_Scientific_Publications_via_Citation-Based_Novelty_Metrics/links/692f96f10e91876082c0c047/Quantifying-Transformative-Impact-in-Scientific-Publications-via-Citation-Based-Novelty-Metrics.pdf?__cf_chl_tk=_x9KdDIcYIeHRFPAWpp.C5wASnwuPt9G87Hb9H0kXfQ-1765925415-1.0.1.1-38S6Kzv6CTu.3sxBM3ePWbVgi7MYc6ioaqquSCjjQbI",
+        "title": "Security check required",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-16T22:50:17.179Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 602,
+        "object_id": "paper:url-misc.1B4EEC85",
+        "created_at": "2025-12-16T22:50:17+00:00",
+        "updated_at": "2025-12-16T22:50:37+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.6C43ECBD": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "6C43ECBD",
+        "url": "https://www.researchgate.net/profile/Sarah-Chen-49/publication/398269018_Quantifying_Transformative_Impact_in_Scientific_Publications_via_Citation-Based_Novelty_Metrics/links/692f96f10e91876082c0c047/Quantifying-Transformative-Impact-in-Scientific-Publications-via-Citation-Based-Novelty-Metrics.pdf",
+        "title": "Security check required",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2025-12-16T22:50:15.885Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "pdf"
+      },
+      "meta": {
+        "issue_number": 601,
+        "object_id": "paper:url-misc.6C43ECBD",
+        "created_at": "2025-12-16T22:50:16+00:00",
+        "updated_at": "2025-12-16T22:50:34+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2510.25779": {
       "data": {
         "sourceId": "arxiv",
