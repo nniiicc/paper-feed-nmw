@@ -1,7 +1,61 @@
 {
-  "snapshot_time": "2025-12-16T00:44:06.124927+00:00",
+  "snapshot_time": "2025-12-16T00:58:58.473393+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2511.21739": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2511.21739",
+        "url": "https://www.arxiv.org/abs/2511.21739",
+        "title": "The Rapid Growth of AI Foundation Model Usage in Science",
+        "authors": "Ana Tri\u0161ovi\u0107, Alex Fogelson, Janakan Sivaloganathan, Neil Thompson",
+        "abstract": "We present the first large-scale analysis of AI foundation model usage in science - not just citations or keywords. We find that adoption has grown rapidly, at nearly-exponential rates, with the highest uptake in Linguistics, Computer Science, and Engineering. Vision models are the most used foundation models in science, although language models' share is growing. Open-weight models dominate. As AI builders increase the parameter counts of their models, scientists have followed suit but at a much slower rate: in 2013, the median foundation model built was 7.7x larger than the median one adopted in science, by 2024 this had jumped to 26x. We also present suggestive evidence that scientists' use of these smaller models may be limiting them from getting the full benefits of AI-enabled science, as papers that use larger models appear in higher-impact journals and accrue more citations.",
+        "timestamp": "2025-12-16T00:57:39.427Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/21",
+        "tags": [
+          "Digital Libraries (cs.DL)",
+          "Artificial Intelligence (cs.AI)"
+        ],
+        "doi": "10.48550/arXiv.2511.21739",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 579,
+        "object_id": "paper:arxiv.2511.21739",
+        "created_at": "2025-12-16T00:57:39+00:00",
+        "updated_at": "2025-12-16T00:58:02+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2512.00651": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2512.00651",
+        "url": "https://arxiv.org/abs/2512.00651",
+        "title": "Large Language Models for Software Engineering: A Reproducibility Crisis",
+        "authors": "Mohammed Latif Siddiq, Arvin Islam-Gomes, Natalie Sekerak, Joanna C. S. Santos",
+        "abstract": "Reproducibility is a cornerstone of scientific progress, yet its state in large language model (LLM)-based software engineering (SE) research remains poorly understood. This paper presents the first large-scale, empirical study of reproducibility practices in LLM-for-SE research. We systematically mined and analyzed 640 papers published between 2017 and 2025 across premier software engineering, machine learning, and natural language processing venues, extracting structured metadata from publications, repositories, and documentation. Guided by four research questions, we examine (i) the prevalence of reproducibility smells, (ii) how reproducibility has evolved over time, (iii) whether artifact evaluation badges reliably reflect reproducibility quality, and (iv) how publication venues influence transparency practices. Using a taxonomy of seven smell categories: Code and Execution, Data, Documentation, Environment and Tooling, Versioning, Model, and Access and Legal, we manually annotated all papers and associated artifacts. Our analysis reveals persistent gaps in artifact availability, environment specification, versioning rigor, and documentation clarity, despite modest improvements in recent years and increased adoption of artifact evaluation processes at top SE venues. Notably, we find that badges often signal artifact presence but do not consistently guarantee execution fidelity or long-term reproducibility. Motivated by these findings, we provide actionable recommendations to mitigate reproducibility smells and introduce a Reproducibility Maturity Model (RMM) to move beyond binary artifact certification toward multi-dimensional, progressive evaluation of reproducibility rigor.",
+        "timestamp": "2025-12-16T00:57:39.534Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/29",
+        "tags": [
+          "Software Engineering (cs.SE)",
+          "Machine Learning (cs.LG)"
+        ],
+        "doi": "10.48550/arXiv.2512.00651",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 580,
+        "object_id": "paper:arxiv.2512.00651",
+        "created_at": "2025-12-16T00:57:39+00:00",
+        "updated_at": "2025-12-16T00:57:59+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/978-981-95-4861-3_25": {
       "data": {
         "sourceId": "springer",
