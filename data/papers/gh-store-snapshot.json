@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2025-12-16T19:02:33.478178+00:00",
+  "snapshot_time": "2025-12-16T19:09:09.722478+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2505.21733": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2505.21733",
+        "url": "https://arxiv.org/html/2505.21733v2",
+        "title": "Scrapers Selectively Respect robots.txt Directives:\nEvidence From a Large-Scale Empirical Study",
+        "authors": "",
+        "abstract": ".Report issue for preceding element Online data scraping has taken on new dimensions in recent years, as traditional scrapers have been joined by new AI-specific bots. To counteract unwanted scraping, many sites use tools like the Robots Exclusion Protocol (REP), which places a robots.txt file at the site root to dictate scraper behavior. Yet, the efficacy of the REP is not well-understood. Anecdotal evidence suggests some bots comply poorly with it, but no rigorous study exists to support (or refute) this claim. To understand the merits and limits of the REP, we conduct the first large-scale study of web scraper compliance with robots.txt directives using anonymized web logs from our institution. We analyze the behavior of 130130 self-declared bots (and many anonymous ones) over 4040 days, using a series of controlled robots.txt experiments. We find that bots are less likely to comply with stricter robots.txt directives, and that certain categories of bots, including AI search crawlers, rarely check robots.txt at all. Our findings suggest that relying on robots.txt to prevent unwanted scraping is risky and highlight the need for alternatives.Report issue for preceding element",
+        "timestamp": "2025-12-16T19:08:12.720Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [
+          "web scraping; content controls; bots"
+        ],
+        "doi": "10.1145/3730567.3764471",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 597,
+        "object_id": "paper:arxiv.2505.21733",
+        "created_at": "2025-12-16T19:08:13+00:00",
+        "updated_at": "2025-12-16T19:08:35+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.d41586-025-04067-4": {
       "data": {
         "sourceId": "nature",
