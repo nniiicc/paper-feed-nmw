@@ -1,7 +1,36 @@
 {
-  "snapshot_time": "2025-12-16T17:57:18.204153+00:00",
+  "snapshot_time": "2025-12-16T18:00:17.672596+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2405.07987": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2405.07987",
+        "url": "https://arxiv.org/abs/2405.07987",
+        "title": "The Platonic Representation Hypothesis",
+        "authors": "Minyoung Huh, Brian Cheung, Tongzhou Wang, Phillip Isola",
+        "abstract": "We argue that representations in AI models, particularly deep networks, are converging. First, we survey many examples of convergence in the literature: over time and across multiple domains, the ways by which different neural networks represent data are becoming more aligned. Next, we demonstrate convergence across data modalities: as vision models and language models get larger, they measure distance between datapoints in a more and more alike way. We hypothesize that this convergence is driving toward a shared statistical model of reality, akin to Plato's concept of an ideal reality. We term such a representation the platonic representation and discuss several possible selective pressures toward it. Finally, we discuss the implications of these trends, their limitations, and counterexamples to our analysis.",
+        "timestamp": "2025-12-16T17:59:17.480Z",
+        "rating": "novote",
+        "publishedDate": "2024/05/13",
+        "tags": [
+          "Machine Learning (cs.LG)",
+          "Artificial Intelligence (cs.AI)",
+          "Computer Vision and Pattern Recognition (cs.CV)",
+          "Neural and Evolutionary Computing (cs.NE)"
+        ],
+        "doi": "10.48550/arXiv.2405.07987",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 594,
+        "object_id": "paper:arxiv.2405.07987",
+        "created_at": "2025-12-16T17:59:17+00:00",
+        "updated_at": "2025-12-16T17:59:41+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2512.10092": {
       "data": {
         "sourceId": "arxiv",
