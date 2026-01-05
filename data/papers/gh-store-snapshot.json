@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-01-05T17:22:12.157989+00:00",
+  "snapshot_time": "2026-01-05T20:00:02.643860+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:acm.10.1145/3646547.3688407": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3646547.3688407",
+        "url": "https://dl.acm.org/doi/10.1145/3646547.3688407",
+        "title": "Looking AT the Blue Skies of Bluesky | Proceedings of the 2024 ACM on Internet Measurement Conference",
+        "authors": "Leonhard Balduf, Saidu Sokoto, Onur Ascigil, Gareth Tyson, Bj\u00f6rn Scheuermann, Maciej Korczy\u0144ski, Ignacio Castro, Micha\u0140 Kr\u00f3l",
+        "abstract": "The pitfalls of centralized social networks, such as Facebook and Twitter/X, have led to concerns about control, transparency, and accountability. Decentralized social networks have emerged as a result with the goal of empowering users. These decentralized approaches come with their own trade-offs, and therefore multiple architectures exist. In this paper, we conduct the first large-scale analysis of Bluesky, a prominent decentralized microblogging platform. In contrast to alternative approaches (e.g. Mastodon), Bluesky decomposes and opens the key functions of the platform into subcomponents that can be provided by third party stakeholders. We collect a comprehensive dataset covering all the key elements of Bluesky, study user activity and assess the diversity of providers for each sub-components.",
+        "timestamp": "2026-01-05T19:59:05.123Z",
+        "rating": "novote",
+        "publishedDate": "(2025)",
+        "tags": [],
+        "doi": "3688407",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 603,
+        "object_id": "paper:acm.10.1145/3646547.3688407",
+        "created_at": "2026-01-05T19:59:05+00:00",
+        "updated_at": "2026-01-05T19:59:27+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.1B4EEC85": {
       "data": {
         "sourceId": "url-misc",
