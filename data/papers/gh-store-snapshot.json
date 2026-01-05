@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-01-05T20:31:20.042190+00:00",
+  "snapshot_time": "2026-01-05T20:32:13.267716+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.4EFC4C4B": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4EFC4C4B",
+        "url": "https://watermark02.silverchair.com/qss.a.405.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA1MwggNPBgkqhkiG9w0BBwagggNAMIIDPAIBADCCAzUGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMYvnSHYI1OXjnWUtLAgEQgIIDBiIciiLxwOBZGaarlkRNiXTb3AhWr3d7gPsVUO_aM5zx0Y3lzWhwF_4Ng-hSDhM6tHPprHOchfFSBeueX1iElht6E2SjmKN6WJ0vTz6c_fHtMWIGbty-yGmr0ynR50l6SqXdgOLzLCKLKv-jXuFyVWiCsg_0Dms5aJ1kr3Gw6I2OUhB9v0lL5W5GrwTIqX4wmpQ08PQ2fhhq6SxGTK2M0DwZFyB3xT4rqhclLNo7jdTo7laTW9UYuHMF4Scs5MEk7VldiVbw74qLkbsmmpX0BBl9rvLn7dnUDSYA5PGgRewVb5nZ3WIvzx4X25Kj6xh0bR5A1DVqXq7_R4dQhgA8cl2Uxhn4iQ3wk2IQBDjgmi_AxxsdlXdIOyRPxhQoJajUZNYhqd0-zRTKM00a69AzR8r4o-bkxEnhSH-NQmWRqw2hwG7G7teiN3FyZikkjV6z0gOyTt8SxVogKWiv1Ph9LJ6ent35NZGiJulI6blOvQqoOHZdsAdwY8GJzZgyq1_211tCV-qv99JwOIrHZ6F0fVDE4UT7cN7qBD74APqftqXTDMmKg-WA-xtt-lktt56O3EUH8pU5ynKSNMh3UMk1QhFj9s0HZn8tBmGhk6x6roPYr7D4ayZ8j5g_--pQH0pgqErScqQOtKZgjM9HpAKtyCMrLopdI8TTFCw1uS3jc0397jN3ix5cm-ynOXOrBBh0GHjx5XGozTFfHGUJGgiRZLMy8NooyWAl59NGBr3tAbznFLmcPjX4UkxxSOEBnX-2UBcNw1RBoYgO4jxm73Iqkm5s3cgQC2IV1OUB-DlTRIYWcMvp9C4mFeWg1xuNz6ZWyAY5LKK93a3_US8Mz-Q-SpDIYdhhyH6o3q3ufF8V43r8Rp4fY9dupev_kr5aCtUgGVGC76krZuzu_kxNllw1pShmxxf-76_QaT-rqqbWRjHuemXxwXYk6MuKjojhk6CZUwaHO_liVM740DXdYn8pM4x0AAjBrVUHd78NGIzD0D3ARyntErxK2jA0k_EnH4ZSVBSR-Jp5tA",
+        "title": "4EFC4C4B",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-05T20:31:13.943Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 606,
+        "object_id": "paper:url-misc.4EFC4C4B",
+        "created_at": "2026-01-05T20:31:14+00:00",
+        "updated_at": "2026-01-05T20:31:37+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.92AFBDB": {
       "data": {
         "sourceId": "url-misc",
