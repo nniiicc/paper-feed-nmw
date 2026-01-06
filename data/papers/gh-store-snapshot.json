@@ -1,7 +1,61 @@
 {
-  "snapshot_time": "2026-01-06T22:46:41.181898+00:00",
+  "snapshot_time": "2026-01-06T23:01:05.927580+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.931901E": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "931901E",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-01-06T23:00:15.641Z",
+            "data": {
+              "session_id": "session_1767740415625_1hc2axn",
+              "source_id": "url-misc",
+              "paper_id": "931901E",
+              "start_time": "2026-01-06T23:00:07.769Z",
+              "end_time": "2026-01-06T23:00:15.625Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 8
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 613,
+        "object_id": "interactions:url-misc.931901E",
+        "created_at": "2026-01-06T23:00:09+00:00",
+        "updated_at": "2026-01-06T23:00:30+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.931901E": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "931901E",
+        "url": "https://academic.oup.com/rev/article/doi/10.1093/reseval/rvad024/7440258",
+        "title": "The conflict of impact for early career researchers planning for a future in the academy",
+        "authors": "Wr\u00f3blewska, Marta Natalia, Balaban, Corina, Derrick, Gemma, Benneworth, Paul",
+        "abstract": "Abstract. It has been argued that due to the growing importance attributed to research impact and forms of its evaluation, an academic \u2018culture of impact\u2019 ",
+        "timestamp": "2026-01-06T23:00:02.538Z",
+        "rating": "novote",
+        "publishedDate": "2024/07/22",
+        "tags": [],
+        "doi": "10.1093/reseval/rvad024",
+        "journalName": "Research Evaluation",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 612,
+        "object_id": "paper:url-misc.931901E",
+        "created_at": "2026-01-06T23:00:02+00:00",
+        "updated_at": "2026-01-06T23:00:21+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.61E2EE15": {
       "data": {
         "sourceId": "url-misc",
