@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-01-06T00:44:55.819369+00:00",
+  "snapshot_time": "2026-01-06T22:46:41.181898+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.61E2EE15": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "61E2EE15",
+        "url": "https://watermark02.silverchair.com/qss.a.405.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA1MwggNPBgkqhkiG9w0BBwagggNAMIIDPAIBADCCAzUGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQM8B5Te9GaBRgOtciXAgEQgIIDBnUuqY-W6zIGHakewsLViNA_hJwQv4Su5bnxPCLAbnZeZ6o8Evj_4ixh9RHgaF1bdrqzOsOnnXh2t8S9lr0MouAd5byS7UW9gGJsAzKSvrwevjPBM_dcpt34FTWvhGqhYEC-E_gEocxZi4YVEPjM_LS57TxJ4a16hzlgPRlrfoIQ9GsjlGi0MSNNkqbe0wwNq_6WU6GXsE92x7D2WtjkxU1Gn15aR5LjjkdvhbfHVwKTP0RyFfZQQ2DRS22tm8KjOz-SK1xYhz3LCH_-in5hBAJuD1ObqZPs10kiw6RwTMe4HD0h_d3l2NFqtONd5xnwh7_0Bet-q0b-1sug_Fd8QQb5DIIYW87i6wJzsM2Tx3jci2ROdXY6VoJpEJZzzZXBuTXqS4p8EmP7untE1cXQBH8L3go3xvijuQB0jXiCJHrKkRADlmgIaRP-foKHpTxCb6xAcnuu81gfzvrBxFLelWHXUsul7xL6YxRTHc9CWO9Zmvp4bkLJHkj0Wpu5clWH2oJPctlz6Qudt2CcvqPmFzAfm7AlO_GF72EDzitkmcUyeurnd8DjVLdTD-d7AWrtVE225u6mTwu5yuh0UMlsWXdTb00EoDnuecKnqOnG2A2y1X_mO2xGpGZ3ka5QmRO6a7QtGSzuJLinQpvSJoZFCW-lWDU75y_M2BTb6OqGbRttiiXxjWitTqIeAPmoJIyRelQRL2rhGpQHuxJKZ4FADAHsxNeKQsQyKalvVTrSZZlfOnLvHqMO4alLqkJCYarhQLQ00o7onBCXov5rnZ0oxLosZFtLLgd2AfIMSfq-PN73VtBXpDdRMGlztHoJOCJ1_vCGAqtlacqZRaYMXziIiZpmFp1f3BlRcXqpdzGnlq7SpyMlbgye_JUeA6WFTyOO6cwy81gSm16SyWiYIskclEHP19ONNKulRyNJZZREVllIfWmr3bPsQQDvz5IFVCvItBhTiKj6l0aUWOrqeauUGfGYbC8zKlxx_dzq13Qe6mnpA_W6S8h5ZCawehFQvd56krsPydvMeQ",
+        "title": "61E2EE15",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-06T22:45:51.508Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 611,
+        "object_id": "paper:url-misc.61E2EE15",
+        "created_at": "2026-01-06T22:45:51+00:00",
+        "updated_at": "2026-01-06T22:46:10+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41562-023-01562-4": {
       "data": {
         "sourceId": "nature",
