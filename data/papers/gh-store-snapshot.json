@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-01-06T23:03:20.164913+00:00",
+  "snapshot_time": "2026-01-06T23:14:49.184422+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:sciencedirect.S0048733325002318": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0048733325002318",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0048733325002318",
+        "title": "Timing is key: Navigating venture capital funding for science-based startups",
+        "authors": "M. Ahmadpoor, B.F. Jones, J. Alc\u00e1cer, M. Gittelman, J. Alc\u00e1cer, M. Gittelman, B. Sampat, N. Amornsiripanitch, P.A. Gompers, Y. Xuan, A. Arora, S. Belenzon, E. Ferracuti, J.P. Nagar, A. Arora, S. Belenzon, A. Patacconi, A. Arora, S. Belenzon, A. Patacconi, J. Suh, A. Arora, A. Fosfuri, T. R\u00f8nde, A. Arora, A. Fosfuri, T. R\u00f8nde, S. Arts, R. Veugelers, S. Belenzon, L. Cioaca, O. Bengtsson, B.A. Sensoy, O. Bengtsson, B.A. Sensoy, D. Bergemann, U. Hege, D.E. Bowen III, L. Fr\u00e9sard, G. Hoberg, M.P. Carpenter, F. Narin, Y. Cheng, A. Fosfuri, N. Misani, S. Cole, L. Jeng, J. Lerner, N. Rigol, B.N. Roth, A. Conti, A. Contigiani, L.D. Cook, M. Marx, E. Yimfor, M. Da Rin, T. Hellmann, M. Puri, S. Dalla Fontana, R. Nanda, P. Dasgupta, P.A. David, O.B.R. de Apodaca, F. Murray, L. Frolund, M. Ewens, N. Malenko, M. Ewens, R. Nanda, M. Rhodes-Kropf, J. Farre-Mensa, D. Hegde, A. Ljungqvist, J.S. Gans, P. Gompers, P. Gompers, W. Gornall, S.N. Kaplan, I.A. Strebulaev, P. Gompers, W. Gornall, S.N. Kaplan, I.A. Strebulaev, P. Gompers, J. Lerner, P. Gompers, J. Lerner, A. Gourevitch, M. Portincaso, A. de la Tour, N. Goeldel, U. Chaudhry, S.J. Grossman, O.D. Hart, R.F. Haans, C. Pieters, Z.-L. He, C. Haeussler, D. Harhoff, E. Mueller, B.H. Hall, T. Hellmann, M. Puri, M. Van den Heuvel, D. Popp, S.T. Howell, D.H. Hsu, R.H. Ziedonis, W.R. Kerr, R. Nanda, J.L. Krieger, M. Schnitzer, M. Watzinger, J. Lerner, U. Malmendier, J. Lerner, R. Nanda, Y. Li, J.T. Mahoney, J.T. Lind, H. Mehlum, M. Marx, A. Fuegi, R. Masclans, C. Menon, G. Tarasconi, R.K. Merton, R. Nanda, R. Nanda, M. Rhodes-Kropf, R. Nanda, M. Rhodes-Kropf, R. Nanda, M. Rhodes-Kropf, F. Narin, D. Olivastro, M. Park, E. Leahey, R.J. Funk, A. Retterath, R. Braun, M. Roach, W.M. Cohen, S. Sharma, O. Sorenson, L. Fleming, M. Squicciarini, H. Dernis, C. Criscuolo, S. Stern",
+        "abstract": "Science-based startups, which develop technologies at the frontier of scientific knowledge, play a crucial role in innovation ecosystems. However, des\u2026",
+        "timestamp": "2026-01-06T23:13:51.963Z",
+        "rating": "novote",
+        "publishedDate": "2026/04/01",
+        "tags": [],
+        "doi": "10.1016/j.respol.2025.105402",
+        "journalName": "Research Policy",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 616,
+        "object_id": "paper:sciencedirect.S0048733325002318",
+        "created_at": "2026-01-06T23:13:52+00:00",
+        "updated_at": "2026-01-06T23:14:13+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.5F907842": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "5F907842",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 615,
+        "object_id": "interactions:url-misc.5F907842",
+        "created_at": "2026-01-06T23:13:51+00:00",
+        "updated_at": "2026-01-06T23:13:53+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.5F907842": {
       "data": {
         "sourceId": "url-misc",
