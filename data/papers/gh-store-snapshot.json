@@ -1,7 +1,100 @@
 {
-  "snapshot_time": "2026-01-06T23:17:58.136719+00:00",
+  "snapshot_time": "2026-01-06T23:19:54.613702+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.16670525": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "16670525",
+        "url": "https://pdf.sciencedirectassets.com/280203/1-s2.0-S1877050925X0017X/1-s2.0-S187705092502472X/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJ%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIFCxpOORWLZgofpPHU76nPHsM2OF4YdC8p1Ktv4pXZY%2FAiA2Zj%2BfD8jCBY6xqCp89bizhRa5Doxg714H6TMOlhF3ZSqyBQhoEAUaDDA1OTAwMzU0Njg2NSIMijHeRSMV5AWRYdQoKo8FHPAcA109O4%2FDxq87bjAdUd3Tq%2B4JAbtW3Um%2BCMZDGuf3sHxynTQ85CnH%2BOxCFvhc5pCKMR%2FBbBm%2BWmP57K6IEb7d6kBFDXpBFh9WdrOvDyU4A1gkNOZgaKv23fZ2Kjme%2Fo6%2FM%2BLiiH1cLXhIeR342zTkZok0N2%2FaVJPIDIlAcp8W%2BENaO5be6Bw3Q3UT%2FEl7w4f1Bj66ATgDgmrX%2FwjW3psfTNq0zb%2FieXDgelV7n%2BXt5nivdsiglseRrEnQTLDBMxKuT1WcZ0HL6WnxdRIok0%2BBjGA0h1QSi6%2BATbyMzV6mGVDxg7pZK4DlPt7mYp0Unu9EJ4k3OxQvgzfLH6wQHatujwP6NDyPrEbIjqbR2e4J3GNxN21wbiD5iHrWInQ8nNhpeWmh41WDw1k%2Fx5bj2K%2B6mcL5EcWlBCBKoPBiH5o%2Fh%2Bi0bhErPuvS%2FnbP%2F7qu6GtdcqCVL5DpvIPJUOj%2FZG%2B006orRYj%2FWsZycxEL33eKJ9SLqlY4hoCW7scj7mI7Wv9H6beYUIE20IG0LmjdqST50msw%2B7E2AO2zUx%2B4%2Bc%2FDLRvcS3mcU7bUHgHaKmjYDnfpszhHOYWqd1AmkwuE08Mzh3yEiYpeN165hKxlLanVkNuBq251SiYnOST7PwcL0TTxH8GSh%2BIV158oJ3yKMMskpCBckLO4Kxey4iiNzK3ktUX5SYu%2BwUm8laCzgTVWprBrFyffalltwmTunJeVpdVhWQWM%2F4spvLAu3czSn71GnqtBYYPwTdaZFZeRvrJFAUr5HbGXo4bIvx0A9h0GpRwxJoVzULImvk5sI%2FSWAUpuDYoitN8Bu5RMXtDRkYLDb9zVWGLNYOj8OPQdm6Ug7ylmEdR1RI14tgbZosO22zDCm%2FbKBjqyAW4kV7DyVhKNdymTfVMd%2BTcUFFTMmBifhL%2Fha1Om2mF0SllVt%2FkGAKxpQxMcbyTmco19Sx4ECCqwZKJcvL%2FRks9GwFuG0A4tNmy3dN3OEmDq7rGOsaInVviHaGjo1m5PEq%2FrnvqGtW1M%2BvpkqI3y7eBzIHMWwiSPQsa7RDANMEGIy%2BIBxgvg0mcB%2BpdEwUkcnLLywg51Ux27q1nDZiOuezWoc21S1SY57rlfaiqVXvwGrKQ%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260106T231826Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY64KEYJU3%2F20260106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c207465e38febda09787b3ed49e1f579c86b3f6ef43ac82f57cac9be62fcec6f&hash=b367e92921c6cd05258924472ef1e015fe582a5ec45ce102fb93f6a68edcceb9&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S187705092502472X&tid=spdf-8db5bcd2-e87a-424c-8883-744ba5e9a7f4&sid=9f6fdce71df786455449cfe585c5b52b3fd9gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=131556015f050006570c&rr=9b9eef3c5cafd7ae&cc=us",
+        "title": "16670525",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-06T23:18:26.939Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 621,
+        "object_id": "paper:url-misc.16670525",
+        "created_at": "2026-01-06T23:18:27+00:00",
+        "updated_at": "2026-01-06T23:18:45+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S187705092502472X": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S187705092502472X",
+        "url": "https://www.sciencedirect.com/science/article/pii/S187705092502472X/pdf?md5=4edf7934f4090b0ffee24f660f2241dc&pid=1-s2.0-S187705092502472X-main.pdf",
+        "title": "Preparing your download",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-06T23:18:07.461Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "pdf"
+      },
+      "meta": {
+        "issue_number": 618,
+        "object_id": "paper:sciencedirect.S187705092502472X",
+        "created_at": "2026-01-06T23:18:07+00:00",
+        "updated_at": "2026-01-06T23:18:30+00:00",
+        "version": 1
+      }
+    },
+    "interactions:sciencedirect.S0048733325002318": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0048733325002318",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-01-06T23:14:31.131Z",
+            "data": {
+              "session_id": "session_1767741270627_x2v84vp",
+              "source_id": "sciencedirect",
+              "paper_id": "S0048733325002318",
+              "start_time": "2026-01-06T23:13:51.636Z",
+              "end_time": "2026-01-06T23:14:30.627Z",
+              "heartbeat_count": 7,
+              "duration_seconds": 35,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 39
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-01-06T23:17:37.436Z",
+            "data": {
+              "session_id": "session_1767741457417_ws2vk7r",
+              "source_id": "sciencedirect",
+              "paper_id": "S0048733325002318",
+              "start_time": "2026-01-06T23:17:06.237Z",
+              "end_time": "2026-01-06T23:17:37.417Z",
+              "heartbeat_count": 6,
+              "duration_seconds": 30,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 31
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 617,
+        "object_id": "interactions:sciencedirect.S0048733325002318",
+        "created_at": "2026-01-06T23:14:31+00:00",
+        "updated_at": "2026-01-06T23:17:57+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S0048733325002318": {
       "data": {
         "sourceId": "sciencedirect",
