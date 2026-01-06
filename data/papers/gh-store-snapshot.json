@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-01-06T23:19:54.613702+00:00",
+  "snapshot_time": "2026-01-06T23:21:35.220937+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:sciencedirect.S1751157718301901": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1751157718301901",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1751157718301901",
+        "title": "Application of machine learning techniques to assess the trends and alignment of the funded research output",
+        "authors": "Xing Wang, Zhihui Zhang, Wei Zhang, \u2026, Wen Li, Su Jung Jee, So Young Sohn, Wei Xu, \u2026, Wenpeng Xing, Jorge P\u00e9rez, \u2026, Koldo Gojenola, Min Yang, \u2026, Jia Zhu",
+        "abstract": "Research and development activities are regarded as one of the most influencing factors of the future of a country. Large investments in research can \u2026",
+        "timestamp": "2026-01-06T23:20:39.859Z",
+        "rating": "novote",
+        "publishedDate": "2020/05/01",
+        "tags": [],
+        "doi": "10.1016/j.joi.2020.101018",
+        "journalName": "Journal of Informetrics",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 622,
+        "object_id": "paper:sciencedirect.S1751157718301901",
+        "created_at": "2026-01-06T23:20:40+00:00",
+        "updated_at": "2026-01-06T23:21:01+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.16670525": {
       "data": {
         "sourceId": "url-misc",
