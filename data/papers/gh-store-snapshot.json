@@ -1,7 +1,69 @@
 {
-  "snapshot_time": "2026-01-06T23:21:35.220937+00:00",
+  "snapshot_time": "2026-01-06T23:22:30.768011+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.6D74D5EA": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "6D74D5EA",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 625,
+        "object_id": "interactions:url-misc.6D74D5EA",
+        "created_at": "2026-01-06T23:21:52+00:00",
+        "updated_at": "2026-01-06T23:21:53+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.6D74D5EA": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "6D74D5EA",
+        "url": "https://scholar.google.com/scholar?cluster=5874302223120551844&hl=en&as_sdt=5,48&sciodt=0,48&scioq=A+bibliometric+studies+of+pre-trained+model+and+fine-tune+method",
+        "title": "Ebadi: Application of machine learning techniques... - Google Scholar",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-06T23:21:38.964Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 624,
+        "object_id": "paper:url-misc.6D74D5EA",
+        "created_at": "2026-01-06T23:21:39+00:00",
+        "updated_at": "2026-01-06T23:21:57+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2510.18803": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2510.18803",
+        "url": "https://arxiv.org/pdf/2510.18803?",
+        "title": "",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-06T23:21:34.056Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 623,
+        "object_id": "paper:arxiv.2510.18803",
+        "created_at": "2026-01-06T23:21:34+00:00",
+        "updated_at": "2026-01-06T23:21:52+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S1751157718301901": {
       "data": {
         "sourceId": "sciencedirect",
