@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-01-06T23:01:05.927580+00:00",
+  "snapshot_time": "2026-01-06T23:03:20.164913+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.5F907842": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "5F907842",
+        "url": "https://journals.sagepub.com/doi/pdf/10.1177/0963662513505397",
+        "title": "5F907842",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-06T23:02:25.013Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1177/0963662513505397",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 614,
+        "object_id": "paper:url-misc.5F907842",
+        "created_at": "2026-01-06T23:02:25+00:00",
+        "updated_at": "2026-01-06T23:02:45+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.931901E": {
       "data": {
         "sourceId": "url-misc",
