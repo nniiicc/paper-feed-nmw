@@ -1,7 +1,75 @@
 {
-  "snapshot_time": "2026-01-06T23:24:10.268868+00:00",
+  "snapshot_time": "2026-01-06T23:26:10.055668+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2510.18803": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2510.18803",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-01-06T23:24:26.909Z",
+            "data": {
+              "session_id": "session_1767741866690_hbjh6bf",
+              "source_id": "arxiv",
+              "paper_id": "2510.18803",
+              "start_time": "2026-01-06T23:24:18.202Z",
+              "end_time": "2026-01-06T23:24:26.690Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 8
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 630,
+        "object_id": "interactions:arxiv.2510.18803",
+        "created_at": "2026-01-06T23:24:27+00:00",
+        "updated_at": "2026-01-06T23:24:49+00:00",
+        "version": 1
+      }
+    },
+    "interactions:sciencedirect.S1751157725000756": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1751157725000756",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 629,
+        "object_id": "interactions:sciencedirect.S1751157725000756",
+        "created_at": "2026-01-06T23:24:13+00:00",
+        "updated_at": "2026-01-06T23:24:14+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S1751157725000756": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1751157725000756",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1751157725000756",
+        "title": "From 'sleeping beauties' to 'rising stars': The religious and philosophical roots of bibliometrics",
+        "authors": "",
+        "abstract": "This article explores the often-overlooked religious and philosophical roots of bibliometrics. Drawing on motifs from the Hebrew Bible and Christian t\u2026",
+        "timestamp": "2026-01-06T23:23:52.142Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/01",
+        "tags": [],
+        "doi": "10.1016/j.joi.2025.101711",
+        "journalName": "Journal of Informetrics",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 628,
+        "object_id": "paper:sciencedirect.S1751157725000756",
+        "created_at": "2026-01-06T23:23:52+00:00",
+        "updated_at": "2026-01-06T23:24:10+00:00",
+        "version": 1
+      }
+    },
     "interactions:sciencedirect.S1751157718301901": {
       "data": {
         "sourceId": "sciencedirect",
