@@ -1,7 +1,98 @@
 {
-  "snapshot_time": "2026-01-07T22:37:07.436688+00:00",
+  "snapshot_time": "2026-01-07T23:16:19.705172+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.2978CE99": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2978CE99",
+        "url": "https://download.ssrn.com/23/12/29/ssrn_id4679309_code357428.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQD9mjVPzp6nosVJyyMw9mvDQ6c%2BaRM%2B8UudW9XS1hpHcAIgJv8LvDQ%2BIIWQgQuVb6CSbd8pJ4MnY0Aoiu2jh2ChnXsqvgUIfxAEGgwzMDg0NzUzMDEyNTciDKMCLp0OnMtbzAXGpSqbBaZGEz8sJdu5DUH9kypIuAAJ8cXWOae%2Bq0WQy75VYPieAwIc08f81zP%2Bs%2F2qByZaofGUG8Ftde5Kk0TK4bDkjBDqZu6nujJzpXBCUeLTV5yEUEPjdUkyIOGiVuacPa2QJ5TcJF1iQotLK1AH3BRCo9S7JSWyYu5uZICndjsvZsHdlv%2Ft8F2wfBomWIt%2FWaxtpM3ifaUCBJ64mTVEMmyaWY3GCIya3AHCPN1cWmYA7VXdzeNXQarwPBdlpX8NUeZt%2B4zctxLSVdm5ygXaNIZtwVcYXMTp6zD0PbyUwKGGcjBgyT9AJnOUdUckbWaQesCnTw1ZHIS3nCoWAY1tTx6kXxwp0dTRJB34JK7wwOHx9PY2jT8RwojKzoQaqBwehIClGs1CQkjtxDzgIjWfQt7jKiXtHTU%2BJqH2LFgoXpuflJGdhL4rpDrE%2FMGcqzWr3ZwCWdsmA0XuY1yHZTpKBh6m%2BBa%2FYRXCgMQLegw87WZf5%2FW6dQZH4TCoRN4aNNRYZjX0Qm%2BmMhK%2BshXvkYEmYTCiLJgl1zvKubVK%2Boqp28mS70fEOnyU3kVSAdj7U3osCgoqHu6FUSx6GUFRjs6fclmGjHOIfS0f7Gw9rYMZd1Z8Mdq9vcfHPNe8Xc8%2BHIi6oz0btU8QTqRudq0yPjV7OPtarSZvtl2Hw6AkveEyyYhtIViRFWV31QYRO3iNTe7CN%2BOwQCatE%2FvntR3ZKKAR%2BSkz4SfWy67AMW927fckH732KECqpk9%2FXui2t%2F1kim0lI0u1cJMRvEnLgHgn0RVPLndJbub8SnPesjY%2FNcy2IIJS%2BrP76aV4Y1belKwJmUVgh4YjUpqCF%2Fzxpn%2Bc0Uu8MHSM6PpIln%2FRTNpSwG5SG8GHldWBNkOV8PX%2Bo4CNSykw6bH7ygY6sQEYkp4bIvKUDViyX1z%2FUmRjD802nwut3dsaShofKVCW6cFQ6vvRleS9EBfcQ%2BGCjYGSMzzj%2Fgg84tC%2BrBJ%2B%2BasWtWG4n6cXyuIQDFSWiTPFEFMXe0Kke51ZU0cliaUUQ2XP6cbJJek3%2BPqI6H5z6D9qRdrOSawsvKgVjtyUZQ0ZlHG6YNJbb27tl8nK%2FnfTOGVmWCsUc5Qe3%2BN1kropaQV%2B5uqsxbX949Mtw74N%2FsA0PiU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260107T231519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAUPUUPRWESXVPHHGW%2F20260107%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=7b78fd22e5e5ef7e31ca76ceaadb450e24fcd87bc221f7ad8e4a559d81526eec&abstractId=4465123",
+        "title": "2978CE99",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-01-07T23:15:20.053Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 633,
+        "object_id": "paper:url-misc.2978CE99",
+        "created_at": "2026-01-07T23:15:20+00:00",
+        "updated_at": "2026-01-07T23:15:41+00:00",
+        "version": 1
+      }
+    },
+    "interactions:ssrn.4465123": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "4465123",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-01-07T23:15:18.269Z",
+            "data": {
+              "session_id": "session_1767827717805_ymd6o3g",
+              "source_id": "ssrn",
+              "paper_id": "4465123",
+              "start_time": "2026-01-07T23:15:12.101Z",
+              "end_time": "2026-01-07T23:15:17.805Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 632,
+        "object_id": "interactions:ssrn.4465123",
+        "created_at": "2026-01-07T23:15:18+00:00",
+        "updated_at": "2026-01-07T23:15:40+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.4465123": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "4465123",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4465123",
+        "title": "Do People Around the World Care Where Their Data Are Stored?",
+        "authors": "Prince, Jeffrey, Wallsten, Scott",
+        "abstract": "Using carefully designed discrete choice surveys, we measure how much individuals care whether their data are stored domestically, i.e., the premium people plac",
+        "timestamp": "2026-01-07T23:15:12.365Z",
+        "rating": "novote",
+        "publishedDate": "2023/05/31",
+        "tags": [
+          "Data Privacy",
+          "Data Localization",
+          "International",
+          "Conjoint",
+          "Willingness-to-Accept",
+          "Online Data",
+          "Survey",
+          "Financial Data",
+          "Smartphone Data",
+          "Healthcare Data",
+          "Home Smart Device Data",
+          "Social Media Data"
+        ],
+        "doi": "10.2139/ssrn.4465123",
+        "journalName": "SSRN",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 631,
+        "object_id": "paper:ssrn.4465123",
+        "created_at": "2026-01-07T23:15:12+00:00",
+        "updated_at": "2026-01-07T23:15:33+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2510.18803": {
       "data": {
         "sourceId": "arxiv",
