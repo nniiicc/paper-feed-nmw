@@ -1,7 +1,75 @@
 {
-  "snapshot_time": "2026-01-07T23:16:19.705172+00:00",
+  "snapshot_time": "2026-01-08T00:15:28.850742+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:acm.10.24963/ijcai.2025/1140": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.24963/ijcai.2025/1140",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-01-08T00:14:24.648Z",
+            "data": {
+              "session_id": "session_1767831264248_gdcfuag",
+              "source_id": "acm",
+              "paper_id": "10.24963/ijcai.2025/1140",
+              "start_time": "2026-01-08T00:14:06.897Z",
+              "end_time": "2026-01-08T00:14:24.248Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 17
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 636,
+        "object_id": "interactions:acm.10.24963/ijcai.2025/1140",
+        "created_at": "2026-01-08T00:14:25+00:00",
+        "updated_at": "2026-01-08T00:14:53+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.24963/ijcai.2025/1140": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.24963/ijcai.2025/1140",
+        "url": "https://dl.acm.org/doi/10.24963/ijcai.2025/1140",
+        "title": "Explainable automatic fact-checking for journalists augmentation in the wild | Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence",
+        "authors": "Filipe Altoe, S\u00e9rgio Miguel Gon\u00e7alves Pinto, H. Sofia Pinto",
+        "abstract": "Journalistic manual fact-checking is the usual way to address fake news; however, this labor-intensive task regularly is not a match for the scale of the problem. The literature introduced automated fact-checking (AFC) as a potential solution; however, there is still missing functionality in the AFC pipeline, a lack of research benchmarking data, and a disconnect between their design and human factors crucial for adoption. We present a fully explainable AFC framework designed to augment professional journalists in the wild. A novel human annotation-free approach surpasses state-of-the-art multi-label classification by 12%. It is the first to demonstrate strong generalization across different claim subjects without retraining and to generate complete verdict explanation articles and their summaries. A focused user study of 103 professional journalists, with 93% having dedicated experience with fact-checking, validates the framework's level of explainability, transparency, and quality of generated fact-checking artifacts. The importance of establishing clear source selection and bias evaluation criteria reinforced the need for human augmentation, not replacement, by AFC systems.",
+        "timestamp": "2026-01-08T00:14:07.140Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "3776387",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 635,
+        "object_id": "paper:acm.10.24963/ijcai.2025/1140",
+        "created_at": "2026-01-08T00:14:07+00:00",
+        "updated_at": "2026-01-08T00:14:25+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.2978CE99": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2978CE99",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 634,
+        "object_id": "interactions:url-misc.2978CE99",
+        "created_at": "2026-01-07T23:29:53+00:00",
+        "updated_at": "2026-01-07T23:29:55+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.2978CE99": {
       "data": {
         "sourceId": "url-misc",
