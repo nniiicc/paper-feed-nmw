@@ -1,7 +1,62 @@
 {
-  "snapshot_time": "2026-01-09T00:44:52.857434+00:00",
+  "snapshot_time": "2026-01-09T23:14:57.267692+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:openreview.04mNnhGv2N": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "04mNnhGv2N",
+        "url": "https://openreview.net/forum?id=04mNnhGv2N&referrer=%5Bthe%20profile%20of%20Edwige%20Cyffers%5D(%2Fprofile%3Fid%3D~Edwige_Cyffers1)",
+        "title": "Fedivertex: a Graph Dataset based on Decentralized Social Networks for Trustworthy Machine Learning",
+        "authors": "Marc DAMIE, Edwige Cyffers",
+        "abstract": "Decentralized machine learning - where each client keeps its own data locally and uses its own computational resources to collaboratively train a model by exchanging peer-to-peer messages - is increasingly popular, as it enables better scalability and control over the data. A major challenge in this setting is that learning dynamics depend on the topology of the communication graph, which motivates the use of real graph datasets for benchmarking decentralized algorithms. Unfortunately, existing graph datasets are largely limited to for-profit social networks crawled at a fixed point in time and often collected at the user scale, where links are heavily influenced by the platform and its recommendation algorithms. The Fediverse, which includes several free and open-source decentralized social media platforms such as Mastodon, Misskey, and Lemmy, offers an interesting real-world alternative. We introduce *Fedivertex*, a new dataset of 182 graphs, covering seven social networks from the Fediverse, crawled weekly over 14 weeks. We release the dataset along with a Python package to facilitate its use, and illustrate its utility on several tasks, including a new *defederation* task, which captures a process of link deletion observed on these networks.",
+        "timestamp": "2026-01-09T23:13:53.913Z",
+        "rating": "novote",
+        "publishedDate": "2025/05/06",
+        "tags": [
+          "fediverse",
+          "social networks",
+          "graphs"
+        ],
+        "doi": "",
+        "journalName": "Submitted to NeurIPS 2025 Datasets and Benchmarks Track",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 641,
+        "object_id": "paper:openreview.04mNnhGv2N",
+        "created_at": "2026-01-09T23:13:54+00:00",
+        "updated_at": "2026-01-09T23:14:15+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2505.20882": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2505.20882",
+        "url": "https://arxiv.org/abs/2505.20882",
+        "title": "Fedivertex: a Graph Dataset based on Decentralized Social Networks for Trustworthy Machine Learning",
+        "authors": "Marc Damie, Edwige Cyffers",
+        "abstract": "Decentralized machine learning - where each client keeps its own data locally and uses its own computational resources to collaboratively train a model by exchanging peer-to-peer messages - is increasingly popular, as it enables better scalability and control over the data. A major challenge in this setting is that learning dynamics depend on the topology of the communication graph, which motivates the use of real graph datasets for benchmarking decentralized algorithms. Unfortunately, existing graph datasets are largely limited to for-profit social networks crawled at a fixed point in time and often collected at the user scale, where links are heavily influenced by the platform and its recommendation algorithms. The Fediverse, which includes several free and open-source decentralized social media platforms such as Mastodon, Misskey, and Lemmy, offers an interesting real-world alternative. We introduce Fedivertex, a new dataset of 182 graphs, covering seven social networks from the Fediverse, crawled weekly over 14 weeks. We release the dataset along with a Python package to facilitate its use, and illustrate its utility on several tasks, including a new defederation task, which captures a process of link deletion observed on these networks.",
+        "timestamp": "2026-01-09T23:13:39.953Z",
+        "rating": "novote",
+        "publishedDate": "2025/05/27",
+        "tags": [
+          "Machine Learning (cs.LG)",
+          "Social and Information Networks (cs.SI)"
+        ],
+        "doi": "10.48550/arXiv.2505.20882",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 640,
+        "object_id": "paper:arxiv.2505.20882",
+        "created_at": "2026-01-09T23:13:40+00:00",
+        "updated_at": "2026-01-09T23:14:01+00:00",
+        "version": 1
+      }
+    },
     "interactions:acm.10.1145/3637369": {
       "data": {
         "sourceId": "acm",
