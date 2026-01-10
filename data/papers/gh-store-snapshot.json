@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-01-10T00:43:53.625804+00:00",
+  "snapshot_time": "2026-01-10T20:09:19.855845+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41597-025-05621-5": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41597-025-05621-5",
+        "url": "https://www.nature.com/articles/s41597-025-05621-5",
+        "title": "Policy agendas of the American state legislatures",
+        "authors": "Dee, Ethan",
+        "abstract": "State legislatures in the United States handle a number of important policy issues, but pose a challenge for researchers to observe because they are not organized by any central agency. We use a machine learning model based on the \u201ctransformer\u201d architecture and contextual word-piece embeddings to code the universe of bills introduced in the states since 2009 (about 1.36 million bills) into 28 policy areas. Validation exercises show our method compares favorably with hand-coded estimates of bill policy areas while offering far greater coverage than legacy human-supervised \u201cdictionary\u201d methods. We explain how researchers can use these estimates to investigate sub-national governance in the United States.",
+        "timestamp": "2026-01-10T20:08:24.761Z",
+        "rating": "novote",
+        "publishedDate": "2025-07-22",
+        "tags": [
+          "Government"
+        ],
+        "doi": "10.1038/s41597-025-05621-5",
+        "journalName": "Scientific Data 2025 12:1",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 643,
+        "object_id": "paper:nature.s41597-025-05621-5",
+        "created_at": "2026-01-10T20:08:25+00:00",
+        "updated_at": "2026-01-10T20:08:45+00:00",
+        "version": 1
+      }
+    },
     "interactions:openreview.04mNnhGv2N": {
       "data": {
         "sourceId": "openreview",
