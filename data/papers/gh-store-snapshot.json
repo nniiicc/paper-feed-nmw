@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-01-20T22:51:06.824659+00:00",
+  "snapshot_time": "2026-01-20T23:02:42.341795+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2404.16019": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2404.16019",
+        "url": "https://arxiv.org/abs/2404.16019",
+        "title": "The PRISM Alignment Dataset: What Participatory, Representative and Individualised Human Feedback Reveals About the Subjective and Multicultural Alignment of Large Language Models",
+        "authors": "Hannah Rose Kirk, Alexander Whitefield, Paul R\u00f6ttger, Andrew Bean, Katerina Margatina, Juan Ciro, Rafael Mosquera, Max Bartolo, Adina Williams, He He, Bertie Vidgen, Scott A. Hale",
+        "abstract": "Human feedback is central to the alignment of Large Language Models (LLMs). However, open questions remain about methods (how), domains (where), people (who) and objectives (to what end) of feedback processes. To navigate these questions, we introduce PRISM, a dataset that maps the sociodemographics and stated preferences of 1,500 diverse participants from 75 countries, to their contextual preferences and fine-grained feedback in 8,011 live conversations with 21 LLMs. With PRISM, we contribute (i) wider geographic and demographic participation in feedback; (ii) census-representative samples for two countries (UK, US); and (iii) individualised ratings that link to detailed participant profiles, permitting personalisation and attribution of sample artefacts. We target subjective and multicultural perspectives on value-laden and controversial issues, where we expect interpersonal and cross-cultural disagreement. We use PRISM in three case studies to demonstrate the need for careful consideration of which humans provide what alignment data.",
+        "timestamp": "2026-01-20T23:01:43.872Z",
+        "rating": "novote",
+        "publishedDate": "2024/04/24",
+        "tags": [
+          "Computation and Language (cs.CL)"
+        ],
+        "doi": "10.48550/arXiv.2404.16019",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 652,
+        "object_id": "paper:arxiv.2404.16019",
+        "created_at": "2026-01-20T23:01:44+00:00",
+        "updated_at": "2026-01-20T23:02:06+00:00",
+        "version": 1
+      }
+    },
     "interactions:url.6C82F8E6": {
       "data": {
         "sourceId": "url",
