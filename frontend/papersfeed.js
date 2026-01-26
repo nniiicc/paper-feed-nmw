@@ -529,6 +529,7 @@ function createReadingHeatmap(data) {
     .attr("y", (d, i) => i * (cellSize + cellGap) + 20 + cellSize/2 + 3)
     .attr("text-anchor", "end")
     .text(d => d);
+
 }
 
 // Format date to YYYY-MM-DD format

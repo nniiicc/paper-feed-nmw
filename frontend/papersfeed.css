@@ -78,6 +78,33 @@ body {
 }
 
 /* Heatmap styles */
+#reading-heatmap {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+  direction: rtl; /* Scroll starts from right (most recent dates) */
+}
+
+#reading-heatmap > svg {
+  direction: ltr; /* Keep SVG content left-to-right readable */
+}
+
+#reading-heatmap::-webkit-scrollbar {
+  height: 6px;
+}
+
+#reading-heatmap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#reading-heatmap::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+#reading-heatmap::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
 .heatmap-cell {
   stroke: hsl(var(--border));
   stroke-width: 1px;
