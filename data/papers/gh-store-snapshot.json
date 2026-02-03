@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-02-03T18:47:25.153861+00:00",
+  "snapshot_time": "2026-02-03T21:27:36.778018+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:sciencedirect.S1353829225000528": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1353829225000528",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 659,
+        "object_id": "interactions:sciencedirect.S1353829225000528",
+        "created_at": "2026-02-03T21:26:35+00:00",
+        "updated_at": "2026-02-03T21:26:38+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S1353829225000528": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1353829225000528",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1353829225000528?via%3Dihub",
+        "title": "Are you a robot?",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-02-03T21:26:24.130Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 658,
+        "object_id": "paper:sciencedirect.S1353829225000528",
+        "created_at": "2026-02-03T21:26:24+00:00",
+        "updated_at": "2026-02-03T21:26:43+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41597-025-05495-7": {
       "data": {
         "sourceId": "nature",
