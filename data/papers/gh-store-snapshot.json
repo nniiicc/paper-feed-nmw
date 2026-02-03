@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-02-03T21:34:55.423583+00:00",
+  "snapshot_time": "2026-02-03T23:13:56.380920+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.3246F76B": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3246F76B",
+        "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/9656491B1AAFD07C22DE159521700CEE/S1532440021000177a.pdf/div-class-title-the-correlates-of-state-policy-and-the-structure-of-state-panel-data-div.pdf",
+        "title": "3246F76B",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-02-03T23:12:59.881Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "pdf"
+      },
+      "meta": {
+        "issue_number": 660,
+        "object_id": "paper:url-misc.3246F76B",
+        "created_at": "2026-02-03T23:13:00+00:00",
+        "updated_at": "2026-02-03T23:13:22+00:00",
+        "version": 1
+      }
+    },
     "interactions:sciencedirect.S1353829225000528": {
       "data": {
         "sourceId": "sciencedirect",
@@ -21,6 +45,21 @@
               "idle_seconds": 0,
               "total_elapsed_seconds": 40
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-03T23:12:47.981Z",
+            "data": {
+              "session_id": "session_1770160367751_s7pidhi",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-03T23:12:37.802Z",
+              "end_time": "2026-02-03T23:12:47.751Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 10
+            }
           }
         ]
       },
@@ -28,7 +67,7 @@
         "issue_number": 659,
         "object_id": "interactions:sciencedirect.S1353829225000528",
         "created_at": "2026-02-03T21:26:35+00:00",
-        "updated_at": "2026-02-03T21:34:20+00:00",
+        "updated_at": "2026-02-03T23:12:53+00:00",
         "version": 1
       }
     },
