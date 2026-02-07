@@ -1,7 +1,71 @@
 {
-  "snapshot_time": "2026-02-07T02:37:27.494020+00:00",
+  "snapshot_time": "2026-02-07T21:13:02.709148+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.3CC2BEF8": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3CC2BEF8",
+        "url": "https://www.cambridge.org/core/journals/political-science-research-and-methods/article/beyond-the-mean-how-thinking-about-the-distribution-of-public-opinions-reduces-politicians-perceptual-errors/A0CEE5D0616BD12E1BA9B1B96C1154C2",
+        "title": "Beyond the mean: how thinking about the distribution of public opinions reduces politicians\u2019 perceptual errors",
+        "authors": "Nicholas Dias, Jack Lucas, Lior Sheffer",
+        "abstract": "Elected politicians regularly over-estimate the conservatism of their constituents\u2019 preferences. While these findings have concerning implications for democratic representation, the magnitude and sources of so-called \u201cconservative over-estimation\u201d are poorly understood. We show that a novel approach to measuring politicians\u2019 perceptions\u2014which asks politicians to draw the distribution of their constituents\u2019 preferences, rather than provide a point estimate\u2014clarifies the magnitude and causes of conservative over-estimation. While the vast majority of politicians exhibit a conservative bias, our \u201cperceived-distribution\u201d task cuts the size of this bias in half. Moreover, psychological projection counterbalances conservative over-estimation among left-wing politicians but reinforces it among right-wing politicians. Our results raise questions about existing accounts of elite misperceptions and help to identify the psychological causes of conservative over-estimation.",
+        "timestamp": "2026-02-07T21:12:37.737Z",
+        "rating": "novote",
+        "publishedDate": "2026/02/02",
+        "tags": [],
+        "doi": "10.1017/psrm.2025.10069",
+        "journalName": "Political Science Research and Methods",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 663,
+        "object_id": "paper:url-misc.3CC2BEF8",
+        "created_at": "2026-02-07T21:12:38+00:00",
+        "updated_at": "2026-02-07T21:12:55+00:00",
+        "version": 1
+      }
+    },
+    "interactions:arxiv.2508.00233": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2508.00233",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 662,
+        "object_id": "interactions:arxiv.2508.00233",
+        "created_at": "2026-02-07T21:12:06+00:00",
+        "updated_at": "2026-02-07T21:12:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2508.00233": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2508.00233",
+        "url": "https://www.arxiv.org/abs/2508.00233",
+        "title": "Correcting Misperceptions at a Glance: Using Data Visualizations to Reduce Political Sectarianism",
+        "authors": "Douglas Markant, Subham Sah, Alireza Karduni, Milad Rogha, My Thai, Wenwen Dou",
+        "abstract": "Political sectarianism is fueled in part by misperceptions of political opponents: People commonly overestimate the support for extreme policies among members of the other party. Research suggests that correcting partisan misperceptions by informing people about the actual views of outparty members may reduce one's own expressed support for political extremism, including partisan violence and anti-democratic actions. The present study investigated how correction effects depend on different representations of outparty views communicated through data visualizations. We conducted an experiment with U.S. based participants from Prolific (N=239 Democrats, N=244 Republicans). Participants made predictions about support for political violence and undemocratic practices among members of their political outparty. They were then presented with data from an earlier survey on the actual views of outparty members. Some participants viewed only the average response (Mean-Only condition), while other groups were shown visual representations of the range of views from 75% of the outparty (Mean+Interval condition) or the full distribution of responses (Mean+Points condition). Compared to a control group that was not informed about outparty views, we observed the strongest correction effects among participants in the Mean-only and Mean+Points condition, while correction effects were weaker in the Mean+Interval condition. In addition, participants who observed the full distribution of out-party views (Mean+Points condition) were most accurate at later recalling the degree of support among the outparty. Our findings suggest that data visualizations can be an important tool for correcting pervasive distortions in beliefs about other groups. However, the way in which variability in outparty views is visualized can significantly shape how people interpret and respond to corrective information.",
+        "timestamp": "2026-02-07T21:11:56.170Z",
+        "rating": "novote",
+        "publishedDate": "2025/08/01",
+        "tags": [
+          "Human-Computer Interaction (cs.HC)"
+        ],
+        "doi": "10.48550/arXiv.2508.00233",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 661,
+        "object_id": "paper:arxiv.2508.00233",
+        "created_at": "2026-02-07T21:11:56+00:00",
+        "updated_at": "2026-02-07T21:12:17+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.3246F76B": {
       "data": {
         "sourceId": "url-misc",
