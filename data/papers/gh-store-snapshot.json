@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-02-11T22:45:40.840036+00:00",
+  "snapshot_time": "2026-02-11T22:46:39.994489+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "interactions:url-misc.7974B063": {
@@ -451,6 +451,201 @@
         "object_id": "paper:url-misc.3246F76B",
         "created_at": "2026-02-03T23:13:00+00:00",
         "updated_at": "2026-02-03T23:13:22+00:00",
+        "version": 1
+      }
+    },
+    "interactions:sciencedirect.S1353829225000528": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S1353829225000528",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-03T21:33:56.161Z",
+            "data": {
+              "session_id": "session_1770154436137_t90un2i",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-03T21:33:15.779Z",
+              "end_time": "2026-02-03T21:33:56.137Z",
+              "heartbeat_count": 8,
+              "duration_seconds": 40,
+              "idle_seconds": 0,
+              "total_elapsed_seconds": 40
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-03T23:12:47.981Z",
+            "data": {
+              "session_id": "session_1770160367751_s7pidhi",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-03T23:12:37.802Z",
+              "end_time": "2026-02-03T23:12:47.751Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 10
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-07T00:55:46.611Z",
+            "data": {
+              "session_id": "session_1770425746379_v9my0ov",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-07T00:55:38.054Z",
+              "end_time": "2026-02-07T00:55:46.379Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 8
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-07T02:34:39.472Z",
+            "data": {
+              "session_id": "session_1770431678748_adl78m8",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-07T02:08:27.671Z",
+              "end_time": "2026-02-07T02:34:38.748Z",
+              "heartbeat_count": 314,
+              "duration_seconds": 1570,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 1571
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-07T02:35:46.353Z",
+            "data": {
+              "session_id": "session_1770431745706_i4k2cb4",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-07T02:35:06.427Z",
+              "end_time": "2026-02-07T02:35:45.706Z",
+              "heartbeat_count": 7,
+              "duration_seconds": 35,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 39
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-07T02:36:32.472Z",
+            "data": {
+              "session_id": "session_1770431792459_m05yw4f",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-07T02:36:15.214Z",
+              "end_time": "2026-02-07T02:36:32.459Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 17
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-09T22:04:47.461Z",
+            "data": {
+              "session_id": "session_1770674687446_u0qu0rh",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-09T22:04:37.306Z",
+              "end_time": "2026-02-09T22:04:47.446Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 0,
+              "total_elapsed_seconds": 10
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-09T22:06:36.961Z",
+            "data": {
+              "session_id": "session_1770674796377_s644ef2",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-09T22:04:47.449Z",
+              "end_time": "2026-02-09T22:06:36.377Z",
+              "heartbeat_count": 21,
+              "duration_seconds": 105,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 109
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-09T22:11:08.988Z",
+            "data": {
+              "session_id": "session_1770675068334_cm2bhmz",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-09T22:08:04.746Z",
+              "end_time": "2026-02-09T22:11:08.334Z",
+              "heartbeat_count": 36,
+              "duration_seconds": 180,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 184
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-11T19:56:28.926Z",
+            "data": {
+              "session_id": "session_1770839788897_b5y4w9m",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-11T19:56:23.617Z",
+              "end_time": "2026-02-11T19:56:28.897Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 0,
+              "total_elapsed_seconds": 5
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-11T21:45:48.711Z",
+            "data": {
+              "session_id": "session_1770846348076_kvsm7w8",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-11T20:53:13.160Z",
+              "end_time": "2026-02-11T21:45:48.076Z",
+              "heartbeat_count": 630,
+              "duration_seconds": 3150,
+              "idle_seconds": 5,
+              "total_elapsed_seconds": 3155
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-11T22:45:30.293Z",
+            "data": {
+              "session_id": "session_1770849928882_d7skhnl",
+              "source_id": "sciencedirect",
+              "paper_id": "S1353829225000528",
+              "start_time": "2026-02-11T22:45:23.189Z",
+              "end_time": "2026-02-11T22:45:28.882Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 659,
+        "object_id": "interactions:sciencedirect.S1353829225000528",
+        "created_at": "2026-02-03T21:26:35+00:00",
+        "updated_at": "2026-02-11T22:45:55+00:00",
         "version": 1
       }
     },
