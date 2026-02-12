@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2026-02-12T01:17:32.863193+00:00",
+  "snapshot_time": "2026-02-12T21:13:12.189061+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s41586-025-09922-y": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-025-09922-y",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 670,
+        "object_id": "interactions:nature.s41586-025-09922-y",
+        "created_at": "2026-02-12T21:13:05+00:00",
+        "updated_at": "2026-02-12T21:13:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41586-025-09922-y": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-025-09922-y",
+        "url": "https://www.nature.com/articles/s41586-025-09922-y",
+        "title": "Artificial intelligence tools expand scientists\u2019 impact but contract science\u2019s focus",
+        "authors": "Hao, Qianyue",
+        "abstract": "Developments in artificial intelligence (AI) have accelerated scientific discovery1. Alongside recent AI-oriented Nobel prizes2\u20139, these trends establish the role of AI tools in science10. This advancement raises questions about the influence of AI tools on scientists and science as a whole, and highlights a potential conflict between individual and collective benefits11. To evaluate these questions, we used a pretrained language model to identify AI-augmented research, with an F1-score of 0.875 in validation against expert-labelled data. Using a dataset of 41.3 million research papers across the natural sciences and covering distinct eras of AI, here we show an accelerated adoption of AI tools among scientists and consistent professional advantages associated with AI usage, but a collective narrowing of scientific focus. Scientists who engage in AI-augmented research publish 3.02 times more papers, receive 4.84 times more citations and become research project leaders 1.37 years earlier than those who do not. By contrast, AI adoption shrinks the collective volume of scientific topics studied by 4.63% and decreases scientists\u2019 engagement with one another by 22%. By consequence, adoption of AI in science presents what seems to be a paradox: an expansion of individual scientists\u2019 impact but a contraction in collective science\u2019s reach, as AI-augmented work moves collectively towards areas richest in data. With reduced follow-on engagement, AI tools seem to automate established fields rather than explore new ones, highlighting a tension between personal advancement and collective scientific progress. Artificial intelligence boosts individual scientists\u2019 output, citations and career progression, but collectively narrows research diversity and reduces collaboration, concentrating work in data-rich areas and potentially limiting broader scientific exploration.",
+        "timestamp": "2026-02-12T21:12:09.915Z",
+        "rating": "novote",
+        "publishedDate": "2026/01",
+        "tags": [
+          "Careers"
+        ],
+        "doi": "10.1038/s41586-025-09922-y",
+        "journalName": "Nature 2026 649:8099",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 668,
+        "object_id": "paper:nature.s41586-025-09922-y",
+        "created_at": "2026-02-12T21:12:10+00:00",
+        "updated_at": "2026-02-12T21:12:32+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.7974B063": {
       "data": {
         "sourceId": "url-misc",
