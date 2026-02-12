@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-02-12T21:13:12.189061+00:00",
+  "snapshot_time": "2026-02-12T21:14:12.096443+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "interactions:nature.s41586-025-09922-y": {
@@ -13,6 +13,33 @@
         "object_id": "interactions:nature.s41586-025-09922-y",
         "created_at": "2026-02-12T21:13:05+00:00",
         "updated_at": "2026-02-12T21:13:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41562-024-02020-5": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-024-02020-5",
+        "url": "https://www.nature.com/articles/s41562-024-02020-5?fromPaywallRec=false",
+        "title": "Quantifying the use and potential benefits of artificial intelligence in scientific research",
+        "authors": "Gao, Jian",
+        "abstract": "The rapid advancement of artificial intelligence (AI) is poised to reshape almost every line of work. Despite enormous efforts devoted to understanding AI\u2019s economic impacts, we lack a systematic understanding of the benefits to scientific research associated with the use of AI. Here we develop a measurement framework to estimate the direct use of AI and associated benefits in science. We find that the use and benefits of AI appear widespread throughout the sciences, growing especially rapidly since 2015. However, there is a substantial gap between AI education and its application in research, highlighting a misalignment between AI expertise supply and demand. Our analysis also reveals demographic disparities, with disciplines with higher proportions of women or Black scientists reaping fewer benefits from AI, potentially exacerbating existing inequalities in science. These findings have implications for the equity and sustainability of the research enterprise, especially as the integration of AI with science continues to deepen. Gao and Wang develop a measurement framework that demonstrates the widespread use and benefits of AI in science. Nonetheless, there is a substantial gap between AI education and application across disciplines.",
+        "timestamp": "2026-02-12T21:13:03.170Z",
+        "rating": "novote",
+        "publishedDate": "2024/12",
+        "tags": [
+          "Science",
+          "technology and society"
+        ],
+        "doi": "10.1038/s41562-024-02020-5",
+        "journalName": "Nature Human Behaviour 2024 8:12",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 669,
+        "object_id": "paper:nature.s41562-024-02020-5",
+        "created_at": "2026-02-12T21:13:03+00:00",
+        "updated_at": "2026-02-12T21:13:23+00:00",
         "version": 1
       }
     },
