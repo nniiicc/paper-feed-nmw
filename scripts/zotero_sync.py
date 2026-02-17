@@ -34,13 +34,14 @@ class PapersFeedSync:
         
         self._issues_cache = None
         self._canonical_map = None
-        
+
         self.version_file = '.zotero_sync_version'
+        self.http_timeout = 30  # seconds
 
     def get_last_sync_version(self) -> Optional[int]:
         """Get the last synced Zotero library version from repo."""
         url = f"https://api.github.com/repos/{self.repo}/contents/{self.version_file}"
-        resp = requests.get(url, headers=self.gh_headers)
+        resp = requests.get(url, headers=self.gh_headers, timeout=self.http_timeout)
         if resp.status_code == 200:
             import base64
             content = base64.b64decode(resp.json()['content']).decode('utf-8')
@@ -55,7 +56,7 @@ class PapersFeedSync:
         import base64
         url = f"https://api.github.com/repos/{self.repo}/contents/{self.version_file}"
         
-        resp = requests.get(url, headers=self.gh_headers)
+        resp = requests.get(url, headers=self.gh_headers, timeout=self.http_timeout)
         sha = resp.json().get('sha') if resp.status_code == 200 else None
         
         content = base64.b64encode(str(version).encode()).decode()
@@ -66,7 +67,7 @@ class PapersFeedSync:
         if sha:
             payload["sha"] = sha
         
-        resp = requests.put(url, headers=self.gh_headers, json=payload)
+        resp = requests.put(url, headers=self.gh_headers, json=payload, timeout=self.http_timeout)
         return resp.status_code in [200, 201]
 
     def get_current_library_version(self) -> int:
@@ -146,7 +147,7 @@ class PapersFeedSync:
         self._canonical_map = {}
         
         while url:
-            resp = requests.get(url, headers=self.gh_headers, params=params)
+            resp = requests.get(url, headers=self.gh_headers, params=params, timeout=self.http_timeout)
             if resp.status_code != 200:
                 logger.warning(f"Failed to fetch issues: {resp.status_code}")
                 break
@@ -209,7 +210,7 @@ class PapersFeedSync:
         # Retry logic with rate limit handling
         max_retries = 3
         for attempt in range(max_retries):
-            resp = requests.post(url, headers=self.gh_headers, json=payload)
+            resp = requests.post(url, headers=self.gh_headers, json=payload, timeout=self.http_timeout)
             if resp.status_code == 201:
                 return True
             elif self._handle_rate_limit(resp):
@@ -228,7 +229,7 @@ class PapersFeedSync:
         # Retry logic with rate limit handling for GET
         max_retries = 3
         for attempt in range(max_retries):
-            resp = requests.get(url, headers=self.gh_headers)
+            resp = requests.get(url, headers=self.gh_headers, timeout=self.http_timeout)
             if resp.status_code == 200:
                 break
             elif self._handle_rate_limit(resp):
@@ -274,7 +275,7 @@ class PapersFeedSync:
 
         # Retry logic with rate limit handling for PATCH
         for attempt in range(max_retries):
-            resp = requests.patch(url, headers=self.gh_headers, json=payload)
+            resp = requests.patch(url, headers=self.gh_headers, json=payload, timeout=self.http_timeout)
             if resp.status_code == 200:
                 return True
             elif self._handle_rate_limit(resp):

@@ -12,7 +12,6 @@ import { browser } from './utils/browser-api';
 
 // Import from central registry instead of individual integrations
 import { sourceIntegrations } from './source-integration/registry';
-import { Message } from './source-integration/types';
 
 const logger = loguru.getLogger('background');
 
@@ -306,28 +305,32 @@ async function handleManualPaperLog(metadata: PaperMetadata): Promise<void> {
 
 // Listen for credential changes
 browser.storage.onChanged.addListener(async (changes) => {
-  logger.debug('Storage changes detected', Object.keys(changes));
-  
-  if (changes.githubToken) {
-    githubToken = changes.githubToken.newValue;
-  }
-  if (changes.githubRepo) {
-    githubRepo = changes.githubRepo.newValue;
-  }
-  
-  // Reinitialize paper manager if credentials changed
-  if (changes.githubToken || changes.githubRepo) {
-    if (githubToken && githubRepo) {
-      const githubClient = new GitHubStoreClient(githubToken, githubRepo);
-      
-      // Pass the source manager to the paper manager
-      paperManager = new PaperManager(githubClient, sourceManager!);
-      logger.info('Paper manager reinitialized');
-      
-      // Reinitialize session service with new paper manager
-      sessionService = new SessionService(paperManager);
-      logger.info('Session service reinitialized');
+  try {
+    logger.debug('Storage changes detected', Object.keys(changes));
+
+    if (changes.githubToken) {
+      githubToken = changes.githubToken.newValue;
     }
+    if (changes.githubRepo) {
+      githubRepo = changes.githubRepo.newValue;
+    }
+
+    // Reinitialize paper manager if credentials changed
+    if (changes.githubToken || changes.githubRepo) {
+      if (githubToken && githubRepo) {
+        const githubClient = new GitHubStoreClient(githubToken, githubRepo);
+
+        // Pass the source manager to the paper manager
+        paperManager = new PaperManager(githubClient, sourceManager!);
+        logger.info('Paper manager reinitialized');
+
+        // Reinitialize session service with new paper manager
+        sessionService = new SessionService(paperManager);
+        logger.info('Session service reinitialized');
+      }
+    }
+  } catch (error) {
+    logger.error('Error handling storage change', error);
   }
 });
 

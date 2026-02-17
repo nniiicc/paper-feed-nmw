@@ -1,0 +1,80 @@
+name: Sign Firefox Extension
+
+on:
+  push:
+    paths:
+      - 'extension/**'
+      - '.github/workflows/sign-firefox-extension.yml'
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: extension
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build extension
+      run: npm run build
+
+    - name: Sign extension for Firefox (unlisted)
+      run: >
+        npx web-ext sign
+        --source-dir .
+        --channel=unlisted
+        --api-key=${{ secrets.AMO_JWT_ISSUER }}
+        --api-secret=${{ secrets.AMO_JWT_SECRET }}
+        --ignore-files="node_modules/" "package.json" "package-lock.json" "tsconfig.json" "rollup.config.js" ".web-extension-id" "*.ts"
+
+    - name: Find signed .xpi file
+      id: find_xpi
+      run: |
+        XPI_PATH=$(find web-ext-artifacts -name '*.xpi' | head -1)
+        if [ -z "$XPI_PATH" ]; then
+          echo "Error: No .xpi file found in web-ext-artifacts/"
+          exit 1
+        fi
+        XPI_NAME=$(basename "$XPI_PATH")
+        echo "xpi_path=$XPI_PATH" >> "$GITHUB_OUTPUT"
+        echo "xpi_name=$XPI_NAME" >> "$GITHUB_OUTPUT"
+
+    - name: Get extension version
+      id: version
+      run: |
+        VERSION=$(node -p "require('./manifest.json').version")
+        echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: extension-v${{ steps.version.outputs.version }}-${{ github.run_number }}
+        name: Firefox Extension v${{ steps.version.outputs.version }} (build ${{ github.run_number }})
+        body: |
+          Signed Firefox extension (.xpi) for Academic Paper Tracker.
+
+          ## Install
+          1. Download the `.xpi` file below
+          2. Open Firefox and navigate to `about:addons`
+          3. Click the gear icon → "Install Add-on From File..."
+          4. Select the downloaded `.xpi` file
+
+          The extension will persist across Firefox restarts and updates.
+        files: extension/${{ steps.find_xpi.outputs.xpi_path }}
+        fail_on_unmatched_files: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

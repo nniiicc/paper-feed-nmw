@@ -25,9 +25,14 @@ class NatureMetadataExtractor extends MetadataExtractor {
    * Override authors extraction to use meta tag first
    */
   protected extractAuthors(): string {
-    const metaAuthors = this.getMetaContent('meta[name="citation_author"]');
-    if (metaAuthors) {
-      return metaAuthors;
+    // Get all citation_author meta tags (Nature uses one per author)
+    const citationAuthors: string[] = [];
+    this.document.querySelectorAll('meta[name="citation_author"]').forEach(el => {
+      const content = el.getAttribute('content');
+      if (content) citationAuthors.push(content);
+    });
+    if (citationAuthors.length > 0) {
+      return citationAuthors.join(', ');
     }
     // Fallback to HTML extraction
     const authorElements = this.document.querySelectorAll('.c-article-author-list__item');

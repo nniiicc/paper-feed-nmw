@@ -5,8 +5,19 @@ import { SourceManager } from '../source-integration/types';
 import { PaperManager } from '../papers/manager';
 import { PaperMetadata } from '../papers/types';
 import { loguru } from './logger';
+import { browser } from './browser-api';
 
 const logger = loguru.getLogger('popup-manager');
+
+/** Escape HTML special characters to prevent XSS */
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 
 /**
  * Popup handler information
@@ -55,7 +66,7 @@ export class PopupManager {
    * Set up message listeners for popup-related messages
    */
   private setupMessageListeners(): void {
-    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
       // Handle popup actions (ratings, notes, etc.)
       if (message.type === 'popupAction') {
         this.handlePopupAction(
@@ -154,7 +165,7 @@ export class PopupManager {
         position
       };
       
-      await chrome.tabs.sendMessage(tabId, message);
+      await browser.tabs.sendMessage(tabId, message);
       
       logger.debug(`Sent popup to content script for ${sourceId}:${paperId}`);
     } catch (error) {
@@ -201,9 +212,11 @@ export class PopupManager {
    * Create HTML for paper popup
    */
   private createPopupHtml(paper: PaperMetadata): string {
+    const title = escapeHtml(paper.title || paper.paperId);
+    const authors = escapeHtml(paper.authors || '');
     return `
-      <div class="paper-popup-header">${paper.title || paper.paperId}</div>
-      <div class="paper-popup-meta">${paper.authors || ''}</div>
+      <div class="paper-popup-header">${title}</div>
+      <div class="paper-popup-meta">${authors}</div>
       
       <div class="paper-popup-buttons">
         <button class="vote-button" data-vote="thumbsup" id="btn-thumbsup" ${paper.rating === 'thumbsup' ? 'class="active"' : ''}>👍 Interesting</button>

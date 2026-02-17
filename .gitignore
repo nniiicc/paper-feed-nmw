@@ -170,3 +170,7 @@ cython_debug/
 # Node.js
 node_modules/
 
+# web-ext
+web-ext-artifacts/
+.web-extension-id
+

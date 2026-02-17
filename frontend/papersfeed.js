@@ -1,5 +1,16 @@
 // frontend/papersfeed.js
 
+/** Escape HTML special characters to prevent XSS */
+function escapeHtml(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 // theme toggle
 (function initTheme() {
   const savedTheme = localStorage.getItem('theme') || 'light';
@@ -519,7 +530,7 @@ function createReadingHeatmap(data) {
     .text(d => d3.timeFormat("%b")(d));
   
   // Add day labels (M, W, F)
-  const dayLabels = ["M", "", "W", "", "F", "", ""];
+  const dayLabels = ["", "M", "", "W", "", "F", ""];
   svg.selectAll(".day-label")
     .data(dayLabels)
     .enter()
@@ -545,8 +556,8 @@ function formatTags(cell) {
   if (!tags || !Array.isArray(tags) || tags.length === 0) {
     return '';
   }
-  return tags.map(tag => 
-    `<span class="tag">${tag}</span>`
+  return tags.map(tag =>
+    `<span class="tag">${escapeHtml(tag)}</span>`
   ).join(' ');
 }
 
@@ -644,31 +655,31 @@ function displayPaperDetails(paperId) {
   // Content no longer includes close button - it's now fixed in HTML
   detailsContent.innerHTML = `
     <div class="details-header">
-      <h2>${paper.title}</h2>
+      <h2>${escapeHtml(paper.title)}</h2>
     </div>
-    
+
     <div class="detail-section">
       <h3>Paper Details</h3>
       <table class="detail-table">
         <tr>
           <th>ID:</th>
-          <td>${paper.id}</td>
+          <td>${escapeHtml(paper.id)}</td>
         </tr>
         <tr>
           <th>Authors:</th>
-          <td>${paper.authors}</td>
+          <td>${escapeHtml(paper.authors)}</td>
         </tr>
         <tr>
           <th>Publication Date:</th>
-          <td>${paper.published}</td>
+          <td>${escapeHtml(paper.published)}</td>
         </tr>
         <tr>
           <th>Last Read:</th>
-          <td>${paper.lastRead}</td>
+          <td>${escapeHtml(paper.lastRead)}</td>
         </tr>
         <tr>
           <th>Reading Time:</th>
-          <td>${paper.readingTime}</td>
+          <td>${paper.readingTimeSeconds > 0 ? Math.round(paper.readingTimeSeconds / 60) + ' min' : 'N/A'}</td>
         </tr>
         <tr>
           <th>Interaction Days:</th>
@@ -680,15 +691,15 @@ function displayPaperDetails(paperId) {
         </tr>
         <tr>
           <th>URL:</th>
-          <td><a href="${paper.url}" target="_blank">${paper.url}</a></td>
+          <td><a href="${escapeHtml(paper.url)}" target="_blank">${escapeHtml(paper.url)}</a></td>
         </tr>
       </table>
     </div>
-    
+
     <div class="detail-section">
       <h3>Abstract</h3>
       <div class="abstract-box">
-        ${paper.abstract}
+        ${escapeHtml(paper.abstract)}
       </div>
     </div>
     
@@ -1308,7 +1319,7 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="flex flex-col items-center justify-center h-64 text-center p-8">
             <i data-lucide="alert-circle" class="h-12 w-12 text-destructive mb-4"></i>
             <h3 class="text-lg font-semibold mb-2">Error Loading Data</h3>
-            <p class="text-sm text-muted-foreground">${error.message}</p>
+            <p class="text-sm text-muted-foreground">${escapeHtml(error.message)}</p>
             <p class="text-xs text-muted-foreground mt-2">Make sure gh-store-snapshot.json exists in the same directory.</p>
           </div>
         `;

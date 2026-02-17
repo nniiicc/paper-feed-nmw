@@ -9,8 +9,7 @@ Example feed: https://dmarx.github.io/papers-feed/
 1. Browser extension monitors your reading habits.
 2. Interactions with domains you are interested in get logged as github issues. Whole separate project for this cursed use of gh-issues here: https://github.com/dmarx/gh-store
    * Domains supported out of the box:
-     * arxiv
-     * openreview
+     * arXiv, OpenReview, Nature, Springer, ScienceDirect, Wiley, IEEE, ACM, PLOS, bioRxiv, medRxiv, SSRN, PubMed, Semantic Scholar, NeurIPS, CVF, ACL, PNAS
    * Can also manually trigger extension to log any page via a popup
 4. Github automation workflows update an interactive webpage.
 
@@ -43,18 +42,51 @@ npm run build
 
 ### Firefox
 
-**Option A: Temporary installation (for testing)**
+**Option A: Install signed extension (recommended — persists across restarts/updates)**
+1. Download the latest `.xpi` from [GitHub Releases](../../releases)
+2. Open Firefox and navigate to `about:addons`
+3. Click the gear icon → "Install Add-on From File..."
+4. Select the downloaded `.xpi` file
+
+**Option B: Temporary installation (for development only — removed on restart)**
 ```bash
 cd extension
 npm run firefox:run
 ```
 
-**Option B: Manual installation**
-1. Navigate to `about:debugging#/runtime/this-firefox`
-2. Click "Load Temporary Add-on..."
-3. Select any file in the `extension` folder (e.g., `manifest.json`)
+Or manually: navigate to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on...", and select `manifest.json`.
 
 > **Note:** Firefox requires version 128+ for full Manifest V3 support.
+
+#### Signing the extension yourself
+
+To produce a signed `.xpi` for Firefox:
+1. Get API credentials from https://addons.mozilla.org/developers/addon/api/key/
+2. Run:
+```bash
+cd extension
+AMO_JWT_ISSUER=your_key AMO_JWT_SECRET=your_secret npm run firefox:sign
+```
+3. The signed `.xpi` will be in `web-ext-artifacts/`
+
+This is also automated via GitHub Actions (requires `AMO_JWT_ISSUER` and `AMO_JWT_SECRET` repository secrets). On each push to `main` that changes `extension/`, the workflow signs the extension and creates a GitHub Release with the `.xpi` attached.
+
+## Running Tests
+
+```bash
+# Run all Python tests
+pytest tests/ -v
+
+# Run specific test suites
+pytest tests/test_canonical_ids.py          # Canonical ID extraction
+pytest tests/test_hydrate_metadata.py       # arXiv metadata functions
+pytest tests/test_import_browser_history.py # URL pattern matching, ID shortening
+pytest tests/test_process_pdf.py            # PDF text sanitization
+pytest tests/test_zotero_sync.py            # Zotero sync (needs pyzotero)
+
+# Type-check the extension
+cd extension && npm run type-check
+```
 
 ## Testing your setup
 
