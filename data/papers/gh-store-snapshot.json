@@ -1,7 +1,57 @@
 {
-  "snapshot_time": "2026-02-17T19:09:45.499115+00:00",
+  "snapshot_time": "2026-02-18T00:57:19.080177+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.13CCC673": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "13CCC673",
+        "url": "https://academic.oup.com/ej/article/135/666/538/7825862",
+        "title": "Who's Afraid of Policy Experiments?",
+        "authors": "Dur, Robert, Non, Arjan, Prottung, Paul, Ricci, Benedetta",
+        "abstract": "Abstract. In many public policy areas, randomised policy experiments can greatly contribute to our knowledge of the effects of policies and can thus help t",
+        "timestamp": "2026-02-18T00:56:18.932Z",
+        "rating": "novote",
+        "publishedDate": "2024/12/24",
+        "tags": [],
+        "doi": "10.1093/ej/ueae090",
+        "journalName": "The Economic Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 672,
+        "object_id": "paper:url-misc.13CCC673",
+        "created_at": "2026-02-18T00:56:19+00:00",
+        "updated_at": "2026-02-18T00:56:39+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.653BADC1": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "653BADC1",
+        "url": "https://osf.io/preprints/socarxiv/hbgjf_v1",
+        "title": "Should generative AI be used in reflexive qualitative research?",
+        "authors": "Ibrahim, Elida, Nelson, Laura, Voyer, Andrea",
+        "abstract": "Debates about generative AI have recently produced strong claims that such tools should be excluded from qualitative, and especially reflexive qualitative, research. This research note challenges that conclusion. We argue that \u201cgenerative AI\u201d is not a single, well-defined method but a heterogeneous set of transformer-based models, many of which are open, local, and configurable for scholarly use. Situating large language models within a longer lineage of computational text analysis\u2014from topic models to word embeddings to transformer-based models\u2014we suggest that decoder-only models offer distinctive affordances that can align productively with qualitative epistemologies, including attention to context and wholism. Drawing on emerging empirical work, we outline how generative models can support rigorous reflexive qualitative analysis, for example, by aiding in surfacing alternative readings, identifying negative cases, and helping researchers probe the boundaries of their interpretations, without replacing human judgment. We then articulate a framework of \u201ctechnological reflexivity\u201d for guiding the responsible use of generative AI in reflexive qualitative research, emphasizing documentation of prompts, holdout validation, critical attention to model bias, interpretive control, and ethical safeguards around data privacy and provenance. We conclude that generative AI should not be categorically rejected; rather, qualitative researchers should play a central role in defining how these tools are used in ways consistent with interpretive rigor and longstanding commitments of the field.",
+        "timestamp": "2026-02-18T00:56:11.475Z",
+        "rating": "novote",
+        "publishedDate": "2026-02-09",
+        "tags": [
+          "computational methods"
+        ],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 671,
+        "object_id": "paper:url-misc.653BADC1",
+        "created_at": "2026-02-18T00:56:11+00:00",
+        "updated_at": "2026-02-18T00:56:33+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41586-025-09922-y": {
       "data": {
         "sourceId": "nature",
@@ -295,111 +345,6 @@
         "object_id": "paper:ieee.9473209",
         "created_at": "2026-02-07T21:53:00+00:00",
         "updated_at": "2026-02-07T21:53:23+00:00",
-        "version": 1
-      }
-    },
-    "interactions:url-misc.3CC2BEF8": {
-      "data": {
-        "sourceId": "url-misc",
-        "paperId": "3CC2BEF8",
-        "interactions": [
-          {
-            "type": "reading_session",
-            "timestamp": "2026-02-07T21:13:29.275Z",
-            "data": {
-              "session_id": "session_1770498809127_qhcxyuf",
-              "source_id": "url-misc",
-              "paper_id": "3CC2BEF8",
-              "start_time": "2026-02-07T21:12:47.525Z",
-              "end_time": "2026-02-07T21:13:29.126Z",
-              "heartbeat_count": 8,
-              "duration_seconds": 40,
-              "idle_seconds": 2,
-              "total_elapsed_seconds": 42
-            }
-          },
-          {
-            "type": "reading_session",
-            "timestamp": "2026-02-12T21:49:48.904Z",
-            "data": {
-              "session_id": "session_1770932988284_f7tue3k",
-              "source_id": "url-misc",
-              "paper_id": "3CC2BEF8",
-              "start_time": "2026-02-12T21:13:09.086Z",
-              "end_time": "2026-02-12T21:49:48.284Z",
-              "heartbeat_count": 439,
-              "duration_seconds": 2195,
-              "idle_seconds": 4,
-              "total_elapsed_seconds": 2199
-            }
-          },
-          {
-            "type": "reading_session",
-            "timestamp": "2026-02-12T21:55:07.750Z",
-            "data": {
-              "session_id": "session_1770933307501_36uw0u6",
-              "source_id": "url-misc",
-              "paper_id": "3CC2BEF8",
-              "start_time": "2026-02-12T21:54:45.968Z",
-              "end_time": "2026-02-12T21:55:07.501Z",
-              "heartbeat_count": 4,
-              "duration_seconds": 20,
-              "idle_seconds": 2,
-              "total_elapsed_seconds": 22
-            }
-          },
-          {
-            "type": "reading_session",
-            "timestamp": "2026-02-13T18:12:12.612Z",
-            "data": {
-              "session_id": "session_1771006331668_gtkupqy",
-              "source_id": "url-misc",
-              "paper_id": "3CC2BEF8",
-              "start_time": "2026-02-13T18:08:38.162Z",
-              "end_time": "2026-02-13T18:12:11.667Z",
-              "heartbeat_count": 42,
-              "duration_seconds": 210,
-              "idle_seconds": 4,
-              "total_elapsed_seconds": 214
-            }
-          },
-          {
-            "type": "reading_session",
-            "timestamp": "2026-02-13T18:58:21.246Z",
-            "data": {
-              "session_id": "session_1771009100176_dt6n2n9",
-              "source_id": "url-misc",
-              "paper_id": "3CC2BEF8",
-              "start_time": "2026-02-13T18:14:20.856Z",
-              "end_time": "2026-02-13T18:58:20.176Z",
-              "heartbeat_count": 527,
-              "duration_seconds": 2635,
-              "idle_seconds": 4,
-              "total_elapsed_seconds": 2639
-            }
-          },
-          {
-            "type": "reading_session",
-            "timestamp": "2026-02-13T19:29:50.636Z",
-            "data": {
-              "session_id": "session_1771010989863_ynnd7mt",
-              "source_id": "url-misc",
-              "paper_id": "3CC2BEF8",
-              "start_time": "2026-02-13T19:27:36.109Z",
-              "end_time": "2026-02-13T19:29:49.863Z",
-              "heartbeat_count": 26,
-              "duration_seconds": 130,
-              "idle_seconds": 4,
-              "total_elapsed_seconds": 134
-            }
-          }
-        ]
-      },
-      "meta": {
-        "issue_number": 664,
-        "object_id": "interactions:url-misc.3CC2BEF8",
-        "created_at": "2026-02-07T21:12:47+00:00",
-        "updated_at": "2026-02-13T19:30:15+00:00",
         "version": 1
       }
     },
