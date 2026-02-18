@@ -1,7 +1,115 @@
 {
-  "snapshot_time": "2026-02-18T00:57:19.080177+00:00",
+  "snapshot_time": "2026-02-18T00:59:15.165626+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:ssrn.5255039": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "5255039",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-18T00:58:09.939Z",
+            "data": {
+              "session_id": "session_1771376289925_bi5bg15",
+              "source_id": "ssrn",
+              "paper_id": "5255039",
+              "start_time": "2026-02-18T00:58:04.248Z",
+              "end_time": "2026-02-18T00:58:09.925Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 678,
+        "object_id": "interactions:ssrn.5255039",
+        "created_at": "2026-02-18T00:58:10+00:00",
+        "updated_at": "2026-02-18T00:58:36+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.5255039": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "5255039",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5255039",
+        "title": "papers.ssrn.com",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-02-18T00:57:54.845Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "SSRN",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 676,
+        "object_id": "paper:ssrn.5255039",
+        "created_at": "2026-02-18T00:57:55+00:00",
+        "updated_at": "2026-02-18T00:58:15+00:00",
+        "version": 1
+      }
+    },
+    "interactions:arxiv.2405.13319": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2405.13319",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-18T00:57:41.762Z",
+            "data": {
+              "session_id": "session_1771376261370_tiqhj49",
+              "source_id": "arxiv",
+              "paper_id": "2405.13319",
+              "start_time": "2026-02-18T00:57:35.491Z",
+              "end_time": "2026-02-18T00:57:41.370Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 675,
+        "object_id": "interactions:arxiv.2405.13319",
+        "created_at": "2026-02-18T00:57:42+00:00",
+        "updated_at": "2026-02-18T00:58:02+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2405.13319": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2405.13319",
+        "url": "https://arxiv.org/html/2405.13319v1",
+        "title": "\u201dYou should probably read this\u201d: Hedge Detection in Text",
+        "authors": "",
+        "abstract": "Humans express ideas, beliefs, and statements through language. The manner of expression can carry information indicating the author\u2019s degree of confidence in their statement. Understanding the certainty level of a claim is crucial in areas such as medicine, finance, engineering, and many others where errors can lead to disastrous results. In this work, we apply a joint model that leverages words and part-of-speech tags to improve hedge detection in text and achieve a new top score on the CoNLL-2010 Wikipedia corpus.",
+        "timestamp": "2026-02-18T00:57:35.860Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 673,
+        "object_id": "paper:arxiv.2405.13319",
+        "created_at": "2026-02-18T00:57:36+00:00",
+        "updated_at": "2026-02-18T00:57:57+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.13CCC673": {
       "data": {
         "sourceId": "url-misc",
@@ -345,6 +453,126 @@
         "object_id": "paper:ieee.9473209",
         "created_at": "2026-02-07T21:53:00+00:00",
         "updated_at": "2026-02-07T21:53:23+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.3CC2BEF8": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3CC2BEF8",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-07T21:13:29.275Z",
+            "data": {
+              "session_id": "session_1770498809127_qhcxyuf",
+              "source_id": "url-misc",
+              "paper_id": "3CC2BEF8",
+              "start_time": "2026-02-07T21:12:47.525Z",
+              "end_time": "2026-02-07T21:13:29.126Z",
+              "heartbeat_count": 8,
+              "duration_seconds": 40,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 42
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-12T21:49:48.904Z",
+            "data": {
+              "session_id": "session_1770932988284_f7tue3k",
+              "source_id": "url-misc",
+              "paper_id": "3CC2BEF8",
+              "start_time": "2026-02-12T21:13:09.086Z",
+              "end_time": "2026-02-12T21:49:48.284Z",
+              "heartbeat_count": 439,
+              "duration_seconds": 2195,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 2199
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-12T21:55:07.750Z",
+            "data": {
+              "session_id": "session_1770933307501_36uw0u6",
+              "source_id": "url-misc",
+              "paper_id": "3CC2BEF8",
+              "start_time": "2026-02-12T21:54:45.968Z",
+              "end_time": "2026-02-12T21:55:07.501Z",
+              "heartbeat_count": 4,
+              "duration_seconds": 20,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 22
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-13T18:12:12.612Z",
+            "data": {
+              "session_id": "session_1771006331668_gtkupqy",
+              "source_id": "url-misc",
+              "paper_id": "3CC2BEF8",
+              "start_time": "2026-02-13T18:08:38.162Z",
+              "end_time": "2026-02-13T18:12:11.667Z",
+              "heartbeat_count": 42,
+              "duration_seconds": 210,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 214
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-13T18:58:21.246Z",
+            "data": {
+              "session_id": "session_1771009100176_dt6n2n9",
+              "source_id": "url-misc",
+              "paper_id": "3CC2BEF8",
+              "start_time": "2026-02-13T18:14:20.856Z",
+              "end_time": "2026-02-13T18:58:20.176Z",
+              "heartbeat_count": 527,
+              "duration_seconds": 2635,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 2639
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-13T19:29:50.636Z",
+            "data": {
+              "session_id": "session_1771010989863_ynnd7mt",
+              "source_id": "url-misc",
+              "paper_id": "3CC2BEF8",
+              "start_time": "2026-02-13T19:27:36.109Z",
+              "end_time": "2026-02-13T19:29:49.863Z",
+              "heartbeat_count": 26,
+              "duration_seconds": 130,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 134
+            }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-18T00:57:04.547Z",
+            "data": {
+              "session_id": "session_1771376224302_gtqz97b",
+              "source_id": "url-misc",
+              "paper_id": "3CC2BEF8",
+              "start_time": "2026-02-18T00:56:57.365Z",
+              "end_time": "2026-02-18T00:57:04.302Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 7
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 664,
+        "object_id": "interactions:url-misc.3CC2BEF8",
+        "created_at": "2026-02-07T21:12:47+00:00",
+        "updated_at": "2026-02-18T00:57:30+00:00",
         "version": 1
       }
     },
