@@ -1,7 +1,70 @@
 {
-  "snapshot_time": "2026-02-19T19:26:33.986100+00:00",
+  "snapshot_time": "2026-02-19T20:40:42.437109+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:openreview.kQDz2azFLm": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "kQDz2azFLm",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-19T20:39:34.472Z",
+            "data": {
+              "session_id": "session_1771533574052_7crridx",
+              "source_id": "openreview",
+              "paper_id": "kQDz2azFLm",
+              "start_time": "2026-02-19T20:39:18.567Z",
+              "end_time": "2026-02-19T20:39:34.052Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 0,
+              "total_elapsed_seconds": 15
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 681,
+        "object_id": "interactions:openreview.kQDz2azFLm",
+        "created_at": "2026-02-19T20:39:35+00:00",
+        "updated_at": "2026-02-19T20:39:58+00:00",
+        "version": 1
+      }
+    },
+    "paper:openreview.kQDz2azFLm": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "kQDz2azFLm",
+        "url": "https://openreview.net/forum?id=kQDz2azFLm&noteId=OQc2N7XA4S#committee-chat",
+        "title": "Prediction Laundering: The Illusion of Neutrality, Transparency, and Governance in Polymarket",
+        "authors": "",
+        "abstract": "The growing reliance on prediction markets as epistemic infrastructures has positioned platforms like Polymarket as providers of objective, real-time probabilistic truth. However, the authoritative signals produced by these platforms often obscure the underlying uncertainty, strategic manipulation, and capital asymmetries inherent in their production, leading to an inappropriate epistemic trust by external observers. This paper presents a qualitative sociotechnical audit of Polymarket ($N=27$), combining digital ethnography with interpretive walkthroughs and semi-structured interviews to examine how probabilistic authority is enacted and contested. We introduce the concept of \"Prediction Laundering\", drawing on MacFarlane\u2019s framework of knowledge transmission, to describe the sociotechnical process by which subjective, high-uncertainty bets, strategic hedges, and capital-heavy whale movements are scrubbed of their original noise and personal stakes through algorithmic aggregation. We trace this process through a four-stage laundering lifecycle that begins with \"Structural Sanitization\", where a centralized ontology scripts the boundaries of the bet-able future. This is followed by \"Probabilistic Flattening\", where the interface collapses heterogeneous motives. The third stage, \"Architectural Masking\", utilizes selective opacity to hide capital-driven influence behind a mirage of crowdsourced consensus. Finally, the process concludes with \"Epistemic Hardening\", where messy governance disputes are erased to produce an objective historical fact. Our findings reveal that this process induces a state of epistemic vertigo among users and creates significant accountability gaps by offloading the labor of truth-resolution to off-platform communities like Discord. We challenge the narrative of frictionless collective intelligence and demonstrate that the platform produces a state of Epistemic Stratification, where technical elites audit the underlying data while the general public consumes a sanitized, capital-driven signal. We conclude by arguing for a shift toward Friction-Positive Design, advocating for interfaces that expose rather than erase the social and financial friction inherent in the production of synthetic truth.",
+        "timestamp": "2026-02-19T20:39:18.858Z",
+        "rating": "novote",
+        "publishedDate": "2026/01/05",
+        "tags": [
+          "Polymarket",
+          "Prediction Laundering",
+          "Epistemic Stratification",
+          "Sociotechnical Audit",
+          "Algorithmic Accountability",
+          "Prediction Markets",
+          "Digital Ethnography",
+          "Friction-Positive Design"
+        ],
+        "doi": "",
+        "journalName": "ACM FAccT 2026 Conference Submission",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 680,
+        "object_id": "paper:openreview.kQDz2azFLm",
+        "created_at": "2026-02-19T20:39:19+00:00",
+        "updated_at": "2026-02-19T20:39:44+00:00",
+        "version": 1
+      }
+    },
     "interactions:ssrn.5255039": {
       "data": {
         "sourceId": "ssrn",
