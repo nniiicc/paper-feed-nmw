@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-02-20T20:25:54.665782+00:00",
+  "snapshot_time": "2026-02-20T20:48:12.848048+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/978-3-031-88988-2_5": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/978-3-031-88988-2_5",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-88988-2_5",
+        "title": "Managing Uncertainty in NLP: Advanced Techniques and Approaches",
+        "authors": "Kaur, Ravleen, Bhatia, M. P. S.",
+        "abstract": "Uncertainty is an inherent challenge in Natural Language Processing (NLP), affecting various stages of model development and application, from data collection to prediction and interpretation. This chapter explores the concept of uncertainty within the context of...",
+        "timestamp": "2026-02-20T20:47:10.661Z",
+        "rating": "novote",
+        "publishedDate": "2025",
+        "tags": [],
+        "doi": "10.1007/978-3-031-88988-2_5",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 691,
+        "object_id": "paper:springer.10.1007/978-3-031-88988-2_5",
+        "created_at": "2026-02-20T20:47:11+00:00",
+        "updated_at": "2026-02-20T20:47:31+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.104E64CB": {
       "data": {
         "sourceId": "url-misc",
