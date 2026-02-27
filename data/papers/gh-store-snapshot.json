@@ -1,7 +1,34 @@
 {
-  "snapshot_time": "2026-02-27T17:59:55.805040+00:00",
+  "snapshot_time": "2026-02-27T19:40:27.709651+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2602.21236": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2602.21236",
+        "url": "https://arxiv.org/abs/2602.21236",
+        "title": "@GrokSet: multi-party Human-LLM Interactions in Social Media",
+        "authors": "Matteo Migliarini, Berat Ercevik, Oluwagbemike Olowe, Saira Fatima, Sarah Zhao, Minh Anh Le, Vasu Sharma, Ashwinee Panda",
+        "abstract": "Large Language Models (LLMs) are increasingly deployed as active participants on public social media platforms, yet their behavior in these unconstrained social environments remains largely unstudied. Existing datasets, drawn primarily from private chat interfaces, lack the multi-party dynamics and public visibility crucial for understanding real-world performance. To address this gap, we introduce @GrokSet, a large-scale dataset of over 1 million tweets involving the @Grok LLM on X. Our analysis reveals a distinct functional shift: rather than serving as a general assistant, the LLM is frequently invoked as an authoritative arbiter in high-stakes, polarizing political debates. However, we observe a persistent engagement gap: despite this visibility, the model functions as a low-status utility, receiving significantly less social validation (likes, replies) than human peers. Finally, we find that this adversarial context exposes shallow alignment: users bypass safety filters not through complex jailbreaks, but through simple persona adoption and tone mirroring. We release @GrokSet as a critical resource for studying the intersection of AI agents and societal discourse.",
+        "timestamp": "2026-02-27T19:39:29.078Z",
+        "rating": "novote",
+        "publishedDate": "2026/02/11",
+        "tags": [
+          "Social and Information Networks (cs.SI)",
+          "Computers and Society (cs.CY)"
+        ],
+        "doi": "10.48550/arXiv.2602.21236",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 694,
+        "object_id": "paper:arxiv.2602.21236",
+        "created_at": "2026-02-27T19:39:29+00:00",
+        "updated_at": "2026-02-27T19:39:47+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2505.08638": {
       "data": {
         "sourceId": "arxiv",
