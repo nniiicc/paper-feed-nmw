@@ -1,7 +1,61 @@
 {
-  "snapshot_time": "2026-02-27T00:56:33.498363+00:00",
+  "snapshot_time": "2026-02-27T17:57:02.073147+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2505.08638": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2505.08638",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-02-27T17:56:03.934Z",
+            "data": {
+              "session_id": "session_1772214963548_9tfye11",
+              "source_id": "arxiv",
+              "paper_id": "2505.08638",
+              "start_time": "2026-02-27T17:55:35.702Z",
+              "end_time": "2026-02-27T17:56:03.548Z",
+              "heartbeat_count": 5,
+              "duration_seconds": 25,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 28
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 693,
+        "object_id": "interactions:arxiv.2505.08638",
+        "created_at": "2026-02-27T17:56:04+00:00",
+        "updated_at": "2026-02-27T17:56:23+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2505.08638": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2505.08638",
+        "url": "https://arxiv.org/html/2505.08638v1",
+        "title": "TRAIL: Trace Reasoning and Agentic Issue Localization",
+        "authors": "",
+        "abstract": "Report issue for preceding element The increasing adoption of agentic workflows across diverse domains brings a critical need to scalably and systematically evaluate the complex traces these systems generate. Current evaluation methods depend on manual, domain-specific human analysis of lengthy workflow traces\u2014an approach that does not scale with the growing complexity and volume of agentic outputs. Error analysis in these settings is further complicated by the interplay of external tool outputs and language model reasoning, making it more challenging than traditional software debugging. In this work, we (1) articulate the need for robust and dynamic evaluation methods for agentic workflow traces, (2) introduce a formal taxonomy of error types encountered in agentic systems, and (3) present a set of 148 large human-annotated traces (TRAIL) constructed using this taxonomy and grounded in established agentic benchmarks. To ensure ecological validity, we curate traces from both single and multi-agent systems, focusing on real-world applications such as software engineering and open-world information retrieval. Our evaluations reveal that modern long context LLMs perform poorly at trace debugging, with the best gemini-2.5-pro model scoring a mere 11% on TRAIL. Our dataset and code are made publicly available to support and accelerate future research in scalable evaluation for agentic workflows111https://huggingface.co/datasets/PatronusAI/TRAIL.Report issue for preceding element",
+        "timestamp": "2026-02-27T17:55:36.166Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.18653/v1/2024.emnlp-main.1219",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 692,
+        "object_id": "paper:arxiv.2505.08638",
+        "created_at": "2026-02-27T17:55:36+00:00",
+        "updated_at": "2026-02-27T17:55:56+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/978-3-031-88988-2_5": {
       "data": {
         "sourceId": "springer",
