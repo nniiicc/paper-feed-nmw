@@ -1,7 +1,53 @@
 {
-  "snapshot_time": "2026-02-27T19:40:27.709651+00:00",
+  "snapshot_time": "2026-02-27T23:24:51.341684+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.593BC595": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "593BC595",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35798885/",
+        "title": "Public use and public funding of science",
+        "authors": "Yian Yin, Yuxiao Dong, Kuansan Wang, Dashun Wang, Benjamin F Jones, 10, 11, 12, 13, Yian Yin, Yuxiao Dong, Kuansan Wang, Dashun Wang, Benjamin F Jones, 10, 11, 12, 13",
+        "abstract": "Knowledge of how science is consumed in public domains is essential for understanding the role of science in human society. Here we examine public use and public funding of science by linking tens of millions of scientific publications from all scientific fields to their upstream funding support and \u2026",
+        "timestamp": "2026-02-27T23:23:51.762Z",
+        "rating": "novote",
+        "publishedDate": "2022 Oct",
+        "tags": [
+          "pmid:35798885",
+          "doi:10.1038/s41562-022-01397-5",
+          "Research Support",
+          "U.S. Gov't",
+          "Non-P.H.S.",
+          "Research Support",
+          "Non-U.S. Gov't",
+          "Yian Yin",
+          "Yuxiao Dong",
+          "Benjamin F Jones",
+          "Humans",
+          "Knowledge*",
+          "Mass Media*",
+          "PubMed Abstract",
+          "NIH",
+          "NLM",
+          "NCBI",
+          "National Institutes of Health",
+          "National Center for Biotechnology Information",
+          "National Library of Medicine",
+          "MEDLINE"
+        ],
+        "doi": "10.1038/s41562-022-01397-5",
+        "journalName": "Nature human behaviour",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 695,
+        "object_id": "paper:url-misc.593BC595",
+        "created_at": "2026-02-27T23:23:52+00:00",
+        "updated_at": "2026-02-27T23:24:14+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2602.21236": {
       "data": {
         "sourceId": "arxiv",
