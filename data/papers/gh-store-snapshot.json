@@ -1,7 +1,64 @@
 {
-  "snapshot_time": "2026-03-02T00:56:23.582576+00:00",
+  "snapshot_time": "2026-03-02T18:01:22.639042+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2402.14873": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2402.14873",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-02T18:00:29.298Z",
+            "data": {
+              "session_id": "session_1772474428862_6xre4az",
+              "source_id": "arxiv",
+              "paper_id": "2402.14873",
+              "start_time": "2026-03-02T18:00:21.427Z",
+              "end_time": "2026-03-02T18:00:28.861Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 7
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 697,
+        "object_id": "interactions:arxiv.2402.14873",
+        "created_at": "2026-03-02T18:00:29+00:00",
+        "updated_at": "2026-03-02T18:00:49+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2402.14873": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2402.14873",
+        "url": "https://arxiv.org/abs/2402.14873",
+        "title": "Technical Report on the Pangram AI-Generated Text Classifier",
+        "authors": "Bradley Emi, Max Spero",
+        "abstract": "We present Pangram Text, a transformer-based neural network trained to distinguish text written by large language models from text written by humans. Pangram Text outperforms zero-shot methods such as DetectGPT as well as leading commercial AI detection tools with over 38 times lower error rates on a comprehensive benchmark comprised of 10 text domains (student writing, creative writing, scientific writing, books, encyclopedias, news, email, scientific papers, short-form Q&A) and 8 open- and closed-source large language models. We propose a training algorithm, hard negative mining with synthetic mirrors, that enables our classifier to achieve orders of magnitude lower false positive rates on high-data domains such as reviews. Finally, we show that Pangram Text is not biased against nonnative English speakers and generalizes to domains and models unseen during training.",
+        "timestamp": "2026-03-02T18:00:21.677Z",
+        "rating": "novote",
+        "publishedDate": "2024/02/21",
+        "tags": [
+          "Computation and Language (cs.CL)",
+          "Artificial Intelligence (cs.AI)"
+        ],
+        "doi": "10.48550/arXiv.2402.14873",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 696,
+        "object_id": "paper:arxiv.2402.14873",
+        "created_at": "2026-03-02T18:00:23+00:00",
+        "updated_at": "2026-03-02T18:00:47+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.593BC595": {
       "data": {
         "sourceId": "url-misc",
