@@ -1,7 +1,62 @@
 {
-  "snapshot_time": "2026-03-03T00:58:08.489559+00:00",
+  "snapshot_time": "2026-03-03T17:40:05.202722+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2407.19669": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2407.19669",
+        "url": "https://arxiv.org/html/2407.19669v1",
+        "title": "mGTE: Generalized Long-Context Text Representation and Reranking Models for Multilingual Text Retrieval",
+        "authors": "",
+        "abstract": "We present systematic efforts in building long-context multilingual text representation model (TRM) and reranker from scratch for text retrieval. We first introduce a text encoder (base size) enhanced with RoPE and unpadding, pre-trained in a native 8192-token context (longer than 512 of previous multilingual encoders). Then we construct a hybrid TRM and a cross-encoder reranker by contrastive learning. Evaluations show that our text encoder outperforms the same-sized previous state-of-the-art XLM-R. Meanwhile, our TRM and reranker match the performance of large-sized state-of-the-art BGE-M3 models and achieve better results on long-context retrieval benchmarks. Further analysis demonstrate that our proposed models exhibit higher efficiency during both training and inference. We believe their efficiency and effectiveness could benefit various researches and industrial applications.",
+        "timestamp": "2026-03-03T17:39:08.486Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.18653/v1/2020.acl-main.421",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 703,
+        "object_id": "paper:arxiv.2407.19669",
+        "created_at": "2026-03-03T17:39:08+00:00",
+        "updated_at": "2026-03-03T17:39:31+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3661145": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3661145",
+        "url": "https://dl.acm.org/doi/10.1145/3661145",
+        "title": "Significant Productivity Gains through Programming with Large Language Models | Proceedings of the ACM on Human-Computer Interaction",
+        "authors": "Thomas Weber, https://orcid.org/0000-0002-6894-605X, View Profile, Maximilian Brandmaier, https://orcid.org/0009-0005-4184-7763, View Profile, Albrecht Schmidt, https://orcid.org/0000-0003-3890-1990, View Profile, Sven Mayer, https://orcid.org/0000-0001-5462-8782, View Profile",
+        "abstract": " Large language models like GPT and Codex drastically alter many daily tasks, including\nprogramming, where they can rapidly generate code from natural language or informal\nspecifications. Thus, they will change what it means to be a programmer and how ...",
+        "timestamp": "2026-03-03T17:39:06.452Z",
+        "rating": "novote",
+        "publishedDate": "2024-06-17",
+        "tags": [
+          "github copilot",
+          "gpt",
+          "language models",
+          "programming",
+          "software development",
+          "user study"
+        ],
+        "doi": "3661145",
+        "journalName": "Proceedings of the ACM on Human-Computer Interaction",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 702,
+        "object_id": "paper:acm.10.1145/3661145",
+        "created_at": "2026-03-03T17:39:06+00:00",
+        "updated_at": "2026-03-03T17:39:28+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41586-023-06647-8": {
       "data": {
         "sourceId": "nature",
