@@ -1,7 +1,122 @@
 {
-  "snapshot_time": "2026-03-03T17:40:05.202722+00:00",
+  "snapshot_time": "2026-03-03T17:41:39.379276+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.65A86E6A": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "65A86E6A",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-03T17:40:30.150Z",
+            "data": {
+              "session_id": "session_1772559629700_rup7hmp",
+              "source_id": "url-misc",
+              "paper_id": "65A86E6A",
+              "start_time": "2026-03-03T17:40:23.245Z",
+              "end_time": "2026-03-03T17:40:29.700Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 707,
+        "object_id": "interactions:url-misc.65A86E6A",
+        "created_at": "2026-03-03T17:40:30+00:00",
+        "updated_at": "2026-03-03T17:40:51+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.65A86E6A": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "65A86E6A",
+        "url": "https://benthams.substack.com/p/the-ai-con-con",
+        "title": "\"The AI Con\" Con ",
+        "authors": "Bentham's Bulldog",
+        "abstract": "The shockingly terrible arguments of the AI naysayers",
+        "timestamp": "2026-03-03T17:40:23.502Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 706,
+        "object_id": "paper:url-misc.65A86E6A",
+        "created_at": "2026-03-03T17:40:23+00:00",
+        "updated_at": "2026-03-03T17:40:46+00:00",
+        "version": 1
+      }
+    },
+    "interactions:openreview.bkWERVKzuP": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "bkWERVKzuP",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-03T17:40:23.089Z",
+            "data": {
+              "session_id": "session_1772559622577_dd1m1bj",
+              "source_id": "openreview",
+              "paper_id": "bkWERVKzuP",
+              "start_time": "2026-03-03T17:40:03.898Z",
+              "end_time": "2026-03-03T17:40:22.577Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 19
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 705,
+        "object_id": "interactions:openreview.bkWERVKzuP",
+        "created_at": "2026-03-03T17:40:23+00:00",
+        "updated_at": "2026-03-03T17:40:45+00:00",
+        "version": 1
+      }
+    },
+    "paper:openreview.bkWERVKzuP": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "bkWERVKzuP",
+        "url": "https://openreview.net/forum?id=bkWERVKzuP#discussion",
+        "title": "Yourbench: Dynamic Evaluation Set Generation with LLMs",
+        "authors": "Sumuk Shashidhar, Cl\u00e9mentine Fourrier, Alina Lozovskaya, Thomas Wolf, Gokhan Tur, Dilek Hakkani-T\u00fcr",
+        "abstract": "Large language models (LLMs) have rapidly outpaced traditional evaluation methodologies, with static benchmarks suffering from saturation, contamination, and domain-specificity limitations while human evaluation remains prohibitively expensive. We present YourBench, an open-source framework that transforms this evaluation paradigm by enabling automated generation of reliable, contamination-free benchmarks directly from user-provided documents without human annotation. To validate our approach, we successfully reproduce the challenging MMLU-Pro benchmark across 86 models spanning 400M to 405B parameters, achieving remarkable Pearson correlations of 0.91-0.99 while generating entirely novel questions for under $15 per model. This demonstrates that dynamically generated evaluations can match the discriminative power of expert-curated benchmarks while eliminating contamination risks. YourBench enables researchers to create domain-specific benchmarks in minutes rather than months. We demonstrate applications in agriculture, personalized education, and RAG training that were previously infeasible. By releasing the YourBench library, Tempora-0325 dataset, 150K+ generated QA pairs, and all evaluation traces, we provide the community with a practical solution to the challenge of keeping pace with rapidly evolving model capabilities.",
+        "timestamp": "2026-03-03T17:40:04.158Z",
+        "rating": "novote",
+        "publishedDate": "08 Jul 2025",
+        "tags": [
+          "benchmarking",
+          "contemporary dataset",
+          "dataset",
+          "reference-free",
+          "automated",
+          "llm"
+        ],
+        "doi": "",
+        "journalName": "COLM 2025",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 704,
+        "object_id": "paper:openreview.bkWERVKzuP",
+        "created_at": "2026-03-03T17:40:04+00:00",
+        "updated_at": "2026-03-03T17:40:24+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2407.19669": {
       "data": {
         "sourceId": "arxiv",
