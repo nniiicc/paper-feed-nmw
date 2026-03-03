@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2026-03-03T00:44:32.988213+00:00",
+  "snapshot_time": "2026-03-03T00:48:53.106757+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s41586-023-06647-8": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-023-06647-8",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 701,
+        "object_id": "interactions:nature.s41586-023-06647-8",
+        "created_at": "2026-03-03T00:48:31+00:00",
+        "updated_at": "2026-03-03T00:48:32+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41586-023-06647-8": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-023-06647-8",
+        "url": "https://www.nature.com/articles/s41586-023-06647-8",
+        "title": "Role play with large language models",
+        "authors": "Shanahan, Murray, McDonell, Kyle, Reynolds, Laria",
+        "abstract": "As dialogue agents become increasingly human-like in their performance, we must develop effective ways to describe their behaviour in high-level terms without falling into the trap of anthropomorphism. Here we foreground the concept of role play. Casting dialogue-agent behaviour in terms of role play allows us to draw on familiar folk psychological terms, without ascribing human characteristics to language models that they in fact lack. Two important cases of dialogue-agent behaviour are addressed this way, namely, (apparent) deception and (apparent) self-awareness. By casting large-language-model-based dialogue-agent behaviour in terms of role&nbsp;play, it is possible to describe dialogue-agent behaviour such as&nbsp;(apparent) deception and&nbsp;(apparent) self-awareness without&nbsp;misleadingly ascribing human characteristics to the models.",
+        "timestamp": "2026-03-03T00:47:57.264Z",
+        "rating": "novote",
+        "publishedDate": "2023/11",
+        "tags": [
+          "Computer science"
+        ],
+        "doi": "10.1038/s41586-023-06647-8",
+        "journalName": "Nature 2023 623:7987",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 700,
+        "object_id": "paper:nature.s41586-023-06647-8",
+        "created_at": "2026-03-03T00:47:57+00:00",
+        "updated_at": "2026-03-03T00:48:19+00:00",
+        "version": 1
+      }
+    },
     "interactions:sciencedirect.S2666659625000113": {
       "data": {
         "sourceId": "sciencedirect",
