@@ -1,7 +1,86 @@
 {
-  "snapshot_time": "2026-03-03T17:41:39.379276+00:00",
+  "snapshot_time": "2026-03-03T17:44:18.131378+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2409.17038": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2409.17038",
+        "url": "https://arxiv.org/abs/2409.17038",
+        "title": "Omnibenchmark: transparent, reproducible, extensible and standardized orchestration of solo and collaborative benchmarks",
+        "authors": "Izaskun Mallona, Almut Luetge, Ben Carrillo, Daniel Incicau, Reto Gerber, Aidan Meara, Anthony Sonrel, Charlotte Soneson, Mark D. Robinson",
+        "abstract": "Benchmarking involves designing, running and disseminating rigorous performance assessments of methods, most often for data analysis and software tools, but the process can also be applied to experimental systems. Ideally, a benchmarking system is used to facilitate the benchmarking process by providing a structured entrypoint to design, coordinate, execute, and store standardized benchmarks. We describe a novel benchmarking system, Omnibenchmark, that facilitates benchmark formalization and execution in both solo and community efforts. Omnibenchmark provides a flexible benchmark plan syntax (i.e., a configuration YAML file), dynamic workflow generation based on Snakemake, S3-compatible storage handling, and reproducible software environments using environment modules, Apptainer or Conda. Such a setup provides an unprecedented flexibility such that existing benchmark designs can be forked and extended, run separately or collaboratively, giving versioned and standardized result outputs and therefore much-needed transparency to the analysis and interpretation of benchmark results. Tutorials and installation instructions are available from this https URL.",
+        "timestamp": "2026-03-03T17:42:36.611Z",
+        "rating": "novote",
+        "publishedDate": "2024/09/25",
+        "tags": [
+          "Other Quantitative Biology (q-bio.OT)"
+        ],
+        "doi": "10.48550/arXiv.2409.17038",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 710,
+        "object_id": "paper:arxiv.2409.17038",
+        "created_at": "2026-03-03T17:42:37+00:00",
+        "updated_at": "2026-03-03T17:42:55+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1057/s41269-023-00290-x": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1057/s41269-023-00290-x",
+        "url": "https://link.springer.com/article/10.1057/s41269-023-00290-x?fromPaywallRec=false",
+        "title": "When do active citizens abstain from the polls? Civic associations, non-electoral participation, and voting in 21st-century democracies",
+        "authors": "Medel, Rodrigo M.",
+        "abstract": "One of the most consistent findings in the literature is that non-electoral political participation has a positive and robust association with electoral participation. However, all democracies have citizens who regularly engage in non-electoral political action but do not vote. Curiously, this abstentionist-activist profile has received little attention. Drawing on elements of the civic voluntarism model and electoral theories, this study tests an argument as to why and when active citizens\u2014i.e., citizens who are politically active in non-electoral terms\u2014are more likely to abstain from the polls. Using data from the International Social Survey Program and multivariate logistic regressions, the results show that when active citizens lack ties to social organizations, their probability of abstaining from the polls increases significantly. However, the results also showed that membership in organizations is relevant only for active citizens who express a limited sense of civic duty. This article discusses the electoral consequences of growing levels of activism based on forms of coordination that are not rooted in traditional civic associations.",
+        "timestamp": "2026-03-03T17:42:10.108Z",
+        "rating": "novote",
+        "publishedDate": "2024/01",
+        "tags": [
+          "Political Science and International Relations",
+          "general"
+        ],
+        "doi": "10.1057/s41269-023-00290-x",
+        "journalName": "Acta Politica",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 709,
+        "object_id": "paper:springer.10.1057/s41269-023-00290-x",
+        "created_at": "2026-03-03T17:42:10+00:00",
+        "updated_at": "2026-03-03T17:42:34+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1007/s11109-025-10101-y": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s11109-025-10101-y",
+        "url": "https://link.springer.com/article/10.1007/s11109-025-10101-y",
+        "title": "Are the Politically Active Better Represented?",
+        "authors": "Lindqvist, Jesper, Oser, Jennifer, Dassonneville, Ruth, Persson, Mikael, Sundell, Anders",
+        "abstract": "Political participation is considered an important path for people to influence politics. However, whether those who participate actually see more of their preferred policies implemented remains an open question. We address this question by analyzing cross-national data connecting opinions to subsequent policy implementation on multiple policy issues. Based on an analysis of data on more than 270,000 survey respondents in 40 countries from 1996 to 2016, we show that voters are at most only slightly, but not substantially better represented than nonvoters. In contrast to the negligible effect sizes for voting, citizens who are active in multiple types of nonelectoral political activity are better represented than those who are inactive. We subsequently examine whether the observed relationships can be explained by socio-economic status, as well as attitudinal engagement such as political trust and political efficacy. Our findings show that the cross-national positive association between nonelectoral participation and opinion-policy congruence remains even when controlling for these factors. Our concluding discussion highlights directions for future research that pinpoint the causal mechanisms that link nonelectoral participation with subsequent opinion-policy congruence.",
+        "timestamp": "2026-03-03T17:42:06.463Z",
+        "rating": "novote",
+        "publishedDate": "2026/01/22",
+        "tags": [
+          "Political Science"
+        ],
+        "doi": "10.1007/s11109-025-10101-y",
+        "journalName": "Political Behavior",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 708,
+        "object_id": "paper:springer.10.1007/s11109-025-10101-y",
+        "created_at": "2026-03-03T17:42:06+00:00",
+        "updated_at": "2026-03-03T17:42:28+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.65A86E6A": {
       "data": {
         "sourceId": "url-misc",
