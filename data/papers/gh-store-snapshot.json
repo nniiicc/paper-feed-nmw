@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-03-02T18:01:22.639042+00:00",
+  "snapshot_time": "2026-03-03T00:44:32.988213+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:sciencedirect.S2666659625000113": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S2666659625000113",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 699,
+        "object_id": "interactions:sciencedirect.S2666659625000113",
+        "created_at": "2026-03-03T00:43:44+00:00",
+        "updated_at": "2026-03-03T00:43:45+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S2666659625000113": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S2666659625000113",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2666659625000113",
+        "title": "Reflexivity and AI start-ups: A collective virtue for dynamic teams",
+        "authors": "",
+        "abstract": "This paper investigates the ethical challenges faced by AI-driven start-ups, where the rapid pace of innovation and limited resources often preclude t\u2026",
+        "timestamp": "2026-03-03T00:43:07.023Z",
+        "rating": "novote",
+        "publishedDate": "2025/06/01",
+        "tags": [],
+        "doi": "10.1016/j.jrt.2025.100115",
+        "journalName": "Journal of Responsible Technology",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 698,
+        "object_id": "paper:sciencedirect.S2666659625000113",
+        "created_at": "2026-03-03T00:43:07+00:00",
+        "updated_at": "2026-03-03T00:43:29+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2402.14873": {
       "data": {
         "sourceId": "arxiv",
