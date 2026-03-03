@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-03-03T17:44:18.131378+00:00",
+  "snapshot_time": "2026-03-03T21:52:37.014311+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:wiley.10.1155/2023/5550418": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1155/2023/5550418",
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1155/2023/5550418",
+        "title": "Transparency Enhances Positive Perceptions of Social Artificial Intelligence",
+        "authors": "Ying Xu, Nora Bradford, Radhika Garg",
+        "abstract": "Social chatbots are aimed at building emotional bonds with users, and thus it is particularly important to design these technologies so as to elicit positive perceptions from users. In the current st...",
+        "timestamp": "2026-03-03T21:51:27.476Z",
+        "rating": "novote",
+        "publishedDate": "2023/01/01",
+        "tags": [],
+        "doi": "10.1155/2023/5550418",
+        "journalName": "Human Behavior and Emerging Technologies",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 711,
+        "object_id": "paper:wiley.10.1155/2023/5550418",
+        "created_at": "2026-03-03T21:51:27+00:00",
+        "updated_at": "2026-03-03T21:52:01+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2409.17038": {
       "data": {
         "sourceId": "arxiv",
