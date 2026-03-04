@@ -1,7 +1,126 @@
 {
-  "snapshot_time": "2026-03-04T18:00:09.291000+00:00",
+  "snapshot_time": "2026-03-04T18:27:47.070690+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:pnas.10.1073/pnas.2516827122": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.2516827122",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-04T18:26:39.776Z",
+            "data": {
+              "session_id": "session_1772648799317_s090ado",
+              "source_id": "pnas",
+              "paper_id": "10.1073/pnas.2516827122",
+              "start_time": "2026-03-04T18:26:13.786Z",
+              "end_time": "2026-03-04T18:26:39.317Z",
+              "heartbeat_count": 5,
+              "duration_seconds": 25,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 26
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 717,
+        "object_id": "interactions:pnas.10.1073/pnas.2516827122",
+        "created_at": "2026-03-04T18:26:40+00:00",
+        "updated_at": "2026-03-04T18:27:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:pnas.10.1073/pnas.2516827122": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.2516827122",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.2516827122",
+        "title": "How social learning enhances\u2014or undermines\u2014efficiency and flexibility in collective decision-making under uncertainty",
+        "authors": "Suganuma, Hidezo, Katahira, Kentaro, Ohtsuki, Hisashi, Kameda, Tatsuya",
+        "abstract": "Balancing efficiency and flexibility in collective decision-making is increasingly\ncritical in modern societies characterized by rapid sociocultura...",
+        "timestamp": "2026-03-04T18:26:14.033Z",
+        "rating": "novote",
+        "publishedDate": "2025-11-24",
+        "tags": [
+          "collective intelligence",
+          "social learning",
+          "computational modeling",
+          "evolutionary simulations"
+        ],
+        "doi": "10.1073/pnas.2516827122",
+        "journalName": "Proceedings of the National Academy of Sciences",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 716,
+        "object_id": "paper:pnas.10.1073/pnas.2516827122",
+        "created_at": "2026-03-04T18:26:14+00:00",
+        "updated_at": "2026-03-04T18:26:33+00:00",
+        "version": 1
+      }
+    },
+    "interactions:pnas.10.1073/pnas.2000333117": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.2000333117",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-04T18:26:07.013Z",
+            "data": {
+              "session_id": "session_1772648766987_lrp09dx",
+              "source_id": "pnas",
+              "paper_id": "10.1073/pnas.2000333117",
+              "start_time": "2026-03-04T18:25:54.563Z",
+              "end_time": "2026-03-04T18:26:06.987Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 12
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 715,
+        "object_id": "interactions:pnas.10.1073/pnas.2000333117",
+        "created_at": "2026-03-04T18:26:07+00:00",
+        "updated_at": "2026-03-04T18:26:31+00:00",
+        "version": 1
+      }
+    },
+    "paper:pnas.10.1073/pnas.2000333117": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.2000333117",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.2000333117",
+        "title": "As diversity increases, people paradoxically perceive social groups as more similar",
+        "authors": "Bai, Xuechunzi, Ramos, Miguel R., Fiske, Susan T.",
+        "abstract": "With globalization and immigration, societal contexts differ in sheer variety of resident\nsocial groups. Social diversity challenges individuals to...",
+        "timestamp": "2026-03-04T18:25:37.158Z",
+        "rating": "novote",
+        "publishedDate": "2020-6-9",
+        "tags": [
+          "intergroup relations",
+          "social diversity",
+          "perceived similarity",
+          "stereotypes",
+          "cognitive process"
+        ],
+        "doi": "10.1073/pnas.2000333117",
+        "journalName": "Proceedings of the National Academy of Sciences",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 714,
+        "object_id": "paper:pnas.10.1073/pnas.2000333117",
+        "created_at": "2026-03-04T18:25:37+00:00",
+        "updated_at": "2026-03-04T18:26:02+00:00",
+        "version": 1
+      }
+    },
     "paper:acm.10.1145/3704723": {
       "data": {
         "sourceId": "acm",
