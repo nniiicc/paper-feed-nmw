@@ -1,7 +1,35 @@
 {
-  "snapshot_time": "2026-03-04T00:54:59.192551+00:00",
+  "snapshot_time": "2026-03-04T18:00:09.291000+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:acm.10.1145/3704723": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3704723",
+        "url": "https://dl.acm.org/doi/full/10.1145/3704723",
+        "title": "Can We Measure the Impact of a Database? | Communications of the ACM",
+        "authors": "Peter Buneman, https://orcid.org/0009-0004-9056-8587, View Profile, Dennis Dosso, https://orcid.org/0000-0001-7307-4607, View Profile, Matteo Lissandrini, https://orcid.org/0000-0001-7922-5998, View Profile, Gianmaria Silvello, https://orcid.org/0000-0003-4970-4554, View Profile, He Sun, View Profile",
+        "abstract": "In academia, the research performance of a faculty is evaluated based on the number of publications, the number of citations, and the impact of publication where one publishes. Most of the time h-index is widely used during the hiring process or ...",
+        "timestamp": "2026-03-04T17:59:05.364Z",
+        "rating": "novote",
+        "publishedDate": "2025-05-01",
+        "tags": [
+          "Data Citation",
+          "h-index",
+          "Scientific and Curated Databases"
+        ],
+        "doi": "3704723",
+        "journalName": "Communications of the ACM",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 712,
+        "object_id": "paper:acm.10.1145/3704723",
+        "created_at": "2026-03-04T17:59:07+00:00",
+        "updated_at": "2026-03-04T17:59:34+00:00",
+        "version": 1
+      }
+    },
     "paper:wiley.10.1155/2023/5550418": {
       "data": {
         "sourceId": "wiley",
