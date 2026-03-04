@@ -1,7 +1,21 @@
 {
-  "snapshot_time": "2026-03-04T20:22:56.430011+00:00",
+  "snapshot_time": "2026-03-04T21:51:45.250017+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:acm.10.1145/3704723": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3704723",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 720,
+        "object_id": "interactions:acm.10.1145/3704723",
+        "created_at": "2026-03-04T21:51:01+00:00",
+        "updated_at": "2026-03-04T21:51:03+00:00",
+        "version": 1
+      }
+    },
     "interactions:pnas.10.1073/pnas.1915378117": {
       "data": {
         "sourceId": "pnas",
@@ -21,6 +35,21 @@
               "idle_seconds": 1,
               "total_elapsed_seconds": 6
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-04T21:50:43.336Z",
+            "data": {
+              "session_id": "session_1772661043129_8gsrt9m",
+              "source_id": "pnas",
+              "paper_id": "10.1073/pnas.1915378117",
+              "start_time": "2026-03-04T21:50:19.670Z",
+              "end_time": "2026-03-04T21:50:43.129Z",
+              "heartbeat_count": 4,
+              "duration_seconds": 20,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 23
+            }
           }
         ]
       },
@@ -28,7 +57,7 @@
         "issue_number": 719,
         "object_id": "interactions:pnas.10.1073/pnas.1915378117",
         "created_at": "2026-03-04T20:21:32+00:00",
-        "updated_at": "2026-03-04T20:21:58+00:00",
+        "updated_at": "2026-03-04T21:51:05+00:00",
         "version": 1
       }
     },
