@@ -1,7 +1,67 @@
 {
-  "snapshot_time": "2026-03-04T18:27:47.070690+00:00",
+  "snapshot_time": "2026-03-04T20:22:56.430011+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:pnas.10.1073/pnas.1915378117": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.1915378117",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-04T20:21:31.474Z",
+            "data": {
+              "session_id": "session_1772655691074_t560mw2",
+              "source_id": "pnas",
+              "paper_id": "10.1073/pnas.1915378117",
+              "start_time": "2026-03-04T20:21:25.552Z",
+              "end_time": "2026-03-04T20:21:31.074Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 719,
+        "object_id": "interactions:pnas.10.1073/pnas.1915378117",
+        "created_at": "2026-03-04T20:21:32+00:00",
+        "updated_at": "2026-03-04T20:21:58+00:00",
+        "version": 1
+      }
+    },
+    "paper:pnas.10.1073/pnas.1915378117": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.1915378117",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.1915378117",
+        "title": "The Diversity\u2013Innovation Paradox in Science",
+        "authors": "Hofstra, Bas, Kulkarni, Vivek V., Munoz-Najar Galvez, Sebastian, He, Bryan, Jurafsky, Dan, McFarland, Daniel A.",
+        "abstract": "Prior work finds a diversity paradox: Diversity breeds innovation, yet underrepresented\ngroups that diversify organizations have less successful ca...",
+        "timestamp": "2026-03-04T20:21:26.030Z",
+        "rating": "novote",
+        "publishedDate": "2020-4-28",
+        "tags": [
+          "diversity",
+          "innovation",
+          "science",
+          "inequality",
+          "sociology of science"
+        ],
+        "doi": "10.1073/pnas.1915378117",
+        "journalName": "Proceedings of the National Academy of Sciences",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 718,
+        "object_id": "paper:pnas.10.1073/pnas.1915378117",
+        "created_at": "2026-03-04T20:21:26+00:00",
+        "updated_at": "2026-03-04T20:21:52+00:00",
+        "version": 1
+      }
+    },
     "interactions:pnas.10.1073/pnas.2516827122": {
       "data": {
         "sourceId": "pnas",
