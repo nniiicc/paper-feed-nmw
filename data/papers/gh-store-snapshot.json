@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2026-03-06T02:11:30.284314+00:00",
+  "snapshot_time": "2026-03-06T02:17:24.846721+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s41562-022-01397-5": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-022-01397-5",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 723,
+        "object_id": "interactions:nature.s41562-022-01397-5",
+        "created_at": "2026-03-06T02:16:38+00:00",
+        "updated_at": "2026-03-06T02:16:39+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41562-022-01397-5": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-022-01397-5",
+        "url": "https://www.nature.com/articles/s41562-022-01397-5",
+        "title": "Public use and public funding of science",
+        "authors": "Yin, Yian, Dong, Yuxiao, Wang, Kuansan, Wang, Dashun, Jones, Benjamin F.",
+        "abstract": "Knowledge of how science is consumed in public domains is essential for understanding the role of science in human society. Here we examine public use and public funding of science by linking tens of millions of scientific publications from all scientific fields to their upstream funding support and downstream public uses across three public domains\u2014government documents, news media and marketplace invention. We find that different public domains draw from various scientific fields in specialized ways, showing diverse patterns of use. Yet, amidst these differences, we find two important forms of alignment. First, we find universal alignment between what the public consumes and what is highly impactful within science. Second, a field\u2019s public funding is strikingly aligned with the field\u2019s collective public use. Overall, public uses of science present a rich landscape of specialized consumption, yet, collectively, science and society interface with remarkable alignment between scientific use, public use and funding. Studying production, funding and consumption of science, the authors find a strong alignment between what the public consumes and what is impactful, as well as an alignment between funding and collective public use.",
+        "timestamp": "2026-03-06T02:16:30.118Z",
+        "rating": "novote",
+        "publishedDate": "2022/10",
+        "tags": [
+          "Funding"
+        ],
+        "doi": "10.1038/s41562-022-01397-5",
+        "journalName": "Nature Human Behaviour 2022 6:10",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 722,
+        "object_id": "paper:nature.s41562-022-01397-5",
+        "created_at": "2026-03-06T02:16:30+00:00",
+        "updated_at": "2026-03-06T02:16:49+00:00",
+        "version": 1
+      }
+    },
     "paper:wiley.10.1111/psj.70054": {
       "data": {
         "sourceId": "wiley",
