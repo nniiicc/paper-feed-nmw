@@ -1,7 +1,51 @@
 {
-  "snapshot_time": "2026-03-09T19:06:44.818484+00:00",
+  "snapshot_time": "2026-03-09T23:05:16.728900+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2502.10263": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2502.10263",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 730,
+        "object_id": "interactions:arxiv.2502.10263",
+        "created_at": "2026-03-09T23:05:09+00:00",
+        "updated_at": "2026-03-09T23:05:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2502.10263": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2502.10263",
+        "url": "https://arxiv.org/abs/2502.10263",
+        "title": "Large Language Models and Synthetic Data for Monitoring Dataset Mentions in Research Papers",
+        "authors": "Aivin V. Solatorio, Rafael Macalaba, James Liounis",
+        "abstract": "Tracking how data is mentioned and used in research papers provides critical insights for improving data discoverability, quality, and production. However, manually identifying and classifying dataset mentions across vast academic literature is resource-intensive and not scalable. This paper presents a machine learning framework that automates dataset mention detection across research domains by leveraging large language models (LLMs), synthetic data, and a two-stage fine-tuning process. We employ zero-shot extraction from research papers, an LLM-as-a-Judge for quality assessment, and a reasoning agent for refinement to generate a weakly supervised synthetic dataset. The Phi-3.5-mini instruct model is pre-fine-tuned on this dataset, followed by fine-tuning on a manually annotated subset. At inference, a ModernBERT-based classifier efficiently filters dataset mentions, reducing computational overhead while maintaining high recall. Evaluated on a held-out manually annotated sample, our fine-tuned model outperforms NuExtract-v1.5 and GLiNER-large-v2.1 in dataset extraction accuracy. Our results highlight how LLM-generated synthetic data can effectively address training data scarcity, improving generalization in low-resource settings. This framework offers a pathway toward scalable monitoring of dataset usage, enhancing transparency, and supporting researchers, funders, and policymakers in identifying data gaps and strengthening data accessibility for informed decision-making.",
+        "timestamp": "2026-03-09T23:04:20.319Z",
+        "rating": "novote",
+        "publishedDate": "2025/02/14",
+        "tags": [
+          "Computation and Language (cs.CL)",
+          "Artificial Intelligence (cs.AI)",
+          "Computers and Society (cs.CY)",
+          "Databases (cs.DB)",
+          "Machine Learning (cs.LG)"
+        ],
+        "doi": "10.48550/arXiv.2502.10263",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 729,
+        "object_id": "paper:arxiv.2502.10263",
+        "created_at": "2026-03-09T23:04:20+00:00",
+        "updated_at": "2026-03-09T23:04:39+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.3F118E79": {
       "data": {
         "sourceId": "url-misc",
