@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-03-09T00:57:07.965946+00:00",
+  "snapshot_time": "2026-03-09T18:55:16.429094+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2602.05181": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2602.05181",
+        "url": "https://arxiv.org/abs/2602.05181",
+        "title": "Prediction Laundering: The Illusion of Neutrality, Transparency, and Governance in Polymarket",
+        "authors": "Yasaman Rohanifar, Syed Ishtiaque Ahmed, Sharifa Sultana",
+        "abstract": "The growing reliance on prediction markets as epistemic infrastructures has positioned platforms like Polymarket as providers of objective, real-time probabilistic truth, yet the signals they produce often obscure uncertainty, strategic manipulation, and capital asymmetries, encouraging misplaced epistemic trust. This paper presents a qualitative sociotechnical audit of Polymarket (N = 27), combining digital ethnography, interpretive walkthroughs, and semi-structured interviews to examine how probabilistic authority is produced and contested. We introduce the concept of Prediction Laundering, drawing on MacFarlanes framework of knowledge transmission, to describe how subjective, high-uncertainty bets, strategic hedges, and capital-heavy whale activity are stripped of their original noise through algorithmic aggregation. We trace a four-stage laundering lifecycle: Structural Sanitization, where a centralized ontology scripts the bet-able future; Probabilistic Flattening, which collapses heterogeneous motives into a single signal; Architectural Masking, which conceals capital-driven influence behind apparent consensus; and Epistemic Hardening, which erases governance disputes to produce an objective historical fact. We show that this process induces epistemic vertigo and accountability gaps by offloading truth-resolution to off-platform communities such as Discord. Challenging narratives of frictionless collective intelligence, we demonstrate Epistemic Stratification, in which technical elites audit underlying mechanisms while the broader public consumes a sanitized, capital-weighted signal, and we conclude by advocating Friction-Positive Design that surfaces the social and financial frictions inherent in synthetic truth production.",
+        "timestamp": "2026-03-09T18:54:12.136Z",
+        "rating": "novote",
+        "publishedDate": "2026/02/05",
+        "tags": [
+          "Computers and Society (cs.CY)"
+        ],
+        "doi": "10.48550/arXiv.2602.05181",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 725,
+        "object_id": "paper:arxiv.2602.05181",
+        "created_at": "2026-03-09T18:54:12+00:00",
+        "updated_at": "2026-03-09T18:54:32+00:00",
+        "version": 1
+      }
+    },
     "paper:ssrn.6260079": {
       "data": {
         "sourceId": "ssrn",
