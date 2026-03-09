@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-03-09T18:56:25.197639+00:00",
+  "snapshot_time": "2026-03-09T19:04:54.316379+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.3F118E79": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3F118E79",
+        "url": "https://profhoffman.substack.com/p/contracting-around-generative-legal",
+        "title": "Contracting Around Generative Legal Writing",
+        "authors": "Dave Hoffman",
+        "abstract": "In a recent post, I looked at how AI vendors use contracts to disclaim responsibility for their products.",
+        "timestamp": "2026-03-09T19:03:40.276Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 727,
+        "object_id": "paper:url-misc.3F118E79",
+        "created_at": "2026-03-09T19:03:40+00:00",
+        "updated_at": "2026-03-09T19:04:05+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.3B21789A": {
       "data": {
         "sourceId": "url-misc",
