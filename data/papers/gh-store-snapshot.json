@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-03-10T00:52:22.519937+00:00",
+  "snapshot_time": "2026-03-10T18:22:58.395463+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:acl.2022.icnlsp-1": {
+      "data": {
+        "sourceId": "acl",
+        "paperId": "2022.icnlsp-1",
+        "url": "https://aclanthology.org/2022.icnlsp-1.9/",
+        "title": "Handling Class Imbalance when Detecting Dataset Mentions with Pre-trained Language Models",
+        "authors": "Yousef Younes, Brigitte Mathiak",
+        "abstract": "Yousef Younes, Brigitte Mathiak. Proceedings of the 5th International Conference on Natural Language and Speech Processing (ICNLSP 2022). 2022.",
+        "timestamp": "2026-03-10T18:21:56.491Z",
+        "rating": "novote",
+        "publishedDate": "2022/12",
+        "tags": [],
+        "doi": "",
+        "journalName": "Proceedings of the 5th International Conference on Natural Language and Speech Processing (ICNLSP 2022)",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 732,
+        "object_id": "paper:acl.2022.icnlsp-1",
+        "created_at": "2026-03-10T18:21:56+00:00",
+        "updated_at": "2026-03-10T18:22:21+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/978-3-032-10004-7_14": {
       "data": {
         "sourceId": "springer",
