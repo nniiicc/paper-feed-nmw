@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-03-10T18:22:58.395463+00:00",
+  "snapshot_time": "2026-03-10T20:49:41.432766+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.3F95D631": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3F95D631",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 734,
+        "object_id": "interactions:url-misc.3F95D631",
+        "created_at": "2026-03-10T20:48:51+00:00",
+        "updated_at": "2026-03-10T20:48:53+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.3F95D631": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3F95D631",
+        "url": "https://direct.mit.edu/qss/article/doi/10.1162/qss_a_00345/126050/A-long-and-winding-road-Research-impact-evaluation",
+        "title": "A long and winding road: Research impact evaluation over public policies",
+        "authors": "Cristofoletti, Evandro Coggo, Salles-Filho, Sergio, Juk, Yohanna, Cabral, Bernardo, Pinto, Karen Esteves Fernandes, Hollanda, Sandra, Graziani, Carlos, Pereira, C\u00e9sar Antonio",
+        "abstract": "Abstract. This study evaluates the extent to which the impacts of scientific publications funded by the S\u00e3o Paulo Research Foundation (FAPESP) on public policies can be assessed using the Overton database. Utilizing the Overton database, we integrate DOI data with bibliometric analyses to track how FAPESP\u2019s funding influences policymaking in Brazil and worldwide. Results show significant citations across diverse fields, notably in health, environmental sustainability, and food security, reflecting the global relevance of FAPESP-funded research. Analyses reveal the geographical and thematic influence on policy documents, even considering potential biases due to the Overton database\u2019s limitations. In this direction, the study highlights some limitations of this database, pointing out methodological challenges that need to be addressed for measuring the impact of scientific publications on policy documents to become more comprehensive and in depth. Overcoming these challenges is essential for effectively understanding the impacts of research on policy and for enabling better communication about the impact of science on society.",
+        "timestamp": "2026-03-10T20:48:39.699Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/08",
+        "tags": [],
+        "doi": "10.1162/qss_a_00345",
+        "journalName": "Quantitative Science Studies",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 733,
+        "object_id": "paper:url-misc.3F95D631",
+        "created_at": "2026-03-10T20:48:40+00:00",
+        "updated_at": "2026-03-10T20:49:03+00:00",
+        "version": 1
+      }
+    },
     "paper:acl.2022.icnlsp-1": {
       "data": {
         "sourceId": "acl",
