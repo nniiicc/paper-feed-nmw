@@ -1,7 +1,55 @@
 {
-  "snapshot_time": "2026-03-12T21:57:51.096470+00:00",
+  "snapshot_time": "2026-03-12T22:06:04.054553+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:ieee.8892116": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "8892116",
+        "url": "https://ieeexplore.ieee.org/document/8892116",
+        "title": "Evaluating the Hardware Cost of the Posit Number System",
+        "authors": "",
+        "abstract": "The posit number system is proposed as a replacement of IEEE floating-point numbers. It is a floating-point system that trades exponent bits for significand bits, depending on the magnitude of the numbers. Thus, it provides more precision for numbers around 1, at the expense of lower precision for very large or very small numbers. Several works have demonstrated that this trade-off can improve the accuracy of applications. However, the variable-length exponent and significand encoding impacts the hardware cost of posit arithmetic. The objective of the present work is to enable application-level evaluations of the posit system that include performance and resource consumption. To this purpose, this article introduces an open-source hardware implementation of the posit number system, in the form of a C++ templatized library compatible with Vivado HLS. This library currently implements addition, subtraction and multiplication for custom-size posits. In addition, the posit standard also mandates the presence of the \"quire\", a large accumulator able to perform exact sums of products. The proposed library includes the first open-source parameterized hardware quire. This library is shown to improve the state-of-the-art of posit implementations in terms of latency and resource consumption. Still, standard 32 bits posit adders and multipliers are found to be much larger and slower than the corresponding floating-point operators. The cost of the posit 32 quire is shown to be comparable to that of a Kulisch accumulator for 32 bits floating-point.",
+        "timestamp": "2026-03-12T22:05:06.540Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1109/FPL.2019.00026",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 743,
+        "object_id": "paper:ieee.8892116",
+        "created_at": "2026-03-12T22:05:06+00:00",
+        "updated_at": "2026-03-12T22:05:28+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1007/978-3-030-46147-8_29": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/978-3-030-46147-8_29",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-030-46147-8_29",
+        "title": "Single-Path NAS: Designing Hardware-Efficient ConvNets in Less Than 4 Hours",
+        "authors": "Stamoulis, Dimitrios, Ding, Ruizhou, Wang, Di, Lymberopoulos, Dimitrios, Priyantha, Bodhi, Liu, Jie, Marculescu, Diana",
+        "abstract": "Can we automatically design a Convolutional Network (ConvNet) with the highest image classification accuracy under the latency constraint of a mobile device? Neural architecture search (NAS) has revolutionized the design of hardware-efficient ConvNets by automating...",
+        "timestamp": "2026-03-12T22:04:52.716Z",
+        "rating": "novote",
+        "publishedDate": "2020",
+        "tags": [],
+        "doi": "10.1007/978-3-030-46147-8_29",
+        "journalName": "Joint European Conference on Machine Learning and Knowledge Discovery in Databases",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 742,
+        "object_id": "paper:springer.10.1007/978-3-030-46147-8_29",
+        "created_at": "2026-03-12T22:04:53+00:00",
+        "updated_at": "2026-03-12T22:05:17+00:00",
+        "version": 1
+      }
+    },
     "paper:ieee.6735414": {
       "data": {
         "sourceId": "ieee",
