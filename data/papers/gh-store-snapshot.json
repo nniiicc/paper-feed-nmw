@@ -1,7 +1,69 @@
 {
-  "snapshot_time": "2026-03-12T19:14:43.873825+00:00",
+  "snapshot_time": "2026-03-12T21:57:51.096470+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:ieee.6735414": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "6735414",
+        "url": "https://ieeexplore.ieee.org/document/6735414",
+        "title": "Affordable and Energy-Efficient Cloud Computing Clusters: The Bolzano Raspberry Pi Cloud Cluster Experiment",
+        "authors": "",
+        "abstract": "We present our ongoing work building a Raspberry Pi cluster consisting of 300 nodes. The unique characteristics of this single board computer pose several challenges, but also offer a number of interesting opportunities. On the one hand, a single Raspberry Pi can be purchased cheaply and has a low power consumption, which makes it possible to create an affordable and energy-efficient cluster. On the other hand, it lacks in computing power, which makes it difficult to run computationally intensive software on it. Nevertheless, by combining a large number of Raspberries into a cluster, this drawback can be (partially) offset. Here we report on the first important steps of creating our cluster: how to set up and configure the hardware and the system software, and how to monitor and maintain the system. We also discuss potential use cases for our cluster, the two most important being an inexpensive and green test bed for cloud computing research and a robust and mobile data center for operating in adverse environments.",
+        "timestamp": "2026-03-12T21:56:58.617Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1109/CloudCom.2013.121",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 741,
+        "object_id": "paper:ieee.6735414",
+        "created_at": "2026-03-12T21:56:58+00:00",
+        "updated_at": "2026-03-12T21:57:20+00:00",
+        "version": 1
+      }
+    },
+    "interactions:ieee.6195829": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "6195829",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 740,
+        "object_id": "interactions:ieee.6195829",
+        "created_at": "2026-03-12T21:56:48+00:00",
+        "updated_at": "2026-03-12T21:56:50+00:00",
+        "version": 1
+      }
+    },
+    "paper:ieee.6195829": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "6195829",
+        "url": "https://ieeexplore.ieee.org/document/6195829",
+        "title": "Cost-effective barrier coverage by mobile sensor networks",
+        "authors": "",
+        "abstract": "Barrier coverage problem in emerging mobile sensor networks has been an interesting research issue. Existing solutions to this problem aim to decide one-time movement for individual sensors to construct as many barriers as possible, which may not work well when there are no sufficient sensors to form a single barrier. In this paper, we try to achieve barrier coverage in sensor scarcity case by dynamic sensor patrolling. In specific, we design a periodic monitoring scheduling (PMS) algorithm in which each point along the barrier line is monitored periodically by mobile sensors. Based on the insight from PMS, we then propose a coordinated sensor patrolling (CSP) algorithm to further improve the barrier coverage, where each sensor's current movement strategy is decided based on the past intruder arrival information. By jointly exploiting sensor mobility and intruder arrival information, CSP is able to significantly enhance barrier coverage. We prove that the total distance that the sensors move during each time slot in CSP is the minimum. Considering the decentralized nature of mobile sensor networks, we further introduce two distributed versions of CSP: S-DCSP and G-DCSP. Through extensive simulations, we demonstrate that CSP has a desired barrier coverage performance and S-DCSP and G-DCSP have similar performance as that of CSP.",
+        "timestamp": "2026-03-12T21:56:31.545Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1109/INFCOM.2012.6195829",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 739,
+        "object_id": "paper:ieee.6195829",
+        "created_at": "2026-03-12T21:56:31+00:00",
+        "updated_at": "2026-03-12T21:56:54+00:00",
+        "version": 1
+      }
+    },
     "interactions:wiley.10.1111/psj.70103": {
       "data": {
         "sourceId": "wiley",
