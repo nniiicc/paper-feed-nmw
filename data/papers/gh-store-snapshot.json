@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-03-13T16:59:13.235215+00:00",
+  "snapshot_time": "2026-03-13T18:22:07.985279+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.580AA78D": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "580AA78D",
+        "url": "https://sigla.georgetown.domains/gateway/wp-content/uploads/2025/03/SIGLA_Site-Text_User-Resources_User-Guide_Launch_April-2022.pdf",
+        "title": "580AA78D",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-03-13T18:21:06.452Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "pdf"
+      },
+      "meta": {
+        "issue_number": 746,
+        "object_id": "paper:url-misc.580AA78D",
+        "created_at": "2026-03-13T18:21:06+00:00",
+        "updated_at": "2026-03-13T18:21:29+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2506.00137": {
       "data": {
         "sourceId": "arxiv",
