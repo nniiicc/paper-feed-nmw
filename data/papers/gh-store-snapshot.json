@@ -1,7 +1,61 @@
 {
-  "snapshot_time": "2026-03-25T00:59:30.213089+00:00",
+  "snapshot_time": "2026-03-25T17:59:28.310016+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:biorxiv.10.1101/2023": {
+      "data": {
+        "sourceId": "biorxiv",
+        "paperId": "10.1101/2023",
+        "url": "https://www.biorxiv.org/content/10.1101/2023.09.07.556750v3",
+        "title": "Analysis of citation dynamics reveals that you do not receive enough recognition for your influential science",
+        "authors": "Salsabil Arabi, Chaoqun Ni, B. Ian Hutchins",
+        "abstract": "<h3>Abstract</h3>\n<p>During career advancement and funding allocation decisions in biomedicine, reviewers have traditionally depended on journal-level measures of scientific influence like the impact factor. Prestigious journals reject large quantities of papers, many of which may be meritorious. It is possible that this process could create a system whereby some influential articles are prospectively identified and recognized by journal brands but most influential articles are overlooked. Here, we measure the degree to which journal prestige hierarchies capture or overlook influential science. We quantify the fraction of scientists\u2019 articles that would receive recognition because (a) they are published in journals above a chosen impact factor threshold, or (b) they are at least as well-cited as articles appearing in such journals. We find that the number of papers cited at least as well as those appearing in high-impact factor journals vastly exceeds the number of papers published in such venues. At the investigator level, this phenomenon extends across gender, racial, and career stage groupings of scientists. We also find that approximately half of researchers never publish in a venue with an impact factor above 15, which under journal-level evaluation regimes may exclude them from consideration for opportunities. Many of these researchers publish equally influential work, however, raising the possibility that the traditionally chosen journal-level measures that are routinely considered under decision-making norms, policy, or law, may recognize as little as 10-20% of this influential work.</p>",
+        "timestamp": "2026-03-25T17:58:23.374Z",
+        "rating": "novote",
+        "publishedDate": "2025/01/01",
+        "tags": [],
+        "doi": "10.1101/2023.09.07.556750",
+        "journalName": "bioRxiv",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 748,
+        "object_id": "paper:biorxiv.10.1101/2023",
+        "created_at": "2026-03-25T17:58:23+00:00",
+        "updated_at": "2026-03-25T17:58:45+00:00",
+        "version": 1
+      }
+    },
+    "paper:pnas.10.1073/pnas.2500322122": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.2500322122",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.2500322122",
+        "title": "Tenure and research trajectories",
+        "authors": "Tripodi, Giorgio, Zheng, Xiang, Qian, Yifan, Murray, Dakota, Jones, Benjamin F., Ni, Chaoqun, Wang, Dashun",
+        "abstract": "Tenure is a cornerstone of the US academic system, yet its relationship to faculty\nresearch trajectories remains poorly understood. Conceptually, t...",
+        "timestamp": "2026-03-25T17:58:23.322Z",
+        "rating": "novote",
+        "publishedDate": "2025-7-22",
+        "tags": [
+          "tenure",
+          "career trajectory",
+          "science of science",
+          "innovation",
+          "computational social science"
+        ],
+        "doi": "10.1073/pnas.2500322122",
+        "journalName": "Proceedings of the National Academy of Sciences",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 747,
+        "object_id": "paper:pnas.10.1073/pnas.2500322122",
+        "created_at": "2026-03-25T17:58:23+00:00",
+        "updated_at": "2026-03-25T17:58:44+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.580AA78D": {
       "data": {
         "sourceId": "url-misc",
