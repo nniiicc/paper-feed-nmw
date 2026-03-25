@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-03-25T18:00:29.805697+00:00",
+  "snapshot_time": "2026-03-25T19:41:38.784330+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.CF103F6": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "CF103F6",
+        "url": "https://zenodo.org/records/21401",
+        "title": "dvxc: Paper submission",
+        "authors": "ajjackson",
+        "abstract": "Release of code at the point of submission of accompanying academic journal article. The dvxc_stats.py program is intended for use with the supporting data from this work.",
+        "timestamp": "2026-03-25T19:40:33.520Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.5281/zenodo.21401",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 750,
+        "object_id": "paper:url-misc.CF103F6",
+        "created_at": "2026-03-25T19:40:33+00:00",
+        "updated_at": "2026-03-25T19:40:55+00:00",
+        "version": 1
+      }
+    },
     "interactions:biorxiv.10.1101/2023": {
       "data": {
         "sourceId": "biorxiv",
