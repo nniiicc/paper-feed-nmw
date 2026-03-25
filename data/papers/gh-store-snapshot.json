@@ -1,7 +1,37 @@
 {
-  "snapshot_time": "2026-03-25T17:59:28.310016+00:00",
+  "snapshot_time": "2026-03-25T18:00:29.805697+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:biorxiv.10.1101/2023": {
+      "data": {
+        "sourceId": "biorxiv",
+        "paperId": "10.1101/2023",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-25T17:59:19.514Z",
+            "data": {
+              "session_id": "session_1774461559506_8y06yen",
+              "source_id": "biorxiv",
+              "paper_id": "10.1101/2023",
+              "start_time": "2026-03-25T17:58:45.180Z",
+              "end_time": "2026-03-25T17:59:19.506Z",
+              "heartbeat_count": 6,
+              "duration_seconds": 30,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 34
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 749,
+        "object_id": "interactions:biorxiv.10.1101/2023",
+        "created_at": "2026-03-25T17:59:20+00:00",
+        "updated_at": "2026-03-25T17:59:40+00:00",
+        "version": 1
+      }
+    },
     "paper:biorxiv.10.1101/2023": {
       "data": {
         "sourceId": "biorxiv",
