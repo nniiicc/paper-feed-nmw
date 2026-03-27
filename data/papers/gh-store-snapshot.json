@@ -1,7 +1,128 @@
 {
-  "snapshot_time": "2026-03-27T01:04:18.563307+00:00",
+  "snapshot_time": "2026-03-27T18:53:33.663265+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:openreview.AmZBo845r8": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "AmZBo845r8",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-27T18:52:11.532Z",
+            "data": {
+              "session_id": "session_1774637531500_msw32cj",
+              "source_id": "openreview",
+              "paper_id": "AmZBo845r8",
+              "start_time": "2026-03-27T18:51:59.701Z",
+              "end_time": "2026-03-27T18:52:11.500Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 12
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 755,
+        "object_id": "interactions:openreview.AmZBo845r8",
+        "created_at": "2026-03-27T18:52:12+00:00",
+        "updated_at": "2026-03-27T18:52:34+00:00",
+        "version": 1
+      }
+    },
+    "paper:openreview.AmZBo845r8": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "AmZBo845r8",
+        "url": "https://openreview.net/forum?id=AmZBo845r8&referrer=%5BReviewers%20Console%5D(%2Fgroup%3Fid%3DACM.org%2FFAccT%2F2026%2FConference%2FReviewers%23assigned-submissions)",
+        "title": "The Prompting Boundary: AI Interaction Type\u2019s Influence on Ownership, Responsibility, and Disclosure in AI-Assisted Coding",
+        "authors": "",
+        "abstract": "In determining how to responsibly integrate AI tools into software development environments, we could look to how such tools impact a programmer\u2019s sense of ownership over code, responsibility for outcomes, and their disclosure of AI usage. We conducted a within-subjects study where computer science students completed coding tasks with three different AI interaction types: autocomplete, in-editor prompting, and chat prompting. We identify what we term the prompting boundary: explicit prompting by the user served as a psychological threshold distinguishing perceived tool use from AI collaboration, with participants not categorizing autocomplete as \"AI\" despite its AI-powered nature. Notably, ownership and disclosure tracked this boundary, but responsibility did not: participants maintained clear accountability even when prompting shifted how they related to the resulting code. These findings suggest the prompting boundary as a new conceptual mechanism specifying when and how AI assistance shapes developers' ownership, responsibility, and disclosure norms in AI-assisted coding.",
+        "timestamp": "2026-03-27T18:51:58.432Z",
+        "rating": "novote",
+        "publishedDate": "2026/01/08",
+        "tags": [
+          "coding",
+          "interaction",
+          "human-AI collaboration",
+          "psychological ownership",
+          "responsibility",
+          "disclosure"
+        ],
+        "doi": "",
+        "journalName": "ACM FAccT 2026 Conference Submission",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 754,
+        "object_id": "paper:openreview.AmZBo845r8",
+        "created_at": "2026-03-27T18:51:58+00:00",
+        "updated_at": "2026-03-27T18:52:18+00:00",
+        "version": 1
+      }
+    },
+    "interactions:openreview.YHqsI1ZmW7": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "YHqsI1ZmW7",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-27T18:51:47.955Z",
+            "data": {
+              "session_id": "session_1774637507542_916opq6",
+              "source_id": "openreview",
+              "paper_id": "YHqsI1ZmW7",
+              "start_time": "2026-03-27T18:51:29.050Z",
+              "end_time": "2026-03-27T18:51:47.542Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 18
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 753,
+        "object_id": "interactions:openreview.YHqsI1ZmW7",
+        "created_at": "2026-03-27T18:51:48+00:00",
+        "updated_at": "2026-03-27T18:52:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:openreview.YHqsI1ZmW7": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "YHqsI1ZmW7",
+        "url": "https://openreview.net/forum?id=YHqsI1ZmW7#discussion",
+        "title": "The Bathtub of European AI Governance: Identifying Technical Sandboxes as the Micro-Foundation of Regulatory Learning",
+        "authors": "",
+        "abstract": "The EU AI Act adopts a horizontal and adaptive approach to govern AI technologies characterised by rapid development and unpredictable emerging capabilities.\nTo maintain relevance, the Act embeds provisions for regulatory learning.\nHowever, these provisions operate within a complex network of actors and mechanisms that lack a clearly defined technical basis for scalable information flow.\nThis paper addresses this gap by establishing a theoretical model of the AI Act\u2019s regulatory learning space, decomposed into micro, meso, and macro levels.\nDrawing from this functional perspective of this model, we situate the diverse stakeholders - ranging from the EU Commission at the macro level to AI developers at the micro level - within the transitions of enforcement (macro-micro) and evidence aggregation (micro-macro).\nWe identify AI Technical Sandboxes as the essential engine for evidence generation at the micro level, providing the necessary data to drive scalable learning across all levels of the model.\nBy providing an extensive discussion of the requirements and challenges for AITSes to serve as this micro-level evidence generator, we aim to bridge the gap between legislative commands and technical operationalisation, thereby enabling a structured discourse between technical and legal experts.",
+        "timestamp": "2026-03-27T18:51:29.287Z",
+        "rating": "novote",
+        "publishedDate": "2026/01/09",
+        "tags": [
+          "AI Governance",
+          "EU AI Act",
+          "sandboxes",
+          "regulatory learning",
+          "trustworthy AI"
+        ],
+        "doi": "",
+        "journalName": "Submitted to ACM FAccT 2026",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 751,
+        "object_id": "paper:openreview.YHqsI1ZmW7",
+        "created_at": "2026-03-27T18:51:29+00:00",
+        "updated_at": "2026-03-27T18:51:47+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.CF103F6": {
       "data": {
         "sourceId": "url-misc",
@@ -1848,6 +1969,21 @@
               "idle_seconds": 2,
               "total_elapsed_seconds": 212
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-03-27T18:52:23.940Z",
+            "data": {
+              "session_id": "session_1774637543839_ycui2fg",
+              "source_id": "openreview",
+              "paper_id": "kQDz2azFLm",
+              "start_time": "2026-03-27T18:52:14.936Z",
+              "end_time": "2026-03-27T18:52:23.839Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 9
+            }
           }
         ]
       },
@@ -1855,7 +1991,7 @@
         "issue_number": 681,
         "object_id": "interactions:openreview.kQDz2azFLm",
         "created_at": "2026-02-19T20:39:35+00:00",
-        "updated_at": "2026-02-19T20:50:24+00:00",
+        "updated_at": "2026-03-27T18:52:46+00:00",
         "version": 1
       }
     },
