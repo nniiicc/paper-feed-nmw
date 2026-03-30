@@ -1,7 +1,36 @@
 {
-  "snapshot_time": "2026-03-30T20:12:22.683129+00:00",
+  "snapshot_time": "2026-03-30T20:40:54.192955+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:openreview.lSWOMjonL7": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "lSWOMjonL7",
+        "url": "https://openreview.net/forum?id=lSWOMjonL7#discussion",
+        "title": "A Survey on Personalized and Pluralistic Preference Alignment in Large Language Models",
+        "authors": "Zhouhang Xie, Junda Wu, Yiran Shen, Raghav Jain, Yu Xia, Xintong Li, Aaron Chang, Ryan A. Rossi, Tong Yu, Sachin Kumar, Bodhisattwa Prasad Majumder, Jingbo Shang, Prithviraj Ammanabrolu, Julian McAuley",
+        "abstract": "Personalized preference alignment for large language models (LLMs), the process of tailoring LLMs to individual users' preferences, is an emerging research direction spanning the area of NLP and personalization. In this survey, we present an analysis of works on personalized alignment and modeling for LLMs. We introduce a taxonomy of preference alignment techniques, including training time, inference time, and heuristic-driven methods. We provide analysis and discussion on the strengths and limitations of each group of techniques and then cover evaluation, benchmarks, as well as open problems in the field.",
+        "timestamp": "2026-03-30T20:39:47.025Z",
+        "rating": "novote",
+        "publishedDate": "07 Jul 2025",
+        "tags": [
+          "Preference Alignment",
+          "Personalization",
+          "Pluralistic Alignment",
+          "Large Language Models"
+        ],
+        "doi": "10.1145/3589334.3645451",
+        "journalName": "COLM 2025",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 758,
+        "object_id": "paper:openreview.lSWOMjonL7",
+        "created_at": "2026-03-30T20:39:47+00:00",
+        "updated_at": "2026-03-30T20:40:11+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.5EDDA626": {
       "data": {
         "sourceId": "url-misc",
