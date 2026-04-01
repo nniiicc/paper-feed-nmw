@@ -1,7 +1,37 @@
 {
-  "snapshot_time": "2026-04-01T21:17:23.394268+00:00",
+  "snapshot_time": "2026-04-01T22:31:35.828764+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.4E494098": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4E494098",
+        "url": "https://journals.sagepub.com/doi/10.1177/00491241251336794",
+        "title": "From Codebooks to Promptbooks: Extracting Information from Text with Generative Large Language Models - Oscar Stuhler, Cat Dang Ton, Etienne Ollion, 2025",
+        "authors": "Oscar Stuhler, https://orcid.org/0000-0001-7391-1743, oms@northwestern.edu, Cat Dang Ton, https://orcid.org/0009-0000-6872-3588, Etienne Ollion, https://orcid.org/0000-0003-3099-5240",
+        "abstract": "Generative AI (GenAI) is quickly becoming a valuable tool for sociological research. Already, sociologists employ GenAI for tasks like classifying text and simu...",
+        "timestamp": "2026-04-01T22:30:39.380Z",
+        "rating": "novote",
+        "publishedDate": "2025-8",
+        "tags": [
+          "text analysis",
+          "information extraction",
+          "large language models",
+          "generative AI",
+          "prompting"
+        ],
+        "doi": "10.1177/00491241251336794",
+        "journalName": "Sociological Methods & Research",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 762,
+        "object_id": "paper:url-misc.4E494098",
+        "created_at": "2026-04-01T22:30:39+00:00",
+        "updated_at": "2026-04-01T22:30:58+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2507.18431": {
       "data": {
         "sourceId": "arxiv",
