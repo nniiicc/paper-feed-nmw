@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2026-04-01T01:12:30.771818+00:00",
+  "snapshot_time": "2026-04-01T21:17:23.394268+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2507.18431": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2507.18431",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 761,
+        "object_id": "interactions:arxiv.2507.18431",
+        "created_at": "2026-04-01T21:16:18+00:00",
+        "updated_at": "2026-04-01T21:16:20+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2507.18431": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2507.18431",
+        "url": "https://arxiv.org/abs/2507.18431",
+        "title": "What does the public want their local government to hear? A data-driven case study of public comments across the state of Michigan",
+        "authors": "Chang Ge, Justine Zhang, Haofei Xu, Yanna Krupnikov, Jenna Bednar, Sabina Tomkins",
+        "abstract": "City council meetings are vital sites for civic participation where the public can speak directly to their local government. By addressing city officials and calling on them to take action, public commenters can potentially influence policy decisions spanning a broad range of concerns, from housing, to sustainability, to social justice. Yet studies of these meetings have often been limited by the availability of large-scale, geographically-diverse data. Relying on local governments' increasing use of YouTube and other technologies to archive their public meetings, we propose a framework that characterizes comments along two dimensions: the local concerns where concerns are situated (e.g., housing, election administration), and the societal concerns raised (e.g., functional democracy, anti-racism). Based on a large record of public comments we collect from 15 cities in Michigan, we produce data-driven taxonomies of the local concerns and societal concerns that these comments cover, and employ machine learning methods to scalably apply our taxonomies across the entire dataset. We then demonstrate how our framework allows us to examine the salient local concerns and societal concerns that arise in our data, as well as how these aspects interact.",
+        "timestamp": "2026-04-01T21:16:09.848Z",
+        "rating": "novote",
+        "publishedDate": "2025/07/24",
+        "tags": [
+          "Computers and Society (cs.CY)"
+        ],
+        "doi": "10.51685/jqd.2025.023",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 760,
+        "object_id": "paper:arxiv.2507.18431",
+        "created_at": "2026-04-01T21:16:10+00:00",
+        "updated_at": "2026-04-01T21:16:36+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.20DC0801": {
       "data": {
         "sourceId": "url-misc",
