@@ -1,7 +1,34 @@
 {
-  "snapshot_time": "2026-04-02T01:02:36.319544+00:00",
+  "snapshot_time": "2026-04-02T16:29:04.893613+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2603.24586": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2603.24586",
+        "url": "https://arxiv.org/abs/2603.24586",
+        "title": "Comparing Developer and LLM Biases in Code Evaluation",
+        "authors": "Aditya Mittal, Ryan Shar, Zichu Wu, Shyam Agarwal, Tongshuang Wu, Chris Donahue, Ameet Talwalkar, Wayne Chi, Valerie Chen",
+        "abstract": "As LLMs are increasingly used as judges in code applications, they should be evaluated in realistic interactive settings that capture partial context and ambiguous intent. We present TRACE (Tool for Rubric Analysis in Code Evaluation), a framework that evaluates LLM judges' ability to predict human preferences and automatically extracts rubric items to reveal systematic biases in how humans and models weigh each item. Across three modalities -- chat-based programming, IDE autocompletion, and instructed code editing -- we use TRACE to measure how well LLM judges align with developer preferences. Among 13 different models, the best judges underperform human annotators by 12-23%. TRACE identifies 35 significant sources of misalignment between humans and judges across interaction modalities, the majority of which correspond to existing software engineering code quality criteria. For example, in chat-based coding, judges are biased towards longer code explanations while humans prefer shorter ones. We find significant misalignment on the majority of existing code quality dimensions, showing alignment gaps between LLM judges and human preference in realistic coding applications.",
+        "timestamp": "2026-04-02T16:27:56.413Z",
+        "rating": "novote",
+        "publishedDate": "2026/03/25",
+        "tags": [
+          "Software Engineering (cs.SE)",
+          "Computation and Language (cs.CL)"
+        ],
+        "doi": "10.48550/arXiv.2603.24586",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 764,
+        "object_id": "paper:arxiv.2603.24586",
+        "created_at": "2026-04-02T16:27:57+00:00",
+        "updated_at": "2026-04-02T16:28:17+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.4E494098": {
       "data": {
         "sourceId": "url-misc",
