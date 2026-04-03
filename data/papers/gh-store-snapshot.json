@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-04-02T22:58:43.481959+00:00",
+  "snapshot_time": "2026-04-03T01:04:43.630582+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "interactions:arxiv.2602.10427": {
@@ -13,6 +13,32 @@
         "object_id": "interactions:arxiv.2602.10427",
         "created_at": "2026-04-02T22:58:25+00:00",
         "updated_at": "2026-04-02T22:58:27+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2602.10427": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2602.10427",
+        "url": "https://arxiv.org/abs/2602.10427",
+        "title": "The selective use of physics knowledge in policy: how interdisciplinary physics bridges subfields and shapes policy influence",
+        "authors": "Jeongmin Lee, Jisung Yoon",
+        "abstract": "Scientific knowledge has become central to policymaking as societies face challenges related to technological change, climate risk, and public health. Despite the growing emphasis on evidence-based policy, a systematic understanding of how science is selectively used in policy, specifically which forms of knowledge are preferred and which scientific citations translate into influence, remains limited. We address these questions by constructing a novel dataset that links policy documents from the Overton database with publications from the American Physical Society, enabling an analysis of how physics knowledge enters and circulates in policy discourse. Using subfield classifications, we provide quantitative evidence for a gap between scientific communities and policymakers. First, we find that policy documents draw on broad and interdisciplinary areas of physics, such as General Physics and Interdisciplinary Physics, rather than mirroring the structure of physics research production. Second, we identify substantial institutional heterogeneity with systematic differences in subfield preferences across policy producing organizations and topics. Third, network analysis reveals that interdisciplinary areas of physics act as a central bridge connecting specialized subfields. Finally, regression analysis reveals a clear separation between policy visibility and policy influence. While interdisciplinary areas facilitate entry into policy discourse, it does not necessarily increase downstream policy influence. Conversely, documents citing geophysics are associated with approximately 24 percent higher policy influence, likely driven by the political salience of climate change policy. Our findings underscore the distinction between scientific visibility and policy influence, contributing to a deeper understanding of the complex relationship between scientific communities and policy system.",
+        "timestamp": "2026-04-02T22:58:19.513Z",
+        "rating": "novote",
+        "publishedDate": "2026/02/11",
+        "tags": [
+          "Physics and Society (physics.soc-ph)"
+        ],
+        "doi": "10.48550/arXiv.2602.10427",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 769,
+        "object_id": "paper:arxiv.2602.10427",
+        "created_at": "2026-04-02T22:58:19+00:00",
+        "updated_at": "2026-04-02T22:58:44+00:00",
         "version": 1
       }
     },
