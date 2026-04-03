@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2026-04-03T22:54:35.893030+00:00",
+  "snapshot_time": "2026-04-03T22:55:32.584219+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.d41586-025-00930-6": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-025-00930-6",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 781,
+        "object_id": "interactions:nature.d41586-025-00930-6",
+        "created_at": "2026-04-03T22:54:44+00:00",
+        "updated_at": "2026-04-03T22:54:46+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.d41586-025-00930-6": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-025-00930-6",
+        "url": "https://www.nature.com/articles/d41586-025-00930-6",
+        "title": "\u2018Open source\u2019 AI isn\u2019t truly open \u2014 here\u2019s how researchers can reclaim the term",
+        "authors": "Stefano Maffulli\ud83d\udcdd0\ud83d\udcdd",
+        "abstract": "Many firms are misusing the \u2018open source\u2019 label. The scientific community, which relies on transparency and replicability, must resist this trend.",
+        "timestamp": "2026-04-03T22:54:18.690Z",
+        "rating": "novote",
+        "publishedDate": "2025-03-27",
+        "tags": [
+          "Computer science"
+        ],
+        "doi": "10.1038/d41586-025-00930-6",
+        "journalName": "Nature 2025 640:8057",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 780,
+        "object_id": "paper:nature.d41586-025-00930-6",
+        "created_at": "2026-04-03T22:54:18+00:00",
+        "updated_at": "2026-04-03T22:54:41+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.4F48BC68": {
       "data": {
         "sourceId": "url-misc",
@@ -30,13 +70,29 @@
       "data": {
         "sourceId": "nature",
         "paperId": "d41586-025-03196-0",
-        "interactions": []
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-03T22:54:34.730Z",
+            "data": {
+              "session_id": "session_1775256874481_qx39clb",
+              "source_id": "nature",
+              "paper_id": "d41586-025-03196-0",
+              "start_time": "2026-04-03T22:53:47.415Z",
+              "end_time": "2026-04-03T22:54:34.481Z",
+              "heartbeat_count": 9,
+              "duration_seconds": 45,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 47
+            }
+          }
+        ]
       },
       "meta": {
         "issue_number": 776,
         "object_id": "interactions:nature.d41586-025-03196-0",
         "created_at": "2026-04-03T22:51:29+00:00",
-        "updated_at": "2026-04-03T22:54:36+00:00",
+        "updated_at": "2026-04-03T22:54:54+00:00",
         "version": 1
       }
     },
