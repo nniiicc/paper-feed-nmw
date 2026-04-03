@@ -1,7 +1,73 @@
 {
-  "snapshot_time": "2026-04-03T19:32:22.321587+00:00",
+  "snapshot_time": "2026-04-03T22:52:22.521089+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.d41586-025-03196-0": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-025-03196-0",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 776,
+        "object_id": "interactions:nature.d41586-025-03196-0",
+        "created_at": "2026-04-03T22:51:29+00:00",
+        "updated_at": "2026-04-03T22:51:30+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.d41586-025-03196-0": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-025-03196-0",
+        "url": "https://www.nature.com/articles/d41586-025-03196-0",
+        "title": "Stop treating code like an afterthought: record, share and value it",
+        "authors": "Di Cosmo, Roberto, Granger, Sabrina, Hinsen, Konrad, Jullien, Nicolas, Le Berre, Daniel, Louvet, Violaine, Maumet, Camille, Maurice, Cl\u00e9mentine, Monat, Rapha\u00ebl, Rougier, Nicolas P.",
+        "abstract": "Scientists, research institutions, funders, libraries and publishers must all improve software practices.",
+        "timestamp": "2026-04-03T22:51:21.325Z",
+        "rating": "novote",
+        "publishedDate": "2025/10",
+        "tags": [
+          "Computer science"
+        ],
+        "doi": "10.1038/d41586-025-03196-0",
+        "journalName": "Nature 2025 646:8084",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 775,
+        "object_id": "paper:nature.d41586-025-03196-0",
+        "created_at": "2026-04-03T22:51:21+00:00",
+        "updated_at": "2026-04-03T22:51:42+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.d41586-026-00370-w": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "d41586-026-00370-w",
+        "url": "https://www.nature.com/articles/d41586-026-00370-w",
+        "title": "OpenClaw AI chatbots are running amok \u2014 these scientists are listening in",
+        "authors": "Mohana Basu\ud83d\udcdd",
+        "abstract": "Artificial-intelligence agents have their own social-media platform and are publishing AI-generated research papers on their own preprint server.",
+        "timestamp": "2026-04-03T22:51:10.813Z",
+        "rating": "novote",
+        "publishedDate": "2026-02-06",
+        "tags": [
+          "Machine learning"
+        ],
+        "doi": "10.1038/d41586-026-00370-w",
+        "journalName": "Nature 2026 650:8102",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 774,
+        "object_id": "paper:nature.d41586-026-00370-w",
+        "created_at": "2026-04-03T22:51:11+00:00",
+        "updated_at": "2026-04-03T22:51:33+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.486C61CD": {
       "data": {
         "sourceId": "url-misc",
