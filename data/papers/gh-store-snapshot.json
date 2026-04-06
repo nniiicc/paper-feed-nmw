@@ -1,7 +1,86 @@
 {
-  "snapshot_time": "2026-04-06T19:16:35.387177+00:00",
+  "snapshot_time": "2026-04-06T19:19:11.270658+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s41524-024-01381-9": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41524-024-01381-9",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 811,
+        "object_id": "interactions:nature.s41524-024-01381-9",
+        "created_at": "2026-04-06T19:19:06+00:00",
+        "updated_at": "2026-04-06T19:19:07+00:00",
+        "version": 1
+      }
+    },
+    "interactions:ieee.9157652": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "9157652",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 809,
+        "object_id": "interactions:ieee.9157652",
+        "created_at": "2026-04-06T19:18:35+00:00",
+        "updated_at": "2026-04-06T19:18:36+00:00",
+        "version": 1
+      }
+    },
+    "paper:ieee.9157652": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "9157652",
+        "url": "https://ieeexplore.ieee.org/document/9157652",
+        "title": "Cops-Ref: A New Dataset and Task on Compositional Referring Expression Comprehension",
+        "authors": "",
+        "abstract": "Referring expression comprehension (REF) aims at identifying a particular object in a scene by a natural language expression. It requires joint reasoning over the textual and visual domains to solve the problem. Some popular referring expression datasets, however, fail to provide an ideal test bed for evaluating the reasoning ability of the models, mainly because 1) their expressions typically describe only some simple distinctive properties of the object and 2) their images contain limited distracting information. To bridge the gap, we propose a new dataset for visual reasoning in context of referring expression comprehension with two main features. First, we design a novel expression engine rendering various reasoning logics that can be flexibly combined with rich visual properties to generate expressions with varying compositionality. Second, to better exploit the full reasoning chain embodied in an expression, we propose a new test setting by adding additional distracting images containing objects sharing similar properties with the referent, thus minimising the success rate of reasoning-free cross-domain alignment. We evaluate several state-of-the-art REF models, but find none of them can achieve promising performance. A proposed modular hard mining strategy performs the best but still leaves substantial room for improvement.",
+        "timestamp": "2026-04-06T19:18:06.852Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1109/CVPR42600.2020.01010",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 808,
+        "object_id": "paper:ieee.9157652",
+        "created_at": "2026-04-06T19:18:07+00:00",
+        "updated_at": "2026-04-06T19:18:30+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2305.10519": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2305.10519",
+        "url": "https://arxiv.org/abs/2305.10519",
+        "title": "Statistical Knowledge Assessment for Large Language Models",
+        "authors": "Qingxiu Dong, Jingjing Xu, Lingpeng Kong, Zhifang Sui, Lei Li",
+        "abstract": "Given varying prompts regarding a factoid question, can a large language model (LLM) reliably generate factually correct answers? Existing LLMs may generate distinct responses for different prompts. In this paper, we study the problem of quantifying knowledge contained in an LLM regarding a given set of facts. We propose KaRR, a statistical approach to assess factual knowledge for LLMs. The main idea is to estimate the ratio of LLM generating text corresponding to the answer entity given diverse prompts of the subject and the querying relation, versus it generating by random chances. Our assessment suite contains a comprehensive set of 994,123 entities and 600 relations, with 1,395,905 text aliases. We use our method to evaluate 20 LLMs of various sizes, including LLaMA, Alpaca, OPT, etc. Experiments show that our results have a strong correlation (0.43 Kendall's \u00a0\\tau) with the results of human assessment on LLMs. Our results reveal that the knowledge in LLMs with the same backbone architecture adheres to the scaling law, while tuning on instruction-following data sometimes compromises the model's capability to generate factually correct text reliably.",
+        "timestamp": "2026-04-06T19:18:03.717Z",
+        "rating": "novote",
+        "publishedDate": "2023/05/17",
+        "tags": [
+          "Computation and Language (cs.CL)",
+          "Machine Learning (cs.LG)"
+        ],
+        "doi": "10.48550/arXiv.2305.10519",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 806,
+        "object_id": "paper:arxiv.2305.10519",
+        "created_at": "2026-04-06T19:18:04+00:00",
+        "updated_at": "2026-04-06T19:18:30+00:00",
+        "version": 1
+      }
+    },
     "paper:openreview.pNtG6NAmx0": {
       "data": {
         "sourceId": "openreview",
