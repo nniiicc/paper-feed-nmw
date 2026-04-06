@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-04-06T18:55:00.135318+00:00",
+  "snapshot_time": "2026-04-06T18:56:56.345968+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/978-3-031-21756-2_31": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/978-3-031-21756-2_31",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-21756-2_31",
+        "title": "Web Archiving as\u00a0Entertainment",
+        "authors": "Reid, Travis, Nelson, Michael L., Weigle, Michele C.",
+        "abstract": "We want to make web archiving entertaining so that it can be enjoyed like a spectator sport. To this end, we have been working on a proof of concept that involves gamification of the web archiving process and integrating video games and web archiving. Our vision for...",
+        "timestamp": "2026-04-06T18:56:00.703Z",
+        "rating": "novote",
+        "publishedDate": "2022",
+        "tags": [],
+        "doi": "10.1007/978-3-031-21756-2_31",
+        "journalName": "International Conference on Asian Digital Libraries",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 790,
+        "object_id": "paper:springer.10.1007/978-3-031-21756-2_31",
+        "created_at": "2026-04-06T18:56:01+00:00",
+        "updated_at": "2026-04-06T18:56:20+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.61AED91": {
       "data": {
         "sourceId": "url-misc",
