@@ -1,7 +1,35 @@
 {
-  "snapshot_time": "2026-04-06T19:15:03.587220+00:00",
+  "snapshot_time": "2026-04-06T19:16:35.387177+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:openreview.pNtG6NAmx0": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "pNtG6NAmx0",
+        "url": "https://openreview.net/forum?id=pNtG6NAmx0",
+        "title": "Statistical Knowledge Assessment for Large Language Models",
+        "authors": "Qingxiu Dong, Jingjing Xu, Lingpeng Kong, Zhifang Sui, Lei Li",
+        "abstract": "Given varying prompts regarding a factoid question, can a large language model (LLM) reliably generate factually correct answers? Existing LLMs may generate distinct responses for different prompts. In this paper, we study the problem of quantifying knowledge contained in an LLM regarding a given set of facts. We propose KaRR, a statistical approach to assess factual knowledge for LLMs. The main idea is to estimate the ratio of LLM generating text corresponding to the answer entity given diverse prompts of the subject and the querying relation, versus it generating by random chances. Our assessment suite contains a comprehensive set of 994,123 entities and 600 relations, with 1,395,905 text aliases. We use our method to evaluate 20 LLMs of various sizes, including LLaMA, Alpaca, OPT, etc. Experiments show that our results have a strong correlation (0.43 Kendall's $\\tau$) with the results of human assessment on LLMs. Our results reveal that the knowledge in LLMs with the same backbone architecture adheres to the scaling law, while tuning on instruction-following data sometimes compromises the model's capability to generate factually correct text reliably.",
+        "timestamp": "2026-04-06T19:15:30.617Z",
+        "rating": "novote",
+        "publishedDate": "21 Sept 2023",
+        "tags": [
+          "Large Language Models",
+          "Knowledge Assessment",
+          "Evaluation"
+        ],
+        "doi": "",
+        "journalName": "NeurIPS 2023 poster",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 805,
+        "object_id": "paper:openreview.pNtG6NAmx0",
+        "created_at": "2026-04-06T19:15:30+00:00",
+        "updated_at": "2026-04-06T19:15:48+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.1912.04488": {
       "data": {
         "sourceId": "arxiv",
