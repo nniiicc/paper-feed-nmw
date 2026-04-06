@@ -1,7 +1,157 @@
 {
-  "snapshot_time": "2026-04-06T19:02:34.493353+00:00",
+  "snapshot_time": "2026-04-06T19:06:04.402070+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.39F079B6": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "39F079B6",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 802,
+        "object_id": "interactions:url-misc.39F079B6",
+        "created_at": "2026-04-06T19:05:21+00:00",
+        "updated_at": "2026-04-06T19:05:23+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2208.08978": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2208.08978",
+        "url": "https://arxiv.org/abs/2208.08978",
+        "title": "A framework for implementing general virtual element spaces",
+        "authors": "Andreas Dedner, Alice Hodson",
+        "abstract": "In this paper we present a framework for the construction and implementation of general virtual element spaces based on projections built from constrained least squares problems. Building on the triples used for finite element spaces, we introduce the concept of a VEM tuple which encodes the necessary building blocks to construct these projections. Using this approach, a wide range of virtual element spaces can be defined. We discuss $H^k$-conforming spaces for $k=1,2$ as well as divergence and curl free spaces. This general framework has the advantage of being easily integrated into any existing finite element package and we demonstrate this within the open source software package DUNE.",
+        "timestamp": "2026-04-06T19:05:04.481Z",
+        "rating": "novote",
+        "publishedDate": "2022/08/18",
+        "tags": [
+          "Numerical Analysis (math.NA)"
+        ],
+        "doi": "10.48550/arXiv.2208.08978",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 801,
+        "object_id": "paper:arxiv.2208.08978",
+        "created_at": "2026-04-06T19:05:04+00:00",
+        "updated_at": "2026-04-06T19:05:24+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.6F9F0E92": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "6F9F0E92",
+        "url": "https://epubs.siam.org/doi/10.1137/23M1573653?__cf_chl_tk=QdzXhYRBoBrgJVbxGT_1E9Zr3YW4J8ydx.4RuzukcDk-1775502284-1.0.1.1-7VrEWNfmktLIWczGW1V_K0H5mtP6rQQmEM7NEhPZq4w",
+        "title": "epubs.siam.org",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-06T19:04:46.249Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1137/23M1573653",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 800,
+        "object_id": "paper:url-misc.6F9F0E92",
+        "created_at": "2026-04-06T19:04:46+00:00",
+        "updated_at": "2026-04-06T19:05:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.39F079B6": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "39F079B6",
+        "url": "https://epubs.siam.org/doi/10.1137/23M1573653",
+        "title": "epubs.siam.org",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-06T19:04:44.823Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1137/23M1573653",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 799,
+        "object_id": "paper:url-misc.39F079B6",
+        "created_at": "2026-04-06T19:04:45+00:00",
+        "updated_at": "2026-04-06T19:05:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.E8D11F3": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "E8D11F3",
+        "url": "https://epubs.siam.org/doi/10.1137/23M1573653?__cf_chl_rt_tk=QdzXhYRBoBrgJVbxGT_1E9Zr3YW4J8ydx.4RuzukcDk-1775502284-1.0.1.1-7VrEWNfmktLIWczGW1V_K0H5mtP6rQQmEM7NEhPZq4w",
+        "title": "Just a moment...",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-06T19:04:44.738Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1137/23M1573653",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 798,
+        "object_id": "paper:url-misc.E8D11F3",
+        "created_at": "2026-04-06T19:04:45+00:00",
+        "updated_at": "2026-04-06T19:05:04+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.2C0904EB": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2C0904EB",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 797,
+        "object_id": "interactions:url-misc.2C0904EB",
+        "created_at": "2026-04-06T19:02:40+00:00",
+        "updated_at": "2026-04-06T19:02:42+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.2C0904EB": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2C0904EB",
+        "url": "https://zenodo.org/records/17161627",
+        "title": "sMRIPrep: Structural MRI PREProcessing workflows",
+        "authors": "Esteban, Oscar, Markiewicz, Christopher J., Blair, Ross, Poldrack, Russell A., Gorgolewski, Krzysztof J.",
+        "abstract": "A BIDS-App to preprocess anatomical (T1w, T2w and FLAIR) data, providing workflows for reuse in NIPreps (NeuroImaging PREProcesssing tools) such as fMRIPrep.",
+        "timestamp": "2026-04-06T19:02:20.451Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.5281/zenodo.17161627",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 796,
+        "object_id": "paper:url-misc.2C0904EB",
+        "created_at": "2026-04-06T19:02:20+00:00",
+        "updated_at": "2026-04-06T19:02:41+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.B01A892": {
       "data": {
         "sourceId": "url-misc",
