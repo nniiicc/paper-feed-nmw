@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-04-06T19:19:11.270658+00:00",
+  "snapshot_time": "2026-04-06T19:28:44.275539+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "interactions:nature.s41524-024-01381-9": {
@@ -16,17 +16,59 @@
         "version": 1
       }
     },
+    "paper:nature.s41524-024-01381-9": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41524-024-01381-9",
+        "url": "https://www.nature.com/articles/s41524-024-01381-9",
+        "title": "A deep generative modeling architecture for designing lattice-constrained perovskite materials",
+        "authors": "Chenebuah, Ericsson Tetteh, Nganbe, Michel, Tchagang, Alain Beaudelaire",
+        "abstract": "In modern materials discovery, materials are now efficiently screened using machine learning (ML) techniques with target-specific properties for meeting various engineering applications. However, a major challenge that persists with deep generative ML approach is the issue related to lattice reconstruction at the decoding phase, leading to the generation of materials with low symmetry, unfeasible atomic coordination, and triclinic behavioral properties in the crystal lattice. To address this concern, the present research makes a contribution by proposing a Lattice-Constrained Materials Generative Model (LCMGM) for designing new and polymorphic perovskite materials with crystal conformities that are consistent with predefined geometrical and thermodynamic stability constraints at the encoding phase. A comparison with baseline models such as Physics Guided Crystal Generative Model (PGCGM) and Fourier-Transformed Crystal Property (FTCP), confirms the potential of the LCMGM for improved training stability, better chemical learning effect and higher geometrical conformity. The new materials emerging from this research are Density Functional Theory (DFT) validated and openly made available in the Mendeley data repository: https://doi.org/10.17632/m262xxpgn2.1 .",
+        "timestamp": "2026-04-06T19:18:58.254Z",
+        "rating": "novote",
+        "publishedDate": "2024-08-30",
+        "tags": [
+          "Computational methods"
+        ],
+        "doi": "10.1038/s41524-024-01381-9",
+        "journalName": "npj Computational Materials 2024 10:1",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 810,
+        "object_id": "paper:nature.s41524-024-01381-9",
+        "created_at": "2026-04-06T19:18:58+00:00",
+        "updated_at": "2026-04-06T19:19:17+00:00",
+        "version": 1
+      }
+    },
     "interactions:ieee.9157652": {
       "data": {
         "sourceId": "ieee",
         "paperId": "9157652",
-        "interactions": []
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-06T19:27:49.550Z",
+            "data": {
+              "session_id": "session_1775503669324_oy0vlek",
+              "source_id": "ieee",
+              "paper_id": "9157652",
+              "start_time": "2026-04-06T19:27:27.170Z",
+              "end_time": "2026-04-06T19:27:49.324Z",
+              "heartbeat_count": 4,
+              "duration_seconds": 20,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 22
+            }
+          }
+        ]
       },
       "meta": {
         "issue_number": 809,
         "object_id": "interactions:ieee.9157652",
         "created_at": "2026-04-06T19:18:35+00:00",
-        "updated_at": "2026-04-06T19:18:36+00:00",
+        "updated_at": "2026-04-06T19:28:08+00:00",
         "version": 1
       }
     },
