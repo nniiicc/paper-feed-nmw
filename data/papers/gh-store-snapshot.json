@@ -1,7 +1,61 @@
 {
-  "snapshot_time": "2026-04-06T01:08:18.365146+00:00",
+  "snapshot_time": "2026-04-06T16:35:10.975819+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:ssrn.1997616": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "1997616",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-06T16:34:11.957Z",
+            "data": {
+              "session_id": "session_1775493251526_7s9wjsm",
+              "source_id": "ssrn",
+              "paper_id": "1997616",
+              "start_time": "2026-04-06T16:34:05.863Z",
+              "end_time": "2026-04-06T16:34:11.526Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 783,
+        "object_id": "interactions:ssrn.1997616",
+        "created_at": "2026-04-06T16:34:12+00:00",
+        "updated_at": "2026-04-06T16:34:33+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.1997616": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "1997616",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1997616",
+        "title": "papers.ssrn.com",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-06T16:34:06.373Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "SSRN",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 782,
+        "object_id": "paper:ssrn.1997616",
+        "created_at": "2026-04-06T16:34:07+00:00",
+        "updated_at": "2026-04-06T16:34:29+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.d41586-025-00930-6": {
       "data": {
         "sourceId": "nature",
