@@ -1,7 +1,38 @@
 {
-  "snapshot_time": "2026-04-06T21:57:46.313528+00:00",
+  "snapshot_time": "2026-04-06T22:01:03.436016+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.31309720": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "31309720",
+        "url": "https://www.frontiersin.org/journals/cardiovascular-medicine/articles/10.3389/fcvm.2022.969421/full",
+        "title": "PlaqView 2.0: A comprehensive web portal for cardiovascular single-cell genomics",
+        "authors": "Ma, Wei Feng , Turner, Adam W. , Gancayco, Christina , Wong, Doris , Song, Yipei , Mosquera, Jose Verdezoto , Auguste, Ga\u00eblle , Hodonsky, Chani J. , Prabhakar, Ajay , Ekiz, H. Atakan , van der Laan, Sander W. , Miller, Clint L. ",
+        "abstract": "Single-cell RNA-seq (scRNA-seq) is a powerful genomics technology to interrogate the cellular composition and behaviors of complex systems. While the number of scRNA-seq datasets and available computational analysis tools have grown exponentially, there are limited systematic data sharing strategies to allow rapid exploration and re-analysis of single-cell datasets, particularly in the cardiovascular field. We previously introduced PlaqView, an open-source web portal for the exploration and analysis of published atherosclerosis single-cell datasets. Now, we introduce PlaqView 2.0 (www.plaqview.com), which provides expanded features and functionalities as well as additional cardiovascular single-cell datasets. We showcase improved PlaqView functionality, backend data processing, user-interface, and capacity. PlaqView brings new or improved tools to explore scRNA-seq data, including  gene query, metadata browser, cell identity prediction, ad hoc RNA-trajectory analysis, and drug-gene interaction prediction. PlaqView serves as one of the largest central repositories for cardiovascular single-cell datasets, which now includes data from aneurysm, genetic mouse knock-outs, and healthy references. PlaqView 2.0 brings advanced tools and high-performance computing directly to users without the need for any programming knowledge. Lastly, we outline steps to generalize and repurpose PlaqView\u2019s framework for single-cell datasets from other fields.",
+        "timestamp": "2026-04-06T22:00:03.474Z",
+        "rating": "novote",
+        "publishedDate": "2022/08/08",
+        "tags": [
+          "ScRNA-seq",
+          "single-cell",
+          "cardiovascular",
+          "Genomics",
+          "web portal",
+          "database"
+        ],
+        "doi": "10.3389/fcvm.2022.969421",
+        "journalName": "Frontiers in Cardiovascular Medicine",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 818,
+        "object_id": "paper:url-misc.31309720",
+        "created_at": "2026-04-06T22:00:03+00:00",
+        "updated_at": "2026-04-06T22:00:28+00:00",
+        "version": 1
+      }
+    },
     "interactions:sciencedirect.S0168165617302547": {
       "data": {
         "sourceId": "sciencedirect",
