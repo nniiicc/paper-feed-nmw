@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-04-06T19:01:08.901474+00:00",
+  "snapshot_time": "2026-04-06T19:02:34.493353+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.B01A892": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "B01A892",
+        "url": "https://osf.io/preprints/osf/ujxp6_v1",
+        "title": "OSF",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-06T19:01:36.201Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 794,
+        "object_id": "paper:url-misc.B01A892",
+        "created_at": "2026-04-06T19:01:36+00:00",
+        "updated_at": "2026-04-06T19:01:57+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/978-3-030-01449-0_16": {
       "data": {
         "sourceId": "springer",
