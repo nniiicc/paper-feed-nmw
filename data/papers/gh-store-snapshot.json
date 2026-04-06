@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-04-06T19:09:25.335602+00:00",
+  "snapshot_time": "2026-04-06T19:15:03.587220+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.1912.04488": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "1912.04488",
+        "url": "https://arxiv.org/abs/1912.04488",
+        "title": "SOLO: Segmenting Objects by Locations",
+        "authors": "Xinlong Wang, Tao Kong, Chunhua Shen, Yuning Jiang, Lei Li",
+        "abstract": "We present a new, embarrassingly simple approach to instance segmentation in images. Compared to many other dense prediction tasks, e.g., semantic segmentation, it is the arbitrary number of instances that have made instance segmentation much more challenging. In order to predict a mask for each instance, mainstream approaches either follow the 'detect-thensegment' strategy as used by Mask R-CNN, or predict category masks first then use clustering techniques to group pixels into individual instances. We view the task of instance segmentation from a completely new perspective by introducing the notion of \"instance categories\", which assigns categories to each pixel within an instance according to the instance's location and size, thus nicely converting instance mask segmentation into a classification-solvable problem. Now instance segmentation is decomposed into two classification tasks. We demonstrate a much simpler and flexible instance segmentation framework with strong performance, achieving on par accuracy with Mask R-CNN and outperforming recent singleshot instance segmenters in accuracy. We hope that this very simple and strong framework can serve as a baseline for many instance-level recognition tasks besides instance segmentation.",
+        "timestamp": "2026-04-06T19:13:53.182Z",
+        "rating": "novote",
+        "publishedDate": "2019/12/10",
+        "tags": [
+          "Computer Vision and Pattern Recognition (cs.CV)"
+        ],
+        "doi": "10.48550/arXiv.1912.04488",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 804,
+        "object_id": "paper:arxiv.1912.04488",
+        "created_at": "2026-04-06T19:13:53+00:00",
+        "updated_at": "2026-04-06T19:14:21+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.1902.03983": {
       "data": {
         "sourceId": "arxiv",
