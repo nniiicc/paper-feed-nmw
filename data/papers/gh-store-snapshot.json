@@ -1,7 +1,71 @@
 {
-  "snapshot_time": "2026-04-06T21:54:59.975829+00:00",
+  "snapshot_time": "2026-04-06T21:57:46.313528+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:sciencedirect.S0168165617302547": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0168165617302547",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 817,
+        "object_id": "interactions:sciencedirect.S0168165617302547",
+        "created_at": "2026-04-06T21:57:09+00:00",
+        "updated_at": "2026-04-06T21:57:11+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0168165617302547": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0168165617302547",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0168165617302547?via%3Dihub",
+        "title": "RNA-bioinformatics: Tools, services and databases for the analysis of RNA-based regulation",
+        "authors": "",
+        "abstract": "The importance of RNA-based regulation is becoming more and more evident. Genome-wide sequencing efforts have shown that the majority of the DNA in eu\u2026",
+        "timestamp": "2026-04-06T21:56:36.889Z",
+        "rating": "novote",
+        "publishedDate": "2017/11/10",
+        "tags": [],
+        "doi": "10.1016/j.jbiotec.2017.05.019",
+        "journalName": "Journal of Biotechnology",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 816,
+        "object_id": "paper:sciencedirect.S0168165617302547",
+        "created_at": "2026-04-06T21:56:37+00:00",
+        "updated_at": "2026-04-06T21:57:02+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2303.16591": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2303.16591",
+        "url": "https://arxiv.org/abs/2303.16591",
+        "title": "An AST-based Code Change Representation and its Performance in Just-in-time Vulnerability Prediction",
+        "authors": "Tam\u00e1s Aladics, P\u00e9ter Heged\u0171s, Rudolf Ferenc",
+        "abstract": "The presence of software vulnerabilities is an ever-growing issue in software development. In most cases, it is desirable to detect vulnerabilities as early as possible, preferably in a just-in-time manner, when the vulnerable piece is added to the code base. The industry has a hard time combating this problem as manual inspection is costly and traditional means, such as rule-based bug detection, are not robust enough to follow the pace of the emergence of new vulnerabilities. The actively researched field of machine learning could help in such situations as models can be trained to detect vulnerable patterns. However, machine learning models work well only if the data is appropriately represented. In our work, we propose a novel way of representing changes in source code (i.e. code commits), the Code Change Tree, a form that is designed to keep only the differences between two abstract syntax trees of Java source code. We compared its effectiveness in predicting if a code change introduces a vulnerability against multiple representation types and evaluated them by a number of machine learning models as a baseline. The evaluation is done on a novel dataset that we published as part of our contributions using a 2-phase dataset generator method. Based on our evaluation we concluded that using Code Change Tree is a valid and effective choice to represent source code changes as it improves performance.",
+        "timestamp": "2026-04-06T21:54:49.118Z",
+        "rating": "novote",
+        "publishedDate": "2023/03/29",
+        "tags": [
+          "Software Engineering (cs.SE)"
+        ],
+        "doi": "10.48550/arXiv.2303.16591",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 815,
+        "object_id": "paper:arxiv.2303.16591",
+        "created_at": "2026-04-06T21:54:49+00:00",
+        "updated_at": "2026-04-06T21:55:07+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/978-3-031-37231-5_8": {
       "data": {
         "sourceId": "springer",
