@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-04-06T21:51:58.675359+00:00",
+  "snapshot_time": "2026-04-06T21:54:59.975829+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/978-3-031-37231-5_8": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/978-3-031-37231-5_8",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-37231-5_8",
+        "title": "An AST-Based Code Change Representation and\u00a0Its Performance in\u00a0Just-in-Time Vulnerability Prediction",
+        "authors": "Aladics, Tam\u00e1s, Heged\u0171s, P\u00e9ter, Ferenc, Rudolf",
+        "abstract": "The presence of software vulnerabilities is an ever-growing issue in software development. In most cases, it is desirable to detect vulnerabilities as early as possible, preferably in a just-in-time manner, when the vulnerable piece is added to the code base. The...",
+        "timestamp": "2026-04-06T21:53:40.096Z",
+        "rating": "novote",
+        "publishedDate": "2023",
+        "tags": [],
+        "doi": "10.1007/978-3-031-37231-5_8",
+        "journalName": "International Conference on Software Technologies",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 814,
+        "object_id": "paper:springer.10.1007/978-3-031-37231-5_8",
+        "created_at": "2026-04-06T21:53:40+00:00",
+        "updated_at": "2026-04-06T21:54:21+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2308.13106": {
       "data": {
         "sourceId": "arxiv",
