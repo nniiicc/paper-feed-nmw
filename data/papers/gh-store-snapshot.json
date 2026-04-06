@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-04-06T22:01:03.436016+00:00",
+  "snapshot_time": "2026-04-06T22:05:43.626873+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:wiley.10.1002/wrna.1631": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/wrna.1631",
+        "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/wrna.1631",
+        "title": "Intron retention and its impact on gene expression and protein diversity: A review and a practical guide",
+        "authors": "David F. Grabski, Lucile Broseus, Bandana Kumari, David Rekosh, Marie-Louise Hammarskjold, William Ritchie",
+        "abstract": "The many fates of mRNA with retained introns.\n\n\n\n\n\n",
+        "timestamp": "2026-04-06T22:04:38.458Z",
+        "rating": "novote",
+        "publishedDate": "2021/01/01",
+        "tags": [
+          "intron retention"
+        ],
+        "doi": "10.1002/wrna.1631",
+        "journalName": "Wiley Interdisciplinary Reviews: RNA",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 819,
+        "object_id": "paper:wiley.10.1002/wrna.1631",
+        "created_at": "2026-04-06T22:04:38+00:00",
+        "updated_at": "2026-04-06T22:05:01+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.31309720": {
       "data": {
         "sourceId": "url-misc",
