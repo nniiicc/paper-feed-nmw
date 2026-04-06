@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-04-06T18:56:56.345968+00:00",
+  "snapshot_time": "2026-04-06T18:59:58.947700+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.77327D76": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "77327D76",
+        "url": "https://academic.oup.com/aje/article/191/4/552/6383105",
+        "title": "The Expert Next Door: Interactions With Friends and Family During the COVID-19 Pandemic",
+        "authors": "Molino, Andrea R, Andersen, Kathleen M, Sawyer, Simone B, \u00d0o\u00e0n, Lan N, Rivera, Yonaira M, James, Bryan D, Fox, Matthew P, Murray, Eleanor J, D\u2019Agostino McGowan, Lucy, Jarrett, Brooke A",
+        "abstract": "Abstract. The coronavirus disease 2019 (COVID-19) pandemic thrust the field of public health into the spotlight. For many epidemiologists, biostatisticians",
+        "timestamp": "2026-04-06T18:59:00.459Z",
+        "rating": "novote",
+        "publishedDate": "2022/03/24",
+        "tags": [],
+        "doi": "10.1093/aje/kwab245",
+        "journalName": "American Journal of Epidemiology",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 792,
+        "object_id": "paper:url-misc.77327D76",
+        "created_at": "2026-04-06T18:59:00+00:00",
+        "updated_at": "2026-04-06T18:59:22+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/978-3-031-21756-2_31": {
       "data": {
         "sourceId": "springer",
