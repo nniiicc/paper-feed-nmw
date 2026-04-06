@@ -1,7 +1,49 @@
 {
-  "snapshot_time": "2026-04-06T19:28:44.275539+00:00",
+  "snapshot_time": "2026-04-06T21:51:58.675359+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2308.13106": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2308.13106",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 813,
+        "object_id": "interactions:arxiv.2308.13106",
+        "created_at": "2026-04-06T21:51:09+00:00",
+        "updated_at": "2026-04-06T21:51:11+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2308.13106": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2308.13106",
+        "url": "https://arxiv.org/abs/2308.13106",
+        "title": "PEak: A Single Source of Truth for Hardware Design and Verification",
+        "authors": "Caleb Donovick, Ross Daly, Jackson Melchert, Lenny Truong, Priyanka Raina, Pat Hanrahan, Clark Barrett",
+        "abstract": "Domain-specific languages for hardware can significantly enhance designer productivity, but sometimes at the cost of ease of verification. On the other hand, ISA specification languages are too static to be used during early stage design space exploration. We present PEak, an open-source hardware design and specification language, which aims to improve both design productivity and verification capability. PEak does this by providing a single source of truth for functional models, formal specifications, and RTL. PEak has been used in several academic projects, and PEak-generated RTL has been included in three fabricated hardware accelerators. In these projects, the formal capabilities of PEak were crucial for enabling both novel design space exploration techniques and automated compiler synthesis.",
+        "timestamp": "2026-04-06T21:50:53.875Z",
+        "rating": "novote",
+        "publishedDate": "2023/08/24",
+        "tags": [
+          "Programming Languages (cs.PL)",
+          "Hardware Architecture (cs.AR)",
+          "Logic in Computer Science (cs.LO)"
+        ],
+        "doi": "10.48550/arXiv.2308.13106",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 812,
+        "object_id": "paper:arxiv.2308.13106",
+        "created_at": "2026-04-06T21:50:54+00:00",
+        "updated_at": "2026-04-06T21:51:18+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41524-024-01381-9": {
       "data": {
         "sourceId": "nature",
