@@ -1,7 +1,113 @@
 {
-  "snapshot_time": "2026-04-20T20:21:57.551912+00:00",
+  "snapshot_time": "2026-04-20T20:25:34.027550+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.3F4F64D0": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3F4F64D0",
+        "url": "https://journals.sagepub.com/doi/full/10.1177/10780874211021688?__cf_chl_tk=fSCtRXCXQMcBME4P26kQCnWg6cORj0ZRyoGe.rKL4Qk-1776716673-1.0.1.1-Zv9.YjYnTKPh6iJl4wLfgBiNxLzM1A7Zj3.iDBbRK3Q",
+        "title": "journals.sagepub.com",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-20T20:24:34.926Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1177/10780874211021688",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 845,
+        "object_id": "paper:url-misc.3F4F64D0",
+        "created_at": "2026-04-20T20:24:35+00:00",
+        "updated_at": "2026-04-20T20:24:59+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.313A47F3": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "313A47F3",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-20T20:24:33.488Z",
+            "data": {
+              "session_id": "session_1776716673034_0zm43l9",
+              "source_id": "url-misc",
+              "paper_id": "313A47F3",
+              "start_time": "2026-04-20T20:24:16.960Z",
+              "end_time": "2026-04-20T20:24:33.032Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 16
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 844,
+        "object_id": "interactions:url-misc.313A47F3",
+        "created_at": "2026-04-20T20:24:34+00:00",
+        "updated_at": "2026-04-20T20:24:54+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.7601B063": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "7601B063",
+        "url": "https://journals.sagepub.com/doi/full/10.1177/10780874211021688?__cf_chl_rt_tk=fSCtRXCXQMcBME4P26kQCnWg6cORj0ZRyoGe.rKL4Qk-1776716673-1.0.1.1-Zv9.YjYnTKPh6iJl4wLfgBiNxLzM1A7Zj3.iDBbRK3Q",
+        "title": "Just a moment...",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-20T20:24:33.689Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1177/10780874211021688",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 843,
+        "object_id": "paper:url-misc.7601B063",
+        "created_at": "2026-04-20T20:24:34+00:00",
+        "updated_at": "2026-04-20T20:24:57+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.313A47F3": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "313A47F3",
+        "url": "https://journals.sagepub.com/doi/full/10.1177/10780874211021688",
+        "title": "Representation in American Cities: Who Runs for Mayor and Who Wins? - Patricia A. Kirkland, 2022",
+        "authors": "Patricia A. Kirkland, https://orcid.org/0000-0001-6465-567X, p.kirkland@princeton.edu",
+        "abstract": "Business leaders emerge as key players in canonical accounts of urban politics, but data limitations have hampered efforts to quantify their role in city politi...",
+        "timestamp": "2026-04-20T20:24:17.298Z",
+        "rating": "novote",
+        "publishedDate": "2022-5",
+        "tags": [
+          "representation",
+          "mayors",
+          "local elections"
+        ],
+        "doi": "10.1177/10780874211021688",
+        "journalName": "Urban Affairs Review",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 842,
+        "object_id": "paper:url-misc.313A47F3",
+        "created_at": "2026-04-20T20:24:17+00:00",
+        "updated_at": "2026-04-20T20:24:37+00:00",
+        "version": 1
+      }
+    },
     "interactions:wiley.10.1111/ajps.12969": {
       "data": {
         "sourceId": "wiley",
