@@ -1,18 +1,142 @@
 {
-  "snapshot_time": "2026-04-20T18:30:19.331806+00:00",
+  "snapshot_time": "2026-04-20T18:32:38.446718+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.4C1D85CF": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4C1D85CF",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-20T18:31:30.624Z",
+            "data": {
+              "session_id": "session_1776709890588_u2t4ac2",
+              "source_id": "url-misc",
+              "paper_id": "4C1D85CF",
+              "start_time": "2026-04-20T18:31:17.959Z",
+              "end_time": "2026-04-20T18:31:30.588Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 13
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 835,
+        "object_id": "interactions:url-misc.4C1D85CF",
+        "created_at": "2026-04-20T18:31:31+00:00",
+        "updated_at": "2026-04-20T18:31:53+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.4C1D85CF": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4C1D85CF",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10730720/#CR42",
+        "title": "American local government elections database",
+        "authors": "Justin de Benedictis-Kessner, Diana Da In Lee, Yamil R Velez, Christopher Warshaw",
+        "abstract": "The study of urban and local politics in the United States has long been hindered by a lack of centralized sources of election data. We introduce a new database of about 78,000 candidates in 57,000 electoral contests that encompasses races for seven ...",
+        "timestamp": "2026-04-20T18:31:08.352Z",
+        "rating": "novote",
+        "publishedDate": "2023 Dec 19",
+        "tags": [],
+        "doi": "10.1038/s41597-023-02792-x",
+        "journalName": "Scientific Data",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 834,
+        "object_id": "paper:url-misc.4C1D85CF",
+        "created_at": "2026-04-20T18:31:08+00:00",
+        "updated_at": "2026-04-20T18:31:28+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.4C6ECD2C": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4C6ECD2C",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-20T18:30:56.468Z",
+            "data": {
+              "session_id": "session_1776709856388_jqjbek8",
+              "source_id": "url-misc",
+              "paper_id": "4C6ECD2C",
+              "start_time": "2026-04-20T18:30:48.478Z",
+              "end_time": "2026-04-20T18:30:56.388Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 8
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 833,
+        "object_id": "interactions:url-misc.4C6ECD2C",
+        "created_at": "2026-04-20T18:30:41+00:00",
+        "updated_at": "2026-04-20T18:31:02+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.4C6ECD2C": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4C6ECD2C",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10730720/figure/Fig3/",
+        "title": "Fig. 3.",
+        "authors": "",
+        "abstract": "The study of urban and local politics in the United States has long been hindered by a lack of centralized sources of election data. We introduce a new database of about 78,000 candidates in 57,000 electoral contests that encompasses races for seven ...",
+        "timestamp": "2026-04-20T18:30:21.479Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1038/s41597-023-02792-x",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 832,
+        "object_id": "paper:url-misc.4C6ECD2C",
+        "created_at": "2026-04-20T18:30:21+00:00",
+        "updated_at": "2026-04-20T18:30:44+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.50E572FF": {
       "data": {
         "sourceId": "url-misc",
         "paperId": "50E572FF",
-        "interactions": []
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-20T18:31:08.279Z",
+            "data": {
+              "session_id": "session_1776709868023_26rn6vw",
+              "source_id": "url-misc",
+              "paper_id": "50E572FF",
+              "start_time": "2026-04-20T18:30:56.424Z",
+              "end_time": "2026-04-20T18:31:08.023Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 12
+            }
+          }
+        ]
       },
       "meta": {
         "issue_number": 831,
         "object_id": "interactions:url-misc.50E572FF",
         "created_at": "2026-04-20T18:29:34+00:00",
-        "updated_at": "2026-04-20T18:29:36+00:00",
+        "updated_at": "2026-04-20T18:31:29+00:00",
         "version": 1
       }
     },
