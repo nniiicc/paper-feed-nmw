@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-04-20T17:59:37.763228+00:00",
+  "snapshot_time": "2026-04-20T18:30:19.331806+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.50E572FF": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "50E572FF",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 831,
+        "object_id": "interactions:url-misc.50E572FF",
+        "created_at": "2026-04-20T18:29:34+00:00",
+        "updated_at": "2026-04-20T18:29:36+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.50E572FF": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "50E572FF",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10730720/",
+        "title": "Checking your browser - reCAPTCHA",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-20T18:29:06.814Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 829,
+        "object_id": "paper:url-misc.50E572FF",
+        "created_at": "2026-04-20T18:29:07+00:00",
+        "updated_at": "2026-04-20T18:29:25+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.693B89EE": {
       "data": {
         "sourceId": "url-misc",
