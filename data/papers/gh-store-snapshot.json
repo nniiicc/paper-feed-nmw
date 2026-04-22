@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-04-22T19:33:45.911497+00:00",
+  "snapshot_time": "2026-04-22T19:39:22.700739+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "interactions:wiley.10.1111/gove.70122": {
@@ -21,6 +21,21 @@
               "idle_seconds": 3,
               "total_elapsed_seconds": 383
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-22T19:38:35.063Z",
+            "data": {
+              "session_id": "session_1776886715051_xfext5j",
+              "source_id": "wiley",
+              "paper_id": "10.1111/gove.70122",
+              "start_time": "2026-04-22T19:38:26.082Z",
+              "end_time": "2026-04-22T19:38:35.051Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 9
+            }
           }
         ]
       },
@@ -28,7 +43,7 @@
         "issue_number": 847,
         "object_id": "interactions:wiley.10.1111/gove.70122",
         "created_at": "2026-04-22T19:26:18+00:00",
-        "updated_at": "2026-04-22T19:33:07+00:00",
+        "updated_at": "2026-04-22T19:38:39+00:00",
         "version": 1
       }
     },
