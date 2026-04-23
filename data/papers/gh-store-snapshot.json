@@ -1,7 +1,159 @@
 {
-  "snapshot_time": "2026-04-23T17:20:11.304962+00:00",
+  "snapshot_time": "2026-04-23T17:24:13.954218+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:wiley.10.1111/psj.12587": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.12587",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 857,
+        "object_id": "interactions:wiley.10.1111/psj.12587",
+        "created_at": "2026-04-23T17:23:56+00:00",
+        "updated_at": "2026-04-23T17:23:58+00:00",
+        "version": 1
+      }
+    },
+    "interactions:wiley.10.1111/psj.70016": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70016",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-23T17:22:01.979Z",
+            "data": {
+              "session_id": "session_1776964921940_4u0qac9",
+              "source_id": "wiley",
+              "paper_id": "10.1111/psj.70016",
+              "start_time": "2026-04-23T17:21:44.567Z",
+              "end_time": "2026-04-23T17:22:01.940Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 17
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 856,
+        "object_id": "interactions:wiley.10.1111/psj.70016",
+        "created_at": "2026-04-23T17:22:02+00:00",
+        "updated_at": "2026-04-23T17:22:30+00:00",
+        "version": 1
+      }
+    },
+    "interactions:wiley.10.1111/psj.70096": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70096",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-23T17:21:44.582Z",
+            "data": {
+              "session_id": "session_1776964904566_agywj9a",
+              "source_id": "wiley",
+              "paper_id": "10.1111/psj.70096",
+              "start_time": "2026-04-23T17:21:27.183Z",
+              "end_time": "2026-04-23T17:21:44.566Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 17
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 855,
+        "object_id": "interactions:wiley.10.1111/psj.70096",
+        "created_at": "2026-04-23T17:21:45+00:00",
+        "updated_at": "2026-04-23T17:22:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/psj.12587": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.12587",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/psj.12587",
+        "title": "Agendas and instability in American local politics: A study of the Austin City Council Agenda 1900\u20132020",
+        "authors": "Peter B. Mortensen, Brooke Nicole Shannon",
+        "abstract": "The 1993 publication of Agendas and Instability in American Politics transformed the study of policymaking in American politics, by systematically tracing stability and change in issue attention over...",
+        "timestamp": "2026-04-23T17:21:38.338Z",
+        "rating": "novote",
+        "publishedDate": "2025/11/01",
+        "tags": [
+          "agenda setting"
+        ],
+        "doi": "10.1111/psj.12587",
+        "journalName": "Policy Studies Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 854,
+        "object_id": "paper:wiley.10.1111/psj.12587",
+        "created_at": "2026-04-23T17:21:38+00:00",
+        "updated_at": "2026-04-23T17:21:59+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/psj.70016": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70016",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/psj.70016",
+        "title": "When sunshine gets you down: The role of transparency on public sentiment toward the amazon HQ2 competition",
+        "authors": "Eric Stokan, Ian G. Anson, Nathan M. Jensen",
+        "abstract": "In 2019, more than 230 local governments sought to attract the second headquarters of Amazon (HQ2). The Amazon HQ2 contest presents a unique, high-profile case of state and local government competiti...",
+        "timestamp": "2026-04-23T17:21:21.994Z",
+        "rating": "novote",
+        "publishedDate": "2025/05/01",
+        "tags": [
+          "economic development"
+        ],
+        "doi": "10.1111/psj.70016",
+        "journalName": "Policy Studies Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 853,
+        "object_id": "paper:wiley.10.1111/psj.70016",
+        "created_at": "2026-04-23T17:21:22+00:00",
+        "updated_at": "2026-04-23T17:21:45+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/psj.70096": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70096",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/psj.70096",
+        "title": "Gender Dimensions of Support for Local Policy: Resident, Policymaker, and Policy Gender",
+        "authors": "Aliza Forman-Rabinovici, Itai Beeri",
+        "abstract": "There is a well-established triadic relationship between satisfaction with public services, trust in leaders, and policy support in developed democracies. This study takes a novel approach by conside...",
+        "timestamp": "2026-04-23T17:21:07.775Z",
+        "rating": "novote",
+        "publishedDate": "2026/01/15",
+        "tags": [
+          "gender"
+        ],
+        "doi": "10.1111/psj.70096",
+        "journalName": "Policy Studies Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 852,
+        "object_id": "paper:wiley.10.1111/psj.70096",
+        "created_at": "2026-04-23T17:21:08+00:00",
+        "updated_at": "2026-04-23T17:21:25+00:00",
+        "version": 1
+      }
+    },
     "interactions:wiley.10.1111/psj.70111": {
       "data": {
         "sourceId": "wiley",
@@ -35,6 +187,21 @@
               "idle_seconds": 3,
               "total_elapsed_seconds": 18
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-23T17:20:38.021Z",
+            "data": {
+              "session_id": "session_1776964837386_j8a0ciz",
+              "source_id": "wiley",
+              "paper_id": "10.1111/psj.70113",
+              "start_time": "2026-04-23T17:19:56.596Z",
+              "end_time": "2026-04-23T17:20:37.386Z",
+              "heartbeat_count": 8,
+              "duration_seconds": 40,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 41
+            }
           }
         ]
       },
@@ -42,7 +209,7 @@
         "issue_number": 850,
         "object_id": "interactions:wiley.10.1111/psj.70113",
         "created_at": "2026-04-23T17:19:09+00:00",
-        "updated_at": "2026-04-23T17:19:33+00:00",
+        "updated_at": "2026-04-23T17:21:04+00:00",
         "version": 1
       }
     },
