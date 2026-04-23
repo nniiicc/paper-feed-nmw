@@ -1,7 +1,34 @@
 {
-  "snapshot_time": "2026-04-23T19:31:10.593990+00:00",
+  "snapshot_time": "2026-04-23T20:07:18.196783+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2502.00202": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2502.00202",
+        "url": "https://arxiv.org/html/2502.00202v1",
+        "title": "Toward Human-Quantum Computer Interaction:\nInterface Techniques for Usable Quantum Computing",
+        "authors": "",
+        "abstract": ".Report issue for preceding element By leveraging quantum-mechanical properties like superposition, entanglement, and interference, quantum computing (QC) offers promising solutions for problems that classical computing has not been able to solve efficiently, such as drug discovery, cryptography, and physical simulation. Unfortunately, adopting QC remains difficult for potential users like QC beginners and application-specific domain experts, due to limited theoretical and practical knowledge, the lack of integrated interface-wise support, and poor documentation. For example, to use quantum computers, one has to convert conceptual logic into low-level codes, analyze quantum program results, and share programs and results. To support the wider adoption of QC, we, as designers and QC experts, propose interaction techniques for QC through design iterations. These techniques include writing quantum codes conceptually, comparing initial quantum programs with optimized programs, sharing quantum program results, and exploring quantum machines. We demonstrate the feasibility and utility of these techniques via use cases with high-fidelity prototypes.Report issue for preceding element",
+        "timestamp": "2026-04-23T20:06:16.658Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [
+          "Quantum computing",
+          "computational notebook"
+        ],
+        "doi": "10.1145/3706598.3713370",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 858,
+        "object_id": "paper:arxiv.2502.00202",
+        "created_at": "2026-04-23T20:06:17+00:00",
+        "updated_at": "2026-04-23T20:06:38+00:00",
+        "version": 1
+      }
+    },
     "interactions:wiley.10.1111/psj.12587": {
       "data": {
         "sourceId": "wiley",
