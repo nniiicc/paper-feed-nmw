@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-04-23T20:14:47.764618+00:00",
+  "snapshot_time": "2026-04-23T23:28:29.331893+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s43588-023-00490-7": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s43588-023-00490-7",
+        "url": "https://www.nature.com/articles/s43588-023-00490-7",
+        "title": "Enhancing the ethics of user-sourced online data collection and sharing",
+        "authors": "Meyer, Michelle N., Basl, John, Choffnes, David, Wilson, Christo, Lazer, David M. J.",
+        "abstract": "Social media and other internet platforms are making it even harder for researchers to investigate their effects on society. One way forward is user-sourced data collection of data to be shared among many researchers, using robust ethics tools to protect the interests of research participants and society.",
+        "timestamp": "2026-04-23T23:27:37.026Z",
+        "rating": "novote",
+        "publishedDate": "2023/08",
+        "tags": [
+          "Ethics"
+        ],
+        "doi": "10.1038/s43588-023-00490-7",
+        "journalName": "Nature Computational Science 2023 3:8",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 861,
+        "object_id": "paper:nature.s43588-023-00490-7",
+        "created_at": "2026-04-23T23:27:37+00:00",
+        "updated_at": "2026-04-23T23:27:54+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2504.09909": {
       "data": {
         "sourceId": "arxiv",
