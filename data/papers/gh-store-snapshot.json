@@ -1,7 +1,103 @@
 {
-  "snapshot_time": "2026-04-23T01:16:10.402146+00:00",
+  "snapshot_time": "2026-04-23T17:20:11.304962+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:wiley.10.1111/psj.70111": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70111",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 851,
+        "object_id": "interactions:wiley.10.1111/psj.70111",
+        "created_at": "2026-04-23T17:19:57+00:00",
+        "updated_at": "2026-04-23T17:19:59+00:00",
+        "version": 1
+      }
+    },
+    "interactions:wiley.10.1111/psj.70113": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70113",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-23T17:19:08.776Z",
+            "data": {
+              "session_id": "session_1776964748245_024u63c",
+              "source_id": "wiley",
+              "paper_id": "10.1111/psj.70113",
+              "start_time": "2026-04-23T17:18:50.177Z",
+              "end_time": "2026-04-23T17:19:08.245Z",
+              "heartbeat_count": 3,
+              "duration_seconds": 15,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 18
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 850,
+        "object_id": "interactions:wiley.10.1111/psj.70113",
+        "created_at": "2026-04-23T17:19:09+00:00",
+        "updated_at": "2026-04-23T17:19:33+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/psj.70113": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70113",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/psj.70113",
+        "title": "Resource Substitution: Local Governments' Issue Attention and Policy Reinvention",
+        "authors": "Yingxin Zhang, Yixue Yao, Kaifeng Yang",
+        "abstract": "Research on policy reinvention, where a government modifies rather than replicates policy innovations introduced by other governments, has progressed significantly, but how it is influenced by the go...",
+        "timestamp": "2026-04-23T17:18:50.509Z",
+        "rating": "novote",
+        "publishedDate": "2026/03/28",
+        "tags": [
+          "issue attention"
+        ],
+        "doi": "10.1111/psj.70113",
+        "journalName": "Policy Studies Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 849,
+        "object_id": "paper:wiley.10.1111/psj.70113",
+        "created_at": "2026-04-23T17:18:50+00:00",
+        "updated_at": "2026-04-23T17:19:15+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/psj.70111": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.70111",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/psj.70111",
+        "title": "Cities Creating Citizens: Policy Feedback and the Effects of Local Naturalization Support on Immigrant Civic Engagement",
+        "authors": "Megan Dias",
+        "abstract": "Despite an increasingly hostile federal stance towards immigrants, cities across the United States have passed policies and implemented programs that help eligible immigrants on their path to citizen...",
+        "timestamp": "2026-04-23T17:18:26.055Z",
+        "rating": "novote",
+        "publishedDate": "2026/03/12",
+        "tags": [
+          "immigration"
+        ],
+        "doi": "10.1111/psj.70111",
+        "journalName": "Policy Studies Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 848,
+        "object_id": "paper:wiley.10.1111/psj.70111",
+        "created_at": "2026-04-23T17:18:26+00:00",
+        "updated_at": "2026-04-23T17:18:48+00:00",
+        "version": 1
+      }
+    },
     "interactions:wiley.10.1111/gove.70122": {
       "data": {
         "sourceId": "wiley",
