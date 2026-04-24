@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-04-24T01:15:21.128064+00:00",
+  "snapshot_time": "2026-04-24T16:42:13.764283+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2407.18418": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2407.18418",
+        "url": "https://arxiv.org/abs/2407.18418",
+        "title": "Know Your Limits: A Survey of Abstention in Large Language Models",
+        "authors": "Bingbing Wen, Jihan Yao, Shangbin Feng, Chenjun Xu, Yulia Tsvetkov, Bill Howe, Lucy Lu Wang",
+        "abstract": "Abstention, the refusal of large language models (LLMs) to provide an answer, is increasingly recognized for its potential to mitigate hallucinations and enhance safety in LLM systems. In this survey, we introduce a framework to examine abstention from three perspectives: the query, the model, and human values. We organize the literature on abstention methods, benchmarks, and evaluation metrics using this framework, and discuss merits and limitations of prior work. We further identify and motivate areas for future research, such as whether abstention can be achieved as a meta-capability that transcends specific tasks or domains, and opportunities to optimize abstention abilities in specific contexts. In doing so, we aim to broaden the scope and impact of abstention methodologies in AI systems.",
+        "timestamp": "2026-04-24T16:41:20.477Z",
+        "rating": "novote",
+        "publishedDate": "2024/07/25",
+        "tags": [
+          "Computation and Language (cs.CL)"
+        ],
+        "doi": "10.48550/arXiv.2407.18418",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 863,
+        "object_id": "paper:arxiv.2407.18418",
+        "created_at": "2026-04-24T16:41:20+00:00",
+        "updated_at": "2026-04-24T16:41:38+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s43588-023-00490-7": {
       "data": {
         "sourceId": "nature",
