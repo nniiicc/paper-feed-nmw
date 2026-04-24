@@ -1,7 +1,35 @@
 {
-  "snapshot_time": "2026-04-24T16:42:13.764283+00:00",
+  "snapshot_time": "2026-04-24T16:46:23.962650+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:openreview.Orvjm9UqH2": {
+      "data": {
+        "sourceId": "openreview",
+        "paperId": "Orvjm9UqH2",
+        "url": "https://openreview.net/forum?id=Orvjm9UqH2#discussion",
+        "title": "Epistemic Alignment: A Mediating Framework for User-LLM Knowledge Delivery",
+        "authors": "Nicholas Clark, Hua Shen, Bill Howe, Tanu Mitra",
+        "abstract": "Large Language Models (LLMs) increasingly serve as tools for knowledge acquisition, yet users cannot effectively specify how they want information presented. When users request that LLMs \"cite reputable sources,\" \"express appropriate uncertainty,\" or \"include multiple perspectives,\" they discover that current interfaces provide no structured way to articulate these preferences. The result is prompt sharing folklore: community-specific copied prompts passed through trust relationships rather than based on measured efficacy. We propose the Epistemic Alignment Framework, a set of ten challenges in knowledge transmission derived from the philosophical literature of epistemology, concerning issues such as uncertainty expression, evidence quality assessment, and calibration of testimonial reliance. The framework serves as a structured intermediary between user needs and system capabilities, creating a common vocabulary to bridge the gap between what users want and what systems deliver. Through a thematic analysis of custom prompts and personalization strategies shared on online communities where these issues are actively discussed, we find users develop elaborate workarounds to address each of the challenges. We then apply our framework to two prominent model providers, OpenAI and Anthropic, through structured content analysis of their documented policies and product features. Our analysis shows that while these providers have partially addressed the challenges we identified, they fail to establish adequate mechanisms for specifying epistemic preferences, lack transparency about how preferences are implemented, and offer no verification tools to confirm whether preferences were followed. For AI developers, the Epistemic Alignment Framework offers concrete guidance for supporting diverse approaches to knowledge; for users, it works toward information delivery that aligns with their specific needs rather than defaulting to one-size-fits-all approaches.",
+        "timestamp": "2026-04-24T16:45:20.457Z",
+        "rating": "novote",
+        "publishedDate": "07 Jul 2025",
+        "tags": [
+          "epistemology of AI",
+          "language model behavior",
+          "human-AI interaction"
+        ],
+        "doi": "",
+        "journalName": "COLM 2025",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 864,
+        "object_id": "paper:openreview.Orvjm9UqH2",
+        "created_at": "2026-04-24T16:45:20+00:00",
+        "updated_at": "2026-04-24T16:45:41+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2407.18418": {
       "data": {
         "sourceId": "arxiv",
