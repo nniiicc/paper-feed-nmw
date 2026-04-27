@@ -1,7 +1,93 @@
 {
-  "snapshot_time": "2026-04-27T01:18:24.642328+00:00",
+  "snapshot_time": "2026-04-27T20:53:17.442451+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.1B309BE4": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "1B309BE4",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 873,
+        "object_id": "interactions:url-misc.1B309BE4",
+        "created_at": "2026-04-27T20:52:30+00:00",
+        "updated_at": "2026-04-27T20:52:32+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.1B309BE4": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "1B309BE4",
+        "url": "https://journals.sagepub.com/doi/full/10.1089/genedge.7.1.013",
+        "title": "StockWatch: Whirlwind Week for Nvidia as Investors Weigh DeepSeek's Impact - Alex  Philippidis, 2025",
+        "authors": "Alex Philippidis",
+        "abstract": "",
+        "timestamp": "2026-04-27T20:52:18.524Z",
+        "rating": "novote",
+        "publishedDate": "2025-2-2",
+        "tags": [],
+        "doi": "10.1089/genedge.7.1.013",
+        "journalName": "GEN Edge",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 872,
+        "object_id": "paper:url-misc.1B309BE4",
+        "created_at": "2026-04-27T20:52:18+00:00",
+        "updated_at": "2026-04-27T20:52:38+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.4D5FB73E": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4D5FB73E",
+        "url": "https://journals.sagepub.com/pb-assets/cmscontent/GCH/Algorithmic%20Media_CFP-1773117974170.pdf?__cf_chl_tk=PIyel9uDWEi.kA1r6UCZLX9RD.e6JSrqjXNLMGpHbkk-1777313434-1.0.1.1-YVvlo6jeGSTuJdAvqHKGlUB01HyrMYLZ9gxzs5xxNUI",
+        "title": "journals.sagepub.com",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-27T18:10:36.504Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 868,
+        "object_id": "paper:url-misc.4D5FB73E",
+        "created_at": "2026-04-27T18:10:36+00:00",
+        "updated_at": "2026-04-27T18:11:01+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/gove.70122": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/gove.70122",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/gove.70122?af=R",
+        "title": "onlinelibrary.wiley.com",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-22T19:22:42.212Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1111/gove.70122",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 846,
+        "object_id": "paper:wiley.10.1111/gove.70122",
+        "created_at": "2026-04-22T19:22:42+00:00",
+        "updated_at": "2026-04-22T19:23:02+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s43588-025-00906-6": {
       "data": {
         "sourceId": "nature",
@@ -622,30 +708,6 @@
         "object_id": "interactions:wiley.10.1111/gove.70122",
         "created_at": "2026-04-22T19:26:18+00:00",
         "updated_at": "2026-04-24T20:55:41+00:00",
-        "version": 1
-      }
-    },
-    "paper:wiley.10.1111/gove.70122": {
-      "data": {
-        "sourceId": "wiley",
-        "paperId": "10.1111/gove.70122",
-        "url": "https://onlinelibrary.wiley.com/doi/10.1111/gove.70122?af=R",
-        "title": "onlinelibrary.wiley.com",
-        "authors": "",
-        "abstract": "",
-        "timestamp": "2026-04-22T19:22:42.212Z",
-        "rating": "novote",
-        "publishedDate": "",
-        "tags": [],
-        "doi": "10.1111/gove.70122",
-        "journalName": "",
-        "sourceType": "url"
-      },
-      "meta": {
-        "issue_number": 846,
-        "object_id": "paper:wiley.10.1111/gove.70122",
-        "created_at": "2026-04-22T19:22:42+00:00",
-        "updated_at": "2026-04-22T19:23:02+00:00",
         "version": 1
       }
     },
