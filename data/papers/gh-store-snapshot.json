@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-04-28T19:27:01.580006+00:00",
+  "snapshot_time": "2026-04-28T19:55:37.337960+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:acl.2026.eacl-demo": {
+      "data": {
+        "sourceId": "acl",
+        "paperId": "2026.eacl-demo",
+        "url": "https://aclanthology.org/2026.eacl-demo.5/",
+        "title": "elfen: A Python Package for Efficient Linguistic Feature Extraction for Natural Language Datasets",
+        "authors": "Maximilian Maurer",
+        "abstract": "Maximilian Maurer. Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 3: System Demonstrations). 2026.",
+        "timestamp": "2026-04-28T19:54:34.131Z",
+        "rating": "novote",
+        "publishedDate": "2026/3",
+        "tags": [],
+        "doi": "10.18653/v1/2026.eacl-demo.5",
+        "journalName": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 3: System Demonstrations)",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 877,
+        "object_id": "paper:acl.2026.eacl-demo",
+        "created_at": "2026-04-28T19:54:34+00:00",
+        "updated_at": "2026-04-28T19:54:57+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.8A3C0E8": {
       "data": {
         "sourceId": "url-misc",
