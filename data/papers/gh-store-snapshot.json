@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-04-29T18:18:57.313627+00:00",
+  "snapshot_time": "2026-04-29T18:28:15.191542+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.59154500": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "59154500",
+        "url": "https://academic.oup.com/ajrccm/article/211/Supplement_1/A3769/8333671?login=true",
+        "title": "Cyanosis Identification is Associated With Differences in Provision of Treatment in Hospital Settings",
+        "authors": "Chaiken, I., Sathe, N.A., Wang, L.L., Wurfel, M.M.",
+        "abstract": "Abstract. Rationale Cyanosis can signal severe cardiopulmonary disease requiring urgent treatment. Cyanosis presents differently depending on skin color: i",
+        "timestamp": "2026-04-29T18:26:54.319Z",
+        "rating": "novote",
+        "publishedDate": "2025/05/01",
+        "tags": [],
+        "doi": "10.1164/ajrccm.2025.211.Abstracts.A3769",
+        "journalName": "American Journal of Respiratory and Critical Care Medicine",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 882,
+        "object_id": "paper:url-misc.59154500",
+        "created_at": "2026-04-29T18:26:54+00:00",
+        "updated_at": "2026-04-29T18:27:22+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.406659E3": {
       "data": {
         "sourceId": "url-misc",
