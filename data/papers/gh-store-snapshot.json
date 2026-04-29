@@ -1,7 +1,89 @@
 {
-  "snapshot_time": "2026-04-29T23:34:56.513198+00:00",
+  "snapshot_time": "2026-04-29T23:44:23.904412+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41597-023-02134-x": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41597-023-02134-x",
+        "url": "https://www.nature.com/articles/s41597-023-02134-x?fromPaywallRec=false",
+        "title": "OpCitance: Citation contexts identified from the PubMed Central open access articles",
+        "authors": "Hsiao, Tzu-Kun",
+        "abstract": "OpCitance contains all the sentences from 2 million PubMed Central open-access (PMCOA) articles, with 137 million inline citations annotated (i.e., the \u201ccitation contexts\u201d). Parsing out the references and citation contexts from the PMCOA XML files was non-trivial due to the diversity of referencing style. Only 0.5% citation contexts remain unidentified due to technical or human issues, e.g., references unmentioned by the authors in the text or improper XML nesting, which is more common among older articles (pre-2000). PubMed IDs (PMIDs) linked to inline citations in the XML files compared to citations harvested using the NCBI E-Utilities differed for 70.96% of the articles. Using an in-house citation matcher, called Patci, 6.84% of the referenced PMIDs were supplemented and corrected. OpCitance includes fewer total number of articles than the Semantic Scholar Open Research Corpus, but OpCitance has 160 thousand unique articles, a higher inline citation identification rate, and a more accurate reference mapping to PMIDs. We hope that OpCitance will facilitate citation context studies in particular and benefit text-mining research more broadly.",
+        "timestamp": "2026-04-29T23:43:12.542Z",
+        "rating": "novote",
+        "publishedDate": "2023-04-28",
+        "tags": [
+          "Publication characteristics"
+        ],
+        "doi": "10.1038/s41597-023-02134-x",
+        "journalName": "Scientific Data 2023 10:1",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 885,
+        "object_id": "paper:nature.s41597-023-02134-x",
+        "created_at": "2026-04-29T23:43:12+00:00",
+        "updated_at": "2026-04-29T23:43:36+00:00",
+        "version": 1
+      }
+    },
+    "interactions:nature.s41597-020-00749-y": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41597-020-00749-y",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-29T23:43:11.943Z",
+            "data": {
+              "session_id": "session_1777506191435_99ms41x",
+              "source_id": "nature",
+              "paper_id": "s41597-020-00749-y",
+              "start_time": "2026-04-29T23:42:41.999Z",
+              "end_time": "2026-04-29T23:43:11.435Z",
+              "heartbeat_count": 5,
+              "duration_seconds": 25,
+              "idle_seconds": 4,
+              "total_elapsed_seconds": 29
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 884,
+        "object_id": "interactions:nature.s41597-020-00749-y",
+        "created_at": "2026-04-29T23:43:12+00:00",
+        "updated_at": "2026-04-29T23:43:39+00:00",
+        "version": 1
+      }
+    },
+    "paper:nature.s41597-020-00749-y": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41597-020-00749-y",
+        "url": "https://www.nature.com/articles/s41597-020-00749-y",
+        "title": "A detailed open access model of the PubMed literature",
+        "authors": "Boyack, Kevin W.",
+        "abstract": "Portfolio analysis is a fundamental practice of organizational leadership and is a necessary precursor of strategic planning. Successful application requires a highly detailed model of research options. We have constructed a model, the first of its kind, that accurately characterizes these options for the biomedical literature. The model comprises over 18 million PubMed documents from 1996\u20132019. Document relatedness was measured using a hybrid citation analysis\u2009+\u2009text similarity approach. The resulting 606.6 million document-to-document links were used to create 28,743 document clusters and an associated visual map. Clusters are characterized using metadata (e.g., phrases, MeSH) and over 20 indicators (e.g., funding, patent activity). The map and cluster-level data are embedded in Tableau to provide an interactive model enabling in-depth exploration of a research portfolio. Two example usage cases are provided, one to identify specific research opportunities related to coronavirus, and the second to identify research strengths of a large cohort of African American and Native American researchers at the University of Michigan Medical School. Machine-accessible metadata file describing the reported data: https://doi.org/10.6084/m9.figshare.13010537",
+        "timestamp": "2026-04-29T23:42:42.327Z",
+        "rating": "novote",
+        "publishedDate": "2020-11-20",
+        "tags": [
+          "Decision making"
+        ],
+        "doi": "10.1038/s41597-020-00749-y",
+        "journalName": "Scientific Data 2020 7:1",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 883,
+        "object_id": "paper:nature.s41597-020-00749-y",
+        "created_at": "2026-04-29T23:42:42+00:00",
+        "updated_at": "2026-04-29T23:43:09+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.59154500": {
       "data": {
         "sourceId": "url-misc",
