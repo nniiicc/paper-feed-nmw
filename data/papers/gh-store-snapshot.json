@@ -1,7 +1,86 @@
 {
-  "snapshot_time": "2026-04-29T01:27:40.652200+00:00",
+  "snapshot_time": "2026-04-29T18:18:57.313627+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.406659E3": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "406659E3",
+        "url": "https://watermark02.silverchair.com/smaf014.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAA1owggNWBgkqhkiG9w0BBwagggNHMIIDQwIBADCCAzwGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMZMcU1f9GHLCHnScUAgEQgIIDDZjavPyc3cGI9Kv0INjghFS2RvEKHMC_wdV5Q1BCflasrWiR7tn8aGTjkqXjsYghByVYEcOqYLgPrmMY-1HV11_h5qlvftOlItZPKZGp2QPFZuh0qp9yLFx8KYl-c9ZcwkNaeujRI7csGxrfu0QrQ1tZhKRwGUepA0hNf5xR_G33-HDyASJOgzQFYan16lY5azIBgGjU2R9LD7QKsjh2TeR0aSG1BtP2rThTFSuLYh-ig-1mfNfknMwCPesmvJ0-enYBMzh9p0ulFrOCvFjfyOVcUxqRWmb-mwUJDwjAvVA1IRg02x4WranfoerPSAwkqCSxLAt74lmp_u-XTHWMN9iWNH3lCxlLhXLRMsaNYnhnxGYUxlLWiKF__7cMRDTMYzuCwgLpe0t006d-i5-KLibBtgjqXmtmgkTFxo0151SxctR-jw38NLEDcy1XGwYNEKR9WjGbpax8KCHd7xvsVngLuKVnsaqCu1laKodIcQdwXpUJ9RG0wzcpRK1tN3ZEi9nR0EdSLHFnuj9qY4Co5mtO5-4MaRIU-aOaBseNaFj4Hxz0VGPnC7SFrwXABTs64LuLHiLi0oHTRie20t-WjVUbgDI3a_K74ujDKSVcuFF41uV6QPscE5Mrs6Ses16VkWNxe9W5vFqwZGTUnxynlI03rOmiEi-64XzYuRMEhdhd1kUYtcXLQe44BTP4h6wKncqIP1i3jgEqe9ysvztyqwZPagGL9KCQFpW3KDu8xOlTh3PoJSPmsYM-foPIfD--jL47XNRItIwEaLDXb3RI08k2Ps5l-vlD12frjlN_6fVOZ-5uOwGOjxsevFdAU0tIAjIa1ZkPpagKJplrvrYN06ifL-Coz9Q1Em1wnlULiQEL5v508liUmYdo_zZNVHokuayWmPqWJrk_FlsgZi0lQp51HuoFdfyZFnmK8jse4HjKQ1f_o9aC3JqOaAf2gTzsTqpYxPXprBkvqm4dBMfqWa6aTjHn0T3w3YCf7Xk6ibbHpb9vg4Wo7f2sTBvMNsYnH50Gu4t6cZemkwBrjHc",
+        "title": "406659E3",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-04-29T18:17:45.226Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 881,
+        "object_id": "paper:url-misc.406659E3",
+        "created_at": "2026-04-29T18:17:45+00:00",
+        "updated_at": "2026-04-29T18:18:15+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.5D9CC45C": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "5D9CC45C",
+        "url": "https://journals.sagepub.com/doi/full/10.1177/0192512114545119",
+        "title": "The roots of trust in local government in western Europe - Jennifer Fitzgerald, Jennifer Wolak, 2016",
+        "authors": "Jennifer Fitzgerald, Jennifer Wolak, wolakj@colorado.edu",
+        "abstract": "When people say that they trust local authorities, is it simply because they have generalized trust in national government? Or is trust in local government root...",
+        "timestamp": "2026-04-29T18:17:40.001Z",
+        "rating": "novote",
+        "publishedDate": "2016-1",
+        "tags": [
+          "Political trust",
+          "trust in local government",
+          "proportional representation",
+          "federalism",
+          "government performance",
+          "western Europe"
+        ],
+        "doi": "10.1177/0192512114545119",
+        "journalName": "International Political Science Review",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 880,
+        "object_id": "paper:url-misc.5D9CC45C",
+        "created_at": "2026-04-29T18:17:40+00:00",
+        "updated_at": "2026-04-29T18:18:01+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.4E5DFE43": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "4E5DFE43",
+        "url": "https://www.jstor.org/stable/48694146?seq=1",
+        "title": "Feelings of Political Efficacy in the Fifty States on JSTOR",
+        "authors": "",
+        "abstract": "Jennifer Wolak, Feelings of Political Efficacy in the Fifty States, Political Behavior, Vol. 40, No. 3 (September 2018), pp. 763-784",
+        "timestamp": "2026-04-29T18:17:34.023Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 879,
+        "object_id": "paper:url-misc.4E5DFE43",
+        "created_at": "2026-04-29T18:17:34+00:00",
+        "updated_at": "2026-04-29T18:17:58+00:00",
+        "version": 1
+      }
+    },
     "interactions:acl.2026.eacl-demo": {
       "data": {
         "sourceId": "acl",
