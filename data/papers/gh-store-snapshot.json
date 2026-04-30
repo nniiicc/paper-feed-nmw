@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-04-30T15:48:54.635521+00:00",
+  "snapshot_time": "2026-04-30T15:55:07.233794+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2504.02153": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2504.02153",
+        "url": "https://arxiv.org/html/2504.02153v1",
+        "title": "Niche Dynamics in Complex Online Community Ecosystems",
+        "authors": "",
+        "abstract": "Report issue for preceding element Online communities are important organizational forms where members socialize and share information. Curiously, different online communities often overlap considerably in topic and membership. Recent research has investigated competition and mutualism among overlapping online communities through the lens of organizational ecology; however, it has not accounted for how the nonlinear dynamics of online attention may lead to episodic competition and mutualism. Neither has it explored the origins of competition and mutualism in the processes by which online communities select or adapt to their niches. This paper presents a large-scale study of 8,806 Reddit communities belonging to 1,919 clusters of high user overlap over a 5-year period. The method uses nonlinear time series methods to infer bursty, often short-lived ecological dynamics. Results reveal that mutualism episodes are longer lived and slightly more frequent than competition episodes. Next, it tests whether online communities find their niches by specializing to avoid competition using panel regression models. It finds that competitive ecological interactions lead to decreasing topic and user overlaps; however, changes that decrease such niche overlaps do not lead to mutualism. The discussion proposes that future designs may enable online community ecosystem management by informing online community leaders to organize \u201cspin-off\u201d communities or via feeds and recommendations.Report issue for preceding element",
+        "timestamp": "2026-04-30T15:53:55.916Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 887,
+        "object_id": "paper:arxiv.2504.02153",
+        "created_at": "2026-04-30T15:53:56+00:00",
+        "updated_at": "2026-04-30T15:54:25+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41597-023-02134-x": {
       "data": {
         "sourceId": "nature",
