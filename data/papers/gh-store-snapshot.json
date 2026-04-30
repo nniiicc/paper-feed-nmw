@@ -1,7 +1,37 @@
 {
-  "snapshot_time": "2026-04-30T15:55:07.233794+00:00",
+  "snapshot_time": "2026-04-30T15:57:28.899645+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2504.02153": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2504.02153",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-30T15:54:42.866Z",
+            "data": {
+              "session_id": "session_1777564482385_39ybs57",
+              "source_id": "arxiv",
+              "paper_id": "2504.02153",
+              "start_time": "2026-04-30T15:53:55.592Z",
+              "end_time": "2026-04-30T15:54:42.385Z",
+              "heartbeat_count": 9,
+              "duration_seconds": 45,
+              "idle_seconds": 2,
+              "total_elapsed_seconds": 47
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 889,
+        "object_id": "interactions:arxiv.2504.02153",
+        "created_at": "2026-04-30T15:54:43+00:00",
+        "updated_at": "2026-04-30T15:55:15+00:00",
+        "version": 1
+      }
+    },
     "paper:arxiv.2504.02153": {
       "data": {
         "sourceId": "arxiv",
@@ -60,6 +90,21 @@
               "idle_seconds": 3,
               "total_elapsed_seconds": 113
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-04-30T15:55:18.746Z",
+            "data": {
+              "session_id": "session_1777564518481_s0z9vjb",
+              "source_id": "nature",
+              "paper_id": "s41597-023-02134-x",
+              "start_time": "2026-04-30T15:54:42.510Z",
+              "end_time": "2026-04-30T15:55:18.481Z",
+              "heartbeat_count": 7,
+              "duration_seconds": 35,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 36
+            }
           }
         ]
       },
@@ -67,7 +112,7 @@
         "issue_number": 886,
         "object_id": "interactions:nature.s41597-023-02134-x",
         "created_at": "2026-04-29T23:44:24+00:00",
-        "updated_at": "2026-04-30T15:48:03+00:00",
+        "updated_at": "2026-04-30T15:55:45+00:00",
         "version": 1
       }
     },
