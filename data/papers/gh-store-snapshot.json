@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-05-07T22:53:49.162458+00:00",
+  "snapshot_time": "2026-05-07T22:59:55.882415+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.3817FD3D": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3817FD3D",
+        "url": "https://zenodo.org/records/20076334",
+        "title": "ESIP Community Report: Impact of Community Fellows Program",
+        "authors": "Crall, Alycia",
+        "abstract": "The ESIP Community Fellows Program has had a strong and lasting impact on early-career Earth science data professionals, particularly in shaping career trajectories, expanding professional networks, and strengthening confidence and belonging in the field. Survey responses from 23 alumni show that all respondents experienced at least some career influence from the Fellowship, with nearly half reporting that it had \u201cquite a bit\u201d or \u201ca great deal\u201d of impact. Most alumni are now working in academia (74%) or government (22%), and many credit the Fellowship with starting new collaborations, taking on leadership roles (61% each), and expanding into interdisciplinary or data-intensive work (44%). Fellows also report that the program helped clarify career interests (74%), strengthen professional networks and CVs (70%), and increase interest in Earth science data work (65%). The program\u2019s greatest value comes from community engagement, particularly participation in ESIP Meetings, networking opportunities, mentorship, and access to leaders in the field. All respondents report that the Fellowship expanded their professional network, with more than half indicating significant growth. Alumni consistently describe the Fellowship as a source of belonging, mentorship, and interdisciplinary community that helped them navigate career decisions and access new opportunities. Many emphasize that the relationships and confidence built through the program are among the most meaningful outcomes, often influencing job placements, leadership development, and long-term professional identity. These findings demonstrate that the Community Fellows Program is a high-impact investment in the next generation of Earth science data professionals and provides strong evidence for its continuation and support. \u00a0",
+        "timestamp": "2026-05-07T22:58:33.616Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.5281/zenodo.20076334",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 900,
+        "object_id": "paper:url-misc.3817FD3D",
+        "created_at": "2026-05-07T22:58:33+00:00",
+        "updated_at": "2026-05-07T22:58:57+00:00",
+        "version": 1
+      }
+    },
     "interactions:ssrn.4728592": {
       "data": {
         "sourceId": "ssrn",
