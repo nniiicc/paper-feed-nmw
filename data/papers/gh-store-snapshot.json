@@ -1,7 +1,121 @@
 {
-  "snapshot_time": "2026-05-07T01:25:57.883873+00:00",
+  "snapshot_time": "2026-05-07T22:48:38.499627+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.5EA3FBFB": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "5EA3FBFB",
+        "url": "https://scholar.google.com/scholar?cluster=2905083053764793737&hl=en&as_sdt=0,48",
+        "title": "Google Scholar",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-05-07T22:47:08.715Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 894,
+        "object_id": "paper:url-misc.5EA3FBFB",
+        "created_at": "2026-05-07T22:47:09+00:00",
+        "updated_at": "2026-05-07T22:47:32+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.61677271": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "61677271",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 893,
+        "object_id": "interactions:url-misc.61677271",
+        "created_at": "2026-05-07T22:47:05+00:00",
+        "updated_at": "2026-05-07T22:47:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.61677271": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "61677271",
+        "url": "https://scholar.google.com/scholar?cluster=2905083053764793737&hl=en&as_sdt=5,48&sciodt=0,48",
+        "title": "Google Scholar",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-05-07T22:46:43.777Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 892,
+        "object_id": "paper:url-misc.61677271",
+        "created_at": "2026-05-07T22:46:44+00:00",
+        "updated_at": "2026-05-07T22:47:11+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3772318.3790910": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3772318.3790910",
+        "url": "https://dl.acm.org/doi/full/10.1145/3772318.3790910",
+        "title": "Navigating Uncertainties: How GenAI Developers Document Their Models on Open-Source Platforms | Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+        "authors": "Ningjing Tang, Megan Li, Amy Winecoff, Michael Madaio, Hoda Heidari, Hong Shen",
+        "abstract": "Model documentation plays a crucial role in promoting responsible AI (RAI) development. The emergence of Generative AI (GenAI) models has reshaped the conditions under which documentation is produced, particularly on open-source platforms where models are hosted and shared. To examine how these changes have manifested in developers\u2019 documentation practices, we interviewed 17 GenAI developers who document models on open-source platforms. Our findings illustrate that uncertainties have become a defining feature of developers\u2019 GenAI documentation practices and that these uncertainties unfold in three interrelated forms: (1) normative and epistemic uncertainties in determining documentation content; (2) methodological uncertainties in evaluating and communicating model properties; and (3) ecosystemic uncertainties about who should document. We argue that these uncertainties in GenAI documentation require coordinated interventions, including infrastructural support to address epistemic and methodological uncertainties, community-based mechanisms to cultivate RAI documentation norms, and collaboration across supply-chain actors to address ecosystemic uncertainties.",
+        "timestamp": "2026-05-07T22:46:18.615Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "3790910",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 891,
+        "object_id": "paper:acm.10.1145/3772318.3790910",
+        "created_at": "2026-05-07T22:46:18+00:00",
+        "updated_at": "2026-05-07T22:46:43+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3489465": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3489465",
+        "url": "https://dl.acm.org/doi/full/10.1145/3489465",
+        "title": "Documentation Matters: Human-Centered AI System to Assist Data Science Code Documentation in Computational Notebooks | ACM Transactions on Computer-Human Interaction",
+        "authors": "April Yi Wang, Dakuo Wang, Jaimie Drozdal, Michael Muller, Soya Park, Justin D. Weisz, Xuye Liu, Lingfei Wu, Casey Dugan",
+        "abstract": "Computational notebooks allow data scientists to express their ideas through a combination\nof code and documentation. However, data scientists often pay attention only to the\ncode, and neglect creating or updating their documentation during quick ...",
+        "timestamp": "2026-05-07T22:46:09.804Z",
+        "rating": "novote",
+        "publishedDate": "2022-01-17",
+        "tags": [
+          "Code summarization",
+          "computational notebooks",
+          "code documentation"
+        ],
+        "doi": "3489465",
+        "journalName": "ACM Transactions on Computer-Human Interaction",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 890,
+        "object_id": "paper:acm.10.1145/3489465",
+        "created_at": "2026-05-07T22:46:10+00:00",
+        "updated_at": "2026-05-07T22:46:33+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2504.02153": {
       "data": {
         "sourceId": "arxiv",
