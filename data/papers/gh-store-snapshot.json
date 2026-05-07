@@ -1,7 +1,96 @@
 {
-  "snapshot_time": "2026-05-07T22:48:38.499627+00:00",
+  "snapshot_time": "2026-05-07T22:53:49.162458+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:ssrn.4728592": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "4728592",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 899,
+        "object_id": "interactions:ssrn.4728592",
+        "created_at": "2026-05-07T22:52:57+00:00",
+        "updated_at": "2026-05-07T22:52:59+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.4728592": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "4728592",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4728592&__cf_chl_rt_tk=vWJzy9iFakBI3x0HnSsBX1h3ajRXbKqpr0Utc2b1P.o-1778194348-1.0.1.1-XolmVjAPzRmTJqFtwc.J4YT6ZeOopZBXszizuJWiX9c",
+        "title": "Just a moment...",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-05-07T22:52:28.428Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "SSRN",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 897,
+        "object_id": "paper:ssrn.4728592",
+        "created_at": "2026-05-07T22:52:28+00:00",
+        "updated_at": "2026-05-07T22:52:58+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.21502A12": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "21502A12",
+        "url": "https://scholar.google.com/scholar?cluster=10420450094905747983&hl=en&as_sdt=0,48",
+        "title": "Google Scholar",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-05-07T22:52:25.254Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 896,
+        "object_id": "paper:url-misc.21502A12",
+        "created_at": "2026-05-07T22:52:25+00:00",
+        "updated_at": "2026-05-07T22:52:52+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.1805.12398": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "1805.12398",
+        "url": "https://arxiv.org/abs/1805.12398",
+        "title": "The Types, Roles, and Practices of Documentation in Data Analytics Open Source Software Libraries: A Collaborative Ethnography of Documentation Work",
+        "authors": "R. Stuart Geiger, Nelle Varoquaux, Charlotte Mazel-Cabasse, Chris Holdgraf",
+        "abstract": "Computational research and data analytics increasingly relies on complex ecosystems of open source software (OSS) \"libraries\" -- curated collections of reusable code that programmers import to perform a specific task. Software documentation for these libraries is crucial in helping programmers/analysts know what libraries are available and how to use them. Yet documentation for open source software libraries is widely considered low-quality. This article is a collaboration between CSCW researchers and contributors to data analytics OSS libraries, based on ethnographic fieldwork and qualitative interviews. We examine several issues around the formats, practices, and challenges around documentation in these largely volunteer-based projects. There are many different kinds and formats of documentation that exist around such libraries, which play a variety of educational, promotional, and organizational roles. The work behind documentation is similarly multifaceted, including writing, reviewing, maintaining, and organizing documentation. Different aspects of documentation work require contributors to have different sets of skills and overcome various social and technical barriers. Finally, most of our interviewees do not report high levels of intrinsic enjoyment for doing documentation work (compared to writing code). Their motivation is affected by personal and project-specific factors, such as the perceived level of credit for doing documentation work versus more \"technical\" tasks like adding new features or fixing bugs. In studying documentation work for data analytics OSS libraries, we gain a new window into the changing practices of data-intensive research, as well as help practitioners better understand how to support this often invisible and infrastructural work in their projects.",
+        "timestamp": "2026-05-07T22:47:13.793Z",
+        "rating": "novote",
+        "publishedDate": "2018/05/31",
+        "tags": [
+          "Computers and Society (cs.CY)",
+          "Software Engineering (cs.SE)"
+        ],
+        "doi": "10.1007/s10606-018-9333-1",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 895,
+        "object_id": "paper:arxiv.1805.12398",
+        "created_at": "2026-05-07T22:47:14+00:00",
+        "updated_at": "2026-05-07T22:47:44+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.5EA3FBFB": {
       "data": {
         "sourceId": "url-misc",
