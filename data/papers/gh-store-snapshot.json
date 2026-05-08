@@ -1,7 +1,21 @@
 {
-  "snapshot_time": "2026-05-07T22:59:55.882415+00:00",
+  "snapshot_time": "2026-05-08T01:29:02.862790+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.3817FD3D": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "3817FD3D",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 901,
+        "object_id": "interactions:url-misc.3817FD3D",
+        "created_at": "2026-05-07T22:59:35+00:00",
+        "updated_at": "2026-05-07T22:59:36+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.3817FD3D": {
       "data": {
         "sourceId": "url-misc",
