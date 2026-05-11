@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-05-11T01:46:00.898171+00:00",
+  "snapshot_time": "2026-05-11T15:55:57.164320+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:ieee.11499811": {
+      "data": {
+        "sourceId": "ieee",
+        "paperId": "11499811",
+        "url": "https://ieeexplore.ieee.org/document/11499811",
+        "title": "OSSI: An Entropy-Weighted Index for Measuring the Success of GitHub Open-Source Project",
+        "authors": "",
+        "abstract": "GitHub is an Open-Source Software ecosystem for collaboration, distribution, and community engagement. However, existing approaches for evaluating the success of GitHub repositories rely predominantly on isolated indicators such as stars or forks, which provide limited insight into the multi-dimensional nature of OSS sustainability. This paper introduces the Open-Source Success Index (OSSI), a composite and entropy-weighted metric designed to quantify OSS project success by integrating multiple repository-level features. OSSI incorporates six widely available indicators stargazers, forks, contributors, open issues, total commits, and lines of code normalized through min-max scaling and combined via the Entropy Weight Method (EWM) to reduce subjective bias and emphasize features with greater discriminative power. A curated dataset of GitHub repositories is analyzed to compute OSSI scores, followed by a three-part validation framework. Construct validity is assessed using Spearman rank correlation, revealing strong associations between OSSI and established popularity metrics. Discriminative capability is evaluated through tertile-based grouping and Kruskal-Wallis tests, demonstrating significant differences in repository characteristics across OSSI tiers. Robustness is confirmed by comparing OSSI rankings derived from EWM, Random Forest feature importance, and Principal Component Analysis, with all variants exhibiting strong rank correlations. The results indicate that OSSI is an interpretable, statistically grounded, and stable metric for assessing OSS success. OSSI offers practical value for maintainers, contributors, and organizations by enabling holistic benchmarking of repository health, addressing limitations of existing single-metric evaluations, and providing a scalable foundation for future OSS analytics research.",
+        "timestamp": "2026-05-11T15:53:49.858Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.1109/SCSE70081.2026.11499811",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 902,
+        "object_id": "paper:ieee.11499811",
+        "created_at": "2026-05-11T15:53:50+00:00",
+        "updated_at": "2026-05-11T15:54:22+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.3817FD3D": {
       "data": {
         "sourceId": "url-misc",
