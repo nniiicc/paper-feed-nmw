@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-05-11T15:55:57.164320+00:00",
+  "snapshot_time": "2026-05-11T20:12:30.229200+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41562-026-02464-x": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41562-026-02464-x",
+        "url": "https://www.nature.com/articles/s41562-026-02464-x",
+        "title": "Government policy documents across 185 countries largely cite Global North sources",
+        "authors": "Ramirez-Ruiz, Sebastian, Senninger, Roman",
+        "abstract": "Evidence is widely acknowledged as essential for crafting effective public policies. Despite its critical role, we know surprisingly little about the specific sources that inform decisions around the world. This paper explores the sources of evidence in the policymaking arena by analysing evidence cited in over 1.2 million policy documents from 185 countries. Our analyses capture references to 3.5 million scholarly works and 740,000 policy sources, including contributions from government agencies, academic researchers, international organizations and think tanks. We map global patterns in citation practices, highlighting regional and policy domain variation, focusing on the documented, accessible and digitally visible evidence available to policymakers. Our findings reveal a pronounced concentration of attention: the vast majority of foreign evidence cited\u2014both academic and policy\u2014is produced in the Global North, even in documents authored by governments in the Global South. These patterns persist across policy areas, though with notable variation in the types of source commonly used. Overall, the findings reveal a highly concentrated evidence landscape, where a small number of countries disproportionately serve as global reference points, underscoring persistent asymmetries in visibility, access and influence within the international policy knowledge ecosystem. This analysis of 1.2 million policy documents from 185 countries identifies global inequalities in whose knowledge is cited in policymaking. Governments in the Global South rely more on foreign sources, and most cited evidence originates in the Global North.",
+        "timestamp": "2026-05-11T20:11:08.466Z",
+        "rating": "novote",
+        "publishedDate": "2026-05-07",
+        "tags": [
+          "Policy"
+        ],
+        "doi": "10.1038/s41562-026-02464-x",
+        "journalName": "Nature Human Behaviour 2026",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 904,
+        "object_id": "paper:nature.s41562-026-02464-x",
+        "created_at": "2026-05-11T20:11:08+00:00",
+        "updated_at": "2026-05-11T20:11:33+00:00",
+        "version": 1
+      }
+    },
     "paper:ieee.11499811": {
       "data": {
         "sourceId": "ieee",
