@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-05-12T01:28:06.201680+00:00",
+  "snapshot_time": "2026-05-12T19:21:57.986063+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41586-026-10447-1": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-026-10447-1",
+        "url": "https://www.nature.com/articles/s41586-026-10447-1",
+        "title": "Systematic partisan content skews in TikTok during the 2024 US elections",
+        "authors": "Ibrahim, Hazem, Jang, HyunSeok Daniel, Aldahoul, Nouar, Kaufman, Aaron R., Rahwan, Talal, Zaki, Yasir",
+        "abstract": "Social media platforms increasingly mediate political information exposure, yet the role of algorithmic curation in shaping political exposure remains contested1,2. This question is difficult to resolve on platforms in which users retain substantial control over their feeds3,4. The \u2018For You\u2019 feed of TikTok, which delivers content almost entirely through algorithmic recommendation, offers a setting in which user agency is sharply constrained. Here we show, through 323 audit experiments with controlled \u2018sock puppet\u2019 accounts seeded with Democratic or Republican content across three US states, that accounts seeded with partisan content exhibited systematic, asymmetric differences in partisan exposure. Across more than 280,000 recommendations collected over 27\u2009weeks during the 2024 US presidential election campaign, Republican-seeded accounts received about 11.5% more co-partisan content than Democratic-seeded accounts, whereas Democratic-seeded accounts were exposed to about 7.5% more cross-partisan content\u2014largely anti-Democratic material\u2014even after adjusting for engagement metrics. These asymmetries are concentrated among high-reach Republican channels and in specific policy domains, including immigration, crime and foreign policy for Democrats, and abortion for Republicans. Our findings show partisan imbalances in political information exposure on a platform dominated by algorithmic recommendations, with implications for platform governance and democratic discourse. Audit experiments on TikTok show asymmetric partisan exposure&nbsp;that is not&nbsp;explained by observable engagement metrics, with Republican-leaning accounts receiving more aligned content and Democratic-leaning accounts more cross-partisan recommendations.",
+        "timestamp": "2026-05-12T19:20:33.026Z",
+        "rating": "novote",
+        "publishedDate": "2026-05-06",
+        "tags": [
+          "Computational science"
+        ],
+        "doi": "10.1038/s41586-026-10447-1",
+        "journalName": "Nature 2026",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 906,
+        "object_id": "paper:nature.s41586-026-10447-1",
+        "created_at": "2026-05-12T19:20:33+00:00",
+        "updated_at": "2026-05-12T19:21:06+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41562-026-02464-x": {
       "data": {
         "sourceId": "nature",
