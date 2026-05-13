@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-05-13T22:06:50.871921+00:00",
+  "snapshot_time": "2026-05-13T22:21:36.450692+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41928-026-01580-w": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41928-026-01580-w",
+        "url": "https://www.nature.com/articles/s41928-026-01580-w",
+        "title": "Epitaxially grown single-crystalline antimony trioxide dielectrics for two-dimensional electronics",
+        "authors": "Zhang, Zimei, Zhang, Zhengwei, Saeed, Muhammad Zeeshan, Li, Miaomiao, Shen, Dingyi, Zhang, Zucheng, Dang, Weiqi, Qin, Biao, Li, Shanhao, Lu, Ping, Tang, Jingmei, Li, Xin, Chen, Liang, Xie, Wengjing, Jin, Minghui, Ding, Feng, Chen, Yang, Liu, Dongyan, Zhu, Mengjian, Li, Bo, Wu, Ruixia, Li, Jia, Duan, Xidong",
+        "abstract": "Two-dimensional semiconductors require atomically thin high-dielectric-constant dielectrics to create scaled electronic devices. Several candidate materials possess features such as scalability, low interface trap density and good dielectric properties, but many of these require transfer, which can create defects, whereas traditional dielectrics are difficult to grow on the inert surface of two-dimensional materials. Here we report the van der Waals epitaxial growth of single-crystalline antimony trioxide (Sb2O3) on the two-dimensional semiconductors tungsten diselenide (WSe2) and molybendum disulfide (MoS2). Using a two-step process to decouple nucleation and epitaxy, unidirectional Sb2O3 domains are nucleated, grown and stitched to form single-crystal films with high uniformity within a growth time of less than 2\u2009min. Monolayer Sb2O3 has a dielectric constant of 6, a breakdown field of ~11\u2009MV\u2009cm\u22121 and a low interface trap density of 3.8\u2009\u00d7\u20091010\u2009cm\u22122\u2009eV\u22121. Top-gate field-effect transistors using a monolayer Sb2O3/bilayer WSe2 heterostructure (equivalent oxide thickness, 0.4\u2009nm) exhibit subthreshold swings of 62\u2009mV\u2009dec\u22121, on/off ratios of 106 and low gate leakage currents of 10\u22124\u2009A\u2009cm\u22122. We illustrate the scalability of the approach by creating 60 top-gate WSe2 transistor arrays with 95% yield, and complementary logic inverters with a maximum voltage gain of 13 at Vdd\u2009=\u20091\u2009V. An in situ epitaxial method can be used to grow thin films of antimony trioxide directly on two-dimensional semiconductors, such as tungsten diselenide, creating transfer-free dielectric gate stacks.",
+        "timestamp": "2026-05-13T22:20:28.059Z",
+        "rating": "novote",
+        "publishedDate": "2026/04",
+        "tags": [
+          "Electrical and electronic engineering"
+        ],
+        "doi": "10.1038/s41928-026-01580-w",
+        "journalName": "Nature Electronics 2026 9:4",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 913,
+        "object_id": "paper:nature.s41928-026-01580-w",
+        "created_at": "2026-05-13T22:20:28+00:00",
+        "updated_at": "2026-05-13T22:20:47+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/s11192-026-05653-7": {
       "data": {
         "sourceId": "springer",
