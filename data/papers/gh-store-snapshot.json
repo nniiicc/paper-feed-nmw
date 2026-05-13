@@ -1,7 +1,54 @@
 {
-  "snapshot_time": "2026-05-13T22:21:36.450692+00:00",
+  "snapshot_time": "2026-05-13T22:23:38.297490+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:plos.10.1371/journal.pcbi.1014133": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pcbi.1014133",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 915,
+        "object_id": "interactions:plos.10.1371/journal.pcbi.1014133",
+        "created_at": "2026-05-13T22:22:33+00:00",
+        "updated_at": "2026-05-13T22:22:34+00:00",
+        "version": 1
+      }
+    },
+    "paper:plos.10.1371/journal.pcbi.1014133": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pcbi.1014133",
+        "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014133",
+        "title": "Training biologists in Unix command-line skills: From curriculum to interactive online tutorials",
+        "authors": "Lucie Khamvongsa-Charbonnier, Robert Aboukhalil, H\u00e9l\u00e8ne Chiapello, Thomas Denecker, Pierre Poulain, Denis Puthier, Olivier Sand, Morgane Thomas-Chollier, Claire Toffano-Nioche",
+        "abstract": "As the generation of data in the life and health sciences expands rapidly, there is a growing need for professionals and students in these fields to master core bioinformatics skills, particularly those relating to Unix-like systems, most commonly used in bioinformatics. This paper introduces two key contributions to address this need: (1) A Unix curriculum for life scientists with little or no command-line experience, based on progressive Unix skill levels for bioinformatics and (2) An implementation of this curriculum into a series of interactive online tutorials deployed through Sandbox.bio\u2014an open-source platform for learning bioinformatics that embeds a command line in the browser, which removes barriers related to software installation and access. We performed an overall evaluation of this teaching framework in different contexts. This inclusive, sustainable approach provides widespread access to essential bioinformatics skills for life science students and professionals alike.",
+        "timestamp": "2026-05-13T22:22:24.737Z",
+        "rating": "novote",
+        "publishedDate": "Apr 3, 2026",
+        "tags": [
+          "Bioinformatics",
+          "Human learning",
+          "Computer software",
+          "Scientists",
+          "Taxonomy",
+          "Trainees",
+          "Open source software",
+          "Medicine and health sciences"
+        ],
+        "doi": "10.1371/journal.pcbi.1014133",
+        "journalName": "PLOS Computational Biology",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 914,
+        "object_id": "paper:plos.10.1371/journal.pcbi.1014133",
+        "created_at": "2026-05-13T22:22:25+00:00",
+        "updated_at": "2026-05-13T22:22:53+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s41928-026-01580-w": {
       "data": {
         "sourceId": "nature",
