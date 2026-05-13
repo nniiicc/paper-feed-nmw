@@ -1,7 +1,21 @@
 {
-  "snapshot_time": "2026-05-12T19:21:57.986063+00:00",
+  "snapshot_time": "2026-05-13T01:46:30.241535+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:nature.s41586-026-10447-1": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-026-10447-1",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 907,
+        "object_id": "interactions:nature.s41586-026-10447-1",
+        "created_at": "2026-05-12T22:34:03+00:00",
+        "updated_at": "2026-05-12T22:34:05+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s41586-026-10447-1": {
       "data": {
         "sourceId": "nature",
