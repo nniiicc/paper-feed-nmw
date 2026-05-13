@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-05-13T20:37:29.284845+00:00",
+  "snapshot_time": "2026-05-13T22:06:50.871921+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/s11192-026-05653-7": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s11192-026-05653-7",
+        "url": "https://link.springer.com/article/10.1007/s11192-026-05653-7",
+        "title": "Co-funding networks as a new tool in research evaluation: a linked open data-based study of the Seventh Framework Programme projects",
+        "authors": "Silva-Al\u00e9s, Niliek, Perianes-Rodr\u00edguez, Antonio",
+        "abstract": "There is a growing interest in studying the influence of funding on scientific progress. Through exploration of the connections between funding acknowledgements (FAs), which link research results to funding sources, science communication processes can be understood and their influence in the international context can be evaluated. Such analyses become more complex when the projects involved have two or more funding sources. This study examines FAs that mention the Seventh Framework Programme (FP7) and tries to achieve a broader, fuller, more singular view than previous studies of FP7 by visualising co-funding networks and conducting a structural analysis of inter-agency relationships. This is done using open sources that have been linked after exhaustive data cleansing and harmonisation and the assignment of unique identifiers. Compliance with the objectives of the three most visible, most productive programmes is also examined, and the geographical distribution of the agencies participating in co-funding networks is evaluated. One intriguing result shows that the number of projects with associated publications has risen 21% thanks to FAs. Considerable differences between programmes are also revealed: IDEAS-ERC is the programme with the highest number of co-funder\u2019s, and HEALTH is the programme with the densest, most cohesive network. Lastly, it is found that a stronger commitment is required from all the actors involved in the course of co-funding and publication to ensure that the funding data provided is of the right quality to facilitate accurate, transparent, useful, full evaluations.",
+        "timestamp": "2026-05-13T22:05:41.761Z",
+        "rating": "novote",
+        "publishedDate": "2026/05/12",
+        "tags": [
+          "Information Storage and Retrieval"
+        ],
+        "doi": "10.1007/s11192-026-05653-7",
+        "journalName": "Scientometrics",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 912,
+        "object_id": "paper:springer.10.1007/s11192-026-05653-7",
+        "created_at": "2026-05-13T22:05:42+00:00",
+        "updated_at": "2026-05-13T22:06:03+00:00",
+        "version": 1
+      }
+    },
     "interactions:acm.10.1145/3479986": {
       "data": {
         "sourceId": "acm",
