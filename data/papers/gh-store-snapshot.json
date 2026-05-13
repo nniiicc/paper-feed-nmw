@@ -1,7 +1,47 @@
 {
-  "snapshot_time": "2026-05-13T01:46:30.241535+00:00",
+  "snapshot_time": "2026-05-13T20:01:49.809511+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:arxiv.2605.06164": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2605.06164",
+        "url": "https://arxiv.org/abs/2605.06164",
+        "title": "Modeling Dependency-Propagated Ecosystem Impact of Changes in Maintenance Activities: Evaluating Support Strategies in the PyPI Network",
+        "authors": "Alexandros Tsakpinis, Emil Schwenger, Alexander Pretschner",
+        "abstract": "Background: Open source software ecosystems exhibit dense dependency networks in which maintenance degradation of structurally central packages can propagate widely. Despite increasing attention to open source sustainability, existing support mechanisms lack an explicit, dependencyaware notion of ecosystem-level impact to guide support decisions. Aims: In this paper, we introduce a dependency-aware model of ecosystem impact that captures how changes in maintenance activities propagate through the Python Package Index (PyPI) ecosystem and affect its overall state. Based on this model, we prioritize packages for ecosystem support using our dependency-propagated notion of ecosystem impact. Method: Applying this framework to a snapshot of 718,750 PyPI packages and over 2 million dependencies, we compare our impact-driven support strategy with existing support mechanisms (Tidelift, Ecosyste\u00a0.ms, and GitHub Sponsors) and with PageRank as a baseline measure of structural importance. Results: Our results show that a large share of the modeled ecosystem impact (approximately 80%) can be attributed to just 0.1% of all PyPI packages when prioritized based on dependency-propagated impact. In contrast, externally defined support sets vary substantially in their alignment with ecosystem impact. We further analyze maintainer reach and metadata accessibility, revealing that ecosystem impact, social footprint, and operational feasibility represent distinct but complementary dimensions of ecosystem support. Conclusions: Dependencyaware ecosystem impact modeling provides a transparent and systematic basis for prioritizing support in large-scale software ecosystems. Our findings suggest that effective support strategies, driven by ecosystem stewards, funding bodies, and organizations operating support programs, should complement existing allocation logic with impact-informed decision making.",
+        "timestamp": "2026-05-13T20:00:27.240Z",
+        "rating": "novote",
+        "publishedDate": "2026/05/07",
+        "tags": [
+          "Software Engineering (cs.SE)"
+        ],
+        "doi": "10.48550/arXiv.2605.06164",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 909,
+        "object_id": "paper:arxiv.2605.06164",
+        "created_at": "2026-05-13T20:00:27+00:00",
+        "updated_at": "2026-05-13T20:00:52+00:00",
+        "version": 1
+      }
+    },
+    "interactions:arxiv.2605.06164": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2605.06164",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 908,
+        "object_id": "interactions:arxiv.2605.06164",
+        "created_at": "2026-05-13T19:59:19+00:00",
+        "updated_at": "2026-05-13T19:59:21+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41586-026-10447-1": {
       "data": {
         "sourceId": "nature",
