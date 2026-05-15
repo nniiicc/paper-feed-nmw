@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-05-15T23:17:24.076477+00:00",
+  "snapshot_time": "2026-05-15T23:24:55.190283+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:sciencedirect.S2214629622001931": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S2214629622001931",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2214629622001931/pdfft?crasolve=1&r=9fc5e46d4c053b70&ts=1778887426147&rtype=https&vrr=UKN&redir=UKN&redir_fr=UKN&redir_arc=UKN&vhash=UKN&host=d3d3LnNjaWVuY2VkaXJlY3QuY29t&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&re=X2JsYW5rXw%3D%3D&ns_h=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ns_e=X2JsYW5rXw%3D%3D&rh_fd=rrr)n%5Ed%60i%5E%60_dm%60%5Eo)%5Ejh&tsoh_fd=rrr)n%5Ed%60i%5E%60_dm%60%5Eo)%5Ejh&hc=~rrr)n%5Ed%60i%5E%60_dm%60%5Eo)%5Ejhwrrr)n%5Ed%60i%5E%60_dm%60%5Eo)%5Ejhwrrr)n%5Ed%60i%5E%60_dm%60%5Eo)%5Ejh&iv=dc30a3576d1d29a0e0164cfbbf18d916&token=34393266366563633235636631363031336163663637623936616231306266303234393963646130313430613165646138366664313139303466613839363033313062353838343064323662336238643932356135643063313930623736303739333134336362303a633834646632666133396631623763366365333533353366&text=008bd41563d2a1b397ed729009a3ed82f9c71104a7389ec11ddafea604dca0229c978ce118b733a29420b9e9a4f4d0a8020d8a81934e3887e0057166096d936e2798942b86d5fa9b2bd374b7630c2b66bd0225a1cf2050f42f2bf51cde2192b07d99f680b2197244d92a701a980759a06d5caff26961ad3e830b7d288040f64a7f7c98c68152999f82733b752660bd2f520f861a4983df34afc391a9829e88c98cd2b62fc9f28b16ac37bc86b915281894460baa8834a02cc2e01622b0421c86baa077b1d01929ac12a4ecc36cb22ef60d467245e6396331f12688a84127b69c18623b2749135f04ec89fe60ff98a3168295650b3cc0f94217e5736df2ad495708cabee4a01ad7f0772402c46f04730c69f4de6ab7709844f7f726055e841b1f96604c16ca1b5158aedd5350e15ec799&original=3f646f776e6c6f61643d74727565&chkp=1c&rack=9fc5e46d4c053b70",
+        "title": "ScienceDirect.com | Science, health and medical journals, full text articles and books.",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-05-15T23:23:46.492Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 921,
+        "object_id": "paper:sciencedirect.S2214629622001931",
+        "created_at": "2026-05-15T23:23:46+00:00",
+        "updated_at": "2026-05-15T23:24:03+00:00",
+        "version": 1
+      }
+    },
     "paper:nature.s41586-025-08972-6": {
       "data": {
         "sourceId": "nature",
@@ -2032,6 +2056,21 @@
               "idle_seconds": 4,
               "total_elapsed_seconds": 514
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-05-15T23:23:46.385Z",
+            "data": {
+              "session_id": "session_1778887426195_wrf1ouv",
+              "source_id": "wiley",
+              "paper_id": "10.1111/gove.70122",
+              "start_time": "2026-05-15T23:23:38.474Z",
+              "end_time": "2026-05-15T23:23:46.195Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 8
+            }
           }
         ]
       },
@@ -2039,7 +2078,7 @@
         "issue_number": 847,
         "object_id": "interactions:wiley.10.1111/gove.70122",
         "created_at": "2026-04-22T19:26:18+00:00",
-        "updated_at": "2026-04-28T19:26:21+00:00",
+        "updated_at": "2026-05-15T23:24:06+00:00",
         "version": 1
       }
     },
