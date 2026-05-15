@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-05-15T22:59:25.206867+00:00",
+  "snapshot_time": "2026-05-15T23:17:24.076477+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41586-025-08972-6": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41586-025-08972-6",
+        "url": "https://www.nature.com/articles/s41586-025-08972-6",
+        "title": "Computer-vision research powers surveillance technology",
+        "authors": "Kalluri, Pratyusha Ria, Agnew, William, Cheng, Myra, Owens, Kentrell, Soldaini, Luca, Birhane, Abeba",
+        "abstract": "An increasing number of scholars, policymakers and grassroots communities argue that artificial intelligence (AI) research\u2014and computer-vision research in particular\u2014has become the primary source for developing and powering mass surveillance1\u20137. Yet, the pathways from computer vision to surveillance continue to be contentious. Here we present an empirical account of the nature and extent of the surveillance AI pipeline, showing extensive evidence of the close relationship between the field of computer vision and surveillance. Through an analysis of computer-vision research papers and citing patents, we found that most of these documents enable the targeting of human bodies and body parts. Comparing the 1990s to the 2010s, we observed a fivefold increase in the number of these computer-vision papers linked to downstream surveillance-enabling patents. Additionally, our findings challenge the notion that only a few rogue entities enable surveillance. Rather, we found that the normalization of targeting humans permeates the field. This normalization is especially striking given patterns of obfuscation. We reveal obfuscating language that allows documents to avoid direct mention of targeting humans, for example, by normalizing the referring to of humans as \u2018objects\u2019 to be studied without special consideration. Our results indicate the extensive ties between computer-vision research and surveillance. An analysis of research&nbsp;papers and citing patents indicates the extensive ties between computer-vision research and surveillance.",
+        "timestamp": "2026-05-15T23:16:13.654Z",
+        "rating": "novote",
+        "publishedDate": "2025/07",
+        "tags": [
+          "Computer science"
+        ],
+        "doi": "10.1038/s41586-025-08972-6",
+        "journalName": "Nature 2025 643:8070",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 920,
+        "object_id": "paper:nature.s41586-025-08972-6",
+        "created_at": "2026-05-15T23:16:14+00:00",
+        "updated_at": "2026-05-15T23:16:39+00:00",
+        "version": 1
+      }
+    },
     "paper:pnas.10.1073/pnas.2523760123": {
       "data": {
         "sourceId": "pnas",
