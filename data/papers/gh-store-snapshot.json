@@ -1,7 +1,69 @@
 {
-  "snapshot_time": "2026-05-15T01:46:33.668491+00:00",
+  "snapshot_time": "2026-05-15T22:56:31.540123+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.2C5463A6": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2C5463A6",
+        "url": "https://www.science.org/doi/10.1126/science.adt9895",
+        "title": "Partisan disparities in the use of science in policy",
+        "authors": "Alexander C. Furnas, Timothy M. LaPira, Dashun Wang",
+        "abstract": "Documents from Congress and think tanks reflect differences in how science is cited",
+        "timestamp": "2026-05-15T22:55:32.427Z",
+        "rating": "novote",
+        "publishedDate": "2025-04-25",
+        "tags": [],
+        "doi": "10.1126/science.adt9895",
+        "journalName": "Science",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 918,
+        "object_id": "paper:url-misc.2C5463A6",
+        "created_at": "2026-05-15T22:55:32+00:00",
+        "updated_at": "2026-05-15T22:55:49+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.2C1DF1E2": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2C1DF1E2",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 917,
+        "object_id": "interactions:url-misc.2C1DF1E2",
+        "created_at": "2026-05-15T22:55:30+00:00",
+        "updated_at": "2026-05-15T22:55:31+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.2C1DF1E2": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "2C1DF1E2",
+        "url": "https://www.science.org/doi/10.1126/science.adx5154",
+        "title": "Partisan disparities in the funding of science in the United States",
+        "authors": "Alexander C. Furnas, Nic Fishman, Leah Rosenstiel, Dashun Wang",
+        "abstract": "Republican lawmakers consistently provided robust federal funding, often exceeding Democrats",
+        "timestamp": "2026-05-15T22:55:24.215Z",
+        "rating": "novote",
+        "publishedDate": "2025-09-18",
+        "tags": [],
+        "doi": "10.1126/science.adx5154",
+        "journalName": "Science",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 916,
+        "object_id": "paper:url-misc.2C1DF1E2",
+        "created_at": "2026-05-15T22:55:24+00:00",
+        "updated_at": "2026-05-15T22:55:45+00:00",
+        "version": 1
+      }
+    },
     "interactions:plos.10.1371/journal.pcbi.1014133": {
       "data": {
         "sourceId": "plos",
