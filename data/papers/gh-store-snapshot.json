@@ -1,7 +1,54 @@
 {
-  "snapshot_time": "2026-05-26T01:49:10.288851+00:00",
+  "snapshot_time": "2026-05-26T15:59:55.174600+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:plos.10.1371/journal.pcbi.1014260": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pcbi.1014260",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 924,
+        "object_id": "interactions:plos.10.1371/journal.pcbi.1014260",
+        "created_at": "2026-05-26T15:59:07+00:00",
+        "updated_at": "2026-05-26T15:59:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:plos.10.1371/journal.pcbi.1014260": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pcbi.1014260",
+        "url": "https://journals.plos.org/ploscompbiol/article/peerReview?id=10.1371/journal.pcbi.1014260",
+        "title": "Biomedical open source software: Crucial packages and hidden heroes",
+        "authors": "Eva Maxfield Brown, Stephan Druskat, Laurent H\u00e9bert-Dufresne, James Howison, Daniel Mietchen, Andrew Nesbitt, Jo\u00e3o Felipe Pimentel, Boris Veytsman",
+        "abstract": "Author summary Scientists today use software as an important tool for their research. The progress of science depends on the people who write software being properly recognized, rewarded, and incentivised. This means that those who fund research or promote scientists need to know the impact of software and identify the most important programs. The universe of scientific software is complex: some people write programs used by researchers, while some people write programs used by other programs. The latter are often even less visible than the former, but they are important for the progress of science. In this work, we establish metrics to measure the impact of both types of software. We introduce the network of dependencies (program A used by researchers depends on programs B, C, and D) and use it to calculate the impact of a large number of packages used in the biomedical literature. In doing so, we identify important software packages, regardless of their direct visibility to end users. We conclude with a discussion of the limitations of our methodology and approaches to improve network validity.",
+        "timestamp": "2026-05-26T15:58:47.021Z",
+        "rating": "novote",
+        "publishedDate": "May 13, 2026",
+        "tags": [
+          "Software tools",
+          "Computer software",
+          "Centrality",
+          "Open source software",
+          "Ecosystems",
+          "Graphs",
+          "Computer applications",
+          "Network analysis"
+        ],
+        "doi": "10.1371/journal.pcbi.1014260",
+        "journalName": "PLOS Computational Biology",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 923,
+        "object_id": "paper:plos.10.1371/journal.pcbi.1014260",
+        "created_at": "2026-05-26T15:58:47+00:00",
+        "updated_at": "2026-05-26T15:59:13+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S2214629622001931": {
       "data": {
         "sourceId": "sciencedirect",
