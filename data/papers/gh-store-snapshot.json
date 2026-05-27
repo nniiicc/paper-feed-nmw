@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-05-27T18:25:22.287741+00:00",
+  "snapshot_time": "2026-05-27T18:46:05.570867+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/s10515-026-00621-0": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s10515-026-00621-0",
+        "url": "https://link.springer.com/article/10.1007/s10515-026-00621-0",
+        "title": "Advancing research software engineering with AI: a research framework",
+        "authors": "Farshidi, Siamak, Bennin, Kwabena Ebo, Babur, \u00d6nder, Sallou, June, Kassahun, Ayalew, Tekinerdogan, Bedir",
+        "abstract": "Research software has become a central pillar of scientific discovery, yet its engineering quality, sustainability, and reproducibility vary widely across projects. At the same time, advances in artificial intelligence (AI), particularly generative AI (GenAI), are rapidly transforming how software is developed. While these tools promise productivity gains, their broader impact on research software engineering practices remains poorly understood at scale. In this study, we present a large-scale empirical analysis of AI-assisted research software engineering. We analyzed 1,510 open-source research software repositories retrieved from Zenodo using the IEEE Taxonomy 2025 top-level categories (598 query terms), restricted to records labeled Software and created after November 2022 (post-GenAI emergence), with duplicate and incomplete entries removed. To distinguish archival dissemination from active development, we separate Zenodo-only artifacts from records linked to evolving GitHub repositories and enrich the latter with repository-level development indicators. Our analysis integrates multiple dimensions, including software engineering maturity (e.g., documentation, automation, testing, and releases), FAIRness for research software (FAIR4RS metadata indicators), inferred AI and GenAI usage, and operational signals related to AIOps and MLOps practices. Based on these indicators, we propose and empirically ground a quadrant-based model that characterizes research software development modes along the axes of engineering maturity and AI integration. The results show that AI-assisted practices are increasingly present in research software, but their adoption remains uneven and often decoupled from established engineering disciplines. Repositories classified as AI4RSE exhibit longer active lifespans, stronger maintenance signals, and higher FAIR alignment than exploratory or informally developed projects. At the same time, a substantial fraction of Zenodo artifacts represent archival snapshots rather than evolving software, highlighting the importance of interpreting engineering indicators in light of dissemination intent. This work contributes (i) a large-scale empirical characterization based on 1,510 repositories of AI-assisted research software development, (ii) an integrated analytical framework combining software engineering, FAIRness, AI usage, and operational practices, and (iii) evidence-based insights into the opportunities and challenges of responsible and sustainable AI4RSE. Together, these contributions provide a foundation for future research and practical guidance on integrating AI into research software engineering.",
+        "timestamp": "2026-05-27T18:45:04.479Z",
+        "rating": "novote",
+        "publishedDate": "2026/11",
+        "tags": [
+          "Artificial Intelligence"
+        ],
+        "doi": "10.1007/s10515-026-00621-0",
+        "journalName": "Automated Software Engineering",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 940,
+        "object_id": "paper:springer.10.1007/s10515-026-00621-0",
+        "created_at": "2026-05-27T18:45:04+00:00",
+        "updated_at": "2026-05-27T18:45:27+00:00",
+        "version": 1
+      }
+    },
     "interactions:ssrn.240371": {
       "data": {
         "sourceId": "ssrn",
@@ -27,6 +53,30 @@
         "object_id": "interactions:url-misc.37797F23",
         "created_at": "2026-05-27T18:24:51+00:00",
         "updated_at": "2026-05-27T18:24:52+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.240371": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "240371",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=240371",
+        "title": "papers.ssrn.com",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-05-27T18:24:50.752Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "SSRN",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 936,
+        "object_id": "paper:ssrn.240371",
+        "created_at": "2026-05-27T18:24:51+00:00",
+        "updated_at": "2026-05-27T18:25:20+00:00",
         "version": 1
       }
     },
