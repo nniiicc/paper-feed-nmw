@@ -1,7 +1,54 @@
 {
-  "snapshot_time": "2026-05-27T15:28:51.811594+00:00",
+  "snapshot_time": "2026-05-27T18:17:48.304611+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:plos.10.1371/journal.pcsy.0000079": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pcsy.0000079",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 932,
+        "object_id": "interactions:plos.10.1371/journal.pcsy.0000079",
+        "created_at": "2026-05-27T18:16:55+00:00",
+        "updated_at": "2026-05-27T18:16:58+00:00",
+        "version": 1
+      }
+    },
+    "paper:plos.10.1371/journal.pcsy.0000079": {
+      "data": {
+        "sourceId": "plos",
+        "paperId": "10.1371/journal.pcsy.0000079",
+        "url": "https://journals.plos.org/complexsystems/article?id=10.1371/journal.pcsy.0000079",
+        "title": "Reinforcement learning to develop policies for fair and productive employment: A case study on wage theft within the day-laborer community",
+        "authors": "Matt Kammer-Kerwick, Evan Aldrich",
+        "abstract": "Author summary This study continues previous translational research at the intersection of behavioral and decision science toward the larger goal of designing dynamic operational policies for complex sociological systems. While this paper has a methodological orientation, we situate a demonstration of our evidence-based model in the problem domain of \u201cdecent work\u201d as envisioned by the United Nations Sustainable Development Goal 8. Here, we apply and extend reinforcement learning to observe the system, periodically try new policy ideas, and adapt the deployed policy based on feedback from the system under the new policy candidate. We apply our approach to the societal challenge of disrupting wage theft experienced by day laborers. We use this case study to recognize the benefit of adapting our approach to complex systems by incorporating a more generalized stochastic model.",
+        "timestamp": "2026-05-27T18:16:42.382Z",
+        "rating": "novote",
+        "publishedDate": "Dec 4, 2025",
+        "tags": [
+          "Employment",
+          "Theft",
+          "Salaries",
+          "Agent-based modeling",
+          "Decision making",
+          "Jobs",
+          "Game theory",
+          "Learning"
+        ],
+        "doi": "10.1371/journal.pcsy.0000079",
+        "journalName": "PLOS Complex Systems",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 931,
+        "object_id": "paper:plos.10.1371/journal.pcsy.0000079",
+        "created_at": "2026-05-27T18:16:42+00:00",
+        "updated_at": "2026-05-27T18:17:06+00:00",
+        "version": 1
+      }
+    },
     "interactions:pnas.10.1073/pnas.2526734123": {
       "data": {
         "sourceId": "pnas",
