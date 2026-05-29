@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-05-29T01:50:27.098762+00:00",
+  "snapshot_time": "2026-05-29T17:35:44.397227+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.42337F43": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "42337F43",
+        "url": "https://elizabethginexi.substack.com/p/summary-of-key-changes-in-ombs-proposed",
+        "title": "Summary of Key Changes in OMB\u2019s Proposed Federal Financial Assistance Rule",
+        "authors": "Elizabeth Ginexi",
+        "abstract": "Russell Vought is going to destroy American Science",
+        "timestamp": "2026-05-29T17:34:37.293Z",
+        "rating": "novote",
+        "publishedDate": "2026-05-29T14:06:32.706Z",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 941,
+        "object_id": "paper:url-misc.42337F43",
+        "created_at": "2026-05-29T17:34:37+00:00",
+        "updated_at": "2026-05-29T17:35:02+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/s10515-026-00621-0": {
       "data": {
         "sourceId": "springer",
