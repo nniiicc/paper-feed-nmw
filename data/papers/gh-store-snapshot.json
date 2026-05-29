@@ -1,7 +1,49 @@
 {
-  "snapshot_time": "2026-05-29T17:38:42.600713+00:00",
+  "snapshot_time": "2026-05-29T17:51:54.621372+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:pnas.10.1073/pnas.2524747123": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.2524747123",
+        "url": "https://www.pnas.org/doi/10.1073/pnas.2524747123",
+        "title": "AI-assisted teams outperform AI-led teams but not human-only teams in assessing research reproducibility in quantitative social science",
+        "authors": "Brodeur, Abel, Valenta, David, Marcoci, Alexandru, Aparicio, Juan P., Mikola, Derek, Barbarioli, Bruno, Alexander, Rohan, Deer, Lachlan, Stafford, Tom, Vilhuber, Lars, Bensch, Gunther, Motoki, Fabio, Abdelhady, Mohamed, Abdelmoula, Yousra, Baki, Ghina Abdul, Aguirre, Tom\u00e1s, Aiyer, Sriraj, Akhtar, Shumi, Akhtar, Farida, Albada, Melle R., Altman, Micah, Angenendt, David, Arjmandi Lari, Zahra, De Le\u00f3n Tejada, Jorge Armando, Arana, David Rodriguez, Asanov, Igor, Noha, Anastasiya-Mariya, Ashong, Rebecca, Auer, Tobias, Bahamonde-Birke, Francisco J., Baker, Bradley J., Bartram, S\u00f6hnke M., Bao, Dongqi, Batinovic, Lucija, Batistoni, Tommaso, Beeder, Monica, Beland, Louis-Philippe, Gero Bienz, Carsten, Aryanto, Christ Billy, Bolibaugh, Cylcia, Bonander, Carl, Bravo, Ramiro, Bronnikov, Egor, Bruns, Stephan, Buliskeria, Nino, Caicedo-Silva, Sara, Calef, Andrea, Sebastian Cano Arias, Juan, A. Castillo Alvarez, Gustavo, Caulker, Solomon, Cepenas, Simonas, Chatton, Arthur, Chen, Zirou, Chioma Ewurum, Ngozi, Cioc\u00eerlan, Anda-Bianca, Clouth, Felix J., Collins, Jason, Cook, Nikolai, Cornejo, Cesar, Craveiro, Jo\u00e3o, Cr\u00e9chet, Jonathan, Cui, Jing, Chalil Vayalabron, Niveditha, Czymara, Christian, Berm\u00fadez Jaramillo, Carlos Daniel, Datta, Hannes, Denoo, Lien, Dhaliwal, Arshia, Dhameja, Nency, Djemai, Elodie, Dujeancourt, Erwan, D\u00fcndar, U\u01e7urcan, Duprey, Thibaut, Eissa, Yasmine, El Fassi, Youssef, El Fassi, Ismail, Ellis, Keaton, Elminejad, Ali, Elsherif, Mahmoud, Emirmahmutoglu, Aysil, Etingin-Frati, Giulian, Eze, Emeka, Dollbaum, Jan Fabian, Feld, Jan, Felipe Rengifo Jaramillo, Andres, Fenig, Guidon, Fernandes, Victoria, Fiala, Lenka, Fink, Lukas, Firouzjaeiangalougah, Mojtaba, Fish, Sara, Fitzgerald, Jack, Forshaw, Rachel, Fortier-Chouinard, Alexandre, Fr\u00e9get, Louis, Frese, Joris, Gabani, Jacopo, Gallegos, Sebastian, Gamill, Max C., G\u00e1sp\u00e1r, Attila, Gauriot, Romain, Gavrilova, Evelina, Geraldes, Diogo, Cantone, Giulio Giacomo, Gibson, Grant, Goldschmitt, Dirk, Gourdon-Kanhukamwe, Am\u00e9lie, Gregor de Varda, Andrea, Grigoryeva, Idaliya, Gugushvili, Alexi, Fletcher, Aaron H. A., Habermann, Florian, Hablicsek, M\u00e1rton, Haddad, Joanne, Hall, Jonathan D., Hammar, Olle, Hassouneh, Malek, Hausladen, Carina I., Hendrikse, Sophie C. F., Hepplewhite, Matthew, Ho, Anson T. Y., Hogan-Hennessy, Senan, Howley, Elliot, Huang, Gaoyang, Hulstaert, H\u00e9lo\u00efse, Ilchovska, Zlatomira G., Jaimes Santamaria, Paola, Jakobsson, Niklas, Jansson, Joakim, Jarosz, Ewa, Jebeli, Hossein, Jiang, Yanchen, Junaid, Hiba, Kalluraya, Rohan, Karim, Sunny, Kelly, Edmund, Kimel, Eva, Kingsuwankul, Sorravich, Klotzb\u00fccher, Valentin, Kr\u00e4hmer, Daniel, Kr\u016bminas, Pijus, Kruus, Nicholas, Kujansuu, Essi, Kurz, Christoph F., K\u00fcster, Stephan, Lee-Whiting, Blake, Lewandowski, Felix, Li, Tongzhe, Li, Ruoxi, Liu, Dan, Liu, Jiacheng, Lo, Helix, Loter, Katharina, Macedo Dias, Felipe, Madan, Christopher R., M\u00e4der, Nicolas, Mandas, Marco, Mantilla, Cesar, Marcus, Jan, Marino Fages, Diego, Martin, Xavier, McWay, Ryan, Medina-Gaspar, Daniel, Meng, Sisi, Meng, Lingyu, Merz, Simon, Miller, Alex P., Mirabel, Thibault, Mishra, Dibya Deepta, Mishra, Sumit, Moges, Belay W., Mohandes Mojarrad, Morteza, Mohnen, Myra, Morin, Louis-Philippe, Muehlenbachs, Lucija, Mullin, Gast\u00f3n, Musulan, Andreea, Muzz\u00ec, Sara, Myers, James A. C., Neubauer, Florian, Nguyen, Tuan, Niazi, Ali, Nordstrom, Ardyn, Nowak, Bart\u0142omiej, O\u2019Habib, Daneal, \u00d6lkers, Tim, Ong, Justin, Orozco Castiblanco, Valeria, \u00d6zak, \u00d6mer, Ozkes, Ali I., Paaso, Mikael, Pandey, Shubham, Papazoglou, Varvara, Penheiro, Romeo, Pham, Linh, Phieler, Ulrike, P\u00fctz, Peter, Qi, Quan, Qiu, Jingyi, Rein, Manuel T., Reinstein, David A., Repo, Juuso, Rudolf, Nicolas, Saha, Shree, Saka, Orkun, Saponaro, Chiara, Sator, Georg, Schoenmakers, Martijn, Seri, Raffaello, Shah, Meet, Sibille, Paul, Siemroth, Christoph, Skavysh, Vladimir, Slater, Ben, Song, Wenting, Staubli, Stefan, Steindl, Tobias, Waongo, Nomwend\u00e9 Steven, Stott, Paul, Strobel, Stephenson, Sudhaharan, Roshini, Sun, Pu, Swain, Scott D., Talavera, Oleksandr, Tantiangco, Hanz M., Tarasenko, Georgy, Tarlinton, Boyd, Tarraf, Mariam, Teoh, Ken, Th\u00e9riault, R\u00e9mi, Thompson, Bethan, Tian, Tonghui, Tian, Wenjie, Tolani, Emmanuel, Borgen, Nicolai, Topstad Borgen, Solveig, Torralba, Javier, Velez-Ospina, Carolina, Mak, Man Wai, Wallrich, Lukas, Wang, Zeyang, Ward, Leah, Webb, Matthew D., Webb, Duncan, Weber, Bryan S., Weber, Christoph, Weng, Wei-Chien, Westheide, Christian, Wilkinson, Tom, Wong, Kwong-Yu, Wro\u0144ski, Marcin, Wu, Zhuangchen, Wu, Qixia, Wu, Victor Y., Xiao, Bohan, Xu, Feihong, Xu, Cong, Yadav, Pranav, Yang Chou, Yu, Yap, Luther, Yazbeck, Myra, Yao, Bo, Zagrodzka, Zuzanna, Zahra, Tahreen, Zaneva, Mirela, Zhang, Xiaomeng, Zhao, Ziwei, Zhong, Han, Zirgulis, Aras, Zou, Jiacheng, Zoutman, Floris, Zozoungbo, Christelle",
+        "abstract": "Large Language Models (LLMs) such as ChatGPT are transforming how scientists conduct\nand validate research, offering promise as tools to improve sc...",
+        "timestamp": "2026-05-29T17:50:37.506Z",
+        "rating": "novote",
+        "publishedDate": "2026-5-28",
+        "tags": [
+          "AI",
+          "reproducibility",
+          "large language models"
+        ],
+        "doi": "10.1073/pnas.2524747123",
+        "journalName": "Proceedings of the National Academy of Sciences",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 943,
+        "object_id": "paper:pnas.10.1073/pnas.2524747123",
+        "created_at": "2026-05-29T17:50:37+00:00",
+        "updated_at": "2026-05-29T17:51:07+00:00",
+        "version": 1
+      }
+    },
+    "interactions:pnas.10.1073/pnas.2524747123": {
+      "data": {
+        "sourceId": "pnas",
+        "paperId": "10.1073/pnas.2524747123",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 944,
+        "object_id": "interactions:pnas.10.1073/pnas.2524747123",
+        "created_at": "2026-05-29T17:50:45+00:00",
+        "updated_at": "2026-05-29T17:50:47+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.42337F43": {
       "data": {
         "sourceId": "url-misc",
