@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-06-01T02:06:26.838370+00:00",
+  "snapshot_time": "2026-06-01T18:46:55.999746+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
     "paper:arxiv.2602.19317": {
@@ -131,6 +131,21 @@
               "idle_seconds": 3,
               "total_elapsed_seconds": 8
             }
+          },
+          {
+            "type": "reading_session",
+            "timestamp": "2026-06-01T18:45:29.811Z",
+            "data": {
+              "session_id": "session_1780339529502_r17i3s5",
+              "source_id": "pnas",
+              "paper_id": "10.1073/pnas.2524747123",
+              "start_time": "2026-06-01T18:45:23.578Z",
+              "end_time": "2026-06-01T18:45:29.502Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 1,
+              "total_elapsed_seconds": 6
+            }
           }
         ]
       },
@@ -138,7 +153,7 @@
         "issue_number": 944,
         "object_id": "interactions:pnas.10.1073/pnas.2524747123",
         "created_at": "2026-05-29T17:50:45+00:00",
-        "updated_at": "2026-05-29T18:28:15+00:00",
+        "updated_at": "2026-06-01T18:46:00+00:00",
         "version": 1
       }
     },
