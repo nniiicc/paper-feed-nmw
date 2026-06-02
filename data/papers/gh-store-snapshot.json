@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-06-02T02:07:20.782733+00:00",
+  "snapshot_time": "2026-06-02T20:36:04.888523+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.47869F75": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "47869F75",
+        "url": "https://osf.io/preprints/psyarxiv/d6v5t_v2",
+        "title": "OSF",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-06-02T20:34:56.953Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 949,
+        "object_id": "paper:url-misc.47869F75",
+        "created_at": "2026-06-02T20:34:57+00:00",
+        "updated_at": "2026-06-02T20:35:21+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.7565437C": {
       "data": {
         "sourceId": "url-misc",
