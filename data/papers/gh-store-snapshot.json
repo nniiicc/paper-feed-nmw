@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-06-03T22:45:02.387476+00:00",
+  "snapshot_time": "2026-06-03T22:57:34.308549+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:acl.2026.findings-eacl": {
+      "data": {
+        "sourceId": "acl",
+        "paperId": "2026.findings-eacl",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 953,
+        "object_id": "interactions:acl.2026.findings-eacl",
+        "created_at": "2026-06-03T22:56:44+00:00",
+        "updated_at": "2026-06-03T22:56:46+00:00",
+        "version": 1
+      }
+    },
+    "paper:acl.2026.findings-eacl": {
+      "data": {
+        "sourceId": "acl",
+        "paperId": "2026.findings-eacl",
+        "url": "https://aclanthology.org/2026.findings-eacl.290/",
+        "title": "code-transformed: The Influence of Large Language Models on Code",
+        "authors": "Yuliang Xu, Siming Huang, Mingmeng Geng, Yao Wan, Xuanhua Shi, Dongping Chen",
+        "abstract": "Yuliang Xu, Siming Huang, Mingmeng Geng, Yao Wan, Xuanhua Shi, Dongping Chen. Findings of the Association for Computational Linguistics: EACL 2026. 2026.",
+        "timestamp": "2026-06-03T22:56:34.078Z",
+        "rating": "novote",
+        "publishedDate": "2026/3",
+        "tags": [],
+        "doi": "10.18653/v1/2026.findings-eacl.290",
+        "journalName": "Findings of the Association for Computational Linguistics: EACL 2026",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 952,
+        "object_id": "paper:acl.2026.findings-eacl",
+        "created_at": "2026-06-03T22:56:34+00:00",
+        "updated_at": "2026-06-03T22:56:52+00:00",
+        "version": 1
+      }
+    },
     "paper:springer.10.1007/s43681-026-01188-y": {
       "data": {
         "sourceId": "springer",
