@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-06-03T16:24:50.099658+00:00",
+  "snapshot_time": "2026-06-03T22:45:02.387476+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:springer.10.1007/s43681-026-01188-y": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1007/s43681-026-01188-y",
+        "url": "https://link.springer.com/article/10.1007/s43681-026-01188-y",
+        "title": "Guidelines without guidance: underdetermination in AI ethics",
+        "authors": "Max, Raphael",
+        "abstract": "AI ethics has become a global industry of principles. Across governments, intergovernmental bodies, research institutes, and firms, guideline documents repeatedly endorse fairness, transparency, accountability, privacy, and human dignity. Yet convergence on labels is often mistaken for convergence on normative content. This paper argues that much of the current discourse remains normatively influential while being insufficiently action-guiding. It develops two claims. First, normative concepts are genuinely useful only when they are determinate enough to support critique: they must specify what would count as satisfying them and what would count as failing them, and they must confront trade-offs rather than implying a moral free lunch in which all values can be maximized simultaneously. Second, even conceptually clear normativity is incomplete if it treats implementation as an afterthought. Normative claims about sociotechnical systems implicitly rely on assumptions about feasibility, institutional incentives, measurement, and human response. When these background assumptions remain unspecified or idealized, ethical guidance becomes aspirational and can even be normatively irresponsible. The paper therefore articulates minimal conditions for AI-ethical discourse that is criticizable and responsibly connected to implementation, without reducing ethics to technocracy or compliance checklists.",
+        "timestamp": "2026-06-03T22:43:57.380Z",
+        "rating": "novote",
+        "publishedDate": "2026/06",
+        "tags": [
+          "Artificial Intelligence"
+        ],
+        "doi": "10.1007/s43681-026-01188-y",
+        "journalName": "AI and Ethics",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 951,
+        "object_id": "paper:springer.10.1007/s43681-026-01188-y",
+        "created_at": "2026-06-03T22:43:57+00:00",
+        "updated_at": "2026-06-03T22:44:22+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.47869F75": {
       "data": {
         "sourceId": "url-misc",
