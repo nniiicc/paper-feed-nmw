@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-06-05T01:57:21.750832+00:00",
+  "snapshot_time": "2026-06-05T16:18:58.654326+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:ssrn.6242898": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "6242898",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 958,
+        "object_id": "interactions:ssrn.6242898",
+        "created_at": "2026-06-05T16:18:05+00:00",
+        "updated_at": "2026-06-05T16:18:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:ssrn.6242898": {
+      "data": {
+        "sourceId": "ssrn",
+        "paperId": "6242898",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6242898&__cf_chl_rt_tk=0ANLm8a2NiiR2ZMYx4UGGGTyBL6tPEkb2Q3tu7.tdcE-1780676273-1.0.1.1-_k5GLAvNJqjPDu5S8vTKqgbtbEqrihSOsAyZjYbQTH0",
+        "title": "Just a moment...",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-06-05T16:17:54.192Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "SSRN",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 956,
+        "object_id": "paper:ssrn.6242898",
+        "created_at": "2026-06-05T16:17:54+00:00",
+        "updated_at": "2026-06-05T16:18:13+00:00",
+        "version": 1
+      }
+    },
     "interactions:wiley.10.1002/asi.70067": {
       "data": {
         "sourceId": "wiley",
