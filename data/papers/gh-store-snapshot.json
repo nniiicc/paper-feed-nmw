@@ -1,7 +1,75 @@
 {
-  "snapshot_time": "2026-06-12T02:03:36.835038+00:00",
+  "snapshot_time": "2026-06-12T20:59:02.439752+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.25349631": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "25349631",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 961,
+        "object_id": "interactions:url-misc.25349631",
+        "created_at": "2026-06-12T20:58:20+00:00",
+        "updated_at": "2026-06-12T20:58:21+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.25349631": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "25349631",
+        "url": "https://www.cambridge.org/core/journals/public-humanities/article/insights-from-reflexivity-on-strengthening-water-security-in-tribal-communities-through-collaborative-approaches/8A1F51FC8F741FAC640B509BD043CFA3",
+        "title": "Insights from Reflexivity on Strengthening Water Security in Tribal Communities through Collaborative Approaches",
+        "authors": "Clarita Lefthand-Begay, Turam Purty, Sheila Carl, Michael Williams",
+        "abstract": "Water insecurity is a persistent challenge in many American Indian and Alaska Native communities, where access to safe, reliable, and culturally relevant water sources is shaped by historical displacement, infrastructure neglect, and environmental degradation. Addressing these longstanding inequalities calls for more equitable, relationship-based, and decolonial approaches to community engagement and collaboration. Our reflexive essay examines how collaborative, Indigenous-centered research practices can strengthen water security efforts in Tribal communities. Using a reflexive qualitative approach grounded in Indigenous Research Methodologies, we analyzed how relationality, ethical engagement, and attention to Indigenous Knowledge Systems (IKS) shaped our team\u2019s research practices and partnerships with Tribal communities. Reflexive and culturally grounded approaches strengthened trust, collaboration, and accountability between researchers and community partners. Integrating IKS with western science research and water justice approaches improved the cultural relevance of the work and supported community-driven, sustainable outcomes. Our experience suggests that water security research is strengthened when it is grounded in relationality, deep listening, and respect for Tribal sovereignty. These findings support the development of ethical, collaborative, and culturally responsive research and policy approaches to water security in Tribal communities.",
+        "timestamp": "2026-06-12T20:57:52.998Z",
+        "rating": "novote",
+        "publishedDate": "2026/01",
+        "tags": [],
+        "doi": "10.1017/pub.2026.10178",
+        "journalName": "Public Humanities",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 960,
+        "object_id": "paper:url-misc.25349631",
+        "created_at": "2026-06-12T20:57:53+00:00",
+        "updated_at": "2026-06-12T20:58:16+00:00",
+        "version": 1
+      }
+    },
+    "interactions:nature.s41599-024-04122-x": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41599-024-04122-x",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-06-12T20:57:19.679Z",
+            "data": {
+              "session_id": "session_1781297839437_j4uvtpg",
+              "source_id": "nature",
+              "paper_id": "s41599-024-04122-x",
+              "start_time": "2026-06-12T20:57:11.641Z",
+              "end_time": "2026-06-12T20:57:19.437Z",
+              "heartbeat_count": 1,
+              "duration_seconds": 5,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 8
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 959,
+        "object_id": "interactions:nature.s41599-024-04122-x",
+        "created_at": "2026-06-12T20:57:20+00:00",
+        "updated_at": "2026-06-12T20:57:50+00:00",
+        "version": 1
+      }
+    },
     "interactions:ssrn.6242898": {
       "data": {
         "sourceId": "ssrn",
