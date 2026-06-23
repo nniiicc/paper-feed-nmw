@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-06-23T01:52:02.593200+00:00",
+  "snapshot_time": "2026-06-23T20:04:18.113946+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.71EDCD90": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "71EDCD90",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 963,
+        "object_id": "interactions:url-misc.71EDCD90",
+        "created_at": "2026-06-23T20:04:05+00:00",
+        "updated_at": "2026-06-23T20:04:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.71EDCD90": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "71EDCD90",
+        "url": "https://aiatuva.substack.com/p/openscholar-scientific-literature-synthesis",
+        "title": "AI Exchange @ UVA | Substack",
+        "authors": "Varun Korisapati",
+        "abstract": "AI @ UVA is a bi-weekly publication covering cutting-edge applications of Artificial Intelligence. Click to read AI Exchange @ UVA, a Substack publication with hundreds of subscribers.",
+        "timestamp": "2026-06-23T20:02:54.703Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 962,
+        "object_id": "paper:url-misc.71EDCD90",
+        "created_at": "2026-06-23T20:02:55+00:00",
+        "updated_at": "2026-06-23T20:03:35+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.25349631": {
       "data": {
         "sourceId": "url-misc",
