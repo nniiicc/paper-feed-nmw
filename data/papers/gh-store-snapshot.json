@@ -1,7 +1,97 @@
 {
-  "snapshot_time": "2026-06-25T21:17:31.363143+00:00",
+  "snapshot_time": "2026-06-25T21:22:33.055432+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:wiley.10.1002/poi3.327": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/poi3.327",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 978,
+        "object_id": "interactions:wiley.10.1002/poi3.327",
+        "created_at": "2026-06-25T21:22:00+00:00",
+        "updated_at": "2026-06-25T21:22:02+00:00",
+        "version": 1
+      }
+    },
+    "interactions:wiley.10.1111/add.70410": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/add.70410",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 977,
+        "object_id": "interactions:wiley.10.1111/add.70410",
+        "created_at": "2026-06-25T21:21:43+00:00",
+        "updated_at": "2026-06-25T21:21:44+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0002916522003859": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0002916522003859",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0002916522003859",
+        "title": "Food for thought: A natural language processing analysis of the 2020 Dietary Guidelines publice comments",
+        "authors": "Dietary Guidelines, natural language processing, Dietary Guidelines, https://beta.regulations.gov/docket/FNS-2020-0015",
+        "abstract": "The Administrative Procedure Act of 1946 guarantees the public an opportunity to view and comment on the 2020 Dietary Guidelines as part of the policy\u2026",
+        "timestamp": "2026-06-25T21:21:33.970Z",
+        "rating": "novote",
+        "publishedDate": "2021/08/01",
+        "tags": [],
+        "doi": "10.1093/ajcn/nqab119",
+        "journalName": "The American Journal of Clinical Nutrition",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 976,
+        "object_id": "paper:sciencedirect.S0002916522003859",
+        "created_at": "2026-06-25T21:21:34+00:00",
+        "updated_at": "2026-06-25T21:21:54+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.273D4142": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "273D4142",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 975,
+        "object_id": "interactions:url-misc.273D4142",
+        "created_at": "2026-06-25T21:21:23+00:00",
+        "updated_at": "2026-06-25T21:21:25+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.273D4142": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "273D4142",
+        "url": "https://zenodo.org/records/17405375",
+        "title": "Data for Policy 2025 (DfP'25) Asia-Pacific Book of Abstracts",
+        "authors": "Data for Policy CIC, He, Bin, Cheng, Yu, Jiang, Shuo, Hou, Jiazuo, Zhu, Yue, Zhang, Taolue",
+        "abstract": "",
+        "timestamp": "2026-06-25T21:21:09.856Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.5281/zenodo.17405375",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 974,
+        "object_id": "paper:url-misc.273D4142",
+        "created_at": "2026-06-25T21:21:10+00:00",
+        "updated_at": "2026-06-25T21:21:28+00:00",
+        "version": 1
+      }
+    },
     "interactions:sciencedirect.S0957417425009522": {
       "data": {
         "sourceId": "sciencedirect",
