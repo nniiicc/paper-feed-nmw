@@ -1,7 +1,83 @@
 {
-  "snapshot_time": "2026-06-25T20:13:13.686990+00:00",
+  "snapshot_time": "2026-06-25T21:15:53.388133+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:sciencedirect.S0740624X22001149": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0740624X22001149",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0740624X22001149",
+        "title": "Do public comments make a difference in open rulemaking? Insights from information management using machine learning and QCA analysis",
+        "authors": "",
+        "abstract": "Scholars still have a mixed picture of the impact of online public involvement in regulatory policy making, and a shortage of theoretical explanations\u2026",
+        "timestamp": "2026-06-25T21:14:47.831Z",
+        "rating": "novote",
+        "publishedDate": "2023/01/01",
+        "tags": [],
+        "doi": "10.1016/j.giq.2022.101778",
+        "journalName": "Government Information Quarterly",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 970,
+        "object_id": "paper:sciencedirect.S0740624X22001149",
+        "created_at": "2026-06-25T21:14:48+00:00",
+        "updated_at": "2026-06-25T21:15:07+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1002/poi3.327": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1002/poi3.327",
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/poi3.327",
+        "title": "Do fake online comments pose a threat to regulatory policymaking? Evidence from Internet regulation in the United States",
+        "authors": "Cassandra Handan-Nader",
+        "abstract": "Broad stakeholder participation in regulatory policymaking via online commenting platforms has become the norm in many advanced democracies around the world. In recent years, a policy debate has emer...",
+        "timestamp": "2026-06-25T21:14:47.224Z",
+        "rating": "novote",
+        "publishedDate": "2023/03/01",
+        "tags": [
+          "e-government"
+        ],
+        "doi": "10.1002/poi3.327",
+        "journalName": "Policy & Internet",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 969,
+        "object_id": "paper:wiley.10.1002/poi3.327",
+        "created_at": "2026-06-25T21:14:47+00:00",
+        "updated_at": "2026-06-25T21:15:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/add.70410": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/add.70410",
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/add.70410",
+        "title": "Characterizing public comments via Regulations.gov in response to proposed cannabis rescheduling in the United States",
+        "authors": "Vijay M. Tiyyala, Cerina Dubois, Clarissa Madar, Ryan Vandrey, Johannes Thrul, Mark Dredze, John W. Ayers",
+        "abstract": "\nAims\nThe United States Drug Enforcement Administration's (DEA) proposed rescheduling of cannabis from Schedule I to Schedule III under the Controlled Substances Act marks a significant shift in fede...",
+        "timestamp": "2026-06-25T21:14:44.751Z",
+        "rating": "novote",
+        "publishedDate": "2026/04/24",
+        "tags": [
+          "artificial intelligence"
+        ],
+        "doi": "10.1111/add.70410",
+        "journalName": "Addiction",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 968,
+        "object_id": "paper:wiley.10.1111/add.70410",
+        "created_at": "2026-06-25T21:14:45+00:00",
+        "updated_at": "2026-06-25T21:15:07+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2501.15654": {
       "data": {
         "sourceId": "arxiv",
