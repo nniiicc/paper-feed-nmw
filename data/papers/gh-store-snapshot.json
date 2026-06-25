@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-06-25T21:15:53.388133+00:00",
+  "snapshot_time": "2026-06-25T21:17:31.363143+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:sciencedirect.S0957417425009522": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0957417425009522",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 973,
+        "object_id": "interactions:sciencedirect.S0957417425009522",
+        "created_at": "2026-06-25T21:16:51+00:00",
+        "updated_at": "2026-06-25T21:16:53+00:00",
+        "version": 1
+      }
+    },
+    "paper:sciencedirect.S0957417425009522": {
+      "data": {
+        "sourceId": "sciencedirect",
+        "paperId": "S0957417425009522",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0957417425009522",
+        "title": "Large language model for interpreting research policy using adaptive two-stage retrieval augmented fine-tuning method",
+        "authors": "https://github.com/renruntao/ResearchPolicy_RAG",
+        "abstract": "Accurate interpretation of scientific funding policies is crucial for government funding agencies and research institutions to make informed decisions\u2026",
+        "timestamp": "2026-06-25T21:15:47.671Z",
+        "rating": "novote",
+        "publishedDate": "2025/06/10",
+        "tags": [],
+        "doi": "10.1016/j.eswa.2025.127330",
+        "journalName": "Expert Systems with Applications",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 971,
+        "object_id": "paper:sciencedirect.S0957417425009522",
+        "created_at": "2026-06-25T21:15:48+00:00",
+        "updated_at": "2026-06-25T21:16:16+00:00",
+        "version": 1
+      }
+    },
     "paper:sciencedirect.S0740624X22001149": {
       "data": {
         "sourceId": "sciencedirect",
