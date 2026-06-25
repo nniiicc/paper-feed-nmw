@@ -1,7 +1,78 @@
 {
-  "snapshot_time": "2026-06-25T21:22:33.055432+00:00",
+  "snapshot_time": "2026-06-25T22:38:36.967170+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.51660284": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "51660284",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 981,
+        "object_id": "interactions:url-misc.51660284",
+        "created_at": "2026-06-25T22:38:19+00:00",
+        "updated_at": "2026-06-25T22:38:20+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.51660284": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "51660284",
+        "url": "https://journals.sagepub.com/doi/10.1177/20539517261419341",
+        "title": "Whose voice counts? The role of large language models in public commenting - Amelia C Arsenault, Sarah Kreps, 2026",
+        "authors": "Amelia C Arsenault, https://orcid.org/0000-0003-1846-8560, aa2758@cornell.edu, Sarah Kreps",
+        "abstract": "The notice-and-comment period in US federal rulemaking fosters civic engagement but has long been dominated by well-resourced actors with specialized knowledge,...",
+        "timestamp": "2026-06-25T22:38:03.519Z",
+        "rating": "novote",
+        "publishedDate": "2026-3",
+        "tags": [
+          "Large language models",
+          "generative artificial intelligence",
+          "notice-and-comment",
+          "rulemaking",
+          "accessibility",
+          "democracy"
+        ],
+        "doi": "10.1177/20539517261419341",
+        "journalName": "Big Data & Society",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 980,
+        "object_id": "paper:url-misc.51660284",
+        "created_at": "2026-06-25T22:38:03+00:00",
+        "updated_at": "2026-06-25T22:38:22+00:00",
+        "version": 1
+      }
+    },
+    "paper:wiley.10.1111/psj.12431": {
+      "data": {
+        "sourceId": "wiley",
+        "paperId": "10.1111/psj.12431",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/psj.12431",
+        "title": "Diverse Lobbying Coalitions and Influence in Notice-and-Comment Rulemaking",
+        "authors": "Maraam A. Dwidar",
+        "abstract": "Many studies have identified a line of influence between interest group lobbying and the federal bureaucracy\u2019s implementation of public policy. These works, however, have often focused on the influen...",
+        "timestamp": "2026-06-25T22:37:21.613Z",
+        "rating": "novote",
+        "publishedDate": "2022/02/01",
+        "tags": [
+          "interest groups"
+        ],
+        "doi": "10.1111/psj.12431",
+        "journalName": "Policy Studies Journal",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 979,
+        "object_id": "paper:wiley.10.1111/psj.12431",
+        "created_at": "2026-06-25T22:37:22+00:00",
+        "updated_at": "2026-06-25T22:37:43+00:00",
+        "version": 1
+      }
+    },
     "interactions:wiley.10.1002/poi3.327": {
       "data": {
         "sourceId": "wiley",
