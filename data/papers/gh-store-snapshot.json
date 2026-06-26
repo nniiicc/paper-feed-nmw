@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-06-26T01:56:12.981376+00:00",
+  "snapshot_time": "2026-06-26T18:21:02.844063+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.7E93FD7": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "7E93FD7",
+        "url": "https://paulkrugman.substack.com/p/why-does-everyone-hate-ai",
+        "title": "Why Does Everyone Hate AI?",
+        "authors": "Paul Krugman",
+        "abstract": "It\u2019s the fear, the enshittification, datacenter hostility, and the tech broligarchy",
+        "timestamp": "2026-06-26T18:19:55.566Z",
+        "rating": "novote",
+        "publishedDate": "2026-06-25T10:31:56.818Z",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 985,
+        "object_id": "paper:url-misc.7E93FD7",
+        "created_at": "2026-06-26T18:19:55+00:00",
+        "updated_at": "2026-06-26T18:20:17+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.65BF0A4F": {
       "data": {
         "sourceId": "url-misc",
