@@ -1,7 +1,69 @@
 {
-  "snapshot_time": "2026-07-09T01:23:10.481066+00:00",
+  "snapshot_time": "2026-07-09T17:13:11.387740+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:acm.10.1145/3805689.3812323": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3805689.3812323",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 989,
+        "object_id": "interactions:acm.10.1145/3805689.3812323",
+        "created_at": "2026-07-09T17:13:04+00:00",
+        "updated_at": "2026-07-09T17:13:06+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3805689.3806741": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3805689.3806741",
+        "url": "https://dl.acm.org/doi/10.1145/3805689.3806741",
+        "title": "Transparency and Digital Governance: How Oversight Bodies Access Information, What Hinders Them, and How They Respond | Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+        "authors": "Anna Ida Hudig, Jatinder Singh",
+        "abstract": "Effective oversight and enforcement of regulations in the digital economy increasingly depends on information about how regulated actors design, use, and manage data, algorithms, and connected devices. This paper provides an empirical account of how oversight bodies access information required for effective oversight in practice, the obstacles they encounter, and how these challenges are currently addressed. Here, we refer to oversight bodies as public, private, and civil society actors that exercise supervisory roles. Based on interviews with regulatory authorities, consumer organisations, civil society groups, certification and audit bodies (and others), we conceptualise oversight as an information flow network, tracing how signals move from monitoring the digital landscape through prioritisation to case investigation. Further, we identify six structural challenges that shape how information is collected and interpreted by oversight bodies. These challenges point to persistent information asymmetries that limit what oversight bodies can see and do, potentially weakening accountability under current and emerging regulatory frameworks. Our findings suggest that today's oversight landscape is shaped by limits in access to information and sense-making, which hinder visibility and thereby weaken the protection of individuals' rights vis-\u00e0-vis regulated actors. In response, we identify intervention points and strategies to help address these constraints, strengthen digital oversight, and improve rights protections.",
+        "timestamp": "2026-07-09T17:12:12.780Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "3806741",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 988,
+        "object_id": "paper:acm.10.1145/3805689.3806741",
+        "created_at": "2026-07-09T17:12:13+00:00",
+        "updated_at": "2026-07-09T17:12:34+00:00",
+        "version": 1
+      }
+    },
+    "paper:acm.10.1145/3805689.3812323": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3805689.3812323",
+        "url": "https://dl.acm.org/doi/10.1145/3805689.3812323",
+        "title": "Push and Pushback in Contesting AI: Demands for and Resistance to Accountability | Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+        "authors": "Yulu Pi, Lucas Lichner, Jae Woo Lee, Sijia Xiao, Renwen Zhang, Jatinder Singh",
+        "abstract": "As AI becomes increasingly embedded in daily life, it has been shown to fail critically, cause harm, and spark public controversy, prompting affected communities, workers, and public-interest groups to contest it. Yet how these contestations unfold in practice remains underexplored. We address this gap by developing an empirically grounded account of AI contestation dynamics. We do so through a thematic analysis of 43 real-world cases in which affected actors direct demands toward those responsible for AI development and deployment, seeking redress, influence, or changes to AI practices. Situating our work within Bovens's relational model of accountability, we conceptualize contestation as accountability-seeking: a dynamic, iterative process in which actors \u201cfrom below\u201d direct explicit demands at actors \u201cfrom above,\u201d who respond by accepting, resisting, or circumventing accountability. Our analysis produces empirically grounded categories of contestation strategies, institutional response tactics, outcome types, and the contextual factors that shape them, illuminating how accountability is pursued and evaded in practice. We show that those being contested often deploy a range of strategies to limit their accountability. Based on these insights, we offer guidance for researchers, policymakers, advocates, and other stakeholders seeking to support effective AI contestation, with particular attention to anticipating and countering institutional strategies used to evade accountability.",
+        "timestamp": "2026-07-09T17:12:11.782Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "3812323",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 987,
+        "object_id": "paper:acm.10.1145/3805689.3812323",
+        "created_at": "2026-07-09T17:12:12+00:00",
+        "updated_at": "2026-07-09T17:12:32+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.7E93FD7": {
       "data": {
         "sourceId": "url-misc",
