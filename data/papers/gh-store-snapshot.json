@@ -1,7 +1,59 @@
 {
-  "snapshot_time": "2026-07-09T22:41:24.028902+00:00",
+  "snapshot_time": "2026-07-09T22:51:58.369363+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:acm.10.1145/3772318.3790910": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3772318.3790910",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 993,
+        "object_id": "interactions:acm.10.1145/3772318.3790910",
+        "created_at": "2026-07-09T22:51:19+00:00",
+        "updated_at": "2026-07-09T22:51:20+00:00",
+        "version": 1
+      }
+    },
+    "interactions:acm.10.1145/3489465": {
+      "data": {
+        "sourceId": "acm",
+        "paperId": "10.1145/3489465",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 992,
+        "object_id": "interactions:acm.10.1145/3489465",
+        "created_at": "2026-07-09T22:51:09+00:00",
+        "updated_at": "2026-07-09T22:51:10+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.280E0217": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "280E0217",
+        "url": "https://download.ssrn.com/24/02/16/ssrn_id4728592_code6185963.pdf?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIGBFo%2Ba%2B5ZpmPox6YGIjrdaC2I5Yxa7PHAAYeUOQfvVmAiEAmwOaSGbC%2FuHK6neyDNlIZ7ycO%2F8qiQQNkcma1hI78nQqxwUIv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAEGgwzMDg0NzUzMDEyNTciDEYaNq18rUGA916tsSqbBQxOtokyU0mqAxYRLiCrlsK7oLs9JobBl5NIuD8huVr%2Fnr77NzkSJPZUJDRn27xb0NvPjzmPaKuzyZ6hkkrLCZMXJh74Vtrw02JIZEj0yYtyeFafqmLREnHcCQq9OVbl275NVFCzW25pNFtreiU26GiYl1z%2FLIW1BuW7mJO%2FqOrHZ9Q6kA5JoUPuPb%2BLCOSiFTyG6RHGMo4erPwgjC7J5VGTjK16QMZkkYNuJXE5iGeyNS1ZqtxQ65dACbiotiSIfVdIK0LVmXD9xXwxTEFefBHYiCjN8iqHl90hy%2F2Vt392yGERe%2FMI9IGMMN0aT0SB4duKj5ASgAOlbWaYJPp61vBmt2qKl4mHpDD1%2FoeIGFAFfmgkGqFYoxMBA5Dhq%2BBdtVzF8gl%2FeWbb6nkt1GMd9r862neqJMvDIsku%2FY1apJh0xPv2Cc5IERQOFQprYgbgwtfXoM0WC5StWxAjJH9zKPpoTqB9v3zbMjtV30iNxAjtTmOxaahmjJfkixJFC1ry0bH%2FYJCH3AQjiA%2FpSPVt7FzbOE%2BTbdXnP8u8rFaxMwGnNQ8HjunUN5MAn3EnWQskEfQEtQK5KnplrTD5KIlG9bRrIlycgAgxO8uJXaJIg%2FmPVkHOf1BSKYEqObRWvCMwQh76DhO1aBVW0zWGa469TY66nRk5MQwn%2BdcVAaHnsIJrih5RAZfWQs5HPhCUE8JQzZqZYEwf7qdLx2BL%2B4muk3zM1FcOuAD6kQE0LIcjynPLvX604OsQc0P%2Bj%2BTGTqMtJyvl0awzT3ZdE%2B%2FeWK%2BAdD%2BNn81ULXUyg8Urm%2BYZB74R24QxXgxt01gIU4rjzUJP23zws1jd87kftHi6UDczRX%2FxhhR0PD8X8%2BsQKIA3PoysgSi5vZwLZjx%2FoTcwj5L0zwY6sQHm9Op%2Be2YynPgIBJDFhCxC7R4X%2Fp6ftErsVlJ4PEOTGQkvPSjCzhbo9TkC50mJiXpb5drdFyNIO9zatWMFw%2FXpdzFSbORcdM%2BzcXkLATFvj55wFF9xHB3OLUCPwjWNMi24iHnO2C7Ge6foLCZokzQNO9ovRjgj6XmrYDuT2teGjlD3VCpFaI4X%2B%2F0YDn1ek%2FwKbO1c%2FRuFlZh8cCpIlqlNMPySVzEdUnHqKCQGe%2BEP7hY%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260507T225305Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAUPUUPRWEZQWFOATL%2F20260507%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=583dbfdfceeeff086069e52e887a24b5b91e1bdcc0d1d994dd58009bc0e23c07&abstractId=4728592",
+        "title": "280E0217",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-07-09T22:50:51.271Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 991,
+        "object_id": "paper:url-misc.280E0217",
+        "created_at": "2026-07-09T22:50:51+00:00",
+        "updated_at": "2026-07-09T22:51:10+00:00",
+        "version": 1
+      }
+    },
     "interactions:acm.10.1145/3805689.3806741": {
       "data": {
         "sourceId": "acm",
