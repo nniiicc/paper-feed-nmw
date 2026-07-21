@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-07-21T22:04:17.562661+00:00",
+  "snapshot_time": "2026-07-21T22:07:59.730065+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s41597-023-02792-x": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s41597-023-02792-x",
+        "url": "https://www.nature.com/articles/s41597-023-02792-x",
+        "title": "American local government elections database",
+        "authors": "de Benedictis-Kessner, Justin, Lee, Diana Da In, Velez, Yamil R., Warshaw, Christopher",
+        "abstract": "The study of urban and local politics in the United States has long been hindered by a lack of centralized sources of election data. We introduce a new database of about 78,000 candidates in 57,000 electoral contests that encompasses races for seven distinct local political offices in most medium and large cities and counties in the U.S. over the last three decades. This is the most comprehensive publicly-available source of information on local elections across the country. We provide partisan and demographic information about candidates in these races as well as electoral outcomes. This new database will facilitate a myriad of new research on representation and elections in local governments.",
+        "timestamp": "2026-07-21T22:06:51.558Z",
+        "rating": "novote",
+        "publishedDate": "2023-12-19",
+        "tags": [
+          "Government"
+        ],
+        "doi": "10.1038/s41597-023-02792-x",
+        "journalName": "Scientific Data 2023 10:1",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1000,
+        "object_id": "paper:nature.s41597-023-02792-x",
+        "created_at": "2026-07-21T22:06:51+00:00",
+        "updated_at": "2026-07-21T22:07:12+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2602.08162": {
       "data": {
         "sourceId": "arxiv",
