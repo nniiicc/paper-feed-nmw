@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-07-21T20:59:39.848344+00:00",
+  "snapshot_time": "2026-07-21T21:01:02.886191+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.5CBD4344": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "5CBD4344",
+        "url": "https://www.cambridge.org/core/journals/philosophy-of-science/article/are-widely-known-findings-easier-to-retract/39F91FF2BB17A5DD6D315302254EB531",
+        "title": "Are Widely Known Findings Easier to Retract?",
+        "authors": "Shahan Ali Memon, Jevin D. West, Cailin O\u2019Connor",
+        "abstract": "Failures of retraction are common in science. Why do they occur? And what determines whether a retraction is successful? We use data from citation records and Altmetrics to test proposed answers to these questions. LaCroix et al. (2021) employ network models to argue the social spread of information helps explain failures of retraction. One prediction is that widely known results, surprisingly, should be easier to retract, since their retraction is more relevant. Our results support this conclusion. We find highly cited papers show more significant reductions in citation after retraction and garner more attention to their retractions as they occur.",
+        "timestamp": "2026-07-21T20:59:57.279Z",
+        "rating": "novote",
+        "publishedDate": "2026/07/17",
+        "tags": [],
+        "doi": "10.1017/psa.2026.10255",
+        "journalName": "Philosophy of Science",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 995,
+        "object_id": "paper:url-misc.5CBD4344",
+        "created_at": "2026-07-21T20:59:57+00:00",
+        "updated_at": "2026-07-21T21:00:18+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.368DCE7B": {
       "data": {
         "sourceId": "url-misc",
