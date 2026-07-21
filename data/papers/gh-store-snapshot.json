@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-07-21T21:01:02.886191+00:00",
+  "snapshot_time": "2026-07-21T21:15:44.551616+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:url-misc.6CD3009": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "6CD3009",
+        "url": "https://www.cambridge.org/core/journals/american-political-science-review/article/party-competition-and-coalitional-stability-evidence-from-american-local-government/82834938908A1582DA548ECB215544A9",
+        "title": "Party Competition and Coalitional Stability: Evidence from American Local Government",
+        "authors": "PETER BUCCHIANERI",
+        "abstract": "For decades, political scientists have argued that competition is a fundamental component of a responsible party system, such that when one party dominates politics, legislative coalitions destabilize and democratic accountability suffers. In this paper, I evaluate these predictions in an important but largely unexplored legislative environment: American local government. Using an original collection of roll-call records from 151 municipal councils, I show that legislative behavior is more one-dimensional when elections are partisan and the electorate is evenly balanced between the parties. When either of these features is absent, however, elite behavior remains unstructured, with coalitions shifting over time and across issues. These differences across institutional and competitive contexts suggest that partisan elections\u2014and the party organizations that nearly always come with them\u2014are critical for translating electoral insecurity into organized government, raising questions about the capacity for electoral accountability in a growing set of one-party dominant governments across the country.",
+        "timestamp": "2026-07-21T21:14:28.219Z",
+        "rating": "novote",
+        "publishedDate": "2020/11",
+        "tags": [],
+        "doi": "10.1017/S0003055420000386",
+        "journalName": "American Political Science Review",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 996,
+        "object_id": "paper:url-misc.6CD3009",
+        "created_at": "2026-07-21T21:14:28+00:00",
+        "updated_at": "2026-07-21T21:14:51+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.5CBD4344": {
       "data": {
         "sourceId": "url-misc",
