@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-07-21T21:15:44.551616+00:00",
+  "snapshot_time": "2026-07-21T22:04:17.562661+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2602.08162": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2602.08162",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 999,
+        "object_id": "interactions:arxiv.2602.08162",
+        "created_at": "2026-07-21T22:03:17+00:00",
+        "updated_at": "2026-07-21T22:03:18+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2602.08162": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2602.08162",
+        "url": "https://arxiv.org/html/2602.08162v1",
+        "title": "NLP for Local Governance Meeting Records:\nA Focus Article on Tasks, Datasets, Metrics and Benchmarks",
+        "authors": "",
+        "abstract": "Report issue for preceding element Local governance meeting records are official documents, in the form of minutes or transcripts, documenting how proposals, discussions, and procedural actions unfold during institutional meetings. While generally structured, these documents are often dense, bureaucratic, and highly heterogeneous across municipalities, exhibiting significant variation in language, terminology, structure, and overall organization. This heterogeneity makes them difficult for non-experts to interpret and challenging for intelligent automated systems to process, limiting public transparency and civic engagement. To address these challenges, computational methods can be employed to structure and interpret such complex documents. In particular, Natural Language Processing (NLP) offers well-established methods that can enhance the accessibility and interpretability of governmental records. In this focus article, we review foundational NLP tasks that support the structuring of local governance meeting documents. Specifically, we review three core tasks: document segmentation, domain-specific entity extraction and automatic text summarization, which are essential for navigating lengthy deliberations, identifying political actors and personal information, and generating concise representations of complex decision-making processes. In reviewing these tasks, we discuss methodological approaches, evaluation metrics, and publicly available resources, while highlighting domain-specific challenges such as data scarcity, privacy constraints, and source variability. By synthesizing existing work across these foundational tasks, this article provides a structured overview of how NLP can enhance the structuring and accessibility of local governance meeting records.Report issue for preceding element",
+        "timestamp": "2026-07-21T22:03:08.671Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "10.54499/2024.07509.IACDC",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 997,
+        "object_id": "paper:arxiv.2602.08162",
+        "created_at": "2026-07-21T22:03:09+00:00",
+        "updated_at": "2026-07-21T22:03:27+00:00",
+        "version": 1
+      }
+    },
     "paper:url-misc.6CD3009": {
       "data": {
         "sourceId": "url-misc",
