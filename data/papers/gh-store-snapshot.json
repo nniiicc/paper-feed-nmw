@@ -1,7 +1,83 @@
 {
-  "snapshot_time": "2026-07-22T01:12:09.710389+00:00",
+  "snapshot_time": "2026-07-22T18:41:52.464033+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.672A41C": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "672A41C",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 1005,
+        "object_id": "interactions:url-misc.672A41C",
+        "created_at": "2026-07-22T18:41:30+00:00",
+        "updated_at": "2026-07-22T18:41:32+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.52052941": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "52052941",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 1004,
+        "object_id": "interactions:url-misc.52052941",
+        "created_at": "2026-07-22T18:40:58+00:00",
+        "updated_at": "2026-07-22T18:41:00+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.52052941": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "52052941",
+        "url": "https://bmjopen.bmj.com/content/10/10/e039969.citation-tools",
+        "title": "Industry ties and evidence in public comments on the FDA framework for modifications to artificial intelligence/machine learning-based medical devices: a cross sectional study",
+        "authors": "James Andrew Smith, Roxanna E Abhari, Zain Hussain, Carl Heneghan, Gary S Collins, Andrew J Carr",
+        "abstract": "Objectives To determine the extent and disclosure of financial ties to industry and use of scientific evidence in comments on a US Food and Drug Administration (FDA) regulatory framework for modifications to artificial intelligence/machine learning (AI/ML)-based software as a medical device (SaMD).\n\nDesign Cross-sectional study.\n\nSetting We searched all publicly available comments on the FDA \u2018Proposed Regulatory Framework for Modifications to Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD)\u2014Discussion Paper and Request for Feedback\u2019 from 2 April 2019 to 8 August 2019.\n\nMain outcome measures The proportion of articles submitted by parties with financial ties to industry, disclosing those ties, citing scientific articles, citing systematic reviews and meta-analyses, and using a systematic process to identify relevant literature.\n\nResults We analysed 125 comments submitted on the proposed framework. 79 (63%) comments came from parties with financial ties; for 36 (29%) comments, it was not clear and the absence of financial ties could only be confirmed for 10 (8%) comments. No financial ties were disclosed in any of the comments that were not from industry submitters. The vast majority of submitted comments (86%) did not cite any scientific literature, just 4% cited a systematic review or meta-analysis and no comments indicated that a systematic process was used to identify relevant literature.\n\nConclusions Financial ties to industry were common and undisclosed, and scientific evidence, including systematic reviews and meta-analyses, were rarely cited. To ensure regulatory frameworks best serve patient interests, the FDA should mandate disclosure of potential conflicts of interest (including financial ties) in comments, encourage the use of scientific evidence, and encourage engagement from non-conflicted parties.",
+        "timestamp": "2026-07-22T18:40:51.159Z",
+        "rating": "novote",
+        "publishedDate": "2020-10-01",
+        "tags": [],
+        "doi": "10.1136/bmjopen-2020-039969",
+        "journalName": "BMJ Open",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1003,
+        "object_id": "paper:url-misc.52052941",
+        "created_at": "2026-07-22T18:40:51+00:00",
+        "updated_at": "2026-07-22T18:41:09+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.672A41C": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "672A41C",
+        "url": "https://bmjopen.bmj.com/content/10/10/e039969",
+        "title": "Industry ties and evidence in public comments on the FDA framework for modifications to artificial intelligence/machine learning-based medical devices: a cross sectional study",
+        "authors": "James Andrew Smith, Roxanna E Abhari, Zain Hussain, Carl Heneghan, Gary S Collins, Andrew J Carr",
+        "abstract": "Objectives To determine the extent and disclosure of financial ties to industry and use of scientific evidence in comments on a US Food and Drug Administration (FDA) regulatory framework for modifications to artificial intelligence/machine learning (AI/ML)-based software as a medical device (SaMD).\n\nDesign Cross-sectional study.\n\nSetting We searched all publicly available comments on the FDA \u2018Proposed Regulatory Framework for Modifications to Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD)\u2014Discussion Paper and Request for Feedback\u2019 from 2 April 2019 to 8 August 2019.\n\nMain outcome measures The proportion of articles submitted by parties with financial ties to industry, disclosing those ties, citing scientific articles, citing systematic reviews and meta-analyses, and using a systematic process to identify relevant literature.\n\nResults We analysed 125 comments submitted on the proposed framework. 79 (63%) comments came from parties with financial ties; for 36 (29%) comments, it was not clear and the absence of financial ties could only be confirmed for 10 (8%) comments. No financial ties were disclosed in any of the comments that were not from industry submitters. The vast majority of submitted comments (86%) did not cite any scientific literature, just 4% cited a systematic review or meta-analysis and no comments indicated that a systematic process was used to identify relevant literature.\n\nConclusions Financial ties to industry were common and undisclosed, and scientific evidence, including systematic reviews and meta-analyses, were rarely cited. To ensure regulatory frameworks best serve patient interests, the FDA should mandate disclosure of potential conflicts of interest (including financial ties) in comments, encourage the use of scientific evidence, and encourage engagement from non-conflicted parties.",
+        "timestamp": "2026-07-22T18:40:46.932Z",
+        "rating": "novote",
+        "publishedDate": "2020-10-01",
+        "tags": [],
+        "doi": "10.1136/bmjopen-2020-039969",
+        "journalName": "BMJ Open",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1002,
+        "object_id": "paper:url-misc.672A41C",
+        "created_at": "2026-07-22T18:40:47+00:00",
+        "updated_at": "2026-07-22T18:41:09+00:00",
+        "version": 1
+      }
+    },
     "interactions:nature.s41597-023-02792-x": {
       "data": {
         "sourceId": "nature",
