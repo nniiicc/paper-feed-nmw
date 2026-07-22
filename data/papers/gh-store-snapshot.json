@@ -1,7 +1,85 @@
 {
-  "snapshot_time": "2026-07-22T18:41:52.464033+00:00",
+  "snapshot_time": "2026-07-22T18:43:02.189872+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:medrxiv.10.1101/2019": {
+      "data": {
+        "sourceId": "medrxiv",
+        "paperId": "10.1101/2019",
+        "url": "https://www.medrxiv.org/content/10.1101/2019.12.11.19013953v1",
+        "title": "Financial interests and evidence in public comments on the FDA framework for modifications to artificial intelligence/machine learning-based medical devices",
+        "authors": "James A. Smith, Roxanna E. Abhari, Zain U. Hussain, Carl Henegan, Gary S. Collins, Andrew J. Carr",
+        "abstract": "<h3>Abstract</h3>\n<p>The US Food and Drug Administration (FDA) has proposed a regulatory framework for modifications to artificial intelligence/machine learning-based software as a medical device (SaMD). We analysed the 125 non-duplicate and non-spam public comments on the proposed framework and found that industry and other parties with a potential financial interest contributed a minimum of 63% of comments and that the absence of a conflict of interest could be confirmed in only 8%. Despite the FDA\u2019s stated commitment to using scientific evidence in the rule-making process, the vast majority of submitted comments (86%) did not cite any scientific literature, just 4% cited a systematic review or meta-analysis, and no comments indicated whether a systematic process was used to identify relevant literature. We recommend that the FDA requires disclosure of conflicts of interest in comments in the future. As the framework continues to be modified, engagement from non-conflicted parties and better use of scientific evidence may help to ensure the development of a regulatory system that best promotes patient interests.</p>",
+        "timestamp": "2026-07-22T18:41:49.865Z",
+        "rating": "novote",
+        "publishedDate": "2019/01/01",
+        "tags": [],
+        "doi": "10.1101/2019.12.11.19013953",
+        "journalName": "medRxiv",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1008,
+        "object_id": "paper:medrxiv.10.1101/2019",
+        "created_at": "2026-07-22T18:41:50+00:00",
+        "updated_at": "2026-07-22T18:42:09+00:00",
+        "version": 1
+      }
+    },
+    "interactions:url-misc.38A1EF88": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "38A1EF88",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-07-22T18:41:42.861Z",
+            "data": {
+              "session_id": "session_1784745702401_rsamfcm",
+              "source_id": "url-misc",
+              "paper_id": "38A1EF88",
+              "start_time": "2026-07-22T18:41:29.617Z",
+              "end_time": "2026-07-22T18:41:42.401Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 3,
+              "total_elapsed_seconds": 13
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 1007,
+        "object_id": "interactions:url-misc.38A1EF88",
+        "created_at": "2026-07-22T18:41:43+00:00",
+        "updated_at": "2026-07-22T18:42:05+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.38A1EF88": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "38A1EF88",
+        "url": "https://bmjopen.bmj.com/content/10/10/e039969.info",
+        "title": "Industry ties and evidence in public comments on the FDA framework for modifications to artificial intelligence/machine learning-based medical devices: a cross sectional study",
+        "authors": "James Andrew Smith, Roxanna E Abhari, Zain Hussain, Carl Heneghan, Gary S Collins, Andrew J Carr",
+        "abstract": "Objectives To determine the extent and disclosure of financial ties to industry and use of scientific evidence in comments on a US Food and Drug Administration (FDA) regulatory framework for modifications to artificial intelligence/machine learning (AI/ML)-based software as a medical device (SaMD).\n\nDesign Cross-sectional study.\n\nSetting We searched all publicly available comments on the FDA \u2018Proposed Regulatory Framework for Modifications to Artificial Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device (SaMD)\u2014Discussion Paper and Request for Feedback\u2019 from 2 April 2019 to 8 August 2019.\n\nMain outcome measures The proportion of articles submitted by parties with financial ties to industry, disclosing those ties, citing scientific articles, citing systematic reviews and meta-analyses, and using a systematic process to identify relevant literature.\n\nResults We analysed 125 comments submitted on the proposed framework. 79 (63%) comments came from parties with financial ties; for 36 (29%) comments, it was not clear and the absence of financial ties could only be confirmed for 10 (8%) comments. No financial ties were disclosed in any of the comments that were not from industry submitters. The vast majority of submitted comments (86%) did not cite any scientific literature, just 4% cited a systematic review or meta-analysis and no comments indicated that a systematic process was used to identify relevant literature.\n\nConclusions Financial ties to industry were common and undisclosed, and scientific evidence, including systematic reviews and meta-analyses, were rarely cited. To ensure regulatory frameworks best serve patient interests, the FDA should mandate disclosure of potential conflicts of interest (including financial ties) in comments, encourage the use of scientific evidence, and encourage engagement from non-conflicted parties.",
+        "timestamp": "2026-07-22T18:41:29.934Z",
+        "rating": "novote",
+        "publishedDate": "2020-10-01",
+        "tags": [],
+        "doi": "10.1136/bmjopen-2020-039969",
+        "journalName": "BMJ Open",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1006,
+        "object_id": "paper:url-misc.38A1EF88",
+        "created_at": "2026-07-22T18:41:30+00:00",
+        "updated_at": "2026-07-22T18:41:48+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.672A41C": {
       "data": {
         "sourceId": "url-misc",
