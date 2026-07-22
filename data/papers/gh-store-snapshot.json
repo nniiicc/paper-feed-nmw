@@ -1,7 +1,45 @@
 {
-  "snapshot_time": "2026-07-22T18:43:02.189872+00:00",
+  "snapshot_time": "2026-07-22T21:32:54.948121+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.71F26578": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "71F26578",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 1010,
+        "object_id": "interactions:url-misc.71F26578",
+        "created_at": "2026-07-22T21:31:53+00:00",
+        "updated_at": "2026-07-22T21:31:55+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.71F26578": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "71F26578",
+        "url": "https://scholar.google.com/scholar?cluster=7363247673701586312&hl=en&as_sdt=0,48",
+        "title": "Google Scholar",
+        "authors": "",
+        "abstract": "",
+        "timestamp": "2026-07-22T21:31:45.379Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [],
+        "doi": "",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1009,
+        "object_id": "paper:url-misc.71F26578",
+        "created_at": "2026-07-22T21:31:45+00:00",
+        "updated_at": "2026-07-22T21:32:07+00:00",
+        "version": 1
+      }
+    },
     "paper:medrxiv.10.1101/2019": {
       "data": {
         "sourceId": "medrxiv",
@@ -200,13 +238,29 @@
       "data": {
         "sourceId": "arxiv",
         "paperId": "2602.08162",
-        "interactions": []
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-07-22T21:31:38.010Z",
+            "data": {
+              "session_id": "session_1784755897684_m918qqu",
+              "source_id": "arxiv",
+              "paper_id": "2602.08162",
+              "start_time": "2026-07-22T21:31:27.438Z",
+              "end_time": "2026-07-22T21:31:37.684Z",
+              "heartbeat_count": 2,
+              "duration_seconds": 10,
+              "idle_seconds": 0,
+              "total_elapsed_seconds": 10
+            }
+          }
+        ]
       },
       "meta": {
         "issue_number": 999,
         "object_id": "interactions:arxiv.2602.08162",
         "created_at": "2026-07-21T22:03:17+00:00",
-        "updated_at": "2026-07-21T22:03:18+00:00",
+        "updated_at": "2026-07-22T21:31:56+00:00",
         "version": 1
       }
     },
