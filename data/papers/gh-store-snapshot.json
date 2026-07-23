@@ -1,7 +1,31 @@
 {
-  "snapshot_time": "2026-07-23T01:19:46.411757+00:00",
+  "snapshot_time": "2026-07-23T19:13:53.892821+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:biorxiv.10.64898/2026": {
+      "data": {
+        "sourceId": "biorxiv",
+        "paperId": "10.64898/2026",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.07.17.739248v1",
+        "title": "Career incentives make Registered Reports unattractive under realistic academic conditions",
+        "authors": "Anne M. Scheel, Leo Tiokhin, Dani\u00ebl Lakens",
+        "abstract": "<p>Registered Reports are a publication format designed to reduce publication bias by guaranteeing publication before results are known. This guarantee is considered attractive in the prevailing 9publish or perish9 culture. But would researchers always prefer such a low-risk option? When strong results allow publication in prestigious journals, the results-dependent nature of standard publications can actually be an advantage for authors. Given this trade-off, the choice between publication formats represents decision making under risk, and researchers may not always be risk-averse. To better understand under which circumstances Registered Reports are likely to be popular, we draw on risk-sensitivity theory from behavioural ecology and develop an agent-based model that explores how four factors shape publication strategies: whether additional publications yield diminishing or increasing career returns, the pace at which studies are completed, publication targets, and competition. We find that many realistic configurations lead researchers to avoid Registered Reports, even when Registered Reports are nearly as valuable as the best possible standard publication. Intense competition and low empirical pace can make the format unviable, while high empirical pace attenuates most other effects. Given prevailing career incentives in many fields, these results suggest that the market share of Registered Reports may remain trivially low without additional incentives or interventions.</p>",
+        "timestamp": "2026-07-23T19:12:51.698Z",
+        "rating": "novote",
+        "publishedDate": "2026/01/01",
+        "tags": [],
+        "doi": "10.64898/2026.07.17.739248",
+        "journalName": "bioRxiv",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1011,
+        "object_id": "paper:biorxiv.10.64898/2026",
+        "created_at": "2026-07-23T19:12:52+00:00",
+        "updated_at": "2026-07-23T19:13:14+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.71F26578": {
       "data": {
         "sourceId": "url-misc",
