@@ -1,7 +1,48 @@
 {
-  "snapshot_time": "2026-07-24T01:15:32.349710+00:00",
+  "snapshot_time": "2026-07-24T19:35:08.644274+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:springer.10.1557/mrc.2019.59": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1557/mrc.2019.59",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 1014,
+        "object_id": "interactions:springer.10.1557/mrc.2019.59",
+        "created_at": "2026-07-24T19:34:02+00:00",
+        "updated_at": "2026-07-24T19:34:04+00:00",
+        "version": 1
+      }
+    },
+    "paper:springer.10.1557/mrc.2019.59": {
+      "data": {
+        "sourceId": "springer",
+        "paperId": "10.1557/mrc.2019.59",
+        "url": "https://link.springer.com/article/10.1557/mrc.2019.59",
+        "title": "ESPEI for efficient thermodynamic database development, modification, and uncertainty quantification: application to Cu\u2013Mg",
+        "authors": "Bocklund, Brandon, Otis, Richard, Egorov, Aleksei, Obaied, Abdulmonem, Roslyakova, Irina, Liu, Zi-Kui",
+        "abstract": "The software package ESPEI has been developed for efficient evaluation of thermodynamic model parameters within the CALPHAD method. ESPEI uses a linear fitting strategy to parameterize Gibbs energy functions of single phases based on their thermochemical data and refines the model parameters using phase equilibrium data through Bayesian parameter estimation within a Markov Chain Monte Carlo machine learning approach. In this paper, the methodologies employed in ESPEI are discussed in detail and demonstrated for the Cu\u2013Mg system down to 0 K using unary descriptions based on segmented regression. The model parameter uncertainties are quantified and propagated to the Gibbs energy functions.",
+        "timestamp": "2026-07-24T19:33:55.941Z",
+        "rating": "novote",
+        "publishedDate": "2019/06",
+        "tags": [
+          "Materials Science",
+          "general"
+        ],
+        "doi": "10.1557/mrc.2019.59",
+        "journalName": "MRS Communications",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1013,
+        "object_id": "paper:springer.10.1557/mrc.2019.59",
+        "created_at": "2026-07-24T19:33:56+00:00",
+        "updated_at": "2026-07-24T19:34:20+00:00",
+        "version": 1
+      }
+    },
     "interactions:biorxiv.10.64898/2026": {
       "data": {
         "sourceId": "biorxiv",
