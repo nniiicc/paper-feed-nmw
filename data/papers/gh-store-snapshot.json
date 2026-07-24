@@ -1,7 +1,51 @@
 {
-  "snapshot_time": "2026-07-24T19:35:08.644274+00:00",
+  "snapshot_time": "2026-07-24T22:18:48.034326+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:url-misc.C9A5EB9": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "C9A5EB9",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 1016,
+        "object_id": "interactions:url-misc.C9A5EB9",
+        "created_at": "2026-07-24T22:18:15+00:00",
+        "updated_at": "2026-07-24T22:18:16+00:00",
+        "version": 1
+      }
+    },
+    "paper:url-misc.C9A5EB9": {
+      "data": {
+        "sourceId": "url-misc",
+        "paperId": "C9A5EB9",
+        "url": "https://journals.sagepub.com/doi/10.1177/02750740261464911?_gl=1*80pjq4*_up*MQ..*_ga*NjM4NDQ3MzE4LjE3ODQ5MzE0MzM.*_ga_60R758KFDG*czE3ODQ5MzE0MzIkbzEkZzEkdDE3ODQ5MzE0MzUkajU3JGwxJGgxNTYyNzcxNTYz",
+        "title": "Exploring How Demand and Supply Knowledge Can Improve Centralized Public Health Procurement - Eric J. Boyer, Niccol\u00f2 Cusumano, Carlos Olmedo, Veronica Vecchi, 2026",
+        "authors": "Eric J. Boyer, https://orcid.org/0000-0002-8316-1103, ejboyer@utep.edu, Niccol\u00f2 Cusumano, https://orcid.org/0000-0003-3737-5028, Carlos Olmedo, https://orcid.org/0000-0002-1054-3821, Veronica Vecchi, https://orcid.org/0000-0003-1043-3021",
+        "abstract": "Despite the growing shift towards procurement centralization among governments around the world, questions remain as to how to increase purchasing within centra...",
+        "timestamp": "2026-07-24T22:17:48.067Z",
+        "rating": "novote",
+        "publishedDate": "",
+        "tags": [
+          "centralized procurement",
+          "supply market intelligence",
+          "transaction cost economics",
+          "government contracting",
+          "centralization"
+        ],
+        "doi": "10.1177/02750740261464911",
+        "journalName": "The American Review of Public Administration",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1015,
+        "object_id": "paper:url-misc.C9A5EB9",
+        "created_at": "2026-07-24T22:17:48+00:00",
+        "updated_at": "2026-07-24T22:18:05+00:00",
+        "version": 1
+      }
+    },
     "interactions:springer.10.1557/mrc.2019.59": {
       "data": {
         "sourceId": "springer",
