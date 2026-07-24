@@ -1,7 +1,21 @@
 {
-  "snapshot_time": "2026-07-23T19:13:53.892821+00:00",
+  "snapshot_time": "2026-07-24T01:15:32.349710+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:biorxiv.10.64898/2026": {
+      "data": {
+        "sourceId": "biorxiv",
+        "paperId": "10.64898/2026",
+        "interactions": []
+      },
+      "meta": {
+        "issue_number": 1012,
+        "object_id": "interactions:biorxiv.10.64898/2026",
+        "created_at": "2026-07-23T19:13:47+00:00",
+        "updated_at": "2026-07-23T19:13:49+00:00",
+        "version": 1
+      }
+    },
     "paper:biorxiv.10.64898/2026": {
       "data": {
         "sourceId": "biorxiv",
