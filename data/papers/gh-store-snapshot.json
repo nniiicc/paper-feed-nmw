@@ -1,7 +1,63 @@
 {
-  "snapshot_time": "2026-08-12T00:45:43.536565+00:00",
+  "snapshot_time": "2026-08-12T22:27:18.342614+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "interactions:arxiv.2608.03329": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2608.03329",
+        "interactions": [
+          {
+            "type": "reading_session",
+            "timestamp": "2026-08-12T22:26:10.349Z",
+            "data": {
+              "session_id": "session_1786573569874_yd9dhxn",
+              "source_id": "arxiv",
+              "paper_id": "2608.03329",
+              "start_time": "2026-08-12T22:25:49.476Z",
+              "end_time": "2026-08-12T22:26:09.874Z",
+              "heartbeat_count": 4,
+              "duration_seconds": 20,
+              "idle_seconds": 0,
+              "total_elapsed_seconds": 20
+            }
+          }
+        ]
+      },
+      "meta": {
+        "issue_number": 1018,
+        "object_id": "interactions:arxiv.2608.03329",
+        "created_at": "2026-08-12T22:26:10+00:00",
+        "updated_at": "2026-08-12T22:26:33+00:00",
+        "version": 1
+      }
+    },
+    "paper:arxiv.2608.03329": {
+      "data": {
+        "sourceId": "arxiv",
+        "paperId": "2608.03329",
+        "url": "https://arxiv.org/abs/2608.03329",
+        "title": "Making AI Visible, Not Vanished: How AI Policies Reshape Developer Experience on GitHub",
+        "authors": "Yunqi Chen, Thomas Zimmermann, Bianca Trinkenreich",
+        "abstract": "Generative AI is rapidly reshaping Open Source Software (OSS) software development,prompting projects to introduce policies governing AI-assisted contributions. However, little is known about how these policies differ or whether they influence developer experience. We present the first large-scale empirical study of AI governance policies in OSS. Analyzing 29,624 GitHub repositories, we identify 385 projects that adopted AI policies and derive TRACE, a framework capturing five governance dimensions: Transparency, Responsibility, Attribution, Constraints, and Enforcement. We further classify policies into five governance families and estimate their effects using propensity-score matching and longitudinal difference-in-differences analysis. Our results show that AI governance primarily regulates rather than prohibits AI-assisted development. Policy adoption brings maintainer engagement, increased AI disclosure, richer review interactions, and improved code quality while AI-assisted contributions continue to grow. Governance design matters: policies emphasizing transparency and responsibility produced stronger community and quality outcomes than restrictive approaches alone. Our findings show how different AI governance strategies shape developer experience and provide evidence to help OSS communities design effective AI policies.",
+        "timestamp": "2026-08-12T22:25:49.812Z",
+        "rating": "novote",
+        "publishedDate": "2026/08/04",
+        "tags": [
+          "Software Engineering (cs.SE)"
+        ],
+        "doi": "10.48550/arXiv.2608.03329",
+        "journalName": "",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1017,
+        "object_id": "paper:arxiv.2608.03329",
+        "created_at": "2026-08-12T22:25:50+00:00",
+        "updated_at": "2026-08-12T22:26:11+00:00",
+        "version": 1
+      }
+    },
     "interactions:url-misc.C9A5EB9": {
       "data": {
         "sourceId": "url-misc",
