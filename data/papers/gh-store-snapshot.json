@@ -1,7 +1,33 @@
 {
-  "snapshot_time": "2026-08-19T00:24:39.620750+00:00",
+  "snapshot_time": "2026-08-19T21:40:33.282848+00:00",
   "repository": "nniiicc/paper-feed-nmw",
   "objects": {
+    "paper:nature.s44284-026-00478-0": {
+      "data": {
+        "sourceId": "nature",
+        "paperId": "s44284-026-00478-0",
+        "url": "https://www.nature.com/articles/s44284-026-00478-0",
+        "title": "Effects of Uber and Lyft on jobs, wages and GDP",
+        "authors": "Koling, Adam, Michalek, Jeremy, Armanios, Daniel, Forsythe, Connor, Jha, Akshaya",
+        "abstract": "Between 2010 and 2019, Uber and Lyft launched in hundreds of cities across the USA. Economic theory and prior literature, coupled with company claims, posit that ride-hailing increases job flexibility for drivers and mobility for passengers, thereby stimulating local economic activity. Here we test these claims by leveraging the staggered entry of Uber and Lyft across 167 service regions nationwide to estimate the aggregate effects on jobs, wages and regional GDP using difference-in-differences approaches that generate consistent estimates in the presence of heterogeneous treatment effects. We find that Uber and Lyft entry led to an increase in both regional GDP per capita and in seasonal, temporary or otherwise intermittent employment per working age population. We do not detect statistically significant effects on overall employment or earnings. Ride-hailing platforms such as Uber and Lyft are theorized to stimulate local economies. An analysis of 167 US cities reveals that their entry increased regional GDP and intermittent employment, but not overall jobs or earnings.",
+        "timestamp": "2026-08-19T21:39:25.376Z",
+        "rating": "novote",
+        "publishedDate": "2026/08",
+        "tags": [
+          "Economics"
+        ],
+        "doi": "10.1038/s44284-026-00478-0",
+        "journalName": "Nature Cities 2026 3:8",
+        "sourceType": "url"
+      },
+      "meta": {
+        "issue_number": 1019,
+        "object_id": "paper:nature.s44284-026-00478-0",
+        "created_at": "2026-08-19T21:39:25+00:00",
+        "updated_at": "2026-08-19T21:39:45+00:00",
+        "version": 1
+      }
+    },
     "interactions:arxiv.2608.03329": {
       "data": {
         "sourceId": "arxiv",
